@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.0">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="SlotMachTest" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="Instr">
+      <TextComponent name="Instructions">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.065" valType="code"/>
+        <Param name="name" updates="None" val="Instructions" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="In this part of the study, you will be making a series of monetary decisions.&amp;#10;&amp;#10;You will have the choice between taking a gamble,  which will be shown on the left side of the screen, or choosing a sure option, which will be on the right side of the screen. &amp;#10;&amp;#10;For each gamble, you will have a chance of either winning money or winning nothing, while the sure option guarantees payoff. &amp;#10;&amp;#10;Press space to continue. " valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="space">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="space" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Inst2">
+      <TextComponent name="instruct2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.065" valType="code"/>
+        <Param name="name" updates="None" val="instruct2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="You will be given regulation intsructions prior to a block of trials. Please employ the strategy while making your decision. &amp;#10;&amp;#10;You will have three seconds to make your choice upon seeing the options. &amp;#10;&amp;#10;To choose the gamble, press &quot;1&quot;. To choose the sure option, press &quot;2&quot;.&amp;#10;&amp;#10;You will first be playing some practice rounds. To begin the practice, press enter!" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="enter">
+        <Param name="allowedKeys" updates="constant" val="'return'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="enter" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Practice">
+      <PolygonComponent name="Line">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="set every repeat" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="set every repeat" val="7" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="Line" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="90" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="line" valType="str"/>
+        <Param name="size" updates="set every repeat" val="(3, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <KeyboardComponent name="choice">
+        <Param name="allowedKeys" updates="set every repeat" val="'1','2'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="choice" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="GambleAmt">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.11" valType="code"/>
+        <Param name="name" updates="None" val="GambleAmt" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(-0.41, -0.1)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="SureAmt">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.11" valType="code"/>
+        <Param name="name" updates="None" val="SureAmt" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0.41, -0.1)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="GambleProb">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.13" valType="code"/>
+        <Param name="name" updates="None" val="GambleProb" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(-0.41, 0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="SureProb">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.13" valType="code"/>
+        <Param name="name" updates="None" val="SureProb" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0.41, 0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="import numpy&amp;#10;from numpy import random&amp;#10;&amp;#10;earnings = 0&amp;#10;earningsStr = &quot;$&quot; + str(earnings)&amp;#10;subID = int(expInfo['participant'])&amp;#10;&amp;#10;FiftyGamble = [1,0]&amp;#10;SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]&amp;#10;ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]&amp;#10;&amp;#10;earning=0&amp;#10;chosenMoney = 0&amp;#10;&amp;#10;&amp;#10;#probability =[]&amp;#10;def gamProbability(gamProb):&amp;#10;    probs = int(gamProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% gamble')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% gamble')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% gamble')&amp;#10;def gambleFunc(gamProb):&amp;#10;    probs = int(gamProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        #print('65% gamble')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% gamble')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% gamble')&amp;#10;    result = random.choice(probability)&amp;#10;    print('gamble result:')&amp;#10;    print(result)&amp;#10;&amp;#10;def loseFunc(chosenMoney, earning):&amp;#10;    earning -= chosenMoney&amp;#10;    print('Lost Money earnings:')&amp;#10;    print(earning)&amp;#10;def winFunc(chosenMoney, earning):&amp;#10;    earning += chosenMoney&amp;#10;    print('Won money earnings:')&amp;#10;    print(earning)&amp;#10;&amp;#10;def earningsFunct(gamProb, chosenMoney, WinLossType, earning):&amp;#10;   if subID%2==0:   #gambles are on left side of screen&amp;#10;       if choice.keys == '1' and WinLossType== 1 : &amp;#10;           print('gambled during win condition')&amp;#10;           #gamProbability(gamProb)&amp;#10;           probs = int(gamProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;               print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)&amp;#10;           if result == 1:   #win&amp;#10;               earning += chosenMoney&amp;#10;               print('Won money earnings:')&amp;#10;               print(earning)&amp;#10;       #    if result == 0: #lose&amp;#10;        #       earnings += 0&amp;#10;   &amp;#10;       if choice.keys == '1' and WinLossType==0:  &amp;#10;           print('gambled during lose condition')&amp;#10;           #gamProbability(gamProb)&amp;#10;           probs = int(gamProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;        #print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)           &amp;#10;           if result == 1: #lose&amp;#10;               earning -= chosenMoney&amp;#10;               print('Lost Money earnings:')&amp;#10;               print(earning)&amp;#10;     #      if result == 0: #win&amp;#10;     #          earnings += 0&amp;#10;                &amp;#10;       if choice.keys == '2'and WinLossType ==1:&amp;#10;           print('did not gamble for win')&amp;#10;           earning += chosenMoney&amp;#10;           print('Won money earnings:')&amp;#10;           print(earning)       &amp;#10;       if choice.keys == '2' and WinLossType == 0: &amp;#10;           print('did not gamble for loss')&amp;#10;           earning -= chosenMoney&amp;#10;           print('Lost Money earnings:')&amp;#10;           print(earning)&amp;#10;&amp;#10;&amp;#10;   if subID%2==1:  #gambles are on right side of screen&amp;#10;       if choice.keys == '2' and WinLossType == 1: &amp;#10;           print('gambled during win condition')&amp;#10;           #gamProbability(gamProb)&amp;#10;           probs = int(gamProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;               print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)           &amp;#10;           if result == 1: #win&amp;#10;               winFunc(chosenMoney, earning)&amp;#10;    #       if result == 0: #lost&amp;#10;    #           earnings += 0&amp;#10;        &amp;#10;        &amp;#10;       if choice.keys == '2' and WinLossType == 0: &amp;#10;           print('gambled during lose condition')&amp;#10;           #gamProbability(gamProb)&amp;#10;           probs = int(gamProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;               print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)           &amp;#10;           if result == 1: #lose&amp;#10;               earning -= chosenMoney&amp;#10;               print('Lost Money earnings:')&amp;#10;               print(earning)&amp;#10;     #      if result == 0: #win&amp;#10;     #          earnings += 0&amp;#10;                &amp;#10;       if choice.keys == '1' and WinLossType == 1:&amp;#10;           print('did not gamble for win')&amp;#10;           earning += chosenMoney&amp;#10;           print('Won money earnings:')&amp;#10;           print(earning)&amp;#10;       if choice.keys == '1' and WinLossType == 0: &amp;#10;           print('did not gamble for lose condition')&amp;#10;           earning -= chosenMoney&amp;#10;           print('Lost Money earnings:')&amp;#10;           print(earning)" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="earnings = 0&amp;#10;earningsStr = &quot;$&quot; + str(earnings)&amp;#10;subID = parseInt(expInfo['participant'])&amp;#10;&amp;#10;FiftyGamble = [1,0]&amp;#10;SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]&amp;#10;ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]&amp;#10;&amp;#10;earning=0&amp;#10;chosenMoney = 0" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="&amp;#10;leftVarText=[]&amp;#10;leftVarMoney = []&amp;#10;rightVarText = []&amp;#10;rightVarMoney = []&amp;#10;result = []&amp;#10;&amp;#10;if (subID%2 == 1){&amp;#10;    leftVarText = (gambleWinLoss);&amp;#10;    leftVarMoney = (gamble);&amp;#10;    rightVarText = (sureWinLoss);&amp;#10;    rightVarMoney = (sure);&amp;#10;    }&amp;#10;if (subID%2 == 0){&amp;#10;    rightVarText= (gambleWinLoss);&amp;#10;    rightVarMoney= (gamble);&amp;#10;    leftVarText= (sureWinLoss);&amp;#10;    leftVarMoney= (sure);&amp;#10;    }&amp;#10;&amp;#10;GambleAmt.setText(leftVarMoney)&amp;#10;SureAmt.setText(rightVarMoney)&amp;#10;GambleProb.setText(leftVarText)&amp;#10;SureProb.setText(rightVarText)&amp;#10;&amp;#10;leftMoney = parseFloat(leftVarMoney[1:])&amp;#10;&amp;#10;rightMoney = parseFloat(rightVarMoney[1:])&amp;#10;&amp;#10;WinLossType = parseInt(WinLossCode)" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;leftVarText=[]&amp;#10;leftVarMoney = []&amp;#10;rightVarText = []&amp;#10;rightVarMoney = []&amp;#10;result = []&amp;#10;&amp;#10;if subID%2 == 1 :&amp;#10;    leftVarText = (gambleWinLoss)&amp;#10;    leftVarMoney = (gamble)&amp;#10;    rightVarText = (sureWinLoss)&amp;#10;    rightVarMoney = (sure)&amp;#10;if subID%2 == 0:&amp;#10;    rightVarText= (gambleWinLoss)&amp;#10;    rightVarMoney= (gamble)&amp;#10;    leftVarText= (sureWinLoss)&amp;#10;    leftVarMoney= (sure)&amp;#10;&amp;#10;GambleAmt.setText(leftVarMoney)&amp;#10;SureAmt.setText(rightVarMoney)&amp;#10;GambleProb.setText(leftVarText)&amp;#10;SureProb.setText(rightVarText)&amp;#10;&amp;#10;leftMoney = float(leftVarMoney[1:])&amp;#10;&amp;#10;rightMoney = float(rightVarMoney[1:])&amp;#10;&amp;#10;WinLossType = int(WinLossCode)&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;if choice.keys == '1':&amp;#10;    GambleAmt.setColor('green')&amp;#10;    chosenMoney = leftMoney&amp;#10;if choice.keys == '2':&amp;#10;    SureAmt.setColor('green')&amp;#10;    chosenMoney = rightMoney&amp;#10;    &amp;#10;if (choice.keys == '1' or choice.keys == '2') and blank.status == NOT_STARTED:&amp;#10;    blank.tStart = t&amp;#10;    blank.frameNStart = frameN&amp;#10;    blank.setAutoDraw(True)&amp;#10;#gamProbability(gambleProb)&amp;#10;#gambleFunc(gambleProb)&amp;#10;#earningsFunct(gambleProb, chosenMoney, WinLossCode, earnings)&amp;#10;#print(earnings)&amp;#10;&amp;#10;&amp;#10;&amp;#10;#earningsText.setText(earningsStr)&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="&amp;#10;if (choice.keys == '1'){&amp;#10;    GambleAmt.setColor('green');&amp;#10;    chosenMoney = leftMoney;&amp;#10;    }&amp;#10;if (choice.keys == '2'){&amp;#10;    SureAmt.setColor('green');&amp;#10;    chosenMoney = rightMoney;&amp;#10;    }&amp;#10;    &amp;#10;if ((choice.keys == '1' or choice.keys == '2') &amp;&amp; blank.status == NOT_STARTED){&amp;#10;    blank.tStart = t;&amp;#10;    blank.frameNStart = frameN;&amp;#10;    blank.setAutoDraw(true);&amp;#10;    }" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="&amp;#10;if (choice.keys == '1'){&amp;#10;    chosenMoney = leftMoney;&amp;#10;    }&amp;#10;if (choice.keys == '2'){&amp;#10;    chosenMoney = rightMoney;&amp;#10;    }&amp;#10;if (choice.keys != None){&amp;#10;    if (subID%2==1){&amp;#10;       if (choice.keys == '1' &amp;&amp; WinLossCode== 1){&amp;#10;           print('gambled during win condition');&amp;#10;           probs = int(gambleProb);&amp;#10;           if (probs == 65){&amp;#10;               probability = SixtyGamble;&amp;#10;               print('65% gamble');&amp;#10;               }&amp;#10;           if (probs == 35){&amp;#10;               probability = ThirtyGamble;&amp;#10;               print('35% gamble');&amp;#10;               }&amp;#10;           if (probs == 50){&amp;#10;               probability = FiftyGamble;&amp;#10;               print('50% gamble');&amp;#10;               }&amp;#10;           result = random.choice(probability);&amp;#10;           print('gamble result:');&amp;#10;           print(result);&amp;#10;           }&amp;#10;           if (result == 1){&amp;#10;               earnings = earnings + chosenMoney;&amp;#10;               print('Won money earnings:');&amp;#10;               print(earnings);&amp;#10;           #    if result == 0: #lose&amp;#10;            #       earnings += 0&amp;#10;       &amp;#10;       if (choice.keys == '1' &amp;&amp; WinLossCode==0){  &amp;#10;           print('gambled during lose condition');&amp;#10;          #gamProbability(gamProb)&amp;#10;           probs = int(gambleProb);&amp;#10;           if (probs == 65){&amp;#10;               probability = SixtyGamble;&amp;#10;               print('65% gamble');&amp;#10;               }&amp;#10;           if (probs == 35){&amp;#10;               probability = ThirtyGamble;&amp;#10;               print('35% gamble');&amp;#10;               }&amp;#10;           if (probs == 50){&amp;#10;               probability = FiftyGamble;&amp;#10;               print('50% gamble');&amp;#10;               }&amp;#10;           result = random.choice(probability);&amp;#10;           print('gamble result:');&amp;#10;           print(result);&amp;#10;           }&amp;#10;           if (result == 1){&amp;#10;              earnings = earnings - chosenMoney;&amp;#10;              print('Lost Money earnings:');&amp;#10;              print(earnings);&amp;#10;              }&amp;#10;         #      if result == 0: #win&amp;#10;         #          earnings += 0&amp;#10;                    &amp;#10;       if (choice.keys == '2'&amp;&amp; WinLossCode ==1){  &amp;#10;           print('did not gamble for win condition');&amp;#10;           earnings = earnings + chosenMoney;&amp;#10;           print('Won sure money earnings:');&amp;#10;           print(earnings)       ;&amp;#10;           }&amp;#10;       if (choice.keys == '2' and WinLossCode == 0){&amp;#10;           earnings = earnings - chosenMoney;&amp;#10;           print('Lost sure Money earnings:');&amp;#10;           print(earnings);&amp;#10;           }&amp;#10;&amp;#10;&amp;#10;    if (subID%2==0){&amp;#10;       if (choice.keys == '2' &amp;&amp; WinLossCode == 1){ &amp;#10;           print('gambled during win condition');&amp;#10;           probs = int(gambleProb);&amp;#10;           }&amp;#10;           if (probs == 65){&amp;#10;               probability = SixtyGamble;&amp;#10;               print('65% gamble');&amp;#10;               }&amp;#10;           if (probs == 35){&amp;#10;               probability = ThirtyGamble;&amp;#10;               print('35% gamble');&amp;#10;           if (probs == 50){&amp;#10;               probability = FiftyGamble;&amp;#10;               print('50% gamble');&amp;#10;               }&amp;#10;           result = random.choice(probability);&amp;#10;           print('gamble result:');&amp;#10;           print(result);&amp;#10;           }&amp;#10;           if (result == 1){&amp;#10;               earnings = earnings + chosenMoney;&amp;#10;               print('won money earnings:');&amp;#10;               print(earnings);&amp;#10;               }&amp;#10;            &amp;#10;       if (choice.keys == '2' &amp;&amp; WinLossCode == 0){ &amp;#10;           print('gambled during lose condition');&amp;#10;           &amp;#10;           probs = int(gambleProb);&amp;#10;           }&amp;#10;           if (probs == 65){&amp;#10;               probability = SixtyGamble;&amp;#10;               print('65% gamble');&amp;#10;               }&amp;#10;           if (probs == 35){&amp;#10;               probability = ThirtyGamble;&amp;#10;               print('35% gamble');&amp;#10;               }&amp;#10;           if (probs == 50){&amp;#10;               probability = FiftyGamble;&amp;#10;               print('50% gamble');&amp;#10;               }&amp;#10;           result = random.choice(probability);&amp;#10;           print('gamble result:');&amp;#10;           print(result);&amp;#10;           }&amp;#10;           if (result == 1){&amp;#10;               earnings = earnings - chosenMoney;&amp;#10;               print('Lost Money earnings:');&amp;#10;               print(earnings);&amp;#10;               }&amp;#10;                    &amp;#10;       if (choice.keys == '1' &amp;&amp; WinLossCode == 1){ &amp;#10;           print('did not gamble during win condition');&amp;#10;           earnings = earnings + chosenMoney;&amp;#10;           print('Won sure money earnings:');&amp;#10;           print(earnings);&amp;#10;           }&amp;#10;       if (choice.keys == '1' &amp;&amp; WinLossCode == 0){ &amp;#10;           print('did not gamble for loss condition');&amp;#10;           earnings = earnings - chosenMoney;&amp;#10;           print('Lost sure Money earnings:');&amp;#10;           print(earnings);&amp;#10;           }&amp;#10;    earningsStr= str(earnings);&amp;#10;    earningsText.setText(earningsStr);&amp;#10;GambleAmt.setColor('white');&amp;#10;SureAmt.setColor('white');&amp;#10;&amp;#10;if (blank.status==FINISHED){&amp;#10;    GambleAmt.setAutoDraw(false);&amp;#10;    SureAmt.setAutoDraw(false);&amp;#10;    SureProb.setAutoDraw(false);&amp;#10;    GambleProb.setAutoDraw(false);&amp;#10;    Line.setAutoDraw(false);&amp;#10;    moneyBank.setAutoDraw(false);&amp;#10;    }" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="&amp;#10;if choice.keys == '1':&amp;#10;    chosenMoney = leftMoney&amp;#10;if choice.keys == '2':&amp;#10;    chosenMoney = rightMoney&amp;#10;if choice.keys != None:&amp;#10;    if subID%2==1:   #gambles are on left side of screen&amp;#10;       if choice.keys == '1' and WinLossCode== 1 :  &amp;#10;           print('gambled during win condition')&amp;#10;           probs = int(gambleProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;               print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)&amp;#10;           if result == 1:   #win&amp;#10;               earnings = earnings + chosenMoney&amp;#10;               print('Won money earnings:')&amp;#10;               print(earnings)&amp;#10;           #    if result == 0: #lose&amp;#10;            #       earnings += 0&amp;#10;       &amp;#10;       if choice.keys == '1' and WinLossCode==0:  &amp;#10;           print('gambled during lose condition')&amp;#10;          #gamProbability(gamProb)&amp;#10;           probs = int(gambleProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;               print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)           &amp;#10;           if result == 1: #lose&amp;#10;              earnings = earnings - chosenMoney&amp;#10;              print('Lost Money earnings:')&amp;#10;              print(earnings)&amp;#10;         #      if result == 0: #win&amp;#10;         #          earnings += 0&amp;#10;                    &amp;#10;       if choice.keys == '2'and WinLossCode ==1:  &amp;#10;           print('did not gamble for win condition')&amp;#10;           earnings = earnings + chosenMoney&amp;#10;           print('Won sure money earnings:')&amp;#10;           print(earnings)       &amp;#10;       if choice.keys == '2' and WinLossCode == 0: #did not gamble for lose condition&amp;#10;           earnings = earnings - chosenMoney&amp;#10;           print('Lost sure Money earnings:')&amp;#10;           print(earnings)&amp;#10;&amp;#10;&amp;#10;    if subID%2==0:  #gambles are on right side of screen&amp;#10;       if choice.keys == '2' and WinLossCode == 1: &amp;#10;           print('gambled during win condition')&amp;#10;           probs = int(gambleProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;               print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)           &amp;#10;           if result == 1: #win&amp;#10;               earnings = earnings + chosenMoney&amp;#10;               print('won money earnings:')&amp;#10;               print(earnings)&amp;#10;        #       if result == 0: #lost&amp;#10;        #           earnings += 0&amp;#10;            &amp;#10;            &amp;#10;       if choice.keys == '2' and WinLossCode == 0: &amp;#10;           print('gambled during lose condition')&amp;#10;              #gamProbability(gamProb)&amp;#10;           probs = int(gambleProb)&amp;#10;           if probs == 65:&amp;#10;               probability = SixtyGamble&amp;#10;               print('65% gamble')&amp;#10;           if probs == 35:&amp;#10;               probability = ThirtyGamble&amp;#10;               print('35% gamble')&amp;#10;           if probs == 50:&amp;#10;               probability = FiftyGamble&amp;#10;               print('50% gamble')&amp;#10;           result = random.choice(probability)&amp;#10;           print('gamble result:')&amp;#10;           print(result)           &amp;#10;           if result == 1: #lose&amp;#10;               earnings = earnings - chosenMoney&amp;#10;               print('Lost Money earnings:')&amp;#10;               print(earnings)&amp;#10;         #      if result == 0: #win&amp;#10;         #          earnings += 0&amp;#10;                    &amp;#10;       if choice.keys == '1' and WinLossCode == 1: &amp;#10;           print('did not gamble during win condition')&amp;#10;           earnings = earnings + chosenMoney&amp;#10;           print('Won sure money earnings:')&amp;#10;           print(earnings)&amp;#10;       if choice.keys == '1' and WinLossCode == 0: &amp;#10;           print('did not gamble for loss condition')&amp;#10;           earnings = earnings - chosenMoney&amp;#10;           print('Lost sure Money earnings:')&amp;#10;           print(earnings)&amp;#10;    earningsStr= str(earnings)&amp;#10;    earningsText.setText(earningsStr)&amp;#10;GambleAmt.setColor('white')&amp;#10;SureAmt.setColor('white')&amp;#10;&amp;#10;if (blank.status==FINISHED):&amp;#10;    GambleAmt.setAutoDraw(False)&amp;#10;    SureAmt.setAutoDraw(False)&amp;#10;    SureProb.setAutoDraw(False)&amp;#10;    GambleProb.setAutoDraw(False)&amp;#10;    Line.setAutoDraw(False)&amp;#10;    moneyBank.setAutoDraw(False)" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="blank">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="blank" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <PolygonComponent name="moneyBank">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="8" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="moneyBank" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.68, -0.42)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.46, 0.24)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="earningsText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="earningsText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.67, -0.42)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$earningsStr" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="BeginInst">
+      <TextComponent name="text_2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="You will now begin the full task." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="earnings = 0;&amp;#10;earning = 0;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="earnings = 0&amp;#10;earning = 0" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="Main">
+      <KeyboardComponent name="choice2">
+        <Param name="allowedKeys" updates="set every repeat" val="'1','2'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="choice2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="sureAmt">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.11" valType="code"/>
+        <Param name="name" updates="None" val="sureAmt" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.41, -0.1)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$sure" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="gambleAmt">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.11" valType="code"/>
+        <Param name="name" updates="None" val="gambleAmt" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.41, -0.1)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$gamble" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="GambleProbability">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.13" valType="code"/>
+        <Param name="name" updates="None" val="GambleProbability" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.41, 0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$gambleProb" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="sureProb">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.13" valType="code"/>
+        <Param name="name" updates="None" val="sureProb" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.41, 0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="100%" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if choice2.keys == '1':&amp;#10;    gambleAmt.setColor('green')&amp;#10;if choice2.keys == '2':&amp;#10;    sureAmt.setColor('green')&amp;#10;    &amp;#10;if (choice2.keys == '1' or choice.keys == '2') and blank.status == NOT_STARTED:&amp;#10;    blank.tStart = t&amp;#10;    blank.frameNStart = frameN&amp;#10;    blank.setAutoDraw(True)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if choice2.keys == '1':&amp;#10;    gambleAmt.setColor('green')&amp;#10;if choice2.keys == '2':&amp;#10;    sureAmt.setColor('green')&amp;#10;    &amp;#10;if (choice2.keys == '1' or choice.keys == '2') and blank.status == NOT_STARTED:&amp;#10;    blank.tStart = t&amp;#10;    blank.frameNStart = frameN&amp;#10;    blank.setAutoDraw(True)" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="gambleAmt.setColor('white')&amp;#10;sureAmt.setColor('white')&amp;#10;&amp;#10;if (blank.status==FINISHED):&amp;#10;    gambleAmt.setAutoDraw(False)&amp;#10;    sureAmt.setAutoDraw(False)&amp;#10;    sureProb.setAutoDraw(False)&amp;#10;    GambleProbability.setAutoDraw(False)" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="blank2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="blank2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <PolygonComponent name="line">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="set every repeat" val="4" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="line" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="90" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="line" valType="str"/>
+        <Param name="size" updates="set every repeat" val="(3, 0.5)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="isi">
+      <TextComponent name="isi2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="isi2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Cue">
+      <TextComponent name="cue">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.15" valType="code"/>
+        <Param name="name" updates="None" val="cue" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$CueType" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="PracticeCue">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.13" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="REGULATE" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Instr"/>
+    <Routine name="Inst2"/>
+    <Routine name="isi"/>
+    <Routine name="PracticeCue"/>
+    <LoopInitiator loopType="TrialHandler" name="PracticeLoop">
+      <Param name="Selected rows" updates="None" val="0:3" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('PracticeSure', '$4.50 '), ('PracticeGamble', '$6.75 '), ('PracticeGambleProb', '50%'), ('Rows', '000:0010'), ('CueType', 'LOOK')]), OrderedDict([('PracticeSure', '$2.00 '), ('PracticeGamble', '$4.25 '), ('PracticeGambleProb', '65%'), ('Rows', '00010:0020'), ('CueType', 'REAPPRAISE')]), OrderedDict([('PracticeSure', '$3.75 '), ('PracticeGamble', '$7.50 '), ('PracticeGambleProb', '35%'), ('Rows', '00020:0030'), ('CueType', 'REAPPRAISE')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0030:0040'), ('CueType', 'LOOK')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0040:0050'), ('CueType', 'REAPPRAISE')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0050:0060'), ('CueType', 'LOOK')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="PracticeSlotMach.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="PracticeLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="isi"/>
+    <Routine name="Practice"/>
+    <LoopTerminator name="PracticeLoop"/>
+    <Routine name="BeginInst"/>
+    <LoopInitiator loopType="TrialHandler" name="mainLoop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('PracticeSure', '$4.50 '), ('PracticeGamble', '$6.75 '), ('PracticeGambleProb', '50%'), ('Rows', '000:0010')]), OrderedDict([('PracticeSure', '$2.00 '), ('PracticeGamble', '$4.25 '), ('PracticeGambleProb', '65%'), ('Rows', '00010:0020')]), OrderedDict([('PracticeSure', '$3.75 '), ('PracticeGamble', '$7.50 '), ('PracticeGambleProb', '35%'), ('Rows', '00020:0030')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0030:0040')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0040:0050')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0050:0060')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="PracticeSlotMach.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="mainLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="isi"/>
+    <Routine name="Cue"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="$Rows" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('instructions', 'In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble,  which will be shown on the left side of the screen, or choosing a sure option, which will be on the right side of the screen. \n\nFor each gamble, you will have a 50% chance of winning money, while the sure option guarantees payoff. \n\nPress space to continue. '), ('sure', '$2.50'), ('gamble', '$6.75'), ('CueType', 'LOOK'), ('gambleProb', '50%'), ('Rows', '0000:0010'), ('PracticeSure', '$4.50'), ('PracticeGamble', '$6.75'), ('PracticeGambleProb', '50%'), ('cueRows', '0000:0006')]), OrderedDict([('instructions', 'You will have three seconds to make your choice upon seeing the options. \n\nTo choose the gamble, press &quot;1&quot;. To choose the sure option, press &quot;2&quot;.\n\nYou will first be playing some practice rounds. To begin the practice, press enter!'), ('sure', '$4.25'), ('gamble', '$10.75'), ('CueType', 'REAPPRAISE'), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', '$2.00'), ('PracticeGamble', '$4.25'), ('PracticeGambleProb', '65%'), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$8.00'), ('gamble', '$12.50'), ('CueType', 'LOOK'), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', '$3.75'), ('PracticeGamble', '$7.50'), ('PracticeGambleProb', '35%'), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.00'), ('gamble', '$4.25'), ('CueType', 'REAPPRAISE'), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.50'), ('gamble', '$7.00'), ('CueType', 'LOOK'), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$5.00'), ('gamble', '$6.95'), ('CueType', 'REAPPRAISE'), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$7.25'), ('gamble', '$10.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$6.75'), ('gamble', '$8.25'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$9.00'), ('gamble', '$14.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.50'), ('gamble', '$3.85'), ('CueType', None), ('gambleProb', '50%'), ('Rows', '0010:00020'), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$6.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.75'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$7.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.15'), ('gamble', '$4.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$5.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.75'), ('gamble', '$7.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.25'), ('gamble', '$4.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$6.15'), ('gamble', '$9.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.95'), ('gamble', '$6.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '50%'), ('Rows', '00020:00030'), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.50'), ('gamble', '$3.85'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$6.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.75'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$7.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.15'), ('gamble', '$4.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$5.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.75'), ('gamble', '$7.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.25'), ('gamble', '$4.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$6.15'), ('gamble', '$9.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.95'), ('gamble', '$6.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', '00030:00040'), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.50'), ('gamble', '$3.85'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$6.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.75'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$7.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.15'), ('gamble', '$4.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$5.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.75'), ('gamble', '$7.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.25'), ('gamble', '$4.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$6.15'), ('gamble', '$9.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', '00040:00050'), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.95'), ('gamble', '$6.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.50'), ('gamble', '$3.85'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$6.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.75'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$7.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.15'), ('gamble', '$4.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$5.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.75'), ('gamble', '$7.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.25'), ('gamble', '$4.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', '00050:0060'), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$6.15'), ('gamble', '$9.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.95'), ('gamble', '$6.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$1.50'), ('gamble', '$3.85'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$6.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.75'), ('gamble', '$5.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.25'), ('gamble', '$7.00'), ('CueType', None), ('gambleProb', '50%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$3.15'), ('gamble', '$4.75'), ('CueType', None), ('gambleProb', '35%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$2.95'), ('gamble', '$5.00'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', '$4.75'), ('gamble', '$7.50'), ('CueType', None), ('gambleProb', '65%'), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', None), ('gamble', None), ('CueType', None), ('gambleProb', None), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', None), ('gamble', None), ('CueType', None), ('gambleProb', None), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', None), ('gamble', None), ('CueType', None), ('gambleProb', None), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)]), OrderedDict([('instructions', None), ('sure', None), ('gamble', None), ('CueType', None), ('gambleProb', None), ('Rows', None), ('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('cueRows', None)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="SlotMachine.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="isi"/>
+    <Routine name="Practice"/>
+    <LoopTerminator name="trials"/>
+    <LoopTerminator name="mainLoop"/>
+  </Flow>
+</PsychoPy2experiment>
