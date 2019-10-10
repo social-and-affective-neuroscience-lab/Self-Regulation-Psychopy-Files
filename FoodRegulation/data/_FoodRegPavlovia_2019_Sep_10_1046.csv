@@ -1,0 +1,6 @@
+﻿CueType,rows,CueType2,Picture,Picture2,practiceLoop.thisRepN,practiceLoop.thisTrialN,practiceLoop.thisN,practiceLoop.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,mainTrials.thisRepN,mainTrials.thisTrialN,mainTrials.thisN,mainTrials.thisIndex,space.keys,space.rt,rating.response,rating.rt,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,,,,,,,,space,0.42742100008763373,,,,001,2019_Sep_10_1046,FoodRegPavlovia,3.2.0,59.82113480991348,
+REGULATE,005:0010,REACT,FoodPics\friedChicken.jpg,FoodPics\F4H\bagels.jpg,0,0,0,0,0,0,0,0,,,,,,,,,,,3,1.985,,001,2019_Sep_10_1046,FoodRegPavlovia,3.2.0,59.82113480991348,
+REGULATE,005:0010,REACT,FoodPics\croissant.jpg,FoodPics\F4H\banana.jpg,0,0,0,0,0,1,1,1,,,,,,,,,,,None,None,,001,2019_Sep_10_1046,FoodRegPavlovia,3.2.0,59.82113480991348,
+REGULATE,005:0010,REACT,FoodPics\pasta.jpeg,FoodPics\F4H\breadtwists.jpg,0,0,0,0,0,2,2,2,,,,,,,,,,,6,1.719,,001,2019_Sep_10_1046,FoodRegPavlovia,3.2.0,59.82113480991348,
+REGULATE,005:0010,REACT,,,0,0,0,0,,,,,,,,,,,,,,,,,,001,2019_Sep_10_1046,FoodRegPavlovia,3.2.0,59.82113480991348,
