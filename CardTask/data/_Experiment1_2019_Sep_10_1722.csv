@@ -1,0 +1,5 @@
+﻿selectBlock,greenText,redText,alltrials.thisRepN,alltrials.thisTrialN,alltrials.thisN,alltrials.thisIndex,Reward.thisRepN,Reward.thisTrialN,Reward.thisN,Reward.thisIndex,Loss.thisRepN,Loss.thisTrialN,Loss.thisN,Loss.thisIndex,response1.keys,response1.rt,response3.keys,response3.rt,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,,space,3.6404557999921963,,,,001,2019_Sep_10_1722,Experiment1,3.2.0,59.79530871379674,
+2,green,red,0,0,0,11,,,,,0,0,0,0,,,2,1.5878580999560654,,001,2019_Sep_10_1722,Experiment1,3.2.0,59.79530871379674,
+2,green,red,0,0,0,11,,,,,,,,,,,,,,001,2019_Sep_10_1722,Experiment1,3.2.0,59.79530871379674,
+,,,,,,,,,,,,,,,,,None,,,,,,,,
