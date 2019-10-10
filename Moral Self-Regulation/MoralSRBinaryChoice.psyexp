@@ -1,0 +1,988 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.0">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="MoralSRBinaryChoice" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="PracticeDilemmas_2">
+      <TextComponent name="practiceQs">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+        <Param name="name" updates="None" val="practiceQs" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$PracticeDilemmas" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="space1">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="space1" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="PracticeAnswers">
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="set every repeat" val="'y','n'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="conBlank">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="conBlank" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="len(key_resp.keys) &gt; 0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="RemText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.055" valType="code"/>
+        <Param name="name" updates="None" val="RemText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.32)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Reminder" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+      <TextComponent name="leftText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="leftText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, 0.0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$PracticeLeftText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="rightText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="rightText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, 0.0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$PracticeRightText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="Yes">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="Yes" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.33)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Implement the plan ('y')" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="2.5" valType="code"/>
+      </TextComponent>
+      <TextComponent name="No">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="No" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.0, -0.41)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Do nothing ('n')" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_5">
+        <Param name="Begin Experiment" updates="constant" val="import numpy&amp;#10;from numpy import random&amp;#10;&amp;#10;earnings = 0&amp;#10;earningsStr = &quot;$&quot; + str(earnings)&amp;#10;subID = int(expInfo['participant'])&amp;#10;&amp;#10;FiftyGamble = [1,0]&amp;#10;SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]&amp;#10;ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]&amp;#10;&amp;#10;earning=0&amp;#10;choseCode = []&amp;#10;chanceResult = []&amp;#10;&amp;#10;#probability =[]&amp;#10;def gamProbability(GroupProb):&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% chance')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% chance')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% chance')&amp;#10;def gambleFunc(GroupProb):&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% chance')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% chance')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% chance')&amp;#10;    result = random.choice(probability)&amp;#10;    print('Chance result:')&amp;#10;    print(result)" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;if key_resp.keys == 'y':&amp;#10;    Yes.setColor('red')&amp;#10;if key_resp.keys == 'n':&amp;#10;    No.setColor('red')&amp;#10;    &amp;#10;#if (key_resp.keys == 'y' or key_resp.keys == 'n') and conBlank.status == NOT_STARTED:&amp;#10;#    conBlank.tStart = t&amp;#10;#    conBlank.frameNStart = frameN&amp;#10;#    conBlank.setAutoDraw(True)&amp;#10;&amp;#10;if key_resp.keys == 'y' or key_resp.keys == 'n':&amp;#10;    key_resp.status = FINISHED" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if key_resp.keys == 'y':&amp;#10;    choseCode = 1&amp;#10;if key_resp.keys == 'n':&amp;#10;    choseCode = 0&amp;#10;&amp;#10;if choseCode == 0 :  &amp;#10;    print('Chose to do nothing, play out the probability ')&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% gamble')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% gamble')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% gamble')&amp;#10;    result = random.choice(probability)&amp;#10;    print('Chance result:')&amp;#10;    print(result)&amp;#10;    if result == 1:   #win&amp;#10;        print('The group escaped!')&amp;#10;        print(earnings)&amp;#10;        chanceResult = (&quot; was saved.&quot;)&amp;#10;    if result == 0: #lose&amp;#10;        print('The group died! :(')&amp;#10;        chanceResult = (' died.')&amp;#10;&amp;#10;&amp;#10;&amp;#10;Yes.setColor('white')&amp;#10;No.setColor('white')&amp;#10;&amp;#10;if conBlank.status == FINISHED:&amp;#10;    leftText.setAutoDraw(False)&amp;#10;    rightText.setAutoDraw(False)&amp;#10;    Yes.setAutoDraw(False)&amp;#10;    No.setAutoDraw(False)&amp;#10;    RemText.setAutoDraw(False)&amp;#10;    Question.setAutoDraw(False)&amp;#10;    continueRoutine = False " valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_5" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="Question">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.055" valType="code"/>
+        <Param name="name" updates="None" val="Question" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.20)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="What do you do?" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="code">
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="code1">
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="this_loop_number = 0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="this_loop_number +=1&amp;#10;&amp;#10;loopNum = int(this_loop_number)&amp;#10;&amp;#10;selectRows=((loopNum-1)*4+1):(loopNum*4)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="code2">
+      <CodeComponent name="code_4">
+        <Param name="Begin Experiment" updates="constant" val="this_loop_number = 0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="this_loop_number +=1&amp;#10;&amp;#10;selectRows = ((this_loop_number-1)*4+1):(this_loop_number*4)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="MainDilemmas">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainDilemmas" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="MainAnswers">
+      <TextComponent name="leftText1">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="leftText1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainLeftText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="rightText1">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="rightText1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainRightText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <RatingScaleComponent name="rating_2">
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="Completely Unacceptable, Completely Acceptable" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="marker" updates="constant" val="triangle" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="rating_2" valType="code"/>
+        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="showAccept" updates="constant" val="False" valType="bool"/>
+        <Param name="singleClick" updates="constant" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="1.3" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+      </RatingScaleComponent>
+    </Routine>
+    <Routine name="ThankYou">
+      <TextComponent name="TY">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="TY" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Thank you for your participation!&amp;#10;&amp;#10;You have completed this part of the study." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Instructions">
+      <TextComponent name="InstText">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="InstText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Instructions" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="space">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="space" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="SetUpCode">
+      <CodeComponent name="code_6">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;'''&amp;#10;from itertools import chain&amp;#10;from itertools import zip_longest as zip&amp;#10;from random import shuffle &amp;#10;PracticeQ1 = data.importConditions('Users\Jojo\Downloads\HelionLab\ExperimentFiles\MoralSelf-Regulation\MoralSelfReg.csv', selection=u'0:04') &amp;#10;PracticeQ2 = data.importConditions('Users\Jojo\Downloads\HelionLab\ExperimentFiles\MoralSelf-Regulation\MoralSelfReg.csv', selection=u'04:08')&amp;#10;&amp;#10;&amp;#10;shuffle(PracticeQ1) &amp;#10;shuffle(PracticeQ2)&amp;#10;&amp;#10;trialList=list(chain.from_iterable(zip(PracticeQ1, PracticeQ2)))&amp;#10;'''" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_6" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="Cue">
+      <TextComponent name="cue">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.13" valType="code"/>
+        <Param name="name" updates="None" val="cue" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$CueInstructions1" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_7">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="subID = int(expInfo['participant'])&amp;#10;&amp;#10;if subID%2==0:&amp;#10;    cue.setText(CueInstructions1)&amp;#10;if subID%2==1:&amp;#10;    cue.setText(CueInstructions2)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_7" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="isi2">
+      <TextComponent name="isi_2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="isi_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="ISI">
+      <TextComponent name="isi">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="isi" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Feedback">
+      <TextComponent name="FeedbackVar">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.07" valType="code"/>
+        <Param name="name" updates="None" val="FeedbackVar" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="default" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_8">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="groupNum = int(GroupNumber)&amp;#10;numPeople = str(groupNum)&amp;#10;groupResult = str(chanceResult)&amp;#10;nounStr = str(Noun)&amp;#10;resultGroup = (&quot;of &quot; + numPeople + nounStr + groupResult)&amp;#10;&amp;#10;if choseCode == 1:&amp;#10;    FeedbackVar.setText(ChosePlan)&amp;#10;    &amp;#10;if choseCode == 0:&amp;#10;    FeedbackVar.setText(ChoseNothing + resultGroup)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_8" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="MainAnswers_2">
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="'y','n'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="conBlank2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="conBlank2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="len(key_resp_3.keys) &gt; 0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="RemText2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.055" valType="code"/>
+        <Param name="name" updates="None" val="RemText2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.32)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank2.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Reminder" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+      <TextComponent name="leftText2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="leftText2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, 0.0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank2.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainLeftText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="rightText2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="rightText2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, 0.0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank2.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainRightText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="yes2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="yes2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.33)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank2.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Implement the plan ('y')" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="no2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="no2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.0, -0.41)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank2.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Do nothing ('n')" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="code_9">
+        <Param name="Begin Experiment" updates="constant" val="import numpy&amp;#10;from numpy import random&amp;#10;&amp;#10;earnings = 0&amp;#10;earningsStr = &quot;$&quot; + str(earnings)&amp;#10;subID = int(expInfo['participant'])&amp;#10;&amp;#10;FiftyGamble = [1,0]&amp;#10;SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]&amp;#10;ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]&amp;#10;&amp;#10;earning=0&amp;#10;choseCode = []&amp;#10;chanceResult = []&amp;#10;&amp;#10;#probability =[]&amp;#10;def gamProbability(GroupProb):&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% chance')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% chance')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% chance')&amp;#10;def gambleFunc(GroupProb):&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% chance')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% chance')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% chance')&amp;#10;    result = random.choice(probability)&amp;#10;    print('Chance result:')&amp;#10;    print(result)" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;if key_resp_3.keys == 'y':&amp;#10;    yes2.setColor('red')&amp;#10;if key_resp_3.keys == 'n':&amp;#10;    no2.setColor('red')&amp;#10;    &amp;#10;#if (key_resp.keys == 'y' or key_resp.keys == 'n') and conBlank.status == NOT_STARTED:&amp;#10;#    conBlank.tStart = t&amp;#10;#    conBlank.frameNStart = frameN&amp;#10;#    conBlank.setAutoDraw(True)&amp;#10;&amp;#10;if key_resp_3.keys == 'y' or key_resp_3.keys == 'n':&amp;#10;    key_resp_3.status = FINISHED" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if key_resp_3.keys == 'y':&amp;#10;    choseCode = 1&amp;#10;if key_resp_3.keys == 'n':&amp;#10;    choseCode = 0&amp;#10;&amp;#10;if choseCode == 0 :  &amp;#10;    print('Chose to do nothing, play out the probability ')&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% gamble')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% gamble')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% gamble')&amp;#10;    result = random.choice(probability)&amp;#10;    print('Chance result:')&amp;#10;    print(result)&amp;#10;    if result == 1:   #win&amp;#10;        print('The group escaped!')&amp;#10;        print(earnings)&amp;#10;        chanceResult = (&quot; were saved.&quot;)&amp;#10;    if result == 0: #lose&amp;#10;        print('The group died! :(')&amp;#10;        chanceResult = (' died.')&amp;#10;&amp;#10;&amp;#10;&amp;#10;yes2.setColor('white')&amp;#10;no2.setColor('white')&amp;#10;&amp;#10;if conBlank2.status == FINISHED:&amp;#10;    leftText2.setAutoDraw(False)&amp;#10;    rightText2.setAutoDraw(False)&amp;#10;    yes2.setAutoDraw(False)&amp;#10;    no2.setAutoDraw(False)&amp;#10;    RemText2.setAutoDraw(False)&amp;#10;    Question2.setAutoDraw(False)&amp;#10;    continueRoutine = False " valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_9" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="Question2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.055" valType="code"/>
+        <Param name="name" updates="None" val="Question2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.20)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="conBlank2.status == FINISHED" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="What do you do?" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <LoopInitiator loopType="TrialHandler" name="IntroLoop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. \nWhen you are done reading each screen, you can press SPACE to move on to the next one.\nHowever, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.')]), OrderedDict([('Instructions', 'The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma:\na) a number of people involved in part of the scenario, and \nb) a likelihood that something will happen.\nYou will be evaluating this scenario given a number of variations of these features.\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.')]), OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be reminded of this after this screen.\nFirst, you will see a &quot;+&quot; in the middle of the screen. Any time that this is up, all you need to do is fixate on the &quot;+&quot; and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a judgment of its moral acceptibility.\nYou will rate each trial on a 1-7 scale, with 1 indicating that the action would be &quot;Completely Unacceptable&quot; and 7 indicating that it would be &quot;Completely Acceptable.&quot; You can use the keys 1-7 to make a response, and then you can hit ENTER to submit your answer.\n')]), OrderedDict([('Instructions', 'After you answer you will again see a &quot;+&quot; in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\nYou will only have 10 seconds to respond to each variation. If the &quot;+&quot; appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the &quot;+&quot; and wait for the next trial. \nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.')]), OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as &quot;written in stone.&quot; All we want from you is a thoughtful first response.\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. ')]), OrderedDict([('Instructions', &quot;In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. &quot;)]), OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale, and press ENTER to submit your rating. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\nPress SPACE to begin the practice trials.\n')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfRegInst.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="IntroLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Instructions"/>
+    <LoopTerminator name="IntroLoop"/>
+    <LoopInitiator loopType="TrialHandler" name="PracticeLoop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('rows', '00:004'), ('CueType1', 'LOOK'), ('CueInstructions', 'In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. \n\nFor the next few seconds, distance yourself from the circumstance and the people in the situation.\n'), ('CueType2', 'REGULATE')]), OrderedDict([('rows', '004:008'), ('CueType1', 'REGULATE'), ('CueInstructions', 'In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. \n\nFor the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. '), ('CueType2', 'LOOK')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="moralRows.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="PracticeLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="ISI"/>
+    <LoopInitiator loopType="TrialHandler" name="PracticeQs">
+      <Param name="Selected rows" updates="None" val="$rows" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('PracticeDilemmas', &quot;You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall. \nYou've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them.&quot;), ('PracticeLeftText', 'Divers on right: 1'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('Reminder', 'Direct your crew to the right, repositioning the trampoline and leaving the man to die ')]), OrderedDict([('PracticeDilemmas', &quot;Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him.\nYou know that there won't be enough time to reach the group if you wait to catch the one. If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths.\nYou can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught.&quot;), ('PracticeLeftText', 'Divers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 45% '), ('Reminder', None)]), OrderedDict([('PracticeDilemmas', 'You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths, but there is no chance that this will happen for the one given how close he is to the ground.'), ('PracticeLeftText', 'Divers on right: 2'), ('PracticeRightText', 'Probability of \nparachute opening: 25% '), ('Reminder', None)]), OrderedDict([('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to direct your crew to the right, re-positioning the trampoline underneath the group.'), ('PracticeLeftText', 'Divers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 75% '), ('Reminder', None)]), OrderedDict([('PracticeDilemmas', 'You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers. You know that when the sharks reach this group they will encircle them and kill them all. '), ('PracticeLeftText', 'Scuba divers in team: 6'), ('PracticeRightText', 'Probability EM pulse\nwill function: 30%'), ('Reminder', None)]), OrderedDict([('PracticeDilemmas', 'You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks. If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers. If you do all of this, all  of the divers will be spared. '), ('PracticeLeftText', 'Scuba divers in team: 3'), ('PracticeRightText', 'Probability EM pulse\nwill function: 15%'), ('Reminder', None)]), OrderedDict([('PracticeDilemmas', &quot;You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function. In order to ensure that the group will be spared, you must shoot the one diver now.&quot;), ('PracticeLeftText', 'Scuba divers in team: 8'), ('PracticeRightText', 'Probability EM pulse\nwill function: 20%'), ('Reminder', None)]), OrderedDict([('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable it would be for you to shoot the one diver.'), ('PracticeLeftText', 'Scuba divers in team: 2'), ('PracticeRightText', 'Probability EM pulse\nwill function: 10%'), ('Reminder', None)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="PracticeMoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="PracticeQs" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="PracticeDilemmas_2"/>
+    <LoopTerminator name="PracticeQs"/>
+    <Routine name="ISI"/>
+    <Routine name="Cue"/>
+    <LoopInitiator loopType="TrialHandler" name="practiceAs">
+      <Param name="Selected rows" updates="None" val="$rows" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('PracticeDilemmas', &quot;• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall \n\n• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them&quot;), ('PracticeLeftText', 'Skydivers on right: 3'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die \nDo nothing: The one skydiver lives, the group has a chance of escape'), ('ChoseNothing', 'The one skydiver was saved. \nThe group '), ('ChosePlan', 'The one skydiver died.\nThe group was saved.'), ('GroupNumber', 3), ('GroupProb', 35)]), OrderedDict([('PracticeDilemmas', &quot;• Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him\n\n• You know that there won't be enough time to reach the group if you wait to catch the one&quot;), ('PracticeLeftText', 'Divers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 50% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die \nDo nothing: The one skydiver lives, the group has a chance of escape'), ('ChoseNothing', 'The one skydiver was saved. \nThe group '), ('ChosePlan', 'The one skydiver died.\nThe group was saved.'), ('GroupNumber', 4), ('GroupProb', 50)]), OrderedDict([('PracticeDilemmas', &quot;• If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths\n\n• You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught&quot;), ('PracticeLeftText', 'Divers on right: 7'), ('PracticeRightText', 'Probability of \nparachute opening: 50% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die \nDo nothing: The one skydiver lives, the group has a chance of escape'), ('ChoseNothing', 'The one skydiver was saved. \nThe group '), ('ChosePlan', 'The one skydiver died.\nThe group was saved.'), ('GroupNumber', 7), ('GroupProb', 50)]), OrderedDict([('PracticeDilemmas', '• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths\n\n• There is no chance that the parachute will open for the one diver, given how close he is to the ground'), ('PracticeLeftText', 'Divers on right: 5'), ('PracticeRightText', 'Probability of \nparachute opening: 65% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die \nDo nothing: The one skydiver lives, the group has a chance of escape'), ('ChoseNothing', 'The one skydiver was saved. \nThe group '), ('ChosePlan', 'The one skydiver died.\nThe group was saved.'), ('GroupNumber', 5), ('GroupProb', 65)]), OrderedDict([('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine if you will perform the specified action.'), ('PracticeLeftText', 'Divers on right: 8'), ('PracticeRightText', 'Probability of \nparachute opening: 65% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die \nDo nothing: The one skydiver lives, the group has a chance of escape'), ('ChoseNothing', 'The one skydiver was saved. \nThe group '), ('ChosePlan', 'The one skydiver died.\nThe group was saved.'), ('GroupNumber', 8), ('GroupProb', 65)]), OrderedDict([('PracticeDilemmas', '• You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers\n\n• You know that when the sharks reach this group they will encircle them and kill them all '), ('PracticeLeftText', 'Scuba divers in team: 6'), ('PracticeRightText', 'Probability EM pulse\nwill function: 35%'), ('Reminder', 'Plan: Shoot the one diver, leaving them to get eaten by sharks\nDo nothing: The one diver lives, the group has a chance of escape'), ('ChoseNothing', 'The one diver was saved. \nThe group '), ('ChosePlan', 'The one diver died.\nThe group was saved.'), ('GroupNumber', 6), ('GroupProb', 35)]), OrderedDict([('PracticeDilemmas', '• You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks \n\n• If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers \n\n• If you do all of this, all  of the divers will be spared'), ('PracticeLeftText', 'Scuba divers in team: 3'), ('PracticeRightText', 'Probability EM pulse\nwill function: 65%'), ('Reminder', 'Plan: Shoot the one diver, leaving them to get eaten by sharks\nDo nothing: The one diver lives, the group has a chance of escape'), ('ChoseNothing', 'The one diver was saved. \nThe group '), ('ChosePlan', 'The one diver died.\nThe group was saved.'), ('GroupNumber', 3), ('GroupProb', 65)]), OrderedDict([('PracticeDilemmas', &quot;• You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function \n\n• In order to ensure that the group will be spared, you must shoot the one diver now&quot;), ('PracticeLeftText', 'Scuba divers in team: 9'), ('PracticeRightText', 'Probability EM pulse\nwill function: 50%'), ('Reminder', 'Plan: Shoot the one diver, leaving them to get eaten by sharks\nDo nothing: The one diver lives, the group has a chance of escape'), ('ChoseNothing', 'The one diver was saved. \nThe group '), ('ChosePlan', 'The one diver died.\nThe group was saved.'), ('GroupNumber', 9), ('GroupProb', 50)]), OrderedDict([('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine if you will perform the specified action.'), ('PracticeLeftText', 'Scuba divers in team: 4'), ('PracticeRightText', 'Probability EM pulse\nwill function: 35%'), ('Reminder', 'Plan: Shoot the one diver, leaving them to get eaten by sharks\nDo nothing: The one diver lives, the group has a chance of escape'), ('ChoseNothing', 'The one diver was saved. \nThe group '), ('ChosePlan', 'The one diver died.\nThe group was saved.'), ('GroupNumber', 4), ('GroupProb', 35)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="PracticeMoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="practiceAs" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="ISI"/>
+    <Routine name="PracticeAnswers"/>
+    <Routine name="ISI"/>
+    <Routine name="Feedback"/>
+    <LoopTerminator name="practiceAs"/>
+    <LoopTerminator name="PracticeLoop"/>
+    <Routine name="isi2"/>
+    <LoopInitiator loopType="TrialHandler" name="MainLoop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('rows2', '000:004'), ('CueInstructions1', 'In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. \n\nFor the next few seconds, distance yourself from the circumstance and the people in the situation.\n'), ('CueInstructions2', 'In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. \n\nFor the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ')]), OrderedDict([('rows2', '004:008'), ('CueInstructions1', 'In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. \n\nFor the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. '), ('CueInstructions2', 'In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. \n\nFor the next few seconds, distance yourself from the circumstance and the people in the situation.\n')]), OrderedDict([('rows2', '008:0012'), ('CueInstructions1', 'In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. \n\nFor the next few seconds, distance yourself from the circumstance and the people in the situation.\n'), ('CueInstructions2', 'In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. \n\nFor the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ')]), OrderedDict([('rows2', '0012:0016'), ('CueInstructions1', 'In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. \n\nFor the next few seconds, distance yourself from the circumstance and the people in the situation.\n'), ('CueInstructions2', 'In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. \n\nFor the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ')]), OrderedDict([('rows2', '0016:0020'), ('CueInstructions1', 'In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. \n\nFor the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. '), ('CueInstructions2', 'In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. \n\nFor the next few seconds, distance yourself from the circumstance and the people in the situation.\n')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="moralRows2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="MainLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="MainQs">
+      <Param name="Selected rows" updates="None" val="$rows2" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. '), ('PracticeDilemmas', &quot;You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall. \nYou've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them.&quot;), ('PracticeLeftText', 'Divers on right: 1'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('CueType', 'LOOK'), ('MainLeftText', 'Workers in \nRoom A: 4'), ('MainRightText', 'Probability of \nescape: 15%'), ('MainDilemmas', &quot;There has been an accident in the basement of an office building. A pipe has broken and is releasing a lethal gas into the building's ventilation system. If nothing is done, the gas will travel upward to Room A and cause the death of all workers there.&quot;)]), OrderedDict([('Instructions', 'When you are done reading each screen, you can press SPACE to move on to the next one.\nHowever, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.\n\nThe scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma: a) a number of people involved in part of the scenario and b) a likelihood that something will happen. You will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.'), ('PracticeDilemmas', &quot;Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him.\nYou know that there won't be enough time to reach the group if you wait to catch the one. If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths.\nYou can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught.&quot;), ('PracticeLeftText', 'Divers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 45% '), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'Workers in \nRoom A: 7'), ('MainRightText', 'Probability of \nescape: 65%'), ('MainDilemmas', 'You are the building manager. You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors. You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there.')]), OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be remminded of this after this screen.\n\nFirst, you will see a &quot;+&quot; in the middle of the screen. Any time that this is up, all you need to do is fixate on the &quot;+&quot; and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a jusgement of its moral acceptibility.\n\nYou will rate each trial on a 1-5 scale, with 1 indicating that the action would be &quot;Completely Unacceptable&quot; and 5 indicating that it would be &quot;Completely Acceptable.&quot;\n'), ('PracticeDilemmas', 'You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths, but there is no chance that this will happen for the one given how close he is to the ground.'), ('PracticeLeftText', 'Divers on right: 2'), ('PracticeRightText', 'Probability of \nparachute opening: 25% '), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'Workers in \nRoom A: 6'), ('MainRightText', 'Probability of \nescape: 50%'), ('MainDilemmas', 'You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them. This would be impossible for the one in Room B.')]), OrderedDict([('Instructions', 'After you answer you will again see a &quot;+&quot; in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the &quot;+&quot; appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. SImply look at the &quot;+&quot; and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.'), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to direct your crew to the right, re-positioning the trampoline underneath the group.'), ('PracticeLeftText', 'Divers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 75% '), ('CueType', 'LOOK'), ('MainLeftText', 'Workers in \nRoom A: 11'), ('MainRightText', 'Probability of \nescape: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.')]), OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as &quot;written in stone.&quot; All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. '), ('PracticeDilemmas', 'You are working on a ship when you see a large group of sharks in the distance heading towards\n a team of scuba divers. You know that when the sharks reach this group they will encircle\nthem and kill them all. '), ('PracticeLeftText', 'Scuba divers in team: 6'), ('PracticeRightText', 'Probability EM pulse\nwill function: 30%'), ('CueType', 'LOOK'), ('MainLeftText', 'People on \nbus: 3'), ('MainRightText', 'Probability bus will \ndrive to safety: 35%'), ('MainDilemmas', 'You are operating a crane in front of a tall bridge when an earthquake hits. As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge. If nothing is done, the bus will soon plummet and all of these people will be killed.')]), OrderedDict([('Instructions', &quot;In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not\nnecessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. &quot;), ('PracticeDilemmas', 'You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks. If you shoot this one driver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers. If you do all of this, all  of the divers will be spared. '), ('PracticeLeftText', 'Scuba divers in team: 3'), ('PracticeRightText', 'Probability EM pulse\nwill function: 15%'), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'People on \nbus: 17'), ('MainRightText', 'Probability bus will \ndrive to safety: 50%'), ('MainDilemmas', 'You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board. However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car. If you move the crane, this part will certainly collapse and the one person in that car will be killed. ')]), OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-5 scale. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials.\n'), ('PracticeDilemmas', &quot;You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks,\nbut given the team's current depth there is only a small chance that the pulse will function. In order to ensure that the group will be spared, you must shoot the one diver now.&quot;), ('PracticeLeftText', 'Scuba divers in team: 8'), ('PracticeRightText', 'Probability EM pulse\nwill function: 20%'), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'People on \nbus: 12'), ('MainRightText', 'Probability bus will \ndrive to safety: 65%'), ('MainDilemmas', 'You also know that there is a chance the bus will be able to drive back onto the bridge, \npreventing the deaths of everyone on board. There is no chance that the car will be able to \navoid falling if you move your crane. ')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable \nit would be for you to shoot the one diver.'), ('PracticeLeftText', 'Scuba divers in team: 2'), ('PracticeRightText', 'Probability EM pulse\nwill function: 10%'), ('CueType', 'LOOK'), ('MainLeftText', 'People on \nbus: 14'), ('MainRightText', 'Probability bus will \ndrive to safety: 15%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 6'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 25%'), ('MainDilemmas', 'You are driving a rescue boat in the ocean, heading east towards one drowning man. You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people  aboard are now drowning.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 11'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 40%'), ('MainDilemmas', 'You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them. However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the  west in time to save them.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 4'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 65%'), ('MainDilemmas', 'You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man. But there is a chance the rescue boat will reach the group drowning to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 7'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 20%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to change your course to head toward the group to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 3'), ('MainRightText', 'Probability of \nevacuation: 35%'), ('MainDilemmas', 'You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track. It is moving so fast that anyone it hits will die immediately. The boxcar is headed towards a tunneled section in which a group of repairmen are working.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 9'), ('MainRightText', 'Probability of \nevacuation: 60%'), ('MainDilemmas', 'You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working. If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all. If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 2'), ('MainRightText', 'Probability of \nevacuation:  55%'), ('MainDilemmas', 'You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives. There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 4'), ('MainRightText', 'Probability of \nevacuation: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be to hit the switch, redirecting the boxcar onto the sidetrack.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 9'), ('MainRightText', 'Probability customers\nwill be spared: 25%'), ('MainDilemmas', 'You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining\nroom, in which a number of customers are eating. If nothing is done the grenade will explode and the\nwalls of the main dining room will collapse and kill these customers.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 7'), ('MainRightText', 'Probability customers\nwill be spared: 15%'), ('MainDilemmas', 'There is only one other location the grenade could be thrown before it explodes, and that is the patio \noutside of the main dining room. There is one customer sitting on the patio, and he would certainly be \nkilled if the grenade is thrown there.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 25'), ('MainRightText', 'Probability customers\nwill be spared: 30%'), ('MainDilemmas', 'You have time to run out and throw the grenade to the patio, without risking any harm to yourself. If \nyou do this, the customers in the dining room will live but the one on the patio will die. You also \nknow that there is a chance that the dining room walls will withstand the blast of the grenade \nexplosion, and the customers would be spared.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 13'), ('MainRightText', 'Probability customers\nwill be spared: 40%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you \nthink it would be to throw the grenade onto the patio.')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="MainQs" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="MainDilemmas"/>
+    <LoopTerminator name="MainQs"/>
+    <Routine name="ISI"/>
+    <Routine name="Cue"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="$rows2" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('MainLeftText', 'Workers in \nRoom A: 4'), ('MainRightText', 'Probability of \nescape: 35%'), ('MainDilemmas', &quot;• There has been an accident in the basement of an office building\n\n• A pipe has broken and is releasing a lethal gas into the building's ventilation system\n\n• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there&quot;), ('Reminder', 'Plan: Hit the button to divert the gas to Room B, killing the one worker there\nDo nothing: The one worker lives, the group in Room A has a chance of escaping'), ('ChoseNothing', 'The one  worker in Room B lived.\n\nThe 4 workers in Room A '), ('ChosePlan', 'The one worker in Room B died. \n\nThe 4 workers in Room A were saved.'), ('GroupNumber', 4), ('GroupProb', 35)]), OrderedDict([('MainLeftText', 'Workers in \nRoom A: 7'), ('MainRightText', 'Probability of \nescape: 65%'), ('MainDilemmas', '• You are the building manager\n\n• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors\n\n• You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there'), ('Reminder', 'Plan: Hit the button to divert the gas to Room B, killing the one worker there\nDo nothing: The one worker lives, the group in Room A has a chance of escaping'), ('ChoseNothing', 'The one worker in Room B lived.\n\nThe 7  workers in Room A '), ('ChosePlan', 'The one worker in Room B died. \n\nThe 7 workers in Room A were saved.'), ('GroupNumber', 7), ('GroupProb', 65)]), OrderedDict([('MainLeftText', 'Workers in \nRoom A: 6'), ('MainRightText', 'Probability of \nescape: 50%'), ('MainDilemmas', '• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them\n\n• This would be impossible for the one worker in Room B'), ('Reminder', 'Plan: Hit the button to divert the gas to Room B, killing the one worker there\nDo nothing: The one worker lives, the group in Room A has a chance of escaping'), ('ChoseNothing', 'The one  worker in Room B lived.\n\nThe 6 workers in Room A '), ('ChosePlan', 'The one worker in Room B died. \n\nThe 6 workers in Room A were saved.'), ('GroupNumber', 6), ('GroupProb', 50)]), OrderedDict([('MainLeftText', 'Workers in \nRoom A: 11'), ('MainRightText', 'Probability of \nescape: 65%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.'), ('Reminder', 'Plan: Hit the button to divert the gas to Room B, killing the one worker there\nDo nothing: The one worker lives, the group in Room A has a chance of escaping'), ('ChoseNothing', 'The one  worker in Room B lived.\n\nThe 11 workers in Room A '), ('ChosePlan', 'The one worker in Room B died. \n\nThe 11 workers in Room A were saved.'), ('GroupNumber', 11), ('GroupProb', 65)]), OrderedDict([('MainLeftText', 'People on \nbus: 3'), ('MainRightText', 'Probability bus will \ndrive to safety: 35%'), ('MainDilemmas', '• You are operating a crane in front of a tall bridge when an earthquake hits\n\n• As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge\n\n• If nothing is done, the bus will soon plummet and all of these people will be killed'), ('Reminder', 'Plan: Move your crane to push the bus, certainly killing the person in the car\nDo nothing: The person in the car lives, the people in the bus have a chance of escape'), ('ChoseNothing', 'The one person in the car lived.\n\nThe 3 people on the bus '), ('ChosePlan', 'The one person in the car died. \n\nThe 3 people on the bus were saved.'), ('GroupNumber', 3), ('GroupProb', 35)]), OrderedDict([('MainLeftText', 'People on \nbus: 17'), ('MainRightText', 'Probability bus will \ndrive to safety: 50%'), ('MainDilemmas', 'You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board. However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car. If you move the crane, this part will certainly collapse and the one person in that car will be killed. '), ('Reminder', 'Plan: Move your crane to push the bus, certainly killing the person in the car\nDo nothing: The person in the car lives, the people in the bus have a chance of escape'), ('ChoseNothing', 'The one person in the car lived.\n\nThe 17 people on the bus '), ('ChosePlan', 'The one person in the car died. \n\nThe 17 people on the bus were saved.'), ('GroupNumber', 17), ('GroupProb', 50)]), OrderedDict([('MainLeftText', 'People on \nbus: 12'), ('MainRightText', 'Probability bus will \ndrive to safety: 65%'), ('MainDilemmas', '• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board\n \n• There is no chance that the car will be able to avoid falling if you move your crane '), ('Reminder', 'Plan: Move your crane to push the bus, certainly killing the person in the car\nDo nothing: The person in the car lives, the people in the bus have a chance of escape'), ('ChoseNothing', 'The one person in the car lived.\n\nThe 12 people on the bus '), ('ChosePlan', 'The one person in the car died. \n\nThe 12 people on the bus were saved.'), ('GroupNumber', 12), ('GroupProb', 65)]), OrderedDict([('MainLeftText', 'People on \nbus: 14'), ('MainRightText', 'Probability bus will \ndrive to safety: 35%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse.'), ('Reminder', 'Plan: Move your crane to push the bus, certainly killing the person in the car\nDo nothing: The person in the car lives, the people in the bus have a chance of escape'), ('ChoseNothing', 'The one person in the car lived.\n\nThe 14 people on the bus '), ('ChosePlan', 'The one person in the car died. \n\nThe 14 people on the bus were saved.'), ('GroupNumber', 14), ('GroupProb', 35)]), OrderedDict([('MainLeftText', 'Individuals drowning\n to the west: 6'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 35%'), ('MainDilemmas', '• You are driving a rescue boat in the ocean, heading east towards one drowning man\n\n• You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people aboard are now drowning'), ('Reminder', 'Plan: Change your course to head towards the group, leaving the man to die\nDo nothing: The man will live, the group has a chance of escape'), ('ChoseNothing', 'The one man in the east lived.\n\nThe 6 individuals drowning in the west'), ('ChosePlan', 'The one man in the east died.\n\nThe 6 individuals drowning in the west were saved.'), ('GroupNumber', 6), ('GroupProb', 35)]), OrderedDict([('MainLeftText', 'Individuals drowning\n to the west: 11'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 50%'), ('MainDilemmas', '• You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them\n\n• However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the west in time to save them'), ('Reminder', 'Plan: Change your course to head towards the group, leaving the man to die\nDo nothing: The man will live, the group has a chance of escape'), ('ChoseNothing', 'The one man in the east lived.\n\nThe 11 individuals drowning in the west'), ('ChosePlan', 'The one man in the east died.\n\nThe 11 individuals drowning in the west were saved.'), ('GroupNumber', 11), ('GroupProb', 50)]), OrderedDict([('MainLeftText', 'Individuals drowning\n to the west: 4'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 65%'), ('MainDilemmas', '• You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man\n\n• But there is a chance the rescue boat will reach the group drowning to the west'), ('Reminder', 'Plan: Change your course to head towards the group, leaving the man to die\nDo nothing: The man will live, the group has a chance of escape'), ('ChoseNothing', 'The one man in the east lived.\n\nThe 4 individuals drowning in the west'), ('ChosePlan', 'The one man in the east died.\n\nThe 4 individuals drowning in the west were saved.'), ('GroupNumber', 4), ('GroupProb', 65)]), OrderedDict([('MainLeftText', 'Individuals drowning\n to the west: 7'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 50%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to change your course to head toward the group to the west.'), ('Reminder', 'Plan: Change your course to head towards the group, leaving the man to die\nDo nothing: The man will live, the group has a chance of escape'), ('ChoseNothing', 'The one man in the east lived.\n\nThe 7 individuals drowning in the west'), ('ChosePlan', 'The one man in the east died.\n\nThe 7 individuals drowning in the west were saved.'), ('GroupNumber', 7), ('GroupProb', 50)]), OrderedDict([('MainLeftText', 'Repairmen on \nmain track: 3'), ('MainRightText', 'Probability of \nevacuation: 35%'), ('MainDilemmas', '• You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track\n\n• It is moving so fast that anyone it hits will die immediately\n\n• The boxcar is headed towards a tunneled section in which a group of repairmen are working'), ('Reminder', 'Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman\nDo nothing: The repairman lives, the group has a chance of escape'), ('ChoseNothing', 'The one repairmen lived.\n\nThe 3 repairmen on the track'), ('ChosePlan', 'The one repairmen died.\n\nThe 3 repairmen on the track were saved.'), ('GroupNumber', 3), ('GroupProb', 35)]), OrderedDict([('MainLeftText', 'Repairmen on \nmain track: 9'), ('MainRightText', 'Probability of \nevacuation: 65%'), ('MainDilemmas', '• You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working\n\n• If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all\n\n• If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die'), ('Reminder', 'Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman\nDo nothing: The repairman lives, the group has a chance of escape'), ('ChoseNothing', 'The one repairmen lived.\n\nThe 9 repairmen on the track'), ('ChosePlan', 'The one repairmen died.\n\nThe 9 repairmen on the track were saved.'), ('GroupNumber', 9), ('GroupProb', 65)]), OrderedDict([('MainLeftText', 'Repairmen on \nmain track: 2'), ('MainRightText', 'Probability of \nevacuation:  50%'), ('MainDilemmas', '• You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives\n\n• There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time'), ('Reminder', 'Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman\nDo nothing: The repairman lives, the group has a chance of escape'), ('ChoseNothing', 'The one repairmen lived.\n\nThe 2 repairmen on the track'), ('ChosePlan', 'The one repairmen died.\n\nThe 2 repairmen on the track were saved.'), ('GroupNumber', 2), ('GroupProb', 50)]), OrderedDict([('MainLeftText', 'Repairmen on \nmain track: 4'), ('MainRightText', 'Probability of \nevacuation: 50%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the switch, redirecting the boxcar onto the sidetrack.'), ('Reminder', 'Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman\nDo nothing: The repairman lives, the group has a chance of escape'), ('ChoseNothing', 'The one repairmen lived.\n\nThe 4 repairmen on the track'), ('ChosePlan', 'The one repairmen died.\n\nThe 4 repairmen on the track were saved.'), ('GroupNumber', 4), ('GroupProb', 50)]), OrderedDict([('MainLeftText', 'Customers in main\ndining room: 9'), ('MainRightText', 'Probability customers\nwill be spared: 35%'), ('MainDilemmas', '• You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining room, in which a number of customers are eating\n\n• If nothing is done the grenade will explode and the walls of the main dining room will collapse and kill these customers'), ('Reminder', 'Plan: Throw the grenade onto the patio, killing the one customer there\nDo nothing: The one customer will live, the group has a chance of escape'), ('ChoseNothing', 'The one customer on the patio lived.\n\nThe 9 customers in the main dining room'), ('ChosePlan', 'The one customer on the patio died.\n\nThe 9 customers in the main dining room were saved.'), ('GroupNumber', 9), ('GroupProb', 35)]), OrderedDict([('MainLeftText', 'Customers in main\ndining room: 7'), ('MainRightText', 'Probability customers\nwill be spared: 50%'), ('MainDilemmas', '• There is only one other location the grenade could be thrown before it explodes, and that is the patio outside of the main dining room\n\n• There is one customer sitting on the patio, and he would certainly be killed if the grenade is thrown there'), ('Reminder', 'Plan: Throw the grenade onto the patio, killing the one customer there\nDo nothing: The one customer will live, the group has a chance of escape'), ('ChoseNothing', 'The one customer on the patio lived.\n\nThe 7 customers in the main dining room'), ('ChosePlan', 'The one customer on the patio died.\n\nThe 7 customers in the main dining room were saved.'), ('GroupNumber', 7), ('GroupProb', 50)]), OrderedDict([('MainLeftText', 'Customers in main\ndining room: 25'), ('MainRightText', 'Probability customers\nwill be spared: 65%'), ('MainDilemmas', '• You have time to run out and throw the grenade to the patio, without risking any harm to yourself\n\n• If you do this, the customers in the dining room will live but the one on the patio will die \n\n• You also know that there is a chance that the dining room walls will withstand the blast of the grenade explosion, and the customers would be spared'), ('Reminder', 'Plan: Throw the grenade onto the patio, killing the one customer there\nDo nothing: The one customer will live, the group has a chance of escape'), ('ChoseNothing', 'The one customer on the patio lived.\n\nThe 25 customers in the main dining room'), ('ChosePlan', 'The one customer on the patio died.\n\nThe 25 customers in the main dining room were saved.'), ('GroupNumber', 25), ('GroupProb', 65)]), OrderedDict([('MainLeftText', 'Customers in main\ndining room: 13'), ('MainRightText', 'Probability customers\nwill be spared: 50%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you \nthink it would be to throw the grenade onto the patio.'), ('Reminder', 'Plan: Throw the grenade onto the patio, killing the one customer there\nDo nothing: The one customer will live, the group has a chance of escape'), ('ChoseNothing', 'The one customer on the patio lived.\n\nThe 13 customers in the main dining room'), ('ChosePlan', 'The one customer on the patio died.\n\nThe 13 customers in the main dining room were saved.'), ('GroupNumber', 13), ('GroupProb', 50)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="ISI"/>
+    <Routine name="MainAnswers_2"/>
+    <Routine name="ISI"/>
+    <Routine name="Feedback"/>
+    <LoopTerminator name="trials_2"/>
+    <Routine name="ISI"/>
+    <LoopTerminator name="MainLoop"/>
+    <Routine name="ThankYou"/>
+  </Flow>
+</PsychoPy2experiment>

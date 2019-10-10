@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.0">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="MoralSR" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="PracticeDilemmas_2">
+      <TextComponent name="practiceQs">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+        <Param name="name" updates="None" val="practiceQs" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$PracticeDilemmas" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="space1">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="space1" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="PracticeAnswers">
+      <TextComponent name="leftText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="leftText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$PracticeLeftText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="rightText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="rightText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$PracticeRightText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <RatingScaleComponent name="rating">
+        <Param name="categoryChoices" updates="constant" val="    " valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="marker" updates="constant" val="triangle" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="rating" valType="code"/>
+        <Param name="pos" updates="constant" val="0, -0.35" valType="str"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
+        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
+        <Param name="size" updates="constant" val="1.5" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="tickHeight" updates="constant" val="1" valType="str"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+      </RatingScaleComponent>
+      <TextComponent name="ComUn">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.033" valType="code"/>
+        <Param name="name" updates="None" val="ComUn" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.24)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Completely Unacceptable            2            3            4            5            6           Completely Acceptable" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="2.5" valType="code"/>
+      </TextComponent>
+      <TextComponent name="ComAc">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="name" updates="None" val="ComAc" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.45, -0.35)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="code">
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="code1">
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="this_loop_number = 0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="this_loop_number +=1&amp;#10;&amp;#10;loopNum = int(this_loop_number)&amp;#10;&amp;#10;selectRows=((loopNum-1)*4+1):(loopNum*4)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="code2">
+      <CodeComponent name="code_4">
+        <Param name="Begin Experiment" updates="constant" val="this_loop_number = 0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="this_loop_number +=1&amp;#10;&amp;#10;selectRows = ((this_loop_number-1)*4+1):(this_loop_number*4)" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="MainDilemmas">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainDilemmas" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="MainAnswers">
+      <TextComponent name="leftText1">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="leftText1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainLeftText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="rightText1">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="rightText1" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$MainRightText" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <RatingScaleComponent name="rating_2">
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="Completely Unacceptable, Completely Acceptable" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="marker" updates="constant" val="triangle" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="rating_2" valType="code"/>
+        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="showAccept" updates="constant" val="False" valType="bool"/>
+        <Param name="singleClick" updates="constant" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="1.3" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+      </RatingScaleComponent>
+    </Routine>
+    <Routine name="ThankYou">
+      <TextComponent name="TY">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="TY" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Thank you for your participation!&amp;#10;&amp;#10;You have completed this part of the study." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Instructions">
+      <TextComponent name="InstText">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="InstText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Instructions" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.6" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="space">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="space" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="SetUpCode">
+      <CodeComponent name="code_6">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;'''&amp;#10;from itertools import chain&amp;#10;from itertools import zip_longest as zip&amp;#10;from random import shuffle &amp;#10;PracticeQ1 = data.importConditions('Users\Jojo\Downloads\HelionLab\ExperimentFiles\MoralSelf-Regulation\MoralSelfReg.csv', selection=u'0:04') &amp;#10;PracticeQ2 = data.importConditions('Users\Jojo\Downloads\HelionLab\ExperimentFiles\MoralSelf-Regulation\MoralSelfReg.csv', selection=u'04:08')&amp;#10;&amp;#10;&amp;#10;shuffle(PracticeQ1) &amp;#10;shuffle(PracticeQ2)&amp;#10;&amp;#10;trialList=list(chain.from_iterable(zip(PracticeQ1, PracticeQ2)))&amp;#10;'''" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_6" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="Cue">
+      <TextComponent name="cue">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+        <Param name="name" updates="None" val="cue" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="15" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$CueInstructions" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="isi2">
+      <TextComponent name="isi_2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="isi_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="ISI">
+      <TextComponent name="isi">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="isi" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <LoopInitiator loopType="TrialHandler" name="IntroLoop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. ')]), OrderedDict([('Instructions', 'When you are done reading each screen, you can press SPACE to move on to the next one.\nHowever, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.\n\nThe scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma: a) a number of people involved in part of the scenario and b) a likelihood that something will happen. You will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.')]), OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be remminded of this after this screen.\n\nFirst, you will see a &quot;+&quot; in the middle of the screen. Any time that this is up, all you need to do is fixate on the &quot;+&quot; and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a jusgement of its moral acceptibility.\n\nYou will rate each trial on a 1-5 scale, with 1 indicating that the action would be &quot;Completely Unacceptable&quot; and 5 indicating that it would be &quot;Completely Acceptable.&quot;\n')]), OrderedDict([('Instructions', 'After you answer you will again see a &quot;+&quot; in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the &quot;+&quot; appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. SImply look at the &quot;+&quot; and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.')]), OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as &quot;written in stone.&quot; All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. ')]), OrderedDict([('Instructions', &quot;In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not\nnecessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. &quot;)]), OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-5 scale. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials.\n')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfRegInst.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="IntroLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Instructions"/>
+    <LoopTerminator name="IntroLoop"/>
+    <LoopInitiator loopType="TrialHandler" name="PracticeLoop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('rows', '00:004'), ('CueType', 'LOOK')]), OrderedDict([('rows', '004:008'), ('CueType', 'REAPPRAISE')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="moralRows.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="PracticeLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="ISI"/>
+    <LoopInitiator loopType="TrialHandler" name="PracticeQs">
+      <Param name="Selected rows" updates="None" val="$rows" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. '), ('PracticeDilemmas', &quot;You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall. \nYou've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them.&quot;), ('PracticeLeftText', 'Divers on right: 1'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('rows', '000:004'), ('rows2', '000:004'), ('MainLeftText', 'Workers in \nRoom A: 4'), ('MainRightText', 'Probability of \nescape: 15%'), ('MainDilemmas', &quot;There has been an accident in the basement of an office building. A pipe has broken and is releasing a lethal gas into the building's ventilation system. If nothing is done, the gas will travel upward to Room A and cause the death of all workers there.&quot;)]), OrderedDict([('Instructions', 'When you are done reading each screen, you can press SPACE to move on to the next one.\nHowever, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.\n\nThe scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma: a) a number of people involved in part of the scenario and b) a likelihood that something will happen. You will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.'), ('PracticeDilemmas', &quot;Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him.\nYou know that there won't be enough time to reach the group if you wait to catch the one. If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths.\nYou can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught.&quot;), ('PracticeLeftText', 'Divers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 45% '), ('rows', '004:007'), ('rows2', '004:007'), ('MainLeftText', 'Workers in \nRoom A: 7'), ('MainRightText', 'Probability of \nescape: 65%'), ('MainDilemmas', 'You are the building manager. You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors. You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there.')]), OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be remminded of this after this screen.\n\nFirst, you will see a &quot;+&quot; in the middle of the screen. Any time that this is up, all you need to do is fixate on the &quot;+&quot; and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a jusgement of its moral acceptibility.\n\nYou will rate each trial on a 1-5 scale, with 1 indicating that the action would be &quot;Completely Unacceptable&quot; and 5 indicating that it would be &quot;Completely Acceptable.&quot;\n'), ('PracticeDilemmas', 'You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths, but there is no chance that this will happen for the one given how close he is to the ground.'), ('PracticeLeftText', 'Divers on right: 2'), ('PracticeRightText', 'Probability of \nparachute opening: 25% '), ('rows', None), ('rows2', '009:0012'), ('MainLeftText', 'Workers in \nRoom A: 6'), ('MainRightText', 'Probability of \nescape: 50%'), ('MainDilemmas', 'You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them. This would be impossible for the one in Room B.')]), OrderedDict([('Instructions', 'After you answer you will again see a &quot;+&quot; in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the &quot;+&quot; appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. SImply look at the &quot;+&quot; and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.'), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to direct your crew to the right, re-positioning the trampoline underneath the group.'), ('PracticeLeftText', 'Divers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 75% '), ('rows', None), ('rows2', '0013:0016'), ('MainLeftText', 'Workers in \nRoom A: 11'), ('MainRightText', 'Probability of \nescape: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.')]), OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as &quot;written in stone.&quot; All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. '), ('PracticeDilemmas', 'You are working on a ship when you see a large group of sharks in the distance heading towards\n a team of scuba divers. You know that when the sharks reach this group they will encircle\nthem and kill them all. '), ('PracticeLeftText', 'Scuba divers in team: 6'), ('PracticeRightText', 'Probability EM pulse\nwill function: 30%'), ('rows', None), ('rows2', '0017:0020'), ('MainLeftText', 'People on \nbus: 3'), ('MainRightText', 'Probability bus will \ndrive to safety: 35%'), ('MainDilemmas', 'You are operating a crane in front of a tall bridge when an earthquake hits. As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge. If nothing is done, the bus will soon plummet and all of these people will be killed.')]), OrderedDict([('Instructions', &quot;In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not\nnecessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. &quot;), ('PracticeDilemmas', 'You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks. If you shoot this one driver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers. If you do all of this, all  of the divers will be spared. '), ('PracticeLeftText', 'Scuba divers in team: 3'), ('PracticeRightText', 'Probability EM pulse\nwill function: 15%'), ('rows', None), ('rows2', None), ('MainLeftText', 'People on \nbus: 17'), ('MainRightText', 'Probability bus will \ndrive to safety: 50%'), ('MainDilemmas', 'You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board. However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car. If you move the crane, this part will certainly collapse and the one person in that car will be killed. ')]), OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-5 scale. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials.\n'), ('PracticeDilemmas', &quot;You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks,\nbut given the team's current depth there is only a small chance that the pulse will function. In order to ensure that the group will be spared, you must shoot the one diver now.&quot;), ('PracticeLeftText', 'Scuba divers in team: 8'), ('PracticeRightText', 'Probability EM pulse\nwill function: 20%'), ('rows', None), ('rows2', None), ('MainLeftText', 'People on \nbus: 12'), ('MainRightText', 'Probability bus will \ndrive to safety: 65%'), ('MainDilemmas', 'You also know that there is a chance the bus will be able to drive back onto the bridge, \npreventing the deaths of everyone on board. There is no chance that the car will be able to \navoid falling if you move your crane. ')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable \nit would be for you to shoot the one diver.'), ('PracticeLeftText', 'Scuba divers in team: 2'), ('PracticeRightText', 'Probability EM pulse\nwill function: 10%'), ('rows', None), ('rows2', None), ('MainLeftText', 'People on \nbus: 14'), ('MainRightText', 'Probability bus will \ndrive to safety: 15%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 6'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 25%'), ('MainDilemmas', 'You are driving a rescue boat in the ocean, heading east towards one drowning man. You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people  aboard are now drowning.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 11'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 40%'), ('MainDilemmas', 'You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them. However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the  west in time to save them.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 4'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 65%'), ('MainDilemmas', 'You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man. But there is a chance the rescue boat will reach the group drowning to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 7'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 20%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to change your course to head toward the group to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 3'), ('MainRightText', 'Probability of \nevacuation: 35%'), ('MainDilemmas', 'You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track. It is moving so fast that anyone it hits will die immediately. The boxcar is headed towards a tunneled section in which a group of repairmen are working.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 9'), ('MainRightText', 'Probability of \nevacuation: 60%'), ('MainDilemmas', 'You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working. If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all. If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 2'), ('MainRightText', 'Probability of \nevacuation:  55%'), ('MainDilemmas', 'You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives. There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 4'), ('MainRightText', 'Probability of \nevacuation: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be to hit the switch, redirecting the boxcar onto the sidetrack.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 9'), ('MainRightText', 'Probability customers\nwill be spared: 25%'), ('MainDilemmas', 'You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining\nroom, in which a number of customers are eating. If nothing is done the grenade will explode and the\nwalls of the main dining room will collapse and kill these customers.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 7'), ('MainRightText', 'Probability customers\nwill be spared: 15%'), ('MainDilemmas', 'There is only one other location the grenade could be thrown before it explodes, and that is the patio \noutside of the main dining room. There is one customer sitting on the patio, and he would certainly be \nkilled if the grenade is thrown there.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 25'), ('MainRightText', 'Probability customers\nwill be spared: 30%'), ('MainDilemmas', 'You have time to run out and throw the grenade to the patio, without risking any harm to yourself. If \nyou do this, the customers in the dining room will live but the one on the patio will die. You also \nknow that there is a chance that the dining room walls will withstand the blast of the grenade \nexplosion, and the customers would be spared.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 13'), ('MainRightText', 'Probability customers\nwill be spared: 40%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you \nthink it would be to throw the grenade onto the patio.')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="PracticeQs" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="PracticeDilemmas_2"/>
+    <LoopTerminator name="PracticeQs"/>
+    <Routine name="ISI"/>
+    <Routine name="Cue"/>
+    <Routine name="ISI"/>
+    <LoopInitiator loopType="TrialHandler" name="practiceAs">
+      <Param name="Selected rows" updates="None" val="$rows" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. '), ('PracticeDilemmas', &quot;You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall. \nYou've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them.&quot;), ('PracticeLeftText', 'Divers on right: 1'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('rows', '000:004'), ('rows2', '000:004'), ('MainLeftText', 'Workers in \nRoom A: 4'), ('MainRightText', 'Probability of \nescape: 15%'), ('MainDilemmas', &quot;There has been an accident in the basement of an office building. A pipe has broken and is releasing a lethal gas into the building's ventilation system. If nothing is done, the gas will travel upward to Room A and cause the death of all workers there.&quot;)]), OrderedDict([('Instructions', 'When you are done reading each screen, you can press SPACE to move on to the next one.\nHowever, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.\n\nThe scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma: a) a number of people involved in part of the scenario and b) a likelihood that something will happen. You will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.'), ('PracticeDilemmas', &quot;Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him.\nYou know that there won't be enough time to reach the group if you wait to catch the one. If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths.\nYou can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught.&quot;), ('PracticeLeftText', 'Divers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 45% '), ('rows', '004:007'), ('rows2', '004:007'), ('MainLeftText', 'Workers in \nRoom A: 7'), ('MainRightText', 'Probability of \nescape: 65%'), ('MainDilemmas', 'You are the building manager. You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors. You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there.')]), OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be remminded of this after this screen.\n\nFirst, you will see a &quot;+&quot; in the middle of the screen. Any time that this is up, all you need to do is fixate on the &quot;+&quot; and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a jusgement of its moral acceptibility.\n\nYou will rate each trial on a 1-5 scale, with 1 indicating that the action would be &quot;Completely Unacceptable&quot; and 5 indicating that it would be &quot;Completely Acceptable.&quot;\n'), ('PracticeDilemmas', 'You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths, but there is no chance that this will happen for the one given how close he is to the ground.'), ('PracticeLeftText', 'Divers on right: 2'), ('PracticeRightText', 'Probability of \nparachute opening: 25% '), ('rows', None), ('rows2', '009:0012'), ('MainLeftText', 'Workers in \nRoom A: 6'), ('MainRightText', 'Probability of \nescape: 50%'), ('MainDilemmas', 'You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them. This would be impossible for the one in Room B.')]), OrderedDict([('Instructions', 'After you answer you will again see a &quot;+&quot; in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the &quot;+&quot; appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. SImply look at the &quot;+&quot; and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.'), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to direct your crew to the right, re-positioning the trampoline underneath the group.'), ('PracticeLeftText', 'Divers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 75% '), ('rows', None), ('rows2', '0013:0016'), ('MainLeftText', 'Workers in \nRoom A: 11'), ('MainRightText', 'Probability of \nescape: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.')]), OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as &quot;written in stone.&quot; All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. '), ('PracticeDilemmas', 'You are working on a ship when you see a large group of sharks in the distance heading towards\n a team of scuba divers. You know that when the sharks reach this group they will encircle\nthem and kill them all. '), ('PracticeLeftText', 'Scuba divers in team: 6'), ('PracticeRightText', 'Probability EM pulse\nwill function: 30%'), ('rows', None), ('rows2', '0017:0020'), ('MainLeftText', 'People on \nbus: 3'), ('MainRightText', 'Probability bus will \ndrive to safety: 35%'), ('MainDilemmas', 'You are operating a crane in front of a tall bridge when an earthquake hits. As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge. If nothing is done, the bus will soon plummet and all of these people will be killed.')]), OrderedDict([('Instructions', &quot;In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not\nnecessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. &quot;), ('PracticeDilemmas', 'You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks. If you shoot this one driver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers. If you do all of this, all  of the divers will be spared. '), ('PracticeLeftText', 'Scuba divers in team: 3'), ('PracticeRightText', 'Probability EM pulse\nwill function: 15%'), ('rows', None), ('rows2', None), ('MainLeftText', 'People on \nbus: 17'), ('MainRightText', 'Probability bus will \ndrive to safety: 50%'), ('MainDilemmas', 'You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board. However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car. If you move the crane, this part will certainly collapse and the one person in that car will be killed. ')]), OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-5 scale. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials.\n'), ('PracticeDilemmas', &quot;You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks,\nbut given the team's current depth there is only a small chance that the pulse will function. In order to ensure that the group will be spared, you must shoot the one diver now.&quot;), ('PracticeLeftText', 'Scuba divers in team: 8'), ('PracticeRightText', 'Probability EM pulse\nwill function: 20%'), ('rows', None), ('rows2', None), ('MainLeftText', 'People on \nbus: 12'), ('MainRightText', 'Probability bus will \ndrive to safety: 65%'), ('MainDilemmas', 'You also know that there is a chance the bus will be able to drive back onto the bridge, \npreventing the deaths of everyone on board. There is no chance that the car will be able to \navoid falling if you move your crane. ')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable \nit would be for you to shoot the one diver.'), ('PracticeLeftText', 'Scuba divers in team: 2'), ('PracticeRightText', 'Probability EM pulse\nwill function: 10%'), ('rows', None), ('rows2', None), ('MainLeftText', 'People on \nbus: 14'), ('MainRightText', 'Probability bus will \ndrive to safety: 15%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 6'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 25%'), ('MainDilemmas', 'You are driving a rescue boat in the ocean, heading east towards one drowning man. You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people  aboard are now drowning.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 11'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 40%'), ('MainDilemmas', 'You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them. However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the  west in time to save them.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 4'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 65%'), ('MainDilemmas', 'You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man. But there is a chance the rescue boat will reach the group drowning to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Individuals drowning\n to the west: 7'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 20%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to change your course to head toward the group to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 3'), ('MainRightText', 'Probability of \nevacuation: 35%'), ('MainDilemmas', 'You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track. It is moving so fast that anyone it hits will die immediately. The boxcar is headed towards a tunneled section in which a group of repairmen are working.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 9'), ('MainRightText', 'Probability of \nevacuation: 60%'), ('MainDilemmas', 'You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working. If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all. If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 2'), ('MainRightText', 'Probability of \nevacuation:  55%'), ('MainDilemmas', 'You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives. There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Repairmen on \nmain track: 4'), ('MainRightText', 'Probability of \nevacuation: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be to hit the switch, redirecting the boxcar onto the sidetrack.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 9'), ('MainRightText', 'Probability customers\nwill be spared: 25%'), ('MainDilemmas', 'You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining\nroom, in which a number of customers are eating. If nothing is done the grenade will explode and the\nwalls of the main dining room will collapse and kill these customers.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 7'), ('MainRightText', 'Probability customers\nwill be spared: 15%'), ('MainDilemmas', 'There is only one other location the grenade could be thrown before it explodes, and that is the patio \noutside of the main dining room. There is one customer sitting on the patio, and he would certainly be \nkilled if the grenade is thrown there.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 25'), ('MainRightText', 'Probability customers\nwill be spared: 30%'), ('MainDilemmas', 'You have time to run out and throw the grenade to the patio, without risking any harm to yourself. If \nyou do this, the customers in the dining room will live but the one on the patio will die. You also \nknow that there is a chance that the dining room walls will withstand the blast of the grenade \nexplosion, and the customers would be spared.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('rows', None), ('rows2', None), ('MainLeftText', 'Customers in main\ndining room: 13'), ('MainRightText', 'Probability customers\nwill be spared: 40%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you \nthink it would be to throw the grenade onto the patio.')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="practiceAs" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="PracticeAnswers"/>
+    <LoopTerminator name="practiceAs"/>
+    <LoopTerminator name="PracticeLoop"/>
+    <Routine name="isi2"/>
+    <LoopInitiator loopType="TrialHandler" name="MainLoop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('rows2', '00:004'), ('CueType', 'REAPPRAISE')]), OrderedDict([('rows2', '004:008'), ('CueType', 'LOOK')]), OrderedDict([('rows2', '008:0012'), ('CueType', 'REAPPRAISE')]), OrderedDict([('rows2', '0012:0016'), ('CueType', 'REAPPRAISE')]), OrderedDict([('rows2', '0016:0020'), ('CueType', 'LOOK')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="moralRows2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="MainLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="MainQs">
+      <Param name="Selected rows" updates="None" val="$rows2" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. '), ('PracticeDilemmas', &quot;You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall. \nYou've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them.&quot;), ('PracticeLeftText', 'Divers on right: 1'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('CueType', 'LOOK'), ('MainLeftText', 'Workers in \nRoom A: 4'), ('MainRightText', 'Probability of \nescape: 15%'), ('MainDilemmas', &quot;There has been an accident in the basement of an office building. A pipe has broken and is releasing a lethal gas into the building's ventilation system. If nothing is done, the gas will travel upward to Room A and cause the death of all workers there.&quot;)]), OrderedDict([('Instructions', 'When you are done reading each screen, you can press SPACE to move on to the next one.\nHowever, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.\n\nThe scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma: a) a number of people involved in part of the scenario and b) a likelihood that something will happen. You will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.'), ('PracticeDilemmas', &quot;Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him.\nYou know that there won't be enough time to reach the group if you wait to catch the one. If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths.\nYou can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught.&quot;), ('PracticeLeftText', 'Divers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 45% '), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'Workers in \nRoom A: 7'), ('MainRightText', 'Probability of \nescape: 65%'), ('MainDilemmas', 'You are the building manager. You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors. You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there.')]), OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be remminded of this after this screen.\n\nFirst, you will see a &quot;+&quot; in the middle of the screen. Any time that this is up, all you need to do is fixate on the &quot;+&quot; and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a jusgement of its moral acceptibility.\n\nYou will rate each trial on a 1-5 scale, with 1 indicating that the action would be &quot;Completely Unacceptable&quot; and 5 indicating that it would be &quot;Completely Acceptable.&quot;\n'), ('PracticeDilemmas', 'You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths, but there is no chance that this will happen for the one given how close he is to the ground.'), ('PracticeLeftText', 'Divers on right: 2'), ('PracticeRightText', 'Probability of \nparachute opening: 25% '), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'Workers in \nRoom A: 6'), ('MainRightText', 'Probability of \nescape: 50%'), ('MainDilemmas', 'You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them. This would be impossible for the one in Room B.')]), OrderedDict([('Instructions', 'After you answer you will again see a &quot;+&quot; in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the &quot;+&quot; appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. SImply look at the &quot;+&quot; and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.'), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to direct your crew to the right, re-positioning the trampoline underneath the group.'), ('PracticeLeftText', 'Divers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 75% '), ('CueType', 'LOOK'), ('MainLeftText', 'Workers in \nRoom A: 11'), ('MainRightText', 'Probability of \nescape: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.')]), OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as &quot;written in stone.&quot; All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. '), ('PracticeDilemmas', 'You are working on a ship when you see a large group of sharks in the distance heading towards\n a team of scuba divers. You know that when the sharks reach this group they will encircle\nthem and kill them all. '), ('PracticeLeftText', 'Scuba divers in team: 6'), ('PracticeRightText', 'Probability EM pulse\nwill function: 30%'), ('CueType', 'LOOK'), ('MainLeftText', 'People on \nbus: 3'), ('MainRightText', 'Probability bus will \ndrive to safety: 35%'), ('MainDilemmas', 'You are operating a crane in front of a tall bridge when an earthquake hits. As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge. If nothing is done, the bus will soon plummet and all of these people will be killed.')]), OrderedDict([('Instructions', &quot;In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not\nnecessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. &quot;), ('PracticeDilemmas', 'You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks. If you shoot this one driver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers. If you do all of this, all  of the divers will be spared. '), ('PracticeLeftText', 'Scuba divers in team: 3'), ('PracticeRightText', 'Probability EM pulse\nwill function: 15%'), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'People on \nbus: 17'), ('MainRightText', 'Probability bus will \ndrive to safety: 50%'), ('MainDilemmas', 'You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board. However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car. If you move the crane, this part will certainly collapse and the one person in that car will be killed. ')]), OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-5 scale. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials.\n'), ('PracticeDilemmas', &quot;You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks,\nbut given the team's current depth there is only a small chance that the pulse will function. In order to ensure that the group will be spared, you must shoot the one diver now.&quot;), ('PracticeLeftText', 'Scuba divers in team: 8'), ('PracticeRightText', 'Probability EM pulse\nwill function: 20%'), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'People on \nbus: 12'), ('MainRightText', 'Probability bus will \ndrive to safety: 65%'), ('MainDilemmas', 'You also know that there is a chance the bus will be able to drive back onto the bridge, \npreventing the deaths of everyone on board. There is no chance that the car will be able to \navoid falling if you move your crane. ')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable \nit would be for you to shoot the one diver.'), ('PracticeLeftText', 'Scuba divers in team: 2'), ('PracticeRightText', 'Probability EM pulse\nwill function: 10%'), ('CueType', 'LOOK'), ('MainLeftText', 'People on \nbus: 14'), ('MainRightText', 'Probability bus will \ndrive to safety: 15%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 6'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 25%'), ('MainDilemmas', 'You are driving a rescue boat in the ocean, heading east towards one drowning man. You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people  aboard are now drowning.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 11'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 40%'), ('MainDilemmas', 'You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them. However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the  west in time to save them.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 4'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 65%'), ('MainDilemmas', 'You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man. But there is a chance the rescue boat will reach the group drowning to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 7'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 20%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to change your course to head toward the group to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 3'), ('MainRightText', 'Probability of \nevacuation: 35%'), ('MainDilemmas', 'You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track. It is moving so fast that anyone it hits will die immediately. The boxcar is headed towards a tunneled section in which a group of repairmen are working.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 9'), ('MainRightText', 'Probability of \nevacuation: 60%'), ('MainDilemmas', 'You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working. If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all. If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 2'), ('MainRightText', 'Probability of \nevacuation:  55%'), ('MainDilemmas', 'You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives. There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 4'), ('MainRightText', 'Probability of \nevacuation: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be to hit the switch, redirecting the boxcar onto the sidetrack.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 9'), ('MainRightText', 'Probability customers\nwill be spared: 25%'), ('MainDilemmas', 'You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining\nroom, in which a number of customers are eating. If nothing is done the grenade will explode and the\nwalls of the main dining room will collapse and kill these customers.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 7'), ('MainRightText', 'Probability customers\nwill be spared: 15%'), ('MainDilemmas', 'There is only one other location the grenade could be thrown before it explodes, and that is the patio \noutside of the main dining room. There is one customer sitting on the patio, and he would certainly be \nkilled if the grenade is thrown there.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 25'), ('MainRightText', 'Probability customers\nwill be spared: 30%'), ('MainDilemmas', 'You have time to run out and throw the grenade to the patio, without risking any harm to yourself. If \nyou do this, the customers in the dining room will live but the one on the patio will die. You also \nknow that there is a chance that the dining room walls will withstand the blast of the grenade \nexplosion, and the customers would be spared.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 13'), ('MainRightText', 'Probability customers\nwill be spared: 40%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you \nthink it would be to throw the grenade onto the patio.')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="MainQs" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="MainDilemmas"/>
+    <LoopTerminator name="MainQs"/>
+    <Routine name="ISI"/>
+    <Routine name="Cue"/>
+    <Routine name="ISI"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="$rows2" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. '), ('PracticeDilemmas', &quot;You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall. \nYou've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them.&quot;), ('PracticeLeftText', 'Divers on right: 1'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('CueType', 'LOOK'), ('MainLeftText', 'Workers in \nRoom A: 4'), ('MainRightText', 'Probability of \nescape: 15%'), ('MainDilemmas', &quot;There has been an accident in the basement of an office building. A pipe has broken and is releasing a lethal gas into the building's ventilation system. If nothing is done, the gas will travel upward to Room A and cause the death of all workers there.&quot;)]), OrderedDict([('Instructions', 'When you are done reading each screen, you can press SPACE to move on to the next one.\nHowever, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.\n\nThe scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma: a) a number of people involved in part of the scenario and b) a likelihood that something will happen. You will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.'), ('PracticeDilemmas', &quot;Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him.\nYou know that there won't be enough time to reach the group if you wait to catch the one. If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths.\nYou can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught.&quot;), ('PracticeLeftText', 'Divers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 45% '), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'Workers in \nRoom A: 7'), ('MainRightText', 'Probability of \nescape: 65%'), ('MainDilemmas', 'You are the building manager. You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors. You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there.')]), OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be remminded of this after this screen.\n\nFirst, you will see a &quot;+&quot; in the middle of the screen. Any time that this is up, all you need to do is fixate on the &quot;+&quot; and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a jusgement of its moral acceptibility.\n\nYou will rate each trial on a 1-5 scale, with 1 indicating that the action would be &quot;Completely Unacceptable&quot; and 5 indicating that it would be &quot;Completely Acceptable.&quot;\n'), ('PracticeDilemmas', 'You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths, but there is no chance that this will happen for the one given how close he is to the ground.'), ('PracticeLeftText', 'Divers on right: 2'), ('PracticeRightText', 'Probability of \nparachute opening: 25% '), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'Workers in \nRoom A: 6'), ('MainRightText', 'Probability of \nescape: 50%'), ('MainDilemmas', 'You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them. This would be impossible for the one in Room B.')]), OrderedDict([('Instructions', 'After you answer you will again see a &quot;+&quot; in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the &quot;+&quot; appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. SImply look at the &quot;+&quot; and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.'), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to direct your crew to the right, re-positioning the trampoline underneath the group.'), ('PracticeLeftText', 'Divers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 75% '), ('CueType', 'LOOK'), ('MainLeftText', 'Workers in \nRoom A: 11'), ('MainRightText', 'Probability of \nescape: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.')]), OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as &quot;written in stone.&quot; All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. '), ('PracticeDilemmas', 'You are working on a ship when you see a large group of sharks in the distance heading towards\n a team of scuba divers. You know that when the sharks reach this group they will encircle\nthem and kill them all. '), ('PracticeLeftText', 'Scuba divers in team: 6'), ('PracticeRightText', 'Probability EM pulse\nwill function: 30%'), ('CueType', 'LOOK'), ('MainLeftText', 'People on \nbus: 3'), ('MainRightText', 'Probability bus will \ndrive to safety: 35%'), ('MainDilemmas', 'You are operating a crane in front of a tall bridge when an earthquake hits. As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge. If nothing is done, the bus will soon plummet and all of these people will be killed.')]), OrderedDict([('Instructions', &quot;In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not\nnecessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. &quot;), ('PracticeDilemmas', 'You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks. If you shoot this one driver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers. If you do all of this, all  of the divers will be spared. '), ('PracticeLeftText', 'Scuba divers in team: 3'), ('PracticeRightText', 'Probability EM pulse\nwill function: 15%'), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'People on \nbus: 17'), ('MainRightText', 'Probability bus will \ndrive to safety: 50%'), ('MainDilemmas', 'You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board. However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car. If you move the crane, this part will certainly collapse and the one person in that car will be killed. ')]), OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-5 scale. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials.\n'), ('PracticeDilemmas', &quot;You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks,\nbut given the team's current depth there is only a small chance that the pulse will function. In order to ensure that the group will be spared, you must shoot the one diver now.&quot;), ('PracticeLeftText', 'Scuba divers in team: 8'), ('PracticeRightText', 'Probability EM pulse\nwill function: 20%'), ('CueType', 'REAPPRAISE'), ('MainLeftText', 'People on \nbus: 12'), ('MainRightText', 'Probability bus will \ndrive to safety: 65%'), ('MainDilemmas', 'You also know that there is a chance the bus will be able to drive back onto the bridge, \npreventing the deaths of everyone on board. There is no chance that the car will be able to \navoid falling if you move your crane. ')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable \nit would be for you to shoot the one diver.'), ('PracticeLeftText', 'Scuba divers in team: 2'), ('PracticeRightText', 'Probability EM pulse\nwill function: 10%'), ('CueType', 'LOOK'), ('MainLeftText', 'People on \nbus: 14'), ('MainRightText', 'Probability bus will \ndrive to safety: 15%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 6'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 25%'), ('MainDilemmas', 'You are driving a rescue boat in the ocean, heading east towards one drowning man. You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people  aboard are now drowning.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 11'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 40%'), ('MainDilemmas', 'You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them. However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the  west in time to save them.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 4'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 65%'), ('MainDilemmas', 'You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man. But there is a chance the rescue boat will reach the group drowning to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Individuals drowning\n to the west: 7'), ('MainRightText', 'Probability of alternate \nrescue boat reaching them: 20%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to change your course to head toward the group to the west.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 3'), ('MainRightText', 'Probability of \nevacuation: 35%'), ('MainDilemmas', 'You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track. It is moving so fast that anyone it hits will die immediately. The boxcar is headed towards a tunneled section in which a group of repairmen are working.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 9'), ('MainRightText', 'Probability of \nevacuation: 60%'), ('MainDilemmas', 'You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working. If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all. If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 2'), ('MainRightText', 'Probability of \nevacuation:  55%'), ('MainDilemmas', 'You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives. There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Repairmen on \nmain track: 4'), ('MainRightText', 'Probability of \nevacuation: 70%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be to hit the switch, redirecting the boxcar onto the sidetrack.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 9'), ('MainRightText', 'Probability customers\nwill be spared: 25%'), ('MainDilemmas', 'You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining\nroom, in which a number of customers are eating. If nothing is done the grenade will explode and the\nwalls of the main dining room will collapse and kill these customers.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 7'), ('MainRightText', 'Probability customers\nwill be spared: 15%'), ('MainDilemmas', 'There is only one other location the grenade could be thrown before it explodes, and that is the patio \noutside of the main dining room. There is one customer sitting on the patio, and he would certainly be \nkilled if the grenade is thrown there.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 25'), ('MainRightText', 'Probability customers\nwill be spared: 30%'), ('MainDilemmas', 'You have time to run out and throw the grenade to the patio, without risking any harm to yourself. If \nyou do this, the customers in the dining room will live but the one on the patio will die. You also \nknow that there is a chance that the dining room walls will withstand the blast of the grenade \nexplosion, and the customers would be spared.')]), OrderedDict([('Instructions', None), ('PracticeDilemmas', None), ('PracticeLeftText', None), ('PracticeRightText', None), ('CueType', None), ('MainLeftText', 'Customers in main\ndining room: 13'), ('MainRightText', 'Probability customers\nwill be spared: 40%'), ('MainDilemmas', 'Consider each of the following scenarios and, for each one, determine how morally acceptable you \nthink it would be to throw the grenade onto the patio.')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="MoralSelfReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="MainAnswers"/>
+    <LoopTerminator name="trials_2"/>
+    <Routine name="ISI"/>
+    <LoopTerminator name="MainLoop"/>
+    <Routine name="ThankYou"/>
+  </Flow>
+</PsychoPy2experiment>

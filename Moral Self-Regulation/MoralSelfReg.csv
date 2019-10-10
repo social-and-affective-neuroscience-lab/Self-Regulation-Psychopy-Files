@@ -1,0 +1,225 @@
+﻿MainLeftText,MainRightText,MainDilemmas,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun
+"Workers in 
+Room A: 4","Probability of 
+escape: 35%","• There has been an accident in the basement of an office building
+
+• A pipe has broken and is releasing a lethal gas into the building's ventilation system
+
+• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there","Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group ","The one worker in Room B died. 
+
+The 4 workers in Room A were saved.",4,35, workers in Room A
+"Workers in 
+Room A: 7","Probability of 
+escape: 65%","• You are the building manager
+
+• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors
+
+• You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there","Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group ","The one worker in Room B died. 
+
+The 7 workers in Room A were saved.",7,65, workers in Room A
+"Workers in 
+Room A: 6","Probability of 
+escape: 50%","• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them
+
+• This would be impossible for the one worker in Room B","Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group ","The one worker in Room B died. 
+
+The 6 workers in Room A were saved.",6,50, workers in Room A
+"Workers in 
+Room A: 11","Probability of 
+escape: 65%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group ","The one worker in Room B died. 
+
+The 11 workers in Room A were saved.",11,65, workers in Room A
+"People on 
+bus: 3","Probability bus will 
+drive to safety: 35%","• You are operating a crane in front of a tall bridge when an earthquake hits
+
+• As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge
+
+• If nothing is done, the bus will soon plummet and all of these people will be killed","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 3 people on the bus were saved.",3,35, people on the bus
+"People on 
+bus: 17","Probability bus will 
+drive to safety: 50%","• You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board
+
+• However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car
+
+• If you move the crane, this part will certainly collapse and the one person in that car will be killed","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 17 people on the bus were saved.",17,50, people on the bus
+"People on 
+bus: 12","Probability bus will 
+drive to safety: 65%","• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board
+ 
+• There is no chance that the car will be able to avoid falling if you move your crane ","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 12 people on the bus were saved.",12,65, people on the bus
+"People on 
+bus: 14","Probability bus will 
+drive to safety: 35%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 14 people on the bus were saved.",14,35, people on the bus
+"Individuals drowning
+ to the west: 6","Probability of alternate 
+rescue boat reaching them: 35%","• You are driving a rescue boat in the ocean, heading east towards one drowning man
+
+• You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people aboard are now drowning","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 6 individuals drowning in the west were saved.",6,35, individuals drowing to the west
+"Individuals drowning
+ to the west: 11","Probability of alternate 
+rescue boat reaching them: 50%","• You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them
+
+• However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the west in time to save them","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 11 individuals drowning in the west were saved.",11,50, individuals drowing to the west
+"Individuals drowning
+ to the west: 4","Probability of alternate 
+rescue boat reaching them: 65%","• You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man
+
+• But there is a chance the rescue boat will reach the group drowning to the west","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 4 individuals drowning in the west were saved.",4,65, individuals drowing to the west
+"Individuals drowning
+ to the west: 7","Probability of alternate 
+rescue boat reaching them: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 7 individuals drowning in the west were saved.",7,50, individuals drowing to the west
+"Repairmen on 
+main track: 3","Probability of 
+evacuation: 35%","• You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track
+
+• It is moving so fast that anyone it hits will die immediately
+
+• The boxcar is headed towards a tunneled section in which a group of repairmen are working","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 3 repairmen on the track were saved.",3,35, repairmen on the main track
+"Repairmen on 
+main track: 9","Probability of 
+evacuation: 65%","• You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working
+
+• If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all
+
+• If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 9 repairmen on the track were saved.",9,65, repairmen on the main track
+"Repairmen on 
+main track: 2","Probability of 
+evacuation:  50%","• You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives
+
+• There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 2 repairmen on the track were saved.",2,50, repairmen on the main track
+"Repairmen on 
+main track: 4","Probability of 
+evacuation: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 4 repairmen on the track were saved.",4,50, repairmen on the main track
+"Customers in main
+dining room: 9","Probability customers
+will be spared: 35%","• You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining room, in which a number of customers are eating
+
+• If nothing is done the grenade will explode and the walls of the main dining room will collapse and kill these customers","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 9 customers in the main dining room were saved.",9,35, customers in the main dining room
+"Customers in main
+dining room: 7","Probability customers
+will be spared: 50%","• There is only one other location the grenade could be thrown before it explodes, and that is the patio outside of the main dining room
+
+• There is one customer sitting on the patio, and he would certainly be killed if the grenade is thrown there","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 7 customers in the main dining room were saved.",7,50, customers in the main dining room
+"Customers in main
+dining room: 25","Probability customers
+will be spared: 65%","• You have time to run out and throw the grenade to the patio, without risking any harm to yourself
+
+• If you do this, the customers in the dining room will live but the one on the patio will die 
+
+• You also know that there is a chance that the dining room walls will withstand the blast of the grenade explosion, and the customers would be spared","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 25 customers in the main dining room were saved.",25,65, customers in the main dining room
+"Customers in main
+dining room: 13","Probability customers
+will be spared: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 13 customers in the main dining room were saved.",13,50, customers in the main dining room

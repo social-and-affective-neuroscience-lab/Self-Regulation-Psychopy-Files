@@ -1,0 +1,452 @@
+﻿Instructions,rows,CueInstructions1,CueInstructions2,PracticeDilemmas,PracticeLeftText,PracticeRightText,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun,rows2,CueInst,MainLeftText,MainRightText,MainDilemmas,IntroLoop.thisRepN,IntroLoop.thisTrialN,IntroLoop.thisN,IntroLoop.thisIndex,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeQs.thisRepN,PracticeQs.thisTrialN,PracticeQs.thisN,PracticeQs.thisIndex,practiceAs.thisRepN,practiceAs.thisTrialN,practiceAs.thisN,practiceAs.thisIndex,MainLoop.thisRepN,MainLoop.thisTrialN,MainLoop.thisN,MainLoop.thisIndex,MainQs.thisRepN,MainQs.thisTrialN,MainQs.thisN,MainQs.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,InstText.started,InstText.stopped,space.keys,space.rt,space.started,space.stopped,isi.started,isi.stopped,practiceQs.started,practiceQs.stopped,space1.keys,space1.rt,space1.started,space1.stopped,cue.started,cue.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,conBlank.started,conBlank.stopped,RemText.started,RemText.stopped,leftText.started,leftText.stopped,rightText.started,rightText.stopped,Yes.started,Yes.stopped,No.started,No.stopped,Question.started,Question.stopped,FeedbackVar.started,FeedbackVar.stopped,isi_2.started,isi_2.stopped,text.started,text.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,key_resp_3.keys,key_resp_3.rt,key_resp_3.started,key_resp_3.stopped,conBlank2.started,conBlank2.stopped,RemText2.started,RemText2.stopped,leftText2.started,leftText2.stopped,rightText2.started,rightText2.stopped,yes2.started,yes2.stopped,no2.started,no2.stopped,Question2.started,Question2.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+"In this study you will be asked to evaluate a number of moral dilemmas under various conditions. 
+
+You will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.
+
+For each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. 
+
+When you are done reading each screen, you can press SPACE to move on to the next one.
+
+However, please try your best to get the fullest understanding of the scenario as described thus far before moving on to the next screen.",,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,25.964165199999115,None,space,1.6523587999981828,25.964165199999115,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+"The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma:
+
+a) a number of people involved in part of the scenario, and 
+
+b) a likelihood that something will happen
+
+You will be evaluating this scenario given a number of variations of these features.
+
+The fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.",,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,27.799588299996685,None,space,0.01017850000062026,27.799588299996685,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+"After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.
+
+Before you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be reminded of this after this screen.
+
+First, you will see a "+" in the middle of the screen. Any time that this is up, all you need to do is fixate on the "+" and prepare to respond to the next trial. 
+
+Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a judgment of its moral acceptibility.
+
+You will then indicate the course of action you would like to take in each scenario; by pressing either 'y' on your keyboard to indicate 'Yes', or 'n' to indicate 'No.'
+",,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,28.117274699994596,None,space,0.07169080000312533,28.117274699994596,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+"After you answer you will again see a "+" in the middle of the screen, followed by the next trial. This will occur for 10 different variations of each scenario. 
+
+It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.
+
+You will only have 10 seconds to respond to each variation. If the "+" appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the "+" and wait for the next trial. 
+
+Once you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don't worry.",,,,,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,28.389475000003586,None,space,0.22639969999727327,28.389475000003586,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+"Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they've given. Don't think of your answers as "written in stone." All we want from you is a thoughtful first response.
+
+While we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it's okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. 
+
+Note, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. ",,,,,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,28.959338100001332,None,space,0.020525300002191216,28.959338100001332,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+"In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.
+
+Likewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this happens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. 
+
+For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. ",,,,,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,29.210569599992596,None,space,0.581331900000805,29.210569599992596,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+"When you are done reading this screen you will begin two practice scenarios. 
+
+Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale, and press ENTER to submit your rating. 
+
+While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.
+
+Furthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.
+
+Press SPACE to begin the practice trials!
+",,,,,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,29.96287809999194,None,space,0.023562100002891384,29.96287809999194,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
+
+• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 3,"Probability of 
+parachute opening: 35% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 3 skydivers was saved.",3,35, skydivers,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,30.012719699996524,None,32.161578200000804,None,space,1.884945300000254,32.161578200000804,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him
+
+• You know that there won't be enough time to reach the group if you wait to catch the one",Divers on right: 4,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 4 skydivers was saved.",4,50, skydivers,,,,,,,,,,0,0,0,0,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,34.195046799999545,None,space,0.047074500005692244,34.195046799999545,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths
+
+• You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught",Divers on right: 7,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 7 skydivers was saved.",7,50, skydivers,,,,,,,,,,0,0,0,0,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,34.37814970000181,None,space,0.29860749999352265,34.37814970000181,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
+
+• There is no chance that the parachute will open for the one diver, given how close he is to the ground",Divers on right: 5,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 5 skydivers was saved.",5,65, skydivers,,,,,,,,,,0,0,0,0,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,34.761569499998586,None,space,0.38940429998910986,34.761569499998586,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"Consider each of the following scenarios and, for each one, determine if you will perform the specified action.",Divers on right: 8,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 8 skydivers was saved.",8,65, skydivers,,,,,,,,,,0,0,0,0,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,35.211599899994326,None,space,0.2803213000006508,35.211599899994326,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
+
+• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 3,"Probability of 
+parachute opening: 35% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 3 skydivers was saved.",3,35, skydivers,,,,,,,,,,0,0,0,0,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,59.97781640000176,None,,,,,,,37.54622049999307,None,n,3.262204099999508,54.694205499996315,None,57.97802860000229,None,54.694205499996315,None,54.694205499996315,None,54.694205499996315,None,54.694205499996315,None,54.694205499996315,None,54.694205499996315,None,62.02754189999541,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him
+
+• You know that there won't be enough time to reach the group if you wait to catch the one",Divers on right: 4,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 4 skydivers was saved.",4,50, skydivers,,,,,,,,,,0,0,0,0,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,72.11095649999334,None,,,,,,,,,n,2.026786800008267,68.06099099999119,None,70.11069139999745,None,68.06099099999119,None,68.06099099999119,None,68.06099099999119,None,68.06099099999119,None,68.06099099999119,None,68.06099099999119,None,74.14399939999566,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths
+
+• You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught",Divers on right: 7,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 7 skydivers was saved.",7,50, skydivers,,,,,,,,,,0,0,0,0,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,83.61085840000305,None,,,,,,,,,n,1.4618665000016335,80.12927269999636,None,81.61079789999349,None,80.12927269999636,None,80.12927269999636,None,80.12927269999636,None,80.12927269999636,None,80.12927269999636,None,80.12927269999636,None,85.64369270000316,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
+
+• There is no chance that the parachute will open for the one diver, given how close he is to the ground",Divers on right: 5,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 5 skydivers was saved.",5,65, skydivers,,,,,,,,,,0,0,0,0,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,94.49370839999756,None,,,,,,,,,n,0.8064524000074016,91.6604903999978,None,92.49387969999225,None,91.6604903999978,None,91.6604903999978,None,91.6604903999978,None,91.6604903999978,None,91.6604903999978,None,91.6604903999978,None,96.51227510000172,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,"Consider each of the following scenarios and, for each one, determine if you will perform the specified action.",Divers on right: 8,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 8 skydivers was saved.",8,65, skydivers,,,,,,,,,,0,0,0,0,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,110.69379579999077,None,,,,,,,,,n,6.165156899995054,102.51145179999003,None,108.69427690000157,None,102.51145179999003,None,102.51145179999003,None,102.51145179999003,None,102.51145179999003,None,102.51145179999003,None,102.51145179999003,None,112.76007950000349,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,00:005,DISTANCE,IMMERSE,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"• You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers
+
+• You know that when the sharks reach this group they will encircle them and kill them all ",Scuba divers in team: 6,"Probability EM pulse
+will function: 35%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
+ 
+The group ","The one scuba diver died.
+
+The group of 6 scuba divers was saved.",6,35, scuba divers,,,,,,,,,,0,1,1,1,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,116.71013039999525,None,118.8437844,None,space,14.041452899997239,118.8437844,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"• You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks 
+
+• If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers 
+
+• If you do all of this, all  of the divers will be spared",Scuba divers in team: 3,"Probability EM pulse
+will function: 65%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
+ 
+The group ","The one scuba diver died.
+
+The group of 3 scuba divers was saved.",3,65, scuba divers,,,,,,,,,,0,1,1,1,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,133.0272518999991,None,space,0.9555690000124741,133.0272518999991,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"• You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function 
+
+• In order to ensure that the group will be spared, you must shoot the one diver now",Scuba divers in team: 9,"Probability EM pulse
+will function: 50%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
+ 
+The group ","The one scuba diver died.
+
+The group of 9 scuba divers  was saved.",9,50, scuba divers,,,,,,,,,,0,1,1,1,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,134.12645899999188,None,space,1.0978532000008272,134.12645899999188,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"Consider each of the following scenarios and, for each one, determine if you will perform the specified action.",Scuba divers in team: 4,"Probability EM pulse
+will function: 35%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved. 
+ 
+The group ","The one scuba diver died.
+
+The group of 4 scuba divers was saved.",4,35, scuba divers,,,,,,,,,,0,1,1,1,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,135.29311469999084,None,space,12.04369950000546,135.29311469999084,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"• You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers
+
+• You know that when the sharks reach this group they will encircle them and kill them all ",Scuba divers in team: 6,"Probability EM pulse
+will function: 35%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
+ 
+The group ","The one scuba diver died.
+
+The group of 6 scuba divers was saved.",6,35, scuba divers,,,,,,,,,,0,1,1,1,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,187.14259049999237,None,,,,,,,149.36835350000183,None,n,18.664051100000506,166.4588359999907,None,185.14192219999677,None,166.4588359999907,None,166.4588359999907,None,166.4588359999907,None,166.4588359999907,None,166.4588359999907,None,166.4588359999907,None,189.1761075999966,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"• You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks 
+
+• If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers 
+
+• If you do all of this, all  of the divers will be spared",Scuba divers in team: 3,"Probability EM pulse
+will function: 65%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
+ 
+The group ","The one scuba diver died.
+
+The group of 3 scuba divers was saved.",3,65, scuba divers,,,,,,,,,,0,1,1,1,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,625.5011896999931,None,,,,,,,,,n,428.2790066000016,195.1910293999972,None,623.5016858000017,None,195.1910293999972,None,195.1910293999972,None,195.1910293999972,None,195.1910293999972,None,195.1910293999972,None,195.1910293999972,None,627.5347888999968,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"• You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function 
+
+• In order to ensure that the group will be spared, you must shoot the one diver now",Scuba divers in team: 9,"Probability EM pulse
+will function: 50%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
+ 
+The group ","The one scuba diver died.
+
+The group of 9 scuba divers  was saved.",9,50, scuba divers,,,,,,,,,,0,1,1,1,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,636.9345243999996,None,,,,,,,,,n,1.322242299997015,633.5846661999967,None,634.9350837999955,None,633.5846661999967,None,633.5846661999967,None,633.5846661999967,None,633.5846661999967,None,633.5846661999967,None,633.5846661999967,None,638.9679296999966,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,"Consider each of the following scenarios and, for each one, determine if you will perform the specified action.",Scuba divers in team: 4,"Probability EM pulse
+will function: 35%","Plan: Shoot the one diver, leaving them to get eaten by sharks
+
+Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved. 
+ 
+The group ","The one scuba diver died.
+
+The group of 4 scuba divers was saved.",4,35, scuba divers,,,,,,,,,,0,1,1,1,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,649.2677472999931,None,,,,,,,,,n,2.27838449999399,644.9607819999947,None,647.2677082000009,None,644.9607819999947,None,644.9607819999947,None,644.9607819999947,None,644.9607819999947,None,644.9607819999947,None,644.9607819999947,None,651.3009878000012,None,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,005:009,IMMERSE,DISTANCE,,,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The 4 workers in Room A ","The one worker in Room B died. 
+
+The 4 workers in Room A were saved.",4,35, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 4","Probability of 
+escape: 35%","• There has been an accident in the basement of an office building
+
+• A pipe has broken and is releasing a lethal gas into the building's ventilation system
+
+• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there",,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,655.284064099993,None,665.3842395999964,None,space,1.5926769000070635,665.3842395999964,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one worker in Room B lived.
+
+The group","The one worker in Room B died. 
+
+The 7 workers in Room A were saved.",7,65, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 7","Probability of 
+escape: 65%","• You are the building manager
+
+• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors
+
+• You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there",,,,,,,,,,,,,,,,,0,0,0,0,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,667.1175436999911,None,space,1.5936166000028607,667.1175436999911,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group","The one worker in Room B died. 
+
+The 6 workers in Room A were saved.",6,50, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 6","Probability of 
+escape: 50%","• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them
+
+• This would be impossible for the one worker in Room B",,,,,,,,,,,,,,,,,0,0,0,0,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,668.8006445999927,None,space,0.6430939999991097,668.8006445999927,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group","The one worker in Room B died. 
+
+The 11 workers in Room A were saved.",11,65, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 11","Probability of 
+escape: 65%","Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.",,,,,,,,,,,,,,,,,0,0,0,0,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,669.5337913999974,None,space,2.7502687999949558,669.5337913999974,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The 4 workers in Room A ","The one worker in Room B died. 
+
+The 4 workers in Room A were saved.",4,35, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 4","Probability of 
+escape: 35%","• There has been an accident in the basement of an office building
+
+• A pipe has broken and is releasing a lethal gas into the building's ventilation system
+
+• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there",,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,0,0,0,,,,,,,702.9668687999947,None,,,,,,,674.3014030999911,None,,,,,,,,,,,,,,,,,,,705.0669288999925,None,,,,,,,,,n,9.509465600000112,691.4335881000006,None,700.9670602999977,None,691.4335881000006,None,691.4335881000006,None,691.4335881000006,None,691.4335881000006,None,691.4335881000006,None,691.4335881000006,None,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one worker in Room B lived.
+
+The group","The one worker in Room B died. 
+
+The 7 workers in Room A were saved.",7,65, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 7","Probability of 
+escape: 65%","• You are the building manager
+
+• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors
+
+• You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there",,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,1,1,1,,,,,,,797.0659565999958,None,,,,,,,,,,,,,,,,,,,,,,,,,,,799.0999248000007,None,,,,,,,,,n,84.03330110000388,711.0152428000001,None,795.0652617000014,None,711.0152428000001,None,711.0152428000001,None,711.0152428000001,None,711.0152428000001,None,711.0152428000001,None,711.0152428000001,None,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group","The one worker in Room B died. 
+
+The 6 workers in Room A were saved.",6,50, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 6","Probability of 
+escape: 50%","• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them
+
+• This would be impossible for the one worker in Room B",,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,2,2,2,,,,,,,836.2494967999955,None,,,,,,,,,,,,,,,,,,,,,,,,,,,838.2981412999943,None,,,,,,,,,n,29.106546100010746,805.1137070999976,None,834.248797399996,None,805.1137070999976,None,805.1137070999976,None,805.1137070999976,None,805.1137070999976,None,805.1137070999976,None,805.1137070999976,None,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,"Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group","The one worker in Room B died. 
+
+The 11 workers in Room A were saved.",11,65, workers in Room A,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+","Workers in 
+Room A: 11","Probability of 
+escape: 65%","Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B.",,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,3,3,3,,,,,,,848.8990704000025,None,,,,,,,,,,,,,,,,,,,,,,,,,,,851.0316050999973,None,,,,,,,,,n,2.584913400001824,844.2963949999976,None,846.8979308999988,None,844.2963949999976,None,844.2963949999976,None,844.2963949999976,None,844.2963949999976,None,844.2963949999976,None,844.2963949999976,None,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,DISTANCE,IMMERSE,,,,,,,,,,000:004,"In the following conditions, we would like you to take a distanced approach. Treat your decisions as if you were an objective observer, that is, someone who is watching the scene but not directly involved in it. 
+
+For the next few seconds, distance yourself from the circumstance and the people in the situation.
+",,,,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,854.9148684999964,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,IMMERSE,DISTANCE,,,,"Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group","The one person in the car died. 
+
+The 3 people on the bus were saved.",3,35, people on the bus,004:008,"In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. 
+
+For the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ","People on 
+bus: 3","Probability bus will 
+drive to safety: 35%","• You are operating a crane in front of a tall bridge when an earthquake hits
+
+• As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge
+
+• If nothing is done, the bus will soon plummet and all of these people will be killed",,,,,,,,,,,,,,,,,0,1,1,1,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,857.2642954000039,None,space,6.808353600004921,857.2642954000039,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,IMMERSE,DISTANCE,,,,"Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group","The one person in the car died. 
+
+The 17 people on the bus were saved.",17,50, people on the bus,004:008,"In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. 
+
+For the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ","People on 
+bus: 17","Probability bus will 
+drive to safety: 50%","• You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board
+
+• However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car
+
+• If you move the crane, this part will certainly collapse and the one person in that car will be killed",,,,,,,,,,,,,,,,,0,1,1,1,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,864.2317280999996,None,space,0.23745970000163652,864.2317280999996,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,IMMERSE,DISTANCE,,,,"Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group","The one person in the car died. 
+
+The 12 people on the bus were saved.",12,65, people on the bus,004:008,"In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. 
+
+For the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ","People on 
+bus: 12","Probability bus will 
+drive to safety: 65%","• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board
+ 
+• There is no chance that the car will be able to avoid falling if you move your crane ",,,,,,,,,,,,,,,,,0,1,1,1,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,864.5807241000002,None,space,0.19735629999195226,864.5807241000002,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,IMMERSE,DISTANCE,,,,"Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group","The one person in the car died. 
+
+The 14 people on the bus were saved.",14,35, people on the bus,004:008,"In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. 
+
+For the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ","People on 
+bus: 14","Probability bus will 
+drive to safety: 35%","Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse.",,,,,,,,,,,,,,,,,0,1,1,1,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,864.8807092999923,None,space,0.6003106999996817,864.8807092999923,None,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,IMMERSE,DISTANCE,,,,"Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group","The one person in the car died. 
+
+The 3 people on the bus were saved.",3,35, people on the bus,004:008,"In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. 
+
+For the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ","People on 
+bus: 3","Probability bus will 
+drive to safety: 35%","• You are operating a crane in front of a tall bridge when an earthquake hits
+
+• As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge
+
+• If nothing is done, the bus will soon plummet and all of these people will be killed",,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,0,0,0,,,,,,,889.4303348999965,None,,,,,,,867.5295789999946,None,,,,,,,,,,,,,,,,,,,891.5643492999952,None,,,,,,,,,n,2.6982350000034785,884.7154625999974,None,887.4305158999923,None,884.7154625999974,None,884.7154625999974,None,884.7154625999974,None,884.7154625999974,None,884.7154625999974,None,884.7154625999974,None,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,IMMERSE,DISTANCE,,,,"Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group","The one person in the car died. 
+
+The 17 people on the bus were saved.",17,50, people on the bus,004:008,"In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. 
+
+For the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ","People on 
+bus: 17","Probability bus will 
+drive to safety: 50%","• You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board
+
+• However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car
+
+• If you move the crane, this part will certainly collapse and the one person in that car will be killed",,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,1,1,1,,,,,,,901.9633808999934,None,,,,,,,,,,,,,,,,,,,,,,,,,,,903.9969898999989,None,,,,,,,,,n,2.438050500000827,897.4978163999913,None,899.9635526999919,None,897.4978163999913,None,897.4978163999913,None,897.4978163999913,None,897.4978163999913,None,897.4978163999913,None,897.4978163999913,None,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,IMMERSE,DISTANCE,,,,"Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group","The one person in the car died. 
+
+The 12 people on the bus were saved.",12,65, people on the bus,004:008,"In the following conditions, we would like you to take an involved approach. Treat your decisions as if you are part of the situation, that is, as someone who is in charge of and responsible for the results of the decision. 
+
+For the next few seconds, imagine that you are one of the people in this scene and think of how you would feel and react in this circumstance. ","People on 
+bus: 12","Probability bus will 
+drive to safety: 65%","• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board
+ 
+• There is no chance that the car will be able to avoid falling if you move your crane ",,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,2,2,2,,,,,,,915.3797056999902,None,,,,,,,,,,,,,,,,,,,,,,,,,,,917.4280494999985,None,,,,,,,,,n,3.3370384000008926,910.0134606999927,None,913.3799079000019,None,910.0134606999927,None,910.0134606999927,None,910.0134606999927,None,910.0134606999927,None,910.0134606999927,None,910.0134606999927,None,1,001,2019_Oct_09_1542,MoralSRBinaryChoice,3.2.0,60.0540366211318,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,926.8464043999993,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,n,1.3899600000004284,923.4279659000022,None,924.8463250999921,None,923.4279659000022,None,923.4279659000022,None,923.4279659000022,None,923.4279659000022,None,923.4279659000022,None,923.4279659000022,None,,,,,,,
