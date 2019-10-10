@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.0">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="EmotRegPavlovia" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="intro">
+      <TextComponent name="Instructions">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+        <Param name="name" updates="None" val="Instructions" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="In this part of the study you will be given a regulation strategy to use while viewing various pictures.&amp;#10;&amp;#10;Then you will use a rating scale to indicate how much you are craving the food item.&amp;#10;&amp;#10;You will first be completing a few practice rounds.&amp;#10;&amp;#10;When you are ready, press space to start!" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="space">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="space" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Cue">
+      <TextComponent name="cue">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="cue" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$CueType" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="ISI">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="ISI" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="2" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="BeginInstr">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="You will now begin the full task" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="isi">
+      <TextComponent name="Iti">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="Iti" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="ratings">
+      <TextComponent name="ratingQ">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+        <Param name="name" updates="None" val="ratingQ" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.1)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="How would you characterize your feelings at the present moment?" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+      </TextComponent>
+      <RatingScaleComponent name="rating">
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="Very negative, Very positive" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="marker" updates="constant" val="triangle" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="rating" valType="code"/>
+        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
+        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
+        <Param name="size" updates="constant" val="1.0" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+      </RatingScaleComponent>
+    </Routine>
+    <Routine name="Pic">
+      <ImageComponent name="Image">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Picture" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Image" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="set every repeat" val="(1.5, 1)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="8" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="intro"/>
+    <LoopInitiator loopType="TrialHandler" name="practiceLoop">
+      <Param name="Selected rows" updates="None" val="0" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('CueType', 'REGULATE')]), OrderedDict([('CueType', 'LOOK')]), OrderedDict([('CueType', 'LOOK')]), OrderedDict([('CueType', 'REGULATE')]), OrderedDict([('CueType', 'REGULATE')]), OrderedDict([('CueType', 'LOOK')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="EmotionRegCues.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="practiceLoop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Cue"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="0:3" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('CueType', 'REGULATE'), ('Picture', 'OasisPics\\Negative\\angry1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\angry2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\bored.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\depressed.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\depressed2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\depressed3.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\doctor.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\doctor2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\frustratedpose.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\frustratedpose7.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\gun.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\hangover.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\miserable.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\neonazi1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\police.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\police2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad3.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad4.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad5.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sadface.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\scared.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\scared1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\scared2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\scary.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\shooting.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\shot3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\solder.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\soldier1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\soldier3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\surgery.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\War1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\War2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\war3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\war6.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\baby1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\baby2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\cheerleader.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\cheerleader2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\children.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\couple2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\couple3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dancing1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dancing2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dancing3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dessert.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\eating.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\eating2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited4.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excitedface2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\exercise.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\happy.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\happy2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\mother.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\mother2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\mother3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\parade1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\picnic.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\picnic2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\school5.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\smiling.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\surprise2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\toast.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\wedding.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\astronaut.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\baby.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\band.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\band2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\biking.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\bungee.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\camping.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\cold.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\collab.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\couple1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\dancing.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\doctor3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\face.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing4.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing5.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\guitar.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\massage.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\musician.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\neutralface2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\picnic.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\raft.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\rockclimb.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\rugby.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school4.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\skier.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\skydiving.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\sleepy.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\sleepy2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\swimming.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\yoga1.jpg')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="EmotionReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Pic"/>
+    <Routine name="ratings"/>
+    <Routine name="isi"/>
+    <LoopTerminator name="trials"/>
+    <LoopTerminator name="practiceLoop"/>
+    <Routine name="BeginInstr"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="0:5" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('CueType', 'REGULATE')]), OrderedDict([('CueType', 'LOOK')]), OrderedDict([('CueType', 'LOOK')]), OrderedDict([('CueType', 'REGULATE')]), OrderedDict([('CueType', 'REGULATE')]), OrderedDict([('CueType', 'LOOK')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="EmotionRegCues.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Cue"/>
+    <LoopInitiator loopType="TrialHandler" name="mainTrials">
+      <Param name="Selected rows" updates="None" val="$rows" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('CueType', 'REGULATE'), ('Picture', 'OasisPics\\Negative\\angry1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\angry2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\bored.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\depressed.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\depressed2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\depressed3.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\doctor.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\doctor2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\frustratedpose.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\frustratedpose7.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\gun.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\hangover.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\miserable.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\neonazi1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\police.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\police2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad2.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad3.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad4.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sad5.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\sadface.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\scared.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\scared1.jpg')]), OrderedDict([('CueType', 'REAPPRAISE'), ('Picture', 'OasisPics\\Negative\\scared2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\scary.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\shooting.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\shot3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\solder.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\soldier1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\soldier3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\surgery.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\War1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\War2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\war3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Negative\\war6.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\baby1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\baby2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\cheerleader.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\cheerleader2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\children.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\couple2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\couple3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dancing1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dancing2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dancing3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\dessert.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\eating.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\eating2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excited4.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\excitedface2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\exercise.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\happy.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\happy2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\mother.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\mother2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\mother3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\parade1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\picnic.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\picnic2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\school5.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\smiling.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\surprise2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\toast.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Positive\\wedding.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\astronaut.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\baby.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\band.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\band2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\biking.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\bungee.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\camping.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\cold.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\collab.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\couple1.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\dancing.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\doctor3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\face.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing4.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\gazing5.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\guitar.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\massage.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\musician.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\neutralface2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\picnic.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\raft.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\rockclimb.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\rugby.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school3.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\school4.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\skier.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\skydiving.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\sleepy.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\sleepy2.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\swimming.jpg')]), OrderedDict([('CueType', None), ('Picture', 'OasisPics\\Neutral\\yoga1.jpg')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="EmotionReg.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="mainTrials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Pic"/>
+    <Routine name="ratings"/>
+    <LoopTerminator name="mainTrials"/>
+    <LoopTerminator name="trials_2"/>
+  </Flow>
+</PsychoPy2experiment>
