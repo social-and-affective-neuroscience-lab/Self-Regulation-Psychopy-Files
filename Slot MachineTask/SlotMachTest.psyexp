@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.2.0">
+<PsychoPy2experiment encoding="utf-8" version="3.2.4">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -656,7 +656,7 @@
     <Routine name="PracticeCue"/>
     <LoopInitiator loopType="TrialHandler" name="PracticeLoop">
       <Param name="Selected rows" updates="None" val="0:3" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('PracticeSure', '$4.50 '), ('PracticeGamble', '$6.75 '), ('PracticeGambleProb', '50%'), ('Rows', '000:0010'), ('CueType', 'LOOK')]), OrderedDict([('PracticeSure', '$2.00 '), ('PracticeGamble', '$4.25 '), ('PracticeGambleProb', '65%'), ('Rows', '00010:0020'), ('CueType', 'REAPPRAISE')]), OrderedDict([('PracticeSure', '$3.75 '), ('PracticeGamble', '$7.50 '), ('PracticeGambleProb', '35%'), ('Rows', '00020:0030'), ('CueType', 'REAPPRAISE')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0030:0040'), ('CueType', 'LOOK')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0040:0050'), ('CueType', 'REAPPRAISE')]), OrderedDict([('PracticeSure', None), ('PracticeGamble', None), ('PracticeGambleProb', None), ('Rows', '0050:0060'), ('CueType', 'LOOK')])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('sure', '$4.50 '), ('gamble', '$6.75 '), ('gambleProb', 50.0), ('gambleWinLoss', '50% WIN'), ('sureWinLoss', '100% WIN'), ('WinLossCode', 1.0)]), OrderedDict([('sure', '$2.00 '), ('gamble', '$4.25 '), ('gambleProb', 65.0), ('gambleWinLoss', '65% WIN'), ('sureWinLoss', '100% WIN'), ('WinLossCode', 1.0)]), OrderedDict([('sure', '$3.75 '), ('gamble', '$7.50 '), ('gambleProb', 35.0), ('gambleWinLoss', '35% WIN '), ('sureWinLoss', '100% LOSE'), ('WinLossCode', 0.0)]), OrderedDict([('sure', None), ('gamble', None), ('gambleProb', None), ('gambleWinLoss', None), ('sureWinLoss', None), ('WinLossCode', None)]), OrderedDict([('sure', None), ('gamble', None), ('gambleProb', None), ('gambleWinLoss', None), ('sureWinLoss', None), ('WinLossCode', None)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="PracticeSlotMach.csv" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>

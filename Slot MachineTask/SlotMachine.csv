@@ -1,71 +1,71 @@
-﻿instructions,sure,gamble,CueType,gambleProb,Rows,PracticeSure,PracticeGamble,PracticeGambleProb,,cueRows,WinLoss,gambleWinLoss,sureWinLoss,,WinLossCode,Evgamble
+instructions	sure	gamble	CueType	gambleProb	Rows	PracticeSure	PracticeGamble	PracticeGambleProb		cueRows	WinLoss	gambleWinLoss	sureWinLoss		WinLossCode	Evgamble
 "In this part of the study, you will be making a series of monetary decisions.
 
 You will have the choice between taking a gamble,  which will be shown on the left side of the screen, or choosing a sure option, which will be on the right side of the screen. 
 
 For each gamble, you will have a 50% chance of winning money, while the sure option guarantees payoff. 
 
-Press space to continue. ",$2.50 ,$6.75 ,LOOK,50,0000:0010,$4.50 ,$6.75 ,50%,,0000:0006,WIN,50%  WIN,100%  WIN,,1,3.375
+Press space to continue. "	$2.50 	$6.75 	LOOK	50	0000:0010	$4.50 	$6.75 	50%		0000:0006	WIN	50%  WIN	100%  WIN		1	3.375
 "You will have three seconds to make your choice upon seeing the options. 
 
 To choose the gamble, press ""1"". To choose the sure option, press ""2"".
 
-You will first be playing some practice rounds. To begin the practice, press enter!",$4.25 ,$10.75 ,REGULATE,35,,$2.00 ,$4.25 ,65%,,,WIN,35%  WIN,100%  WIN,,1,3.7625
-,$8.00 ,$12.50 ,LOOK,65,,$3.75 ,$7.50 ,35%,,,WIN,65%  WIN,100%  WIN,,1,8.125
-,$1.00 ,$4.25 ,REGULATE,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,1.4875
-,$3.50 ,$7.00 ,LOOK,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,2.45
-,$4.25 ,$5.50 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,2.25
-,$1.50 ,$3.85 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,1.925
-,$2.95 ,$6.75 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,2.3625
-,$3.75 ,$5.50 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,3.575
-,$4.25 ,$7.00 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,3.5
-,$2.95 ,$6.75 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,2.3625
-,$3.75 ,$5.50 ,,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,3.575
-,$4.25 ,$7.00 ,,50,,,,,,,WIN,50%  WIN,100%  WIN,,1,3.5
-,$3.15 ,$4.75 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,
-,$2.95 ,$5.00 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,
-,$3.15 ,$4.75 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$2.95 ,$5.00 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$4.75 ,$7.50 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$1.25 ,$4.00 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$6.15 ,$9.75 ,,35,00040:00050,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$1.50 ,$3.85 ,,50,,,,,,,WIN,50%  WIN,100%  WIN,,1,
-,$2.95 ,$6.75 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,
-,$3.75 ,$5.50 ,,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$4.25 ,$7.00 ,,50,,,,,,,WIN,50%  WIN,100%  WIN,,1,
-,$3.15 ,$4.75 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,
-,$3.95 ,$6.00 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$4.25 ,$5.50 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,
-,$1.50 ,$3.85 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,
-,$2.95 ,$6.75 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$3.75 ,$5.50 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$5.00 ,$6.95 ,REGULATE,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$7.25 ,$10.00 ,,50,,,,,,,WIN,50%  WIN,100%  WIN,,1,
-,$6.75 ,$8.25 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,
-,$9.00 ,$14.50 ,,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$1.50 ,$3.85 ,,50,0010:00020,,,,,,WIN,50%  WIN,100%  WIN,,1,
-,$4.25 ,$7.00 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,
-,$3.15 ,$4.75 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$2.95 ,$5.00 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$4.75 ,$7.50 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$1.25 ,$4.00 ,,50,00050:0060,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,
-,$4.75 ,$7.50 ,,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$1.25 ,$4.00 ,,50,,,,,,,WIN,50%  WIN,100%  WIN,,1,
-,$6.15 ,$9.75 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,
-,$3.95 ,$6.00 ,,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$4.25 ,$5.50 ,,50,00020:00030,,,,,,WIN,50%  WIN,100%  WIN,,1,
-,$6.15 ,$9.75 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$3.95 ,$6.00 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$4.25 ,$5.50 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,
-,$1.50 ,$3.85 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,
-,$2.95 ,$6.75 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$2.95 ,$5.00 ,,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$4.75 ,$7.50 ,,65,,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$1.25 ,$4.00 ,,50,,,,,,,WIN,50%  WIN,100%  WIN,,1,
-,$6.15 ,$9.75 ,,35,,,,,,,WIN,35%  WIN,100%  WIN,,1,
-,$3.95 ,$6.00 ,,65,00030:00040,,,,,,WIN,65%  WIN,100%  WIN,,1,
-,$3.75 ,$5.50 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$4.25 ,$7.00 ,,50,,,,,,,LOSE,50%  LOSE,100%  LOSE,,0,
-,$3.15 ,$4.75 ,,35,,,,,,,LOSE,35%  LOSE,100%  LOSE,,0,
-,$2.95 ,$5.00 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
-,$4.75 ,$7.50 ,,65,,,,,,,LOSE,65%  LOSE,100%  LOSE,,0,
+You will first be playing some practice rounds. To begin the practice, press enter!"	$4.25 	$10.75 	REGULATE	35		$2.00 	$4.25 	65%			WIN	35%  WIN	100%  WIN		1	3.7625
+	$8.00 	$12.50 	LOOK	65		$3.75 	$7.50 	35%			WIN	65%  WIN	100%  WIN		1	8.125
+	$1.00 	$4.25 	REGULATE	35							WIN	35%  WIN	100%  WIN		1	1.4875
+	$3.50 	$7.00 	LOOK	35							WIN	35%  WIN	100%  WIN		1	2.45
+	$4.25 	$5.50 		50							LOSE	50%  LOSE	100%  LOSE		0	2.25
+	$1.50 	$3.85 		50							LOSE	50%  LOSE	100%  LOSE		0	1.925
+	$2.95 	$6.75 		35							LOSE	35%  LOSE	100%  LOSE		0	2.3625
+	$3.75 	$5.50 		65							LOSE	65%  LOSE	100%  LOSE		0	3.575
+	$4.25 	$7.00 		50							LOSE	50%  LOSE	100%  LOSE		0	3.5
+	$2.95 	$6.75 		35							WIN	35%  WIN	100%  WIN		1	2.3625
+	$3.75 	$5.50 		65							WIN	65%  WIN	100%  WIN		1	3.575
+	$4.25 	$7.00 		50							WIN	50%  WIN	100%  WIN		1	3.5
+	$3.15 	$4.75 		35							WIN	35%  WIN	100%  WIN		1	
+	$2.95 	$5.00 		35							WIN	35%  WIN	100%  WIN		1	
+	$3.15 	$4.75 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$2.95 	$5.00 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$4.75 	$7.50 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$1.25 	$4.00 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$6.15 	$9.75 		35	00040:00050						LOSE	35%  LOSE	100%  LOSE		0	
+	$1.50 	$3.85 		50							WIN	50%  WIN	100%  WIN		1	
+	$2.95 	$6.75 		35							WIN	35%  WIN	100%  WIN		1	
+	$3.75 	$5.50 		65							WIN	65%  WIN	100%  WIN		1	
+	$4.25 	$7.00 		50							WIN	50%  WIN	100%  WIN		1	
+	$3.15 	$4.75 		35							WIN	35%  WIN	100%  WIN		1	
+	$3.95 	$6.00 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$4.25 	$5.50 		50							LOSE	50%  LOSE	100%  LOSE		0	
+	$1.50 	$3.85 		50							LOSE	50%  LOSE	100%  LOSE		0	
+	$2.95 	$6.75 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$3.75 	$5.50 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$5.00 	$6.95 	REGULATE	65							WIN	65%  WIN	100%  WIN		1	
+	$7.25 	$10.00 		50							WIN	50%  WIN	100%  WIN		1	
+	$6.75 	$8.25 		35							WIN	35%  WIN	100%  WIN		1	
+	$9.00 	$14.50 		65							WIN	65%  WIN	100%  WIN		1	
+	$1.50 	$3.85 		50	0010:00020						WIN	50%  WIN	100%  WIN		1	
+	$4.25 	$7.00 		50							LOSE	50%  LOSE	100%  LOSE		0	
+	$3.15 	$4.75 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$2.95 	$5.00 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$4.75 	$7.50 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$1.25 	$4.00 		50	00050:0060						LOSE	50%  LOSE	100%  LOSE		0	
+	$4.75 	$7.50 		65							WIN	65%  WIN	100%  WIN		1	
+	$1.25 	$4.00 		50							WIN	50%  WIN	100%  WIN		1	
+	$6.15 	$9.75 		35							WIN	35%  WIN	100%  WIN		1	
+	$3.95 	$6.00 		65							WIN	65%  WIN	100%  WIN		1	
+	$4.25 	$5.50 		50	00020:00030						WIN	50%  WIN	100%  WIN		1	
+	$6.15 	$9.75 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$3.95 	$6.00 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$4.25 	$5.50 		50							LOSE	50%  LOSE	100%  LOSE		0	
+	$1.50 	$3.85 		50							LOSE	50%  LOSE	100%  LOSE		0	
+	$2.95 	$6.75 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$2.95 	$5.00 		65							WIN	65%  WIN	100%  WIN		1	
+	$4.75 	$7.50 		65							WIN	65%  WIN	100%  WIN		1	
+	$1.25 	$4.00 		50							WIN	50%  WIN	100%  WIN		1	
+	$6.15 	$9.75 		35							WIN	35%  WIN	100%  WIN		1	
+	$3.95 	$6.00 		65	00030:00040						WIN	65%  WIN	100%  WIN		1	
+	$3.75 	$5.50 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$4.25 	$7.00 		50							LOSE	50%  LOSE	100%  LOSE		0	
+	$3.15 	$4.75 		35							LOSE	35%  LOSE	100%  LOSE		0	
+	$2.95 	$5.00 		65							LOSE	65%  LOSE	100%  LOSE		0	
+	$4.75 	$7.50 		65							LOSE	65%  LOSE	100%  LOSE		0	

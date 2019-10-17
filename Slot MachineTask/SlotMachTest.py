@@ -1,4 +1,15 @@
-#Slot Machine
+﻿#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
+    on October 14, 2019, at 12:50
+If you publish work using this script the most relevant publication is:
+
+    Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
+        PsychoPy2: Experiments in behavior made easy Behav Res 51: 195. 
+        https://doi.org/10.3758/s13428-018-01193-y
+
+"""
 
 from __future__ import absolute_import, division
 
@@ -22,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.0'
+psychopyVersion = '3.2.4'
 expName = 'SlotMachTest'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -38,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\Jojo\\Downloads\\Helion Lab\\Experiment Files\\Slot MachineTask\\SlotMachTest.py',
+    originPath='C:\\Users\\tul00635\\Documents\\GitHub\\Self-Regulation-Psychopy-Files\\Slot MachineTask\\SlotMachTest.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -81,14 +92,13 @@ space = keyboard.Keyboard()
 # Initialize components for Routine "Inst2"
 Inst2Clock = core.Clock()
 instruct2 = visual.TextStim(win=win, name='instruct2',
-    text='You will be given regulation intsructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press enter!',
+    text='You will be given regulation intsructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the gamble, press "1". To choose the sure option, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press enter!',
     font='Arial',
     pos=(0, 0), height=0.065, wrapWidth=1.6, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 enter = keyboard.Keyboard()
-key_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -350,7 +360,7 @@ earningsText = visual.TextStim(win=win, name='earningsText',
 # Initialize components for Routine "BeginInst"
 BeginInstClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='You will now begin the full task. Press enter to start!',
+    text='You will now begin the full task.',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -1506,13 +1516,12 @@ for thisPracticeLoop in PracticeLoop:
     
 # completed 1 repeats of 'PracticeLoop'
 
+
 # ------Prepare to start Routine "BeginInst"-------
 routineTimer.add(3.000000)
-key_resp.keys = []
-key_resp.rt = []
 # update component parameters for each repeat
 # keep track of which components have finished
-BeginInstComponents = [text_2, key_resp]
+BeginInstComponents = [text_2]
 for thisComponent in BeginInstComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -1520,21 +1529,23 @@ for thisComponent in BeginInstComponents:
     thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+# reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-Inst2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+BeginInstClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 continueRoutine = True
 
-while continueRoutine:
+# -------Run Routine "BeginInst"-------
+while continueRoutine and routineTimer.getTime() > 0:
     # get current time
-    t = Inst2Clock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=Inst2Clock)
+    t = BeginInstClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=BeginInstClock)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *instruct2* updates
+    # *text_2* updates
     if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
         text_2.frameNStart = frameN  # exact frame index
@@ -1542,32 +1553,14 @@ while continueRoutine:
         text_2.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
         text_2.setAutoDraw(True)
-    
-    # *enter* updates
-    waitOnFlip = False
-    if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        key_resp.frameNStart = frameN  # exact frame index
-        key_resp.tStart = t  # local t and not account for scr refresh
-        key_resp.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(enter, 'tStartRefresh')  # time at next scr refresh
-        key_resp.status = STARTED
-        # keyboard checking is just starting
-        waitOnFlip = True
-        win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if key_resp.status == STARTED and not waitOnFlip:
-        theseKeys = key_resp.getKeys(keyList=['return'], waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            key_resp.keys = theseKeys.name  # just the last key pressed
-            key_resp.rt = theseKeys.rt
-            # a response ends the routine
-            continueRoutine = False
+    if text_2.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > text_2.tStartRefresh + 3-frameTolerance:
+            # keep track of stop time/frame for later
+            text_2.tStop = t  # not accounting for scr refresh
+            text_2.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
+            text_2.setAutoDraw(False)
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1586,18 +1579,12 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "Inst2"-------
+# -------Ending Routine "BeginInst"-------
 for thisComponent in BeginInstComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-# check responses
-if key_resp.keys in ['', [], None]:  # No response was made
-    key_resp.keys = None
-
-
-
-thisExp.nextEntry()
-routineTimer.reset()
+thisExp.addData('text_2.started', text_2.tStartRefresh)
+thisExp.addData('text_2.stopped', text_2.tStopRefresh)
 earnings = 0
 earning = 0
 
@@ -1612,8 +1599,7 @@ thisMainLoop = mainLoop.trialList[0]  # so we can initialise stimuli with some v
 if thisMainLoop != None:
     for paramName in thisMainLoop:
         exec('{} = thisMainLoop[paramName]'.format(paramName))
-earnings = 0
-earning = 0
+
 for thisMainLoop in mainLoop:
     currentLoop = mainLoop
     # abbreviate parameter names if possible (e.g. rgb = thisMainLoop.rgb)

@@ -1,111 +1,225 @@
-﻿Instructions,PracticeDilemmas,PracticeLeftText,PracticeRightText,,,MainLeftText,MainRightText,MainDilemmas
-"In this study you will be asked to evaluate a number of moral dilemmas under various conditions. 
-You will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.
-
-For each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. ","You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall. 
-You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them.",Divers on right: 1,"Probability of 
-parachute opening: 35% ",,,"Workers in 
+﻿MainLeftText,MainRightText,MainDilemmas,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun
+"Workers in 
 Room A: 4","Probability of 
-escape: 15%","There has been an accident in the basement of an office building. A pipe has broken and is releasing a lethal gas into the building's ventilation system. If nothing is done, the gas will travel upward to Room A and cause the death of all workers there."
-"When you are done reading each screen, you can press SPACE to move on to the next one.
-However, please try your best to get the fullest understanding of the scenario as described thus far  before moving on to the next screen.
+escape: 35%","• There has been an accident in the basement of an office building
 
-The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma: a) a number of people involved in part of the scenario and b) a likelihood that something will happen. You will be evaluating this scenario given a number of variations of these features.
+• A pipe has broken and is releasing a lethal gas into the building's ventilation system
 
-The fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.","Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him.
-You know that there won't be enough time to reach the group if you wait to catch the one. If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths.
-You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught.",Divers on right: 4,"Probability of 
-parachute opening: 45% ",,,"Workers in 
+• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there","Plan: Hit the button to divert the gas to Room B, killing the one worker there
+
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group ","The one worker in Room B died. 
+
+The 4 workers in Room A were saved.",4,35, workers in Room A
+"Workers in 
 Room A: 7","Probability of 
-escape: 65%","You are the building manager. You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors. You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there."
-"After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.
+escape: 65%","• You are the building manager
 
-Before you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be remminded of this after this screen.
+• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors
 
-First, you will see a ""+"" in the middle of the screen. Any time that this is up, all you need to do is fixate on the ""+"" and prepare to respond to the next trial. Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a jusgement of its moral acceptibility.
+• You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there","Plan: Hit the button to divert the gas to Room B, killing the one worker there
 
-You will rate each trial on a 1-7 scale, with 1 indicating that the action would be ""Completely Unacceptable"" and 7 indicating that it would be ""Completely Acceptable.""
-","You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths, but there is no chance that this will happen for the one given how close he is to the ground.",Divers on right: 2,"Probability of 
-parachute opening: 25% ",,,"Workers in 
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group ","The one worker in Room B died. 
+
+The 7 workers in Room A were saved.",7,65, workers in Room A
+"Workers in 
 Room A: 6","Probability of 
-escape: 50%",You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them. This would be impossible for the one in Room B.
-"After you answer you will again see a ""+"" in the middle of the screen, followed by the next trial. This  will occur for 10 different variations of each scenario. It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.
+escape: 50%","• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them
 
-You will only have 10 seconds to respond to each variation. If the ""+"" appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the ""+"" and wait for the next trial. 
+• This would be impossible for the one worker in Room B","Plan: Hit the button to divert the gas to Room B, killing the one worker there
 
-Once you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don't worry.","Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to direct your crew to the right, re-positioning the trampoline underneath the group.",Divers on right: 6,"Probability of 
-parachute opening: 75% ",,,"Workers in 
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
+
+The group ","The one worker in Room B died. 
+
+The 6 workers in Room A were saved.",6,50, workers in Room A
+"Workers in 
 Room A: 11","Probability of 
-escape: 70%","Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to hit the button that closes the vent door and diverts the lethal gas to Room B."
-"Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they've given. Don't think of your answers as ""written in stone."" All we want from you is a thoughtful first response.
+escape: 65%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Hit the button to divert the gas to Room B, killing the one worker there
 
-While we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it's okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. 
+Do nothing: The one worker will live, the group in Room A has a chance of escaping","The one  worker in Room B lived.
 
-Note, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. ",You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers. You know that when the sharks reach this group they will encircle them and kill them all. ,Scuba divers in team: 6,"Probability EM pulse
-will function: 30%",,,"People on 
+The group ","The one worker in Room B died. 
+
+The 11 workers in Room A were saved.",11,65, workers in Room A
+"People on 
 bus: 3","Probability bus will 
-drive to safety: 35%","You are operating a crane in front of a tall bridge when an earthquake hits. As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge. If nothing is done, the bus will soon plummet and all of these people will be killed."
-"In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.
+drive to safety: 35%","• You are operating a crane in front of a tall bridge when an earthquake hits
 
-Likewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this hapens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. ","You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks. If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers. If you do all of this, all  of the divers will be spared. ",Scuba divers in team: 3,"Probability EM pulse
-will function: 15%",,,"People on 
+• As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge
+
+• If nothing is done, the bus will soon plummet and all of these people will be killed","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 3 people on the bus were saved.",3,35, people on the bus
+"People on 
 bus: 17","Probability bus will 
-drive to safety: 50%","You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board. However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car. If you move the crane, this part will certainly collapse and the one person in that car will be killed. "
-"When you are done reading this screen you will begin two practice scenarios. Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale. While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.
+drive to safety: 50%","• You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board
 
-Furthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.
+• However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car
 
-Press SPACE to begin the practice trials.
-","You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function. In order to ensure that the group will be spared, you must shoot the one diver now.",Scuba divers in team: 8,"Probability EM pulse
-will function: 20%",,,"People on 
+• If you move the crane, this part will certainly collapse and the one person in that car will be killed","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 17 people on the bus were saved.",17,50, people on the bus
+"People on 
 bus: 12","Probability bus will 
-drive to safety: 65%","You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board. 
-There is no chance that the car will be able to avoid falling if you move your crane. "
-,"Consider each of the following scenarios and, for each one, determine how morally acceptable it would be for you to shoot the one diver.",Scuba divers in team: 2,"Probability EM pulse
-will function: 10%",,,"People on 
+drive to safety: 65%","• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board
+ 
+• There is no chance that the car will be able to avoid falling if you move your crane ","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 12 people on the bus were saved.",12,65, people on the bus
+"People on 
 bus: 14","Probability bus will 
-drive to safety: 15%","Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be for you to move your crane to push the bus, causing part of the bridge with a single car to collapse."
-,,,,,,"Individuals drowning
+drive to safety: 35%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Move your crane to push the bus, certainly killing the person in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The one person in the car lived.
+
+The group  ","The one person in the car died. 
+
+The 14 people on the bus were saved.",14,35, people on the bus
+"Individuals drowning
  to the west: 6","Probability of alternate 
-rescue boat reaching them: 25%","You are driving a rescue boat in the ocean, heading east towards one drowning man. You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people  aboard are now drowning."
-,,,,,,"Individuals drowning
+rescue boat reaching them: 35%","• You are driving a rescue boat in the ocean, heading east towards one drowning man
+
+• You receive a distress signal informing you that a small boat has capsized in the opposite direction, and all the people aboard are now drowning","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 6 individuals drowning in the west were saved.",6,35, individuals drowing to the west
+"Individuals drowning
  to the west: 11","Probability of alternate 
-rescue boat reaching them: 40%","You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them. However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the  west in time to save them."
-,,,,,,"Individuals drowning
+rescue boat reaching them: 50%","• You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them
+
+• However, if you do this, the one man to the east will certainly die. If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the west in time to save them","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 11 individuals drowning in the west were saved.",11,50, individuals drowing to the west
+"Individuals drowning
  to the west: 4","Probability of alternate 
-rescue boat reaching them: 65%","You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man. But there is a chance the rescue boat will reach the group drowning to the west."
-,,,,,,"Individuals drowning
+rescue boat reaching them: 65%","• You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man
+
+• But there is a chance the rescue boat will reach the group drowning to the west","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 4 individuals drowning in the west were saved.",4,65, individuals drowing to the west
+"Individuals drowning
  to the west: 7","Probability of alternate 
-rescue boat reaching them: 20%","Consider each of the following scenarios and, for each one, determine how morally acceptable you think it would be to change your course to head toward the group to the west."
-,,,,,,"Repairmen on 
+rescue boat reaching them: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Change your course to head towards the group, leaving the man to die
+
+Do nothing: The man will live, the group has a chance of surviving","The one man in the east lived.
+
+The group  ","The one man in the east died.
+
+The 7 individuals drowning in the west were saved.",7,50, individuals drowing to the west
+"Repairmen on 
 main track: 3","Probability of 
-evacuation: 35%","You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track. It is moving so fast that anyone it hits will die immediately. The boxcar is headed towards a tunneled section in which a group of repairmen are working."
-,,,,,,"Repairmen on 
+evacuation: 35%","• You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track
+
+• It is moving so fast that anyone it hits will die immediately
+
+• The boxcar is headed towards a tunneled section in which a group of repairmen are working","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 3 repairmen on the track were saved.",3,35, repairmen on the main track
+"Repairmen on 
 main track: 9","Probability of 
-evacuation: 60%","You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working. If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all. If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die."
-,,,,,,"Repairmen on 
+evacuation: 65%","• You can flip the switch, redirecting the boxcar to a sidetrack on which there is one repairman working
+
+• If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all
+
+• If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 9 repairmen on the track were saved.",9,65, repairmen on the main track
+"Repairmen on 
 main track: 2","Probability of 
-evacuation:  55%","You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives. There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time."
-,,,,,,"Repairmen on 
+evacuation:  50%","• You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives
+
+• There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 2 repairmen on the track were saved.",2,50, repairmen on the main track
+"Repairmen on 
 main track: 4","Probability of 
-evacuation: 70%","Consider each of the following scenarios and, for each one, determine how morally acceptable you  think it would be to hit the switch, redirecting the boxcar onto the sidetrack."
-,,,,,,"Customers in main
+evacuation: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
+
+Do nothing: The repairman will live, the group has a chance of evacuating","The one repairmen lived.
+
+The group ","The one repairmen died.
+
+The 4 repairmen on the track were saved.",4,50, repairmen on the main track
+"Customers in main
 dining room: 9","Probability customers
-will be spared: 25%","You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining
-room, in which a number of customers are eating. If nothing is done the grenade will explode and the
-walls of the main dining room will collapse and kill these customers."
-,,,,,,"Customers in main
+will be spared: 35%","• You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining room, in which a number of customers are eating
+
+• If nothing is done the grenade will explode and the walls of the main dining room will collapse and kill these customers","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 9 customers in the main dining room were saved.",9,35, customers in the main dining room
+"Customers in main
 dining room: 7","Probability customers
-will be spared: 15%","There is only one other location the grenade could be thrown before it explodes, and that is the patio 
-outside of the main dining room. There is one customer sitting on the patio, and he would certainly be 
-killed if the grenade is thrown there."
-,,,,,,"Customers in main
+will be spared: 50%","• There is only one other location the grenade could be thrown before it explodes, and that is the patio outside of the main dining room
+
+• There is one customer sitting on the patio, and he would certainly be killed if the grenade is thrown there","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 7 customers in the main dining room were saved.",7,50, customers in the main dining room
+"Customers in main
 dining room: 25","Probability customers
-will be spared: 30%","You have time to run out and throw the grenade to the patio, without risking any harm to yourself. If 
-you do this, the customers in the dining room will live but the one on the patio will die. You also 
-know that there is a chance that the dining room walls will withstand the blast of the grenade 
-explosion, and the customers would be spared."
-,,,,,,"Customers in main
+will be spared: 65%","• You have time to run out and throw the grenade to the patio, without risking any harm to yourself
+
+• If you do this, the customers in the dining room will live but the one on the patio will die 
+
+• You also know that there is a chance that the dining room walls will withstand the blast of the grenade explosion, and the customers would be spared","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 25 customers in the main dining room were saved.",25,65, customers in the main dining room
+"Customers in main
 dining room: 13","Probability customers
-will be spared: 40%","Consider each of the following scenarios and, for each one, determine how morally acceptable you 
-think it would be to throw the grenade onto the patio."
+will be spared: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the grenade onto the patio, killing the one customer there
+
+Do nothing: The one customer will live, the group has a chance of surviving","The one customer on the patio lived.
+
+The group  ","The one customer on the patio died.
+
+The 13 customers in the main dining room were saved.",13,50, customers in the main dining room

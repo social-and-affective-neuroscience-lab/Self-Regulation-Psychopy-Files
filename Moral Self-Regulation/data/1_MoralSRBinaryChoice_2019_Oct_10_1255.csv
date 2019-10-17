@@ -1,0 +1,154 @@
+﻿Instructions,rows,CueInstructions1,CueInstructions2,PracticeDilemmas,PracticeLeftText,PracticeRightText,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun,IntroLoop.thisRepN,IntroLoop.thisTrialN,IntroLoop.thisN,IntroLoop.thisIndex,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeQs.thisRepN,PracticeQs.thisTrialN,PracticeQs.thisN,PracticeQs.thisIndex,practiceAs.thisRepN,practiceAs.thisTrialN,practiceAs.thisN,practiceAs.thisIndex,InstText.started,InstText.stopped,space.keys,space.rt,space.started,space.stopped,isi.started,isi.stopped,practiceQs.started,practiceQs.stopped,space1.keys,space1.rt,space1.started,space1.stopped,cue.started,cue.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,conBlank.started,conBlank.stopped,RemText.started,RemText.stopped,leftText.started,leftText.stopped,rightText.started,rightText.stopped,Yes.started,Yes.stopped,No.started,No.stopped,Question.started,Question.stopped,FeedbackVar.started,FeedbackVar.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+"In this study you will be asked to evaluate a number of moral dilemmas under various conditions. 
+
+You will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.
+
+For each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. 
+
+When you are done reading each screen, you can press SPACE to move on to the next one.
+
+However, please try your best to get the fullest understanding of the scenario as described thus far before moving on to the next screen.",,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,10.726979500000198,None,space,8.575867100000323,10.726979500000198,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+"The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma:
+
+a) a number of people involved in part of the scenario, and 
+
+b) a likelihood that something will happen
+
+You will be evaluating this scenario given a number of variations of these features.
+
+The fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.",,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,19.40796979999959,None,space,1.2705857999999353,19.40796979999959,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+"After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.
+
+Before you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be reminded of this after this screen.
+
+First, you will see a "+" in the middle of the screen. Any time that this is up, all you need to do is fixate on the "+" and prepare to respond to the next trial. 
+
+Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a judgment of its moral acceptibility.
+
+You will then indicate the course of action you would like to take in each scenario; by pressing either 'y' on your keyboard to indicate 'Yes', or 'n' to indicate 'No.'
+",,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,20.842906500000026,None,space,10.539670500000284,20.842906500000026,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+"After you answer you will again see a "+" in the middle of the screen, followed by the next trial. This will occur for 10 different variations of each scenario. 
+
+It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.
+
+You will only have 10 seconds to respond to each variation. If the "+" appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the "+" and wait for the next trial. 
+
+Once you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don't worry.",,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,31.498003200000312,None,space,3.132736499999737,31.498003200000312,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+"Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they've given. Don't think of your answers as "written in stone." All we want from you is a thoughtful first response.
+
+While we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it's okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. 
+
+Note, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. ",,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,34.76969829999962,None,space,3.2206403999998656,34.76969829999962,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+"In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.
+
+Likewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this happens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. 
+
+For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. ",,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,38.11672449999969,None,space,0.7857879000002868,38.11672449999969,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+"When you are done reading this screen you will begin two practice scenarios. 
+
+Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale, and press ENTER to submit your rating. 
+
+While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.
+
+Furthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.
+
+Press SPACE to begin the practice trials!
+",,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,39.02031939999961,None,space,0.8741382000007434,39.02031939999961,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
+
+• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 3,"Probability of 
+parachute opening: 35% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 3 skydivers was saved.",3,35, skydivers,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,39.92647699999998,None,41.98618129999977,None,space,3.076342199999999,41.98618129999977,None,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him
+
+• You know that there won't be enough time to reach the group if you wait to catch the one",Divers on right: 4,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 4 skydivers was saved.",4,50, skydivers,,,,,0,0,0,0,0,1,1,1,,,,,,,,,,,,,45.10675149999952,None,space,0.7717108999995617,45.10675149999952,None,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths
+
+• You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught",Divers on right: 7,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 7 skydivers was saved.",7,50, skydivers,,,,,0,0,0,0,0,2,2,2,,,,,,,,,,,,,45.94116010000016,None,space,0.641242499999862,45.94116010000016,None,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
+
+• There is no chance that the parachute will open for the one diver, given how close he is to the ground",Divers on right: 5,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 5 skydivers was saved.",5,65, skydivers,,,,,0,0,0,0,0,3,3,3,,,,,,,,,,,,,46.62635070000033,None,space,0.7404646000004504,46.62635070000033,None,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Divers on right: 8,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 8 skydivers was saved.",8,65, skydivers,,,,,0,0,0,0,0,4,4,4,,,,,,,,,,,,,47.39575220000006,None,space,0.9945447000000058,47.39575220000006,None,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
+
+• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 3,"Probability of 
+parachute opening: 35% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 3 skydivers was saved.",3,35, skydivers,,,,,0,0,0,0,,,,,0,0,0,0,,,,,,,79.77618989999974,None,,,,,,,50.43744069999957,None,n,10.234124599999632,67.51607429999967,None,77.77445989999978,None,67.51607429999967,None,67.51607429999967,None,67.51607429999967,None,67.51607429999967,None,67.51607429999967,None,67.51607429999967,None,81.80575250000038,None,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him
+
+• You know that there won't be enough time to reach the group if you wait to catch the one",Divers on right: 4,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 4 skydivers was saved.",4,50, skydivers,,,,,0,0,0,0,,,,,0,1,1,1,,,,,,,91.80272779999996,None,,,,,,,,,y,1.9706533999997191,87.81217730000026,None,89.80117080000036,None,87.81217730000026,None,87.81217730000026,None,87.81217730000026,None,87.81217730000026,None,87.81217730000026,None,87.81217730000026,None,93.81600170000002,None,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths
+
+• You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught",Divers on right: 7,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 7 skydivers was saved.",7,50, skydivers,,,,,0,0,0,0,,,,,0,2,2,2,,,,,,,104.4301317999998,None,,,,,,,,,y,2.5965433000001212,99.80964179999955,None,102.4282019000002,None,99.80964179999955,None,99.80964179999955,None,99.80964179999955,None,99.80964179999955,None,99.80964179999955,None,99.80964179999955,None,106.4409469000002,None,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
+
+• There is no chance that the parachute will open for the one diver, given how close he is to the ground",Divers on right: 5,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 5 skydivers was saved.",5,65, skydivers,,,,,0,0,0,0,,,,,0,3,3,3,,,,,,,121.97778870000002,None,,,,,,,,,n,7.516135300000315,112.44193300000006,None,119.97619430000032,None,112.44193300000006,None,112.44193300000006,None,112.44193300000006,None,112.44193300000006,None,112.44193300000006,None,112.44193300000006,None,123.98980829999982,None,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Divers on right: 8,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
+
+Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
+ 
+The group ","The one skydiver died.
+
+The group of 8 skydivers was saved.",8,65, skydivers,,,,,0,0,0,0,,,,,0,4,4,4,,,,,,,135.8559183999996,None,,,,,,,,,y,3.8446844999998575,129.98546299999998,None,133.85445809999965,None,129.98546299999998,None,129.98546299999998,None,129.98546299999998,None,129.98546299999998,None,129.98546299999998,None,129.98546299999998,None,137.86815849999948,None,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,00:005,DISTANCE,IMMERSE,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,001,2019_Oct_10_1255,MoralSRBinaryChoice,3.2.4,59.82993938034832,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,141.86113139999998,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
