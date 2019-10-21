@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 10, 2019, at 13:02
+    on October 21, 2019, at 12:30
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -860,7 +860,7 @@ for thisPracticeLoop in PracticeLoop:
     PracticeLoop.addData('isi.stopped', isi.tStopRefresh)
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(15.000000)
+    routineTimer.add(8.000000)
     # update component parameters for each repeat
     cue.setText(CueInstructions1)
     subID = int(expInfo['participant'])
@@ -904,7 +904,7 @@ for thisPracticeLoop in PracticeLoop:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 15-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 8-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -1906,7 +1906,7 @@ for thisMainLoop in MainLoop:
     MainLoop.addData('isi.stopped', isi.tStopRefresh)
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(15.000000)
+    routineTimer.add(8.000000)
     # update component parameters for each repeat
     cue.setText(CueInstructions1)
     subID = int(expInfo['participant'])
@@ -1950,7 +1950,7 @@ for thisMainLoop in MainLoop:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 15-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 8-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
