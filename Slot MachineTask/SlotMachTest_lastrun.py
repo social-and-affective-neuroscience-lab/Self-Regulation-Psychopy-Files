@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 14, 2019, at 11:02
+    on October 21, 2019, at 12:18
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -360,12 +360,13 @@ earningsText = visual.TextStim(win=win, name='earningsText',
 # Initialize components for Routine "BeginInst"
 BeginInstClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='You will now begin the full task.',
+    text='You will now begin the full task.\n\nPress SPACE to start!',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+key_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -1518,10 +1519,11 @@ for thisPracticeLoop in PracticeLoop:
 
 
 # ------Prepare to start Routine "BeginInst"-------
-routineTimer.add(3.000000)
 # update component parameters for each repeat
+key_resp.keys = []
+key_resp.rt = []
 # keep track of which components have finished
-BeginInstComponents = [text_2]
+BeginInstComponents = [text_2, key_resp]
 for thisComponent in BeginInstComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -1537,7 +1539,7 @@ frameN = -1
 continueRoutine = True
 
 # -------Run Routine "BeginInst"-------
-while continueRoutine and routineTimer.getTime() > 0:
+while continueRoutine:
     # get current time
     t = BeginInstClock.getTime()
     tThisFlip = win.getFutureFlipTime(clock=BeginInstClock)
@@ -1553,14 +1555,32 @@ while continueRoutine and routineTimer.getTime() > 0:
         text_2.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
         text_2.setAutoDraw(True)
-    if text_2.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text_2.tStartRefresh + 3-frameTolerance:
-            # keep track of stop time/frame for later
-            text_2.tStop = t  # not accounting for scr refresh
-            text_2.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
-            text_2.setAutoDraw(False)
+    
+    # *key_resp* updates
+    waitOnFlip = False
+    if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp.frameNStart = frameN  # exact frame index
+        key_resp.tStart = t  # local t and not account for scr refresh
+        key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+        key_resp.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp.getKeys(keyList=['space'], waitRelease=False)
+        if len(theseKeys):
+            theseKeys = theseKeys[0]  # at least one key was pressed
+            
+            # check for quit:
+            if "escape" == theseKeys:
+                endExpNow = True
+            key_resp.keys = theseKeys.name  # just the last key pressed
+            key_resp.rt = theseKeys.rt
+            # a response ends the routine
+            continueRoutine = False
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1587,11 +1607,22 @@ thisExp.addData('text_2.started', text_2.tStartRefresh)
 thisExp.addData('text_2.stopped', text_2.tStopRefresh)
 earnings = 0
 earning = 0
+# check responses
+if key_resp.keys in ['', [], None]:  # No response was made
+    key_resp.keys = None
+thisExp.addData('key_resp.keys',key_resp.keys)
+if key_resp.keys != None:  # we had a response
+    thisExp.addData('key_resp.rt', key_resp.rt)
+thisExp.addData('key_resp.started', key_resp.tStartRefresh)
+thisExp.addData('key_resp.stopped', key_resp.tStopRefresh)
+thisExp.nextEntry()
+# the Routine "BeginInst" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
 mainLoop = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('PracticeSlotMach.csv'),
+    trialList=data.importConditions('SlotMachine.csv'),
     seed=None, name='mainLoop')
 thisExp.addLoop(mainLoop)  # add the loop to the experiment
 thisMainLoop = mainLoop.trialList[0]  # so we can initialise stimuli with some values

@@ -1,0 +1,612 @@
+11.5249 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+12.7648 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C8C7858D68>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C8C79A6588>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.7648 	EXP 	window1: recordFrameIntervals = False
+12.9313 	EXP 	window1: recordFrameIntervals = True
+13.1154 	EXP 	window1: recordFrameIntervals = False
+13.3872 	EXP 	Created Instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='Instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.5)
+13.4130 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.4177 	EXP 	Created ISI = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='ISI', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.4207 	EXP 	Created Image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+13.4272 	EXP 	Created ratingQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='ratingQ', opacity=1.0, ori=0, pos=array([0. , 0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.5)
+13.4824 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.84, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.168, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+13.4868 	EXP 	Created Iti = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Iti', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.5207 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='You will now begin the full task', units='height', win=Window(...), wrapWidth=1.5)
+13.5261 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.5323 	EXP 	Created ISI = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='ISI', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.5344 	EXP 	Created Image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+13.5391 	EXP 	Created ratingQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='ratingQ', opacity=1.0, ori=0, pos=array([0. , 0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.5)
+13.5585 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.84, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.168, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+13.5904 	EXP 	rating: flipVert = False
+13.5904 	EXP 	rating: autoLog = True
+13.5904 	EXP 	rating: flipVert = False
+13.5904 	EXP 	rating: autoLog = True
+13.5904 	EXP 	Instructions: autoDraw = True
+14.3361 	DATA 	Mouse: Left button down, pos=(889,638)
+14.4361 	DATA 	Mouse:  Left button up, pos=(889,638)
+16.7618 	EXP 	Imported EmotionRegCues.csv as conditions, 1 conditions, 3 params
+16.7621 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+16.7624 	EXP 	New trial (rep=0, index=0): OrderedDict([('CueType', 'REGULATE'), ('rows', '003:0021'), ('CueType2', 'REACT')])
+16.7897 	DATA 	Keypress: space
+16.7935 	EXP 	Instructions: autoDraw = False
+16.7935 	EXP 	cue: text = 'REGULATE'
+16.7935 	EXP 	ISI: text = '+'
+16.7935 	EXP 	cue: autoDraw = True
+18.7855 	EXP 	ISI: autoDraw = True
+18.8025 	EXP 	cue: autoDraw = False
+20.7595 	EXP 	Imported EmotionReg.csv as conditions, 3 conditions, 1 params
+20.7596 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+20.7598 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'musician.jpg')])
+20.7994 	EXP 	cue: autoDraw = False
+20.7994 	EXP 	ISI: autoDraw = False
+20.7994 	EXP 	Image: size = array([1.5, 1. ])
+20.7994 	EXP 	Image: image = 'musician.jpg'
+20.7994 	EXP 	Image: autoDraw = True
+28.7679 	EXP 	RatingScale rating: reset()
+28.7831 	EXP 	Image: autoDraw = False
+28.7831 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+28.7831 	EXP 	ratingQ: autoDraw = True
+28.7831 	EXP 	rating: autoDraw = True
+30.4153 	DATA 	Keypress: 5
+31.4672 	DATA 	Keypress: return
+31.4673 	DATA 	RatingScale rating: (key response) rating=5
+31.4673 	DATA 	RatingScale rating: rating RT=2.696
+31.4673 	DATA 	RatingScale rating: history=[(None, 0.0), (5, 1.644), (5, 2.696)]
+31.7627 	EXP 	ratingQ: autoDraw = False
+31.7627 	EXP 	rating: autoDraw = False
+31.7627 	EXP 	Iti: text = '+'
+31.7627 	EXP 	Iti: autoDraw = True
+33.7491 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'picnic1.jpg')])
+33.7715 	EXP 	Iti: autoDraw = False
+33.7715 	EXP 	Image: size = array([1.5, 1. ])
+33.7715 	EXP 	Image: image = 'picnic1.jpg'
+33.7715 	EXP 	Image: autoDraw = True
+41.7434 	EXP 	RatingScale rating: reset()
+41.7548 	EXP 	Image: autoDraw = False
+41.7548 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+41.7548 	EXP 	ratingQ: autoDraw = True
+41.7548 	EXP 	rating: autoDraw = True
+43.3601 	DATA 	Keypress: 3
+44.6273 	DATA 	Keypress: return
+44.6274 	DATA 	RatingScale rating: (key response) rating=3
+44.6274 	DATA 	RatingScale rating: rating RT=2.882
+44.6274 	DATA 	RatingScale rating: history=[(None, 0.0), (3, 1.614), (3, 2.881)]
+44.7405 	EXP 	ratingQ: autoDraw = False
+44.7405 	EXP 	ratingQ: autoDraw = False
+44.7405 	EXP 	rating: autoDraw = False
+44.7405 	EXP 	Iti: text = '+'
+44.7405 	EXP 	Iti: autoDraw = True
+46.7289 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'frustratedpose7.jpg')])
+46.7485 	EXP 	Iti: autoDraw = False
+46.7485 	EXP 	Iti: autoDraw = False
+46.7485 	EXP 	Image: size = array([1.5, 1. ])
+46.7485 	EXP 	Image: image = 'frustratedpose7.jpg'
+46.7485 	EXP 	Image: autoDraw = True
+54.7375 	EXP 	RatingScale rating: reset()
+54.7485 	EXP 	Image: autoDraw = False
+54.7485 	EXP 	Image: autoDraw = False
+54.7485 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+54.7485 	EXP 	ratingQ: autoDraw = True
+54.7485 	EXP 	rating: autoDraw = True
+56.9047 	DATA 	Keypress: 5
+57.7351 	EXP 	ratingQ: autoDraw = False
+57.7685 	EXP 	ratingQ: autoDraw = False
+57.7685 	EXP 	rating: autoDraw = False
+57.7685 	EXP 	Iti: text = '+'
+57.7685 	EXP 	Iti: autoDraw = True
+59.7700 	EXP 	Iti: autoDraw = False
+59.7700 	EXP 	text: autoDraw = True
+64.2293 	EXP 	Imported EmotionRegCues.csv as conditions, 5 conditions, 3 params
+64.2296 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+64.2299 	EXP 	New trial (rep=0, index=0): OrderedDict([('CueType', 'REGULATE'), ('rows', '003:0021'), ('CueType2', 'REACT')])
+64.2322 	DATA 	Keypress: space
+64.2400 	EXP 	text: autoDraw = False
+64.2400 	EXP 	cue: text = 'REGULATE'
+64.2400 	EXP 	ISI: text = '+'
+64.2400 	EXP 	cue: autoDraw = True
+66.2242 	EXP 	ISI: autoDraw = True
+66.2415 	EXP 	cue: autoDraw = False
+68.2151 	EXP 	Imported EmotionReg.csv as conditions, 18 conditions, 1 params
+68.2153 	EXP 	Created sequence: random, trialTypes=18, nReps=1, seed=None
+68.2154 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'gazing.jpg')])
+68.2450 	EXP 	ISI: autoDraw = False
+68.2450 	EXP 	cue: autoDraw = False
+68.2450 	EXP 	ISI: autoDraw = False
+68.2450 	EXP 	Image: size = array([1.5, 1. ])
+68.2450 	EXP 	Image: image = 'gazing.jpg'
+68.2450 	EXP 	Image: autoDraw = True
+76.2381 	EXP 	RatingScale rating: reset()
+76.2500 	EXP 	Image: autoDraw = False
+76.2500 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+76.2500 	EXP 	ratingQ: autoDraw = True
+76.2500 	EXP 	rating: autoDraw = True
+77.8705 	DATA 	Keypress: 7
+79.2359 	EXP 	ratingQ: autoDraw = False
+79.2378 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'rockclimb.jpg')])
+79.2694 	EXP 	ratingQ: autoDraw = False
+79.2694 	EXP 	rating: autoDraw = False
+79.2694 	EXP 	Image: size = array([1.5, 1. ])
+79.2694 	EXP 	Image: image = 'rockclimb.jpg'
+79.2694 	EXP 	Image: autoDraw = True
+87.2476 	EXP 	RatingScale rating: reset()
+87.2584 	EXP 	Image: autoDraw = False
+87.2584 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+87.2584 	EXP 	ratingQ: autoDraw = True
+87.2584 	EXP 	rating: autoDraw = True
+88.3796 	DATA 	Keypress: 5
+90.2298 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'soldier3.jpg')])
+90.2501 	EXP 	ratingQ: autoDraw = False
+90.2501 	EXP 	rating: autoDraw = False
+90.2501 	EXP 	Image: size = array([1.5, 1. ])
+90.2501 	EXP 	Image: image = 'soldier3.jpg'
+90.2501 	EXP 	Image: autoDraw = True
+98.2403 	EXP 	RatingScale rating: reset()
+98.2538 	EXP 	Image: autoDraw = False
+98.2538 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+98.2538 	EXP 	ratingQ: autoDraw = True
+98.2538 	EXP 	rating: autoDraw = True
+101.2366 	EXP 	ratingQ: autoDraw = False
+101.2378 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'dessert.jpg')])
+101.2600 	EXP 	ratingQ: autoDraw = False
+101.2600 	EXP 	rating: autoDraw = False
+101.2600 	EXP 	Image: size = array([1.5, 1. ])
+101.2600 	EXP 	Image: image = 'dessert.jpg'
+101.2600 	EXP 	Image: autoDraw = True
+102.5301 	DATA 	Mouse: Left button down, pos=(890,709)
+102.6094 	DATA 	Mouse:  Left button up, pos=(891,709)
+109.2287 	EXP 	RatingScale rating: reset()
+109.2447 	EXP 	Image: autoDraw = False
+109.2447 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+109.2447 	EXP 	ratingQ: autoDraw = True
+109.2447 	EXP 	rating: autoDraw = True
+110.6819 	DATA 	Keypress: 6
+112.2301 	EXP 	ratingQ: autoDraw = False
+112.2314 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'excited2.jpg')])
+112.2502 	EXP 	ratingQ: autoDraw = False
+112.2502 	EXP 	rating: autoDraw = False
+112.2502 	EXP 	Image: size = array([1.5, 1. ])
+112.2502 	EXP 	Image: image = 'excited2.jpg'
+112.2502 	EXP 	Image: autoDraw = True
+120.2413 	EXP 	RatingScale rating: reset()
+120.2530 	EXP 	Image: autoDraw = False
+120.2530 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+120.2530 	EXP 	ratingQ: autoDraw = True
+120.2530 	EXP 	rating: autoDraw = True
+121.7078 	DATA 	Keypress: 5
+123.2383 	EXP 	ratingQ: autoDraw = False
+123.2403 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'depressed2.jpg')])
+123.2619 	EXP 	ratingQ: autoDraw = False
+123.2619 	EXP 	rating: autoDraw = False
+123.2619 	EXP 	Image: size = array([1.5, 1. ])
+123.2619 	EXP 	Image: image = 'depressed2.jpg'
+123.2619 	EXP 	Image: autoDraw = True
+131.2337 	EXP 	RatingScale rating: reset()
+131.2451 	EXP 	Image: autoDraw = False
+131.2451 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+131.2451 	EXP 	ratingQ: autoDraw = True
+131.2451 	EXP 	rating: autoDraw = True
+132.9845 	DATA 	Keypress: 5
+134.2317 	EXP 	ratingQ: autoDraw = False
+134.2329 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'scared1.jpg')])
+134.2535 	EXP 	ratingQ: autoDraw = False
+134.2535 	EXP 	rating: autoDraw = False
+134.2535 	EXP 	Image: size = array([1.5, 1. ])
+134.2535 	EXP 	Image: image = 'scared1.jpg'
+134.2535 	EXP 	Image: autoDraw = True
+142.2432 	EXP 	RatingScale rating: reset()
+142.2545 	EXP 	Image: autoDraw = False
+142.2545 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+142.2545 	EXP 	ratingQ: autoDraw = True
+142.2545 	EXP 	rating: autoDraw = True
+143.6413 	DATA 	Keypress: 4
+145.2408 	EXP 	ratingQ: autoDraw = False
+145.2423 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'baby1.jpg')])
+145.2631 	EXP 	ratingQ: autoDraw = False
+145.2631 	EXP 	rating: autoDraw = False
+145.2631 	EXP 	Image: size = array([1.5, 1. ])
+145.2631 	EXP 	Image: image = 'baby1.jpg'
+145.2631 	EXP 	Image: autoDraw = True
+153.2350 	EXP 	RatingScale rating: reset()
+153.2474 	EXP 	Image: autoDraw = False
+153.2474 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+153.2474 	EXP 	ratingQ: autoDraw = True
+153.2474 	EXP 	rating: autoDraw = True
+154.4687 	DATA 	Keypress: 8
+156.2329 	EXP 	ratingQ: autoDraw = False
+156.2345 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'angry2.jpg')])
+156.2529 	EXP 	ratingQ: autoDraw = False
+156.2529 	EXP 	rating: autoDraw = False
+156.2529 	EXP 	Image: size = array([1.5, 1. ])
+156.2529 	EXP 	Image: image = 'angry2.jpg'
+156.2529 	EXP 	Image: autoDraw = True
+164.2415 	EXP 	RatingScale rating: reset()
+164.2557 	EXP 	Image: autoDraw = False
+164.2557 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+164.2557 	EXP 	ratingQ: autoDraw = True
+164.2557 	EXP 	rating: autoDraw = True
+164.7764 	DATA 	Keypress: 5
+167.2424 	EXP 	ratingQ: autoDraw = False
+167.2441 	EXP 	New trial (rep=0, index=9): OrderedDict([('Picture', 'mother4')])
+167.2446 	WARNING 	Requested image 'mother4' not found but similar filename 'mother4.jpg' exists. This will be used instead but changing the filename is advised.
+167.2630 	EXP 	ratingQ: autoDraw = False
+167.2630 	EXP 	rating: autoDraw = False
+167.2630 	EXP 	Image: size = array([1.5, 1. ])
+167.2630 	EXP 	Image: image = 'mother4'
+167.2630 	EXP 	Image: autoDraw = True
+175.2375 	EXP 	RatingScale rating: reset()
+175.2488 	EXP 	Image: autoDraw = False
+175.2488 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+175.2488 	EXP 	ratingQ: autoDraw = True
+175.2488 	EXP 	rating: autoDraw = True
+176.7026 	DATA 	Keypress: 5
+178.2346 	EXP 	ratingQ: autoDraw = False
+178.2360 	EXP 	New trial (rep=0, index=10): OrderedDict([('Picture', 'police.jpg')])
+178.2585 	EXP 	ratingQ: autoDraw = False
+178.2585 	EXP 	rating: autoDraw = False
+178.2585 	EXP 	Image: size = array([1.5, 1. ])
+178.2585 	EXP 	Image: image = 'police.jpg'
+178.2585 	EXP 	Image: autoDraw = True
+186.2458 	EXP 	RatingScale rating: reset()
+186.2573 	EXP 	Image: autoDraw = False
+186.2573 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+186.2573 	EXP 	ratingQ: autoDraw = True
+186.2573 	EXP 	rating: autoDraw = True
+189.2287 	EXP 	New trial (rep=0, index=11): OrderedDict([('Picture', 'camping.jpg')])
+189.2503 	EXP 	ratingQ: autoDraw = False
+189.2503 	EXP 	rating: autoDraw = False
+189.2503 	EXP 	Image: size = array([1.5, 1. ])
+189.2503 	EXP 	Image: image = 'camping.jpg'
+189.2503 	EXP 	Image: autoDraw = True
+197.2356 	EXP 	RatingScale rating: reset()
+197.2501 	EXP 	Image: autoDraw = False
+197.2501 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+197.2501 	EXP 	ratingQ: autoDraw = True
+197.2501 	EXP 	rating: autoDraw = True
+200.2355 	EXP 	ratingQ: autoDraw = False
+200.2371 	EXP 	New trial (rep=0, index=12): OrderedDict([('Picture', 'massage.jpg')])
+200.2600 	EXP 	ratingQ: autoDraw = False
+200.2600 	EXP 	rating: autoDraw = False
+200.2600 	EXP 	Image: size = array([1.5, 1. ])
+200.2600 	EXP 	Image: image = 'massage.jpg'
+200.2600 	EXP 	Image: autoDraw = True
+200.3214 	DATA 	Keypress: 7
+208.2444 	EXP 	RatingScale rating: reset()
+208.2592 	EXP 	Image: autoDraw = False
+208.2592 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+208.2592 	EXP 	ratingQ: autoDraw = True
+208.2592 	EXP 	rating: autoDraw = True
+211.2284 	EXP 	ratingQ: autoDraw = False
+211.2297 	EXP 	New trial (rep=0, index=13): OrderedDict([('Picture', 'dancing2.jpg')])
+211.2514 	EXP 	ratingQ: autoDraw = False
+211.2514 	EXP 	rating: autoDraw = False
+211.2514 	EXP 	Image: size = array([1.5, 1. ])
+211.2514 	EXP 	Image: image = 'dancing2.jpg'
+211.2514 	EXP 	Image: autoDraw = True
+219.2419 	EXP 	RatingScale rating: reset()
+219.2534 	EXP 	Image: autoDraw = False
+219.2534 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+219.2534 	EXP 	ratingQ: autoDraw = True
+219.2534 	EXP 	rating: autoDraw = True
+222.2379 	EXP 	ratingQ: autoDraw = False
+222.2399 	EXP 	New trial (rep=0, index=14): OrderedDict([('Picture', 'sad5.jpg')])
+222.3225 	EXP 	ratingQ: autoDraw = False
+222.3225 	EXP 	rating: autoDraw = False
+222.3225 	EXP 	Image: size = array([1.5, 1. ])
+222.3225 	EXP 	Image: image = 'sad5.jpg'
+222.3225 	EXP 	Image: autoDraw = True
+230.2297 	EXP 	RatingScale rating: reset()
+230.2446 	EXP 	Image: autoDraw = False
+230.2446 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+230.2446 	EXP 	ratingQ: autoDraw = True
+230.2446 	EXP 	rating: autoDraw = True
+233.2322 	EXP 	ratingQ: autoDraw = False
+233.2340 	EXP 	New trial (rep=0, index=15): OrderedDict([('Picture', 'sleepy.jpg')])
+233.2555 	EXP 	ratingQ: autoDraw = False
+233.2555 	EXP 	rating: autoDraw = False
+233.2555 	EXP 	Image: size = array([1.5, 1. ])
+233.2555 	EXP 	Image: image = 'sleepy.jpg'
+233.2555 	EXP 	Image: autoDraw = True
+241.2401 	EXP 	RatingScale rating: reset()
+241.2540 	EXP 	Image: autoDraw = False
+241.2540 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+241.2540 	EXP 	ratingQ: autoDraw = True
+241.2540 	EXP 	rating: autoDraw = True
+244.2398 	EXP 	ratingQ: autoDraw = False
+244.2414 	EXP 	New trial (rep=0, index=16): OrderedDict([('Picture', 'happy2.jpg')])
+244.2591 	EXP 	ratingQ: autoDraw = False
+244.2591 	EXP 	rating: autoDraw = False
+244.2591 	EXP 	Image: size = array([1.5, 1. ])
+244.2591 	EXP 	Image: image = 'happy2.jpg'
+244.2591 	EXP 	Image: autoDraw = True
+252.2310 	EXP 	RatingScale rating: reset()
+252.2463 	EXP 	Image: autoDraw = False
+252.2463 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+252.2463 	EXP 	ratingQ: autoDraw = True
+252.2463 	EXP 	rating: autoDraw = True
+255.2328 	EXP 	ratingQ: autoDraw = False
+255.2342 	EXP 	New trial (rep=0, index=17): OrderedDict([('Picture', 'band2.jpg')])
+255.2563 	EXP 	ratingQ: autoDraw = False
+255.2563 	EXP 	rating: autoDraw = False
+255.2563 	EXP 	Image: size = array([1.5, 1. ])
+255.2563 	EXP 	Image: image = 'band2.jpg'
+255.2563 	EXP 	Image: autoDraw = True
+263.2407 	EXP 	RatingScale rating: reset()
+263.2547 	EXP 	Image: autoDraw = False
+263.2547 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+263.2547 	EXP 	ratingQ: autoDraw = True
+263.2547 	EXP 	rating: autoDraw = True
+266.2246 	EXP 	ratingQ: autoDraw = False
+266.2425 	EXP 	New trial (rep=0, index=1): OrderedDict([('CueType', 'REGULATE'), ('rows', '0075:93'), ('CueType2', 'REACT')])
+266.2577 	EXP 	ratingQ: autoDraw = False
+266.2577 	EXP 	rating: autoDraw = False
+266.2577 	EXP 	cue: text = 'REGULATE'
+266.2577 	EXP 	ISI: text = '+'
+266.2577 	EXP 	cue: autoDraw = True
+268.2428 	EXP 	ISI: autoDraw = True
+268.2603 	EXP 	cue: autoDraw = False
+270.2327 	EXP 	Imported EmotionReg.csv as conditions, 18 conditions, 1 params
+270.2329 	EXP 	Created sequence: random, trialTypes=18, nReps=1, seed=None
+270.2331 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'sadpose1.jpg')])
+270.2525 	EXP 	cue: autoDraw = False
+270.2525 	EXP 	ISI: autoDraw = False
+270.2525 	EXP 	Image: size = array([1.5, 1. ])
+270.2525 	EXP 	Image: image = 'sadpose1.jpg'
+270.2525 	EXP 	Image: autoDraw = True
+278.2370 	EXP 	RatingScale rating: reset()
+278.2509 	EXP 	Image: autoDraw = False
+278.2509 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+278.2509 	EXP 	ratingQ: autoDraw = True
+278.2509 	EXP 	rating: autoDraw = True
+281.2361 	EXP 	ratingQ: autoDraw = False
+281.2377 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'dancing1.jpg')])
+281.2585 	EXP 	ratingQ: autoDraw = False
+281.2585 	EXP 	rating: autoDraw = False
+281.2585 	EXP 	Image: size = array([1.5, 1. ])
+281.2585 	EXP 	Image: image = 'dancing1.jpg'
+281.2585 	EXP 	Image: autoDraw = True
+289.2293 	EXP 	RatingScale rating: reset()
+289.2442 	EXP 	Image: autoDraw = False
+289.2442 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+289.2442 	EXP 	ratingQ: autoDraw = True
+289.2442 	EXP 	rating: autoDraw = True
+292.2295 	EXP 	ratingQ: autoDraw = False
+292.2313 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'sad4.jpg')])
+292.2572 	EXP 	ratingQ: autoDraw = False
+292.2572 	EXP 	rating: autoDraw = False
+292.2572 	EXP 	Image: size = array([1.5, 1. ])
+292.2572 	EXP 	Image: image = 'sad4.jpg'
+292.2572 	EXP 	Image: autoDraw = True
+300.2389 	EXP 	RatingScale rating: reset()
+300.2535 	EXP 	Image: autoDraw = False
+300.2535 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+300.2535 	EXP 	ratingQ: autoDraw = True
+300.2535 	EXP 	rating: autoDraw = True
+303.2381 	EXP 	ratingQ: autoDraw = False
+303.2394 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'police2.jpg')])
+303.2604 	EXP 	ratingQ: autoDraw = False
+303.2604 	EXP 	rating: autoDraw = False
+303.2604 	EXP 	Image: size = array([1.5, 1. ])
+303.2604 	EXP 	Image: image = 'police2.jpg'
+303.2604 	EXP 	Image: autoDraw = True
+311.2304 	EXP 	RatingScale rating: reset()
+311.2462 	EXP 	Image: autoDraw = False
+311.2462 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+311.2462 	EXP 	ratingQ: autoDraw = True
+311.2462 	EXP 	rating: autoDraw = True
+314.2306 	EXP 	ratingQ: autoDraw = False
+314.2316 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'school4.jpg')])
+314.2526 	EXP 	ratingQ: autoDraw = False
+314.2526 	EXP 	rating: autoDraw = False
+314.2526 	EXP 	Image: size = array([1.5, 1. ])
+314.2526 	EXP 	Image: image = 'school4.jpg'
+314.2526 	EXP 	Image: autoDraw = True
+322.2390 	EXP 	RatingScale rating: reset()
+322.2541 	EXP 	Image: autoDraw = False
+322.2541 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+322.2541 	EXP 	ratingQ: autoDraw = True
+322.2541 	EXP 	rating: autoDraw = True
+325.2403 	EXP 	ratingQ: autoDraw = False
+325.2415 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'gazing4.jpg')])
+325.2627 	EXP 	ratingQ: autoDraw = False
+325.2627 	EXP 	rating: autoDraw = False
+325.2627 	EXP 	Image: size = array([1.5, 1. ])
+325.2627 	EXP 	Image: image = 'gazing4.jpg'
+325.2627 	EXP 	Image: autoDraw = True
+333.2338 	EXP 	RatingScale rating: reset()
+333.2496 	EXP 	Image: autoDraw = False
+333.2496 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+333.2496 	EXP 	ratingQ: autoDraw = True
+333.2496 	EXP 	rating: autoDraw = True
+336.2321 	EXP 	ratingQ: autoDraw = False
+336.2335 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'gun.jpg')])
+336.2556 	EXP 	ratingQ: autoDraw = False
+336.2556 	EXP 	rating: autoDraw = False
+336.2556 	EXP 	Image: size = array([1.5, 1. ])
+336.2556 	EXP 	Image: image = 'gun.jpg'
+336.2556 	EXP 	Image: autoDraw = True
+344.2415 	EXP 	RatingScale rating: reset()
+344.2561 	EXP 	Image: autoDraw = False
+344.2561 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+344.2561 	EXP 	ratingQ: autoDraw = True
+344.2561 	EXP 	rating: autoDraw = True
+347.2420 	EXP 	ratingQ: autoDraw = False
+347.2437 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'biking.jpg')])
+347.2638 	EXP 	ratingQ: autoDraw = False
+347.2638 	EXP 	rating: autoDraw = False
+347.2638 	EXP 	Image: size = array([1.5, 1. ])
+347.2638 	EXP 	Image: image = 'biking.jpg'
+347.2638 	EXP 	Image: autoDraw = True
+355.2401 	EXP 	RatingScale rating: reset()
+355.2524 	EXP 	Image: autoDraw = False
+355.2524 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+355.2524 	EXP 	ratingQ: autoDraw = True
+355.2524 	EXP 	rating: autoDraw = True
+358.2342 	EXP 	ratingQ: autoDraw = False
+358.2353 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'eating2.jpg')])
+358.2565 	EXP 	ratingQ: autoDraw = False
+358.2565 	EXP 	rating: autoDraw = False
+358.2565 	EXP 	Image: size = array([1.5, 1. ])
+358.2565 	EXP 	Image: image = 'eating2.jpg'
+358.2565 	EXP 	Image: autoDraw = True
+366.2425 	EXP 	RatingScale rating: reset()
+366.2583 	EXP 	Image: autoDraw = False
+366.2583 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+366.2583 	EXP 	ratingQ: autoDraw = True
+366.2583 	EXP 	rating: autoDraw = True
+369.2282 	EXP 	ratingQ: autoDraw = False
+369.2296 	EXP 	New trial (rep=0, index=9): OrderedDict([('Picture', 'parade1.jpg')])
+369.2529 	EXP 	ratingQ: autoDraw = False
+369.2529 	EXP 	rating: autoDraw = False
+369.2529 	EXP 	Image: size = array([1.5, 1. ])
+369.2529 	EXP 	Image: image = 'parade1.jpg'
+369.2529 	EXP 	Image: autoDraw = True
+377.2403 	EXP 	RatingScale rating: reset()
+377.2512 	EXP 	Image: autoDraw = False
+377.2512 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+377.2512 	EXP 	ratingQ: autoDraw = True
+377.2512 	EXP 	rating: autoDraw = True
+380.2355 	EXP 	ratingQ: autoDraw = False
+380.2373 	EXP 	New trial (rep=0, index=10): OrderedDict([('Picture', 'picnic.jpg')])
+380.2617 	EXP 	ratingQ: autoDraw = False
+380.2617 	EXP 	rating: autoDraw = False
+380.2617 	EXP 	Image: size = array([1.5, 1. ])
+380.2617 	EXP 	Image: image = 'picnic.jpg'
+380.2617 	EXP 	Image: autoDraw = True
+388.2307 	EXP 	RatingScale rating: reset()
+388.2457 	EXP 	Image: autoDraw = False
+388.2457 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+388.2457 	EXP 	ratingQ: autoDraw = True
+388.2457 	EXP 	rating: autoDraw = True
+391.2281 	EXP 	ratingQ: autoDraw = False
+391.2299 	EXP 	New trial (rep=0, index=11): OrderedDict([('Picture', 'bored.jpg')])
+391.2508 	EXP 	ratingQ: autoDraw = False
+391.2508 	EXP 	rating: autoDraw = False
+391.2508 	EXP 	Image: size = array([1.5, 1. ])
+391.2508 	EXP 	Image: image = 'bored.jpg'
+391.2508 	EXP 	Image: autoDraw = True
+399.2368 	EXP 	RatingScale rating: reset()
+399.2517 	EXP 	Image: autoDraw = False
+399.2517 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+399.2517 	EXP 	ratingQ: autoDraw = True
+399.2517 	EXP 	rating: autoDraw = True
+402.2380 	EXP 	ratingQ: autoDraw = False
+402.2397 	EXP 	New trial (rep=0, index=12): OrderedDict([('Picture', 'mother2.jpg')])
+402.2602 	EXP 	ratingQ: autoDraw = False
+402.2602 	EXP 	rating: autoDraw = False
+402.2602 	EXP 	Image: size = array([1.5, 1. ])
+402.2602 	EXP 	Image: image = 'mother2.jpg'
+402.2602 	EXP 	Image: autoDraw = True
+410.2307 	EXP 	RatingScale rating: reset()
+410.2471 	EXP 	Image: autoDraw = False
+410.2471 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+410.2471 	EXP 	ratingQ: autoDraw = True
+410.2471 	EXP 	rating: autoDraw = True
+413.2294 	EXP 	ratingQ: autoDraw = False
+413.2308 	EXP 	New trial (rep=0, index=13): OrderedDict([('Picture', 'surprise2.jpg')])
+413.2521 	EXP 	ratingQ: autoDraw = False
+413.2521 	EXP 	rating: autoDraw = False
+413.2521 	EXP 	Image: size = array([1.5, 1. ])
+413.2521 	EXP 	Image: image = 'surprise2.jpg'
+413.2521 	EXP 	Image: autoDraw = True
+421.2400 	EXP 	RatingScale rating: reset()
+421.2557 	EXP 	Image: autoDraw = False
+421.2557 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+421.2557 	EXP 	ratingQ: autoDraw = True
+421.2557 	EXP 	rating: autoDraw = True
+424.2392 	EXP 	ratingQ: autoDraw = False
+424.2410 	EXP 	New trial (rep=0, index=14): OrderedDict([('Picture', 'doctor3.jpg')])
+424.2607 	EXP 	ratingQ: autoDraw = False
+424.2607 	EXP 	rating: autoDraw = False
+424.2607 	EXP 	Image: size = array([1.5, 1. ])
+424.2607 	EXP 	Image: image = 'doctor3.jpg'
+424.2607 	EXP 	Image: autoDraw = True
+432.2306 	EXP 	RatingScale rating: reset()
+432.2454 	EXP 	Image: autoDraw = False
+432.2454 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+432.2454 	EXP 	ratingQ: autoDraw = True
+432.2454 	EXP 	rating: autoDraw = True
+435.2316 	EXP 	ratingQ: autoDraw = False
+435.2329 	EXP 	New trial (rep=0, index=15): OrderedDict([('Picture', 'guitar.jpg')])
+435.2542 	EXP 	ratingQ: autoDraw = False
+435.2542 	EXP 	rating: autoDraw = False
+435.2542 	EXP 	Image: size = array([1.5, 1. ])
+435.2542 	EXP 	Image: image = 'guitar.jpg'
+435.2542 	EXP 	Image: autoDraw = True
+443.2388 	EXP 	RatingScale rating: reset()
+443.2538 	EXP 	Image: autoDraw = False
+443.2538 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+443.2538 	EXP 	ratingQ: autoDraw = True
+443.2538 	EXP 	rating: autoDraw = True
+446.2260 	EXP 	ratingQ: autoDraw = False
+446.2518 	EXP 	New trial (rep=0, index=16): OrderedDict([('Picture', 'war3.jpg')])
+446.2780 	EXP 	ratingQ: autoDraw = False
+446.2780 	EXP 	rating: autoDraw = False
+446.2780 	EXP 	Image: size = array([1.5, 1. ])
+446.2780 	EXP 	Image: image = 'war3.jpg'
+446.2780 	EXP 	Image: autoDraw = True
+454.2325 	EXP 	RatingScale rating: reset()
+454.2476 	EXP 	Image: autoDraw = False
+454.2476 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+454.2476 	EXP 	ratingQ: autoDraw = True
+454.2476 	EXP 	rating: autoDraw = True
+457.2335 	EXP 	ratingQ: autoDraw = False
+457.2354 	EXP 	New trial (rep=0, index=17): OrderedDict([('Picture', 'baby3.jpg')])
+457.2583 	EXP 	ratingQ: autoDraw = False
+457.2583 	EXP 	rating: autoDraw = False
+457.2583 	EXP 	Image: size = array([1.5, 1. ])
+457.2583 	EXP 	Image: image = 'baby3.jpg'
+457.2583 	EXP 	Image: autoDraw = True
+465.2427 	EXP 	RatingScale rating: reset()
+465.2579 	EXP 	Image: autoDraw = False
+465.2579 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+465.2579 	EXP 	ratingQ: autoDraw = True
+465.2579 	EXP 	rating: autoDraw = True
+468.2415 	EXP 	ratingQ: autoDraw = False
+468.2428 	EXP 	New trial (rep=0, index=2): OrderedDict([('CueType', 'REACT'), ('rows', '0039:0057'), ('CueType2', 'REGULATE')])
+468.2608 	EXP 	ratingQ: autoDraw = False
+468.2608 	EXP 	rating: autoDraw = False
+468.2608 	EXP 	cue: text = 'REACT'
+468.2608 	EXP 	ISI: text = '+'
+468.2608 	EXP 	cue: autoDraw = True
+470.2446 	EXP 	ISI: autoDraw = True
+470.2603 	EXP 	cue: autoDraw = False
+472.2342 	EXP 	Imported EmotionReg.csv as conditions, 18 conditions, 1 params
+472.2345 	EXP 	Created sequence: random, trialTypes=18, nReps=1, seed=None
+472.2346 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'angry1.jpg')])
+472.2533 	EXP 	cue: autoDraw = False
+472.2533 	EXP 	ISI: autoDraw = False
+472.2533 	EXP 	Image: size = array([1.5, 1. ])
+472.2533 	EXP 	Image: image = 'angry1.jpg'
+472.2533 	EXP 	Image: autoDraw = True
+480.2377 	EXP 	RatingScale rating: reset()
+480.2523 	EXP 	Image: autoDraw = False
+480.2523 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+480.2523 	EXP 	ratingQ: autoDraw = True
+480.2523 	EXP 	rating: autoDraw = True
+483.2382 	EXP 	ratingQ: autoDraw = False
+483.2405 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'doctor2.jpg')])
+483.2626 	EXP 	ratingQ: autoDraw = False
+483.2626 	EXP 	rating: autoDraw = False
+483.2626 	EXP 	Image: size = array([1.5, 1. ])
+483.2626 	EXP 	Image: image = 'doctor2.jpg'
+483.2626 	EXP 	Image: autoDraw = True
+491.2291 	EXP 	RatingScale rating: reset()
+491.2469 	EXP 	Image: autoDraw = False
+491.2469 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+491.2469 	EXP 	ratingQ: autoDraw = True
+491.2469 	EXP 	rating: autoDraw = True
+494.2135 	EXP 	ratingQ: autoDraw = False
+494.2326 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'yoga1.jpg')])
+494.2534 	EXP 	ratingQ: autoDraw = False
+494.2534 	EXP 	rating: autoDraw = False
+494.2534 	EXP 	Image: size = array([1.5, 1. ])
+494.2534 	EXP 	Image: image = 'yoga1.jpg'
+494.2534 	EXP 	Image: autoDraw = True
+502.2381 	EXP 	RatingScale rating: reset()
+502.2529 	EXP 	Image: autoDraw = False
+502.2529 	EXP 	ratingQ: text = 'How would you characterize your feelings at the present moment?'
+502.2529 	EXP 	ratingQ: autoDraw = True
+502.2529 	EXP 	rating: autoDraw = True
+505.2419 	EXP 	ratingQ: autoDraw = False
+505.2431 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'coupl1.jpg')])
+505.2436 	ERROR 	Couldn't find image coupl1.jpg; check path? (tried: C:\Users\tul00635\Documents\GitHub\Self-Regulation-Psychopy-Files\EmotionRegulation\coupl1.jpg)
+505.2827 	EXP 	window1: mouseVisible = True
