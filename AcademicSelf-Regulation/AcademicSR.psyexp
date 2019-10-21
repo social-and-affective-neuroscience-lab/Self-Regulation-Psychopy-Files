@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.2.4">
+<PsychoPy2experiment encoding="utf-8" version="3.2.0">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -570,7 +570,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
         <Param name="name" updates="None" val="text" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -580,14 +580,49 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="videogame holder&amp;#10;" valType="str"/>
+        <Param name="text" updates="constant" val="You will be playing a version of Pacman. You will be playing as the yellow dot. Your goal is to gather as many points while avoiding the red dots. &amp;#10;&amp;#10;When you are ready, press SPACE!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
     </Routine>
     <Routine name="ISI"/>
+    <Routine name="pacman">
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="#Pacman variables and functions&amp;#10;from random import choice&amp;#10;from turtle import *&amp;#10;from freegames import floor, vector&amp;#10;&amp;#10;&amp;#10;state = {'score': 0}&amp;#10;path = Turtle(visible=False)&amp;#10;writer = Turtle(visible=False)&amp;#10;aim = vector(5, 0)&amp;#10;pacman = vector(-40, -80)&amp;#10;ghosts = [&amp;#10;    [vector(-180, 160), vector(5, 0)],&amp;#10;    [vector(-180, -160), vector(0, 5)],&amp;#10;    [vector(100, 160), vector(0, -5)],&amp;#10;    [vector(100, -160), vector(-5, 0)],&amp;#10;]&amp;#10;tiles = [&amp;#10;    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,&amp;#10;    0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,&amp;#10;    0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,&amp;#10;    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,&amp;#10;    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,&amp;#10;    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,&amp;#10;]&amp;#10;&amp;#10;def square(x, y):&amp;#10;    &quot;Draw square using path at (x, y).&quot;&amp;#10;    path.up()&amp;#10;    path.goto(x, y)&amp;#10;    path.down()&amp;#10;    path.begin_fill()&amp;#10;&amp;#10;    for count in range(4):&amp;#10;        path.forward(20)&amp;#10;        path.left(90)&amp;#10;&amp;#10;    path.end_fill()&amp;#10;&amp;#10;def offset(point):&amp;#10;    &quot;Return offset of point in tiles.&quot;&amp;#10;    x = (floor(point.x, 20) + 200) / 20&amp;#10;    y = (180 - floor(point.y, 20)) / 20&amp;#10;    index = int(x + y * 20)&amp;#10;    return index&amp;#10;&amp;#10;def valid(point):&amp;#10;    &quot;Return True if point is valid in tiles.&quot;&amp;#10;    index = offset(point)&amp;#10;&amp;#10;    if tiles[index] == 0:&amp;#10;        return False&amp;#10;&amp;#10;    index = offset(point + 19)&amp;#10;&amp;#10;    if tiles[index] == 0:&amp;#10;        return False&amp;#10;&amp;#10;    return point.x % 20 == 0 or point.y % 20 == 0&amp;#10;&amp;#10;def world():&amp;#10;    &quot;Draw world using path.&quot;&amp;#10;    bgcolor('black')&amp;#10;    path.color('blue')&amp;#10;&amp;#10;    for index in range(len(tiles)):&amp;#10;        tile = tiles[index]&amp;#10;&amp;#10;        if tile &gt; 0:&amp;#10;            x = (index % 20) * 20 - 200&amp;#10;            y = 180 - (index // 20) * 20&amp;#10;            square(x, y)&amp;#10;&amp;#10;            if tile == 1:&amp;#10;                path.up()&amp;#10;                path.goto(x + 10, y + 10)&amp;#10;                path.dot(2, 'white')&amp;#10;&amp;#10;def move():&amp;#10;    &quot;Move pacman and all ghosts.&quot;&amp;#10;    writer.undo()&amp;#10;    writer.write(state['score'])&amp;#10;&amp;#10;    clear()&amp;#10;&amp;#10;    if valid(pacman + aim):&amp;#10;        pacman.move(aim)&amp;#10;&amp;#10;    index = offset(pacman)&amp;#10;&amp;#10;    if tiles[index] == 1:&amp;#10;        tiles[index] = 2&amp;#10;        state['score'] += 1&amp;#10;        x = (index % 20) * 20 - 200&amp;#10;        y = 180 - (index // 20) * 20&amp;#10;        square(x, y)&amp;#10;&amp;#10;    up()&amp;#10;    goto(pacman.x + 10, pacman.y + 10)&amp;#10;    dot(20, 'yellow')&amp;#10;&amp;#10;    for point, course in ghosts:&amp;#10;        if valid(point + course):&amp;#10;            point.move(course)&amp;#10;        else:&amp;#10;            options = [&amp;#10;                vector(5, 0),&amp;#10;                vector(-5, 0),&amp;#10;                vector(0, 5),&amp;#10;                vector(0, -5),&amp;#10;            ]&amp;#10;            plan = choice(options)&amp;#10;            course.x = plan.x&amp;#10;            course.y = plan.y&amp;#10;&amp;#10;        up()&amp;#10;        goto(point.x + 10, point.y + 10)&amp;#10;        dot(20, 'red')&amp;#10;&amp;#10;    update()&amp;#10;&amp;#10;    for point, course in ghosts:&amp;#10;        if abs(pacman - point) &lt; 20:&amp;#10;            return&amp;#10;&amp;#10;    ontimer(move, 100)&amp;#10;&amp;#10;def change(x, y):&amp;#10;    &quot;Change pacman aim if valid.&quot;&amp;#10;    if valid(pacman + vector(x, y)):&amp;#10;        aim.x = x&amp;#10;        aim.y = y&amp;#10;#End pacman vars &amp; functs &amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="setup(420, 420, 370, 0)&amp;#10;hideturtle()&amp;#10;tracer(False)&amp;#10;writer.goto(160, 160)&amp;#10;writer.color('white')&amp;#10;writer.write(state['score'])&amp;#10;listen()&amp;#10;onkey(lambda: change(5, 0), 'Right')&amp;#10;onkey(lambda: change(-5, 0), 'Left')&amp;#10;onkey(lambda: change(0, 5), 'Up')&amp;#10;onkey(lambda: change(0, -5), 'Down')&amp;#10;world()&amp;#10;move()&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="setup(420, 420, 370, 0)&amp;#10;hideturtle()&amp;#10;tracer(False)&amp;#10;writer.goto(160, 160)&amp;#10;writer.color('white')&amp;#10;writer.write(state['score'])&amp;#10;listen()&amp;#10;onkey(lambda: change(5, 0), 'Right')&amp;#10;onkey(lambda: change(-5, 0), 'Left')&amp;#10;onkey(lambda: change(0, 5), 'Up')&amp;#10;onkey(lambda: change(0, -5), 'Down')&amp;#10;world()&amp;#10;move()" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="done()" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="Instructions"/>
@@ -644,6 +679,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="Game"/>
+    <Routine name="pacman"/>
     <LoopTerminator name="GameTrials"/>
     <LoopTerminator name="AllTrials"/>
   </Flow>

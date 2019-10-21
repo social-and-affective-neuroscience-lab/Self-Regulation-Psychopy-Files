@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 15, 2019, at 12:05
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.0),
+    on October 17, 2019, at 15:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.4'
+psychopyVersion = '3.2.0'
 expName = 'AcademicSR'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\tul00635\\Documents\\GitHub\\Self-Regulation-Psychopy-Files\\AcademicSelf-Regulation\\AcademicSR_lastrun.py',
+    originPath='C:\\Users\\Jojo\\Downloads\\GitHub\\Self-Regulation-Psychopy-Files\\AcademicSelf-Regulation\\AcademicSR_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -89,6 +89,9 @@ instruct = visual.TextStim(win=win, name='instruct',
     depth=0.0);
 space = keyboard.Keyboard()
 
+# Initialize components for Routine "ISI"
+ISIClock = core.Clock()
+
 # Initialize components for Routine "Cue"
 CueClock = core.Clock()
 regCue = visual.TextStim(win=win, name='regCue',
@@ -98,6 +101,9 @@ regCue = visual.TextStim(win=win, name='regCue',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+
+# Initialize components for Routine "ISI"
+ISIClock = core.Clock()
 
 # Initialize components for Routine "Choice"
 ChoiceClock = core.Clock()
@@ -230,12 +236,165 @@ testQsClock = core.Clock()
 # Initialize components for Routine "Game"
 GameClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='videogame holder\n',
+    text='You will be playing a version of Pacman. You will be playing as the yellow dot. Your goal is to gather as many points while avoiding the red dots. \n\nWhen you are ready, press SPACE!',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.07, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+key_resp = keyboard.Keyboard()
+
+# Initialize components for Routine "pacman"
+pacmanClock = core.Clock()
+#Pacman variables and functions
+from random import choice
+from turtle import *
+from freegames import floor, vector
+
+
+state = {'score': 0}
+path = Turtle(visible=False)
+writer = Turtle(visible=False)
+aim = vector(5, 0)
+pacman = vector(-40, -80)
+ghosts = [
+    [vector(-180, 160), vector(5, 0)],
+    [vector(-180, -160), vector(0, 5)],
+    [vector(100, 160), vector(0, -5)],
+    [vector(100, -160), vector(-5, 0)],
+]
+tiles = [
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0,
+    0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+]
+
+def square(x, y):
+    "Draw square using path at (x, y)."
+    path.up()
+    path.goto(x, y)
+    path.down()
+    path.begin_fill()
+
+    for count in range(4):
+        path.forward(20)
+        path.left(90)
+
+    path.end_fill()
+
+def offset(point):
+    "Return offset of point in tiles."
+    x = (floor(point.x, 20) + 200) / 20
+    y = (180 - floor(point.y, 20)) / 20
+    index = int(x + y * 20)
+    return index
+
+def valid(point):
+    "Return True if point is valid in tiles."
+    index = offset(point)
+
+    if tiles[index] == 0:
+        return False
+
+    index = offset(point + 19)
+
+    if tiles[index] == 0:
+        return False
+
+    return point.x % 20 == 0 or point.y % 20 == 0
+
+def world():
+    "Draw world using path."
+    bgcolor('black')
+    path.color('blue')
+
+    for index in range(len(tiles)):
+        tile = tiles[index]
+
+        if tile > 0:
+            x = (index % 20) * 20 - 200
+            y = 180 - (index // 20) * 20
+            square(x, y)
+
+            if tile == 1:
+                path.up()
+                path.goto(x + 10, y + 10)
+                path.dot(2, 'white')
+
+def move():
+    "Move pacman and all ghosts."
+    writer.undo()
+    writer.write(state['score'])
+
+    clear()
+
+    if valid(pacman + aim):
+        pacman.move(aim)
+
+    index = offset(pacman)
+
+    if tiles[index] == 1:
+        tiles[index] = 2
+        state['score'] += 1
+        x = (index % 20) * 20 - 200
+        y = 180 - (index // 20) * 20
+        square(x, y)
+
+    up()
+    goto(pacman.x + 10, pacman.y + 10)
+    dot(20, 'yellow')
+
+    for point, course in ghosts:
+        if valid(point + course):
+            point.move(course)
+        else:
+            options = [
+                vector(5, 0),
+                vector(-5, 0),
+                vector(0, 5),
+                vector(0, -5),
+            ]
+            plan = choice(options)
+            course.x = plan.x
+            course.y = plan.y
+
+        up()
+        goto(point.x + 10, point.y + 10)
+        dot(20, 'red')
+
+    update()
+
+    for point, course in ghosts:
+        if abs(pacman - point) < 20:
+            return
+
+    ontimer(move, 100)
+
+def change(x, y):
+    "Change pacman aim if valid."
+    if valid(pacman + vector(x, y)):
+        aim.x = x
+        aim.y = y
+#End pacman vars & functs 
+
+
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -359,6 +518,57 @@ for thisAllTrial in AllTrials:
         for paramName in thisAllTrial:
             exec('{} = thisAllTrial[paramName]'.format(paramName))
     
+    # ------Prepare to start Routine "ISI"-------
+    # update component parameters for each repeat
+    # keep track of which components have finished
+    ISIComponents = []
+    for thisComponent in ISIComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    ISIClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
+    
+    # -------Run Routine "ISI"-------
+    while continueRoutine:
+        # get current time
+        t = ISIClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=ISIClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in ISIComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "ISI"-------
+    for thisComponent in ISIComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # the Routine "ISI" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # ------Prepare to start Routine "Cue"-------
     routineTimer.add(3.000000)
     # update component parameters for each repeat
@@ -427,6 +637,57 @@ for thisAllTrial in AllTrials:
             thisComponent.setAutoDraw(False)
     AllTrials.addData('regCue.started', regCue.tStartRefresh)
     AllTrials.addData('regCue.stopped', regCue.tStopRefresh)
+    
+    # ------Prepare to start Routine "ISI"-------
+    # update component parameters for each repeat
+    # keep track of which components have finished
+    ISIComponents = []
+    for thisComponent in ISIComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    ISIClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
+    
+    # -------Run Routine "ISI"-------
+    while continueRoutine:
+        # get current time
+        t = ISIClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=ISIClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in ISIComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "ISI"-------
+    for thisComponent in ISIComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # the Routine "ISI" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # ------Prepare to start Routine "Choice"-------
     # update component parameters for each repeat
@@ -1060,10 +1321,11 @@ for thisAllTrial in AllTrials:
                 exec('{} = thisGameTrial[paramName]'.format(paramName))
         
         # ------Prepare to start Routine "Game"-------
-        routineTimer.add(4.000000)
         # update component parameters for each repeat
+        key_resp.keys = []
+        key_resp.rt = []
         # keep track of which components have finished
-        GameComponents = [text]
+        GameComponents = [text, key_resp]
         for thisComponent in GameComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1079,7 +1341,7 @@ for thisAllTrial in AllTrials:
         continueRoutine = True
         
         # -------Run Routine "Game"-------
-        while continueRoutine and routineTimer.getTime() > 0:
+        while continueRoutine:
             # get current time
             t = GameClock.getTime()
             tThisFlip = win.getFutureFlipTime(clock=GameClock)
@@ -1095,14 +1357,32 @@ for thisAllTrial in AllTrials:
                 text.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
                 text.setAutoDraw(True)
-            if text.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text.tStartRefresh + 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    text.tStop = t  # not accounting for scr refresh
-                    text.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(text, 'tStopRefresh')  # time at next scr refresh
-                    text.setAutoDraw(False)
+            
+            # *key_resp* updates
+            waitOnFlip = False
+            if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                key_resp.frameNStart = frameN  # exact frame index
+                key_resp.tStart = t  # local t and not account for scr refresh
+                key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+                key_resp.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp.status == STARTED and not waitOnFlip:
+                theseKeys = key_resp.getKeys(keyList=['space'], waitRelease=False)
+                if len(theseKeys):
+                    theseKeys = theseKeys[0]  # at least one key was pressed
+                    
+                    # check for quit:
+                    if "escape" == theseKeys:
+                        endExpNow = True
+                    key_resp.keys = theseKeys.name  # just the last key pressed
+                    key_resp.rt = theseKeys.rt
+                    # a response ends the routine
+                    continueRoutine = False
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1127,6 +1407,95 @@ for thisAllTrial in AllTrials:
                 thisComponent.setAutoDraw(False)
         GameTrials.addData('text.started', text.tStartRefresh)
         GameTrials.addData('text.stopped', text.tStopRefresh)
+        # check responses
+        if key_resp.keys in ['', [], None]:  # No response was made
+            key_resp.keys = None
+        GameTrials.addData('key_resp.keys',key_resp.keys)
+        if key_resp.keys != None:  # we had a response
+            GameTrials.addData('key_resp.rt', key_resp.rt)
+        GameTrials.addData('key_resp.started', key_resp.tStartRefresh)
+        GameTrials.addData('key_resp.stopped', key_resp.tStopRefresh)
+        # the Routine "Game" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
+        # ------Prepare to start Routine "pacman"-------
+        # update component parameters for each repeat
+        setup(420, 420, 370, 0)
+        hideturtle()
+        tracer(False)
+        writer.goto(160, 160)
+        writer.color('white')
+        writer.write(state['score'])
+        listen()
+        onkey(lambda: change(5, 0), 'Right')
+        onkey(lambda: change(-5, 0), 'Left')
+        onkey(lambda: change(0, 5), 'Up')
+        onkey(lambda: change(0, -5), 'Down')
+        world()
+        move()
+        
+        # keep track of which components have finished
+        pacmanComponents = []
+        for thisComponent in pacmanComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        pacmanClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
+        
+        # -------Run Routine "pacman"-------
+        while continueRoutine:
+            # get current time
+            t = pacmanClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=pacmanClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            setup(420, 420, 370, 0)
+            hideturtle()
+            tracer(False)
+            writer.goto(160, 160)
+            writer.color('white')
+            writer.write(state['score'])
+            listen()
+            onkey(lambda: change(5, 0), 'Right')
+            onkey(lambda: change(-5, 0), 'Left')
+            onkey(lambda: change(0, 5), 'Up')
+            onkey(lambda: change(0, -5), 'Down')
+            world()
+            move()
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in pacmanComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "pacman"-------
+        for thisComponent in pacmanComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        done()
+        # the Routine "pacman" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         thisExp.nextEntry()
         
     # completed doGame repeats of 'GameTrials'

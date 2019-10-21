@@ -1,0 +1,163 @@
+4.7430 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+5.7356 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001DC6D8B0C18>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001DC6D945A90>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.7357 	EXP 	window1: recordFrameIntervals = False
+5.8992 	EXP 	window1: recordFrameIntervals = True
+6.0834 	EXP 	window1: recordFrameIntervals = False
+6.7443 	EXP 	Created instruct = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.4)
+6.7744 	EXP 	Created regCue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='regCue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='REGULATE', units='height', win=Window(...), wrapWidth=1)
+6.7962 	EXP 	Created choiceQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='choiceQ', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.4)
+6.8219 	EXP 	Created testChoice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='testChoice', opacity=1.0, ori=0, pos=array([-0.41,  0.15]), rgb=array([255., 255., 255.]), text='Practice Standardized Test Questions', units='height', win=Window(...), wrapWidth=1)
+6.8313 	EXP 	Created videogameChoice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='videogameChoice', opacity=1.0, ori=0, pos=array([0.41, 0.15]), rgb=array([255., 255., 255.]), text='Play a Videogame', units='height', win=Window(...), wrapWidth=1)
+6.8449 	EXP 	Created gre = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='gre.png', interpolate=True, mask=None, maskParams=None, name='gre', opacity=1.0, ori=0.0, pos=array([-0.41,  0.02]), size=array([0.3  , 0.105]), texRes=128, units='height', win=Window(...))
+6.8501 	EXP 	Created gmat = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='gmat.png', interpolate=True, mask=None, maskParams=None, name='gmat', opacity=1.0, ori=0.0, pos=array([-0.41, -0.13]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.8533 	EXP 	Created lsat = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='lsat.png', interpolate=True, mask=None, maskParams=None, name='lsat', opacity=1.0, ori=0.0, pos=array([-0.41, -0.27]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.8591 	EXP 	Created mcat = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='mcat.png', interpolate=True, mask=None, maskParams=None, name='mcat', opacity=1.0, ori=0.0, pos=array([-0.41, -0.41]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.8779 	EXP 	Created game = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='game.png', interpolate=True, mask=None, maskParams=None, name='game', opacity=1.0, ori=0.0, pos=array([ 0.41, -0.19]), size=array([0.4, 0.5]), texRes=128, units='height', win=Window(...))
+6.8785 	EXP 	Created blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.9273 	EXP 	Created testQChoice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.055, italic=False, languageStyle='LTR', name='testQChoice', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.3)
+6.9311 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='gre.png', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0.   , 0.105]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9339 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='gmat.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.05]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9361 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='lsat.png', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([ 0. , -0.2]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9399 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='mcat.png', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.35]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9414 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-6.0, fillColor=None, fillColorSpace='rgb', fillRGB=None, interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='polygon', opacity=1.0, ori=array(1.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+7.0147 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.3038 	EXP 	instruct: autoDraw = True
+8.9885 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+8.9894 	EXP 	New trial (rep=0, index=0): None
+9.0024 	EXP 	instruct: autoDraw = False
+9.0024 	EXP 	regCue: autoDraw = True
+12.0315 	EXP 	regCue: autoDraw = False
+12.0315 	EXP 	blank: text = ''
+12.0315 	EXP 	choiceQ: autoDraw = True
+12.0315 	EXP 	testChoice: autoDraw = True
+12.0315 	EXP 	videogameChoice: autoDraw = True
+12.0315 	EXP 	gre: autoDraw = True
+12.0315 	EXP 	gmat: autoDraw = True
+12.0315 	EXP 	lsat: autoDraw = True
+12.0315 	EXP 	mcat: autoDraw = True
+12.0315 	EXP 	game: autoDraw = True
+17.5828 	EXP 	videogameChoice: color = 'green (named)'
+17.5828 	EXP 	blank: autoDraw = True
+17.5991 	EXP 	videogameChoice: color = 'green (named)'
+17.6160 	EXP 	videogameChoice: color = 'green (named)'
+17.6320 	EXP 	videogameChoice: color = 'green (named)'
+17.6488 	EXP 	videogameChoice: color = 'green (named)'
+17.6664 	EXP 	videogameChoice: color = 'green (named)'
+17.6824 	EXP 	videogameChoice: color = 'green (named)'
+17.6989 	EXP 	videogameChoice: color = 'green (named)'
+17.7154 	EXP 	videogameChoice: color = 'green (named)'
+17.7321 	EXP 	videogameChoice: color = 'green (named)'
+17.7487 	EXP 	videogameChoice: color = 'green (named)'
+17.7654 	EXP 	videogameChoice: color = 'green (named)'
+17.7821 	EXP 	videogameChoice: color = 'green (named)'
+17.7987 	EXP 	videogameChoice: color = 'green (named)'
+17.8154 	EXP 	videogameChoice: color = 'green (named)'
+17.8324 	EXP 	videogameChoice: color = 'green (named)'
+17.8486 	EXP 	videogameChoice: color = 'green (named)'
+17.8661 	EXP 	videogameChoice: color = 'green (named)'
+17.8823 	EXP 	videogameChoice: color = 'green (named)'
+17.8990 	EXP 	videogameChoice: color = 'green (named)'
+17.9154 	EXP 	videogameChoice: color = 'green (named)'
+17.9321 	EXP 	videogameChoice: color = 'green (named)'
+17.9488 	EXP 	videogameChoice: color = 'green (named)'
+17.9658 	EXP 	videogameChoice: color = 'green (named)'
+17.9823 	EXP 	videogameChoice: color = 'green (named)'
+17.9993 	EXP 	videogameChoice: color = 'green (named)'
+18.0157 	EXP 	videogameChoice: color = 'green (named)'
+18.0329 	EXP 	videogameChoice: color = 'green (named)'
+18.0487 	EXP 	videogameChoice: color = 'green (named)'
+18.0654 	EXP 	videogameChoice: color = 'green (named)'
+18.0834 	EXP 	videogameChoice: color = 'green (named)'
+18.1000 	EXP 	videogameChoice: color = 'green (named)'
+18.1168 	EXP 	videogameChoice: color = 'green (named)'
+18.1324 	EXP 	videogameChoice: color = 'green (named)'
+18.1490 	EXP 	videogameChoice: color = 'green (named)'
+18.1657 	EXP 	videogameChoice: color = 'green (named)'
+18.1820 	EXP 	videogameChoice: color = 'green (named)'
+18.1988 	EXP 	videogameChoice: color = 'green (named)'
+18.2154 	EXP 	videogameChoice: color = 'green (named)'
+18.2325 	EXP 	videogameChoice: color = 'green (named)'
+18.2487 	EXP 	videogameChoice: color = 'green (named)'
+18.2661 	EXP 	videogameChoice: color = 'green (named)'
+18.2829 	EXP 	videogameChoice: color = 'green (named)'
+18.2988 	EXP 	videogameChoice: color = 'green (named)'
+18.3158 	EXP 	videogameChoice: color = 'green (named)'
+18.3324 	EXP 	videogameChoice: color = 'green (named)'
+18.3487 	EXP 	videogameChoice: color = 'green (named)'
+18.3656 	EXP 	videogameChoice: color = 'green (named)'
+18.3821 	EXP 	videogameChoice: color = 'green (named)'
+18.3988 	EXP 	videogameChoice: color = 'green (named)'
+18.4158 	EXP 	videogameChoice: color = 'green (named)'
+18.4320 	EXP 	videogameChoice: color = 'green (named)'
+18.4486 	EXP 	videogameChoice: color = 'green (named)'
+18.4654 	EXP 	videogameChoice: color = 'green (named)'
+18.4823 	EXP 	videogameChoice: color = 'green (named)'
+18.4987 	EXP 	videogameChoice: color = 'green (named)'
+18.5154 	EXP 	videogameChoice: color = 'green (named)'
+18.5323 	EXP 	videogameChoice: color = 'green (named)'
+18.5492 	EXP 	videogameChoice: color = 'green (named)'
+18.5658 	EXP 	videogameChoice: color = 'green (named)'
+18.5821 	EXP 	videogameChoice: color = 'green (named)'
+18.5988 	EXP 	videogameChoice: color = 'green (named)'
+18.6154 	EXP 	videogameChoice: color = 'green (named)'
+18.6321 	EXP 	videogameChoice: color = 'green (named)'
+18.6487 	EXP 	videogameChoice: color = 'green (named)'
+18.6653 	EXP 	videogameChoice: color = 'green (named)'
+18.6820 	EXP 	videogameChoice: color = 'green (named)'
+18.6987 	EXP 	videogameChoice: color = 'green (named)'
+18.7155 	EXP 	videogameChoice: color = 'green (named)'
+18.7321 	EXP 	videogameChoice: color = 'green (named)'
+18.7487 	EXP 	videogameChoice: color = 'green (named)'
+18.7655 	EXP 	videogameChoice: color = 'green (named)'
+18.7821 	EXP 	videogameChoice: color = 'green (named)'
+18.7987 	EXP 	videogameChoice: color = 'green (named)'
+18.8154 	EXP 	videogameChoice: color = 'green (named)'
+18.8321 	EXP 	videogameChoice: color = 'green (named)'
+18.8494 	EXP 	videogameChoice: color = 'green (named)'
+18.8659 	EXP 	videogameChoice: color = 'green (named)'
+18.8824 	EXP 	videogameChoice: color = 'green (named)'
+18.8987 	EXP 	videogameChoice: color = 'green (named)'
+18.9158 	EXP 	videogameChoice: color = 'green (named)'
+18.9320 	EXP 	videogameChoice: color = 'green (named)'
+18.9490 	EXP 	videogameChoice: color = 'green (named)'
+18.9654 	EXP 	videogameChoice: color = 'green (named)'
+18.9821 	EXP 	videogameChoice: color = 'green (named)'
+18.9988 	EXP 	videogameChoice: color = 'green (named)'
+19.0157 	EXP 	videogameChoice: color = 'green (named)'
+19.0326 	EXP 	videogameChoice: color = 'green (named)'
+19.0492 	EXP 	videogameChoice: color = 'green (named)'
+19.0659 	EXP 	videogameChoice: color = 'green (named)'
+19.0829 	EXP 	videogameChoice: color = 'green (named)'
+19.0829 	EXP 	blank: autoDraw = False
+19.1057 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+19.1071 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+19.1079 	EXP 	New trial (rep=0, index=0): None
+19.1204 	EXP 	choiceQ: autoDraw = False
+19.1204 	EXP 	testChoice: autoDraw = False
+19.1204 	EXP 	videogameChoice: autoDraw = False
+19.1204 	EXP 	gre: autoDraw = False
+19.1204 	EXP 	gmat: autoDraw = False
+19.1204 	EXP 	lsat: autoDraw = False
+19.1204 	EXP 	mcat: autoDraw = False
+19.1204 	EXP 	game: autoDraw = False
+19.1204 	EXP 	videogameChoice: color = 'green (named)'
+19.1204 	EXP 	choiceQ: autoDraw = False
+19.1204 	EXP 	testChoice: autoDraw = False
+19.1204 	EXP 	videogameChoice: autoDraw = False
+19.1204 	EXP 	gre: autoDraw = False
+19.1204 	EXP 	gmat: autoDraw = False
+19.1204 	EXP 	lsat: autoDraw = False
+19.1204 	EXP 	mcat: autoDraw = False
+19.1204 	EXP 	game: autoDraw = False
+19.1204 	EXP 	blank: autoDraw = False
+19.1204 	EXP 	videogameChoice: color = 'white (named)'
+19.1204 	EXP 	testChoice: color = 'white (named)'
+19.1204 	EXP 	choiceQ: autoDraw = False
+19.1204 	EXP 	testChoice: autoDraw = False
+19.1204 	EXP 	videogameChoice: autoDraw = False
+19.1204 	EXP 	gre: autoDraw = False
+19.1204 	EXP 	gmat: autoDraw = False
+19.1204 	EXP 	lsat: autoDraw = False
+19.1204 	EXP 	mcat: autoDraw = False
+19.1204 	EXP 	text: autoDraw = True
+21.1533 	EXP 	window1: mouseVisible = True
