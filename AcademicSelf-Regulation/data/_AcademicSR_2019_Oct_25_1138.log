@@ -1,0 +1,279 @@
+5.5043 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+6.3114 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002028A3EFCF8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002028A5424E0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.3114 	EXP 	window1: recordFrameIntervals = False
+6.4784 	EXP 	window1: recordFrameIntervals = True
+6.6611 	EXP 	window1: recordFrameIntervals = False
+6.8736 	EXP 	Created instruct = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instruct', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.4)
+6.8930 	EXP 	Created regCue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='regCue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='REGULATE', units='height', win=Window(...), wrapWidth=1)
+6.9097 	EXP 	Created choiceQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='choiceQ', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.4)
+6.9249 	EXP 	Created testChoice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='testChoice', opacity=1.0, ori=0, pos=array([-0.41,  0.15]), rgb=array([255., 255., 255.]), text='Practice Standardized Test Questions', units='height', win=Window(...), wrapWidth=1)
+6.9309 	EXP 	Created videogameChoice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='videogameChoice', opacity=1.0, ori=0, pos=array([0.41, 0.15]), rgb=array([255., 255., 255.]), text='Play a Videogame', units='height', win=Window(...), wrapWidth=1)
+6.9354 	EXP 	Created gre = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='gre.png', interpolate=True, mask=None, maskParams=None, name='gre', opacity=1.0, ori=0.0, pos=array([-0.41,  0.02]), size=array([0.3  , 0.105]), texRes=128, units='height', win=Window(...))
+6.9378 	EXP 	Created gmat = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='gmat.png', interpolate=True, mask=None, maskParams=None, name='gmat', opacity=1.0, ori=0.0, pos=array([-0.41, -0.13]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9393 	EXP 	Created lsat = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='lsat.png', interpolate=True, mask=None, maskParams=None, name='lsat', opacity=1.0, ori=0.0, pos=array([-0.41, -0.27]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9502 	EXP 	Created game = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='game.png', interpolate=True, mask=None, maskParams=None, name='game', opacity=1.0, ori=0.0, pos=array([ 0.41, -0.19]), size=array([0.4, 0.5]), texRes=128, units='height', win=Window(...))
+6.9506 	EXP 	Created blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.9812 	EXP 	Created testQChoice = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.055, italic=False, languageStyle='LTR', name='testQChoice', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.3)
+6.9846 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='gre.png', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0.   , 0.105]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9872 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='gmat.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.05]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9893 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='lsat.png', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([ 0. , -0.2]), size=array([0.3 , 0.11]), texRes=128, units='height', win=Window(...))
+6.9911 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-5.0, fillColor=None, fillColorSpace='rgb', fillRGB=None, interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='polygon', opacity=1.0, ori=array(1.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+7.0039 	EXP 	Created TextQuestion = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.028, italic=False, languageStyle='LTR', name='TextQuestion', opacity=1.0, ori=0, pos=array([0.  , 0.35]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.45)
+7.0139 	EXP 	Created choiceA = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.026, italic=False, languageStyle='LTR', name='choiceA', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+7.0171 	EXP 	Created choiceB = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.026, italic=False, languageStyle='LTR', name='choiceB', opacity=1.0, ori=0, pos=array([ 0. , -0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+7.0201 	EXP 	Created choiceC = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.026, italic=False, languageStyle='LTR', name='choiceC', opacity=1.0, ori=0, pos=array([ 0. , -0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+7.0233 	EXP 	Created choiceD = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.026, italic=False, languageStyle='LTR', name='choiceD', opacity=1.0, ori=0, pos=array([ 0. , -0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+7.0265 	EXP 	Created choiceE = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.026, italic=False, languageStyle='LTR', name='choiceE', opacity=1.0, ori=0, pos=array([ 0.  , -0.45]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+7.1007 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.1304 	EXP 	instruct: autoDraw = True
+8.4503 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+8.4505 	EXP 	New trial (rep=0, index=0): None
+8.4563 	DATA 	Keypress: space
+8.4635 	EXP 	instruct: autoDraw = False
+8.4635 	EXP 	regCue: autoDraw = True
+11.5125 	EXP 	regCue: autoDraw = False
+11.5125 	EXP 	regCue: autoDraw = False
+11.5125 	EXP 	blank: text = ''
+11.5125 	EXP 	choiceQ: autoDraw = True
+11.5125 	EXP 	testChoice: autoDraw = True
+11.5125 	EXP 	videogameChoice: autoDraw = True
+11.5125 	EXP 	gre: autoDraw = True
+11.5125 	EXP 	gmat: autoDraw = True
+11.5125 	EXP 	lsat: autoDraw = True
+11.5125 	EXP 	game: autoDraw = True
+13.0885 	DATA 	Keypress: 1
+13.0999 	EXP 	testChoice: color = 'green (named)'
+13.0999 	EXP 	blank: autoDraw = True
+13.1166 	EXP 	testChoice: color = 'green (named)'
+13.1333 	EXP 	testChoice: color = 'green (named)'
+13.1502 	EXP 	testChoice: color = 'green (named)'
+13.1667 	EXP 	testChoice: color = 'green (named)'
+13.1834 	EXP 	testChoice: color = 'green (named)'
+13.2002 	EXP 	testChoice: color = 'green (named)'
+13.2167 	EXP 	testChoice: color = 'green (named)'
+13.2334 	EXP 	testChoice: color = 'green (named)'
+13.2501 	EXP 	testChoice: color = 'green (named)'
+13.2673 	EXP 	testChoice: color = 'green (named)'
+13.2835 	EXP 	testChoice: color = 'green (named)'
+13.3001 	EXP 	testChoice: color = 'green (named)'
+13.3169 	EXP 	testChoice: color = 'green (named)'
+13.3332 	EXP 	testChoice: color = 'green (named)'
+13.3502 	EXP 	testChoice: color = 'green (named)'
+13.3670 	EXP 	testChoice: color = 'green (named)'
+13.3832 	EXP 	testChoice: color = 'green (named)'
+13.4004 	EXP 	testChoice: color = 'green (named)'
+13.4168 	EXP 	testChoice: color = 'green (named)'
+13.4340 	EXP 	testChoice: color = 'green (named)'
+13.4502 	EXP 	testChoice: color = 'green (named)'
+13.4668 	EXP 	testChoice: color = 'green (named)'
+13.4835 	EXP 	testChoice: color = 'green (named)'
+13.5001 	EXP 	testChoice: color = 'green (named)'
+13.5169 	EXP 	testChoice: color = 'green (named)'
+13.5336 	EXP 	testChoice: color = 'green (named)'
+13.5502 	EXP 	testChoice: color = 'green (named)'
+13.5667 	EXP 	testChoice: color = 'green (named)'
+13.5835 	EXP 	testChoice: color = 'green (named)'
+13.6006 	EXP 	testChoice: color = 'green (named)'
+13.6171 	EXP 	testChoice: color = 'green (named)'
+13.6340 	EXP 	testChoice: color = 'green (named)'
+13.6504 	EXP 	testChoice: color = 'green (named)'
+13.6672 	EXP 	testChoice: color = 'green (named)'
+13.6838 	EXP 	testChoice: color = 'green (named)'
+13.7006 	EXP 	testChoice: color = 'green (named)'
+13.7173 	EXP 	testChoice: color = 'green (named)'
+13.7338 	EXP 	testChoice: color = 'green (named)'
+13.7503 	EXP 	testChoice: color = 'green (named)'
+13.7674 	EXP 	testChoice: color = 'green (named)'
+13.7838 	EXP 	testChoice: color = 'green (named)'
+13.8008 	EXP 	testChoice: color = 'green (named)'
+13.8171 	EXP 	testChoice: color = 'green (named)'
+13.8336 	EXP 	testChoice: color = 'green (named)'
+13.8506 	EXP 	testChoice: color = 'green (named)'
+13.8674 	EXP 	testChoice: color = 'green (named)'
+13.8839 	EXP 	testChoice: color = 'green (named)'
+13.9009 	EXP 	testChoice: color = 'green (named)'
+13.9172 	EXP 	testChoice: color = 'green (named)'
+13.9342 	EXP 	testChoice: color = 'green (named)'
+13.9506 	EXP 	testChoice: color = 'green (named)'
+13.9676 	EXP 	testChoice: color = 'green (named)'
+13.9840 	EXP 	testChoice: color = 'green (named)'
+14.0007 	EXP 	testChoice: color = 'green (named)'
+14.0174 	EXP 	testChoice: color = 'green (named)'
+14.0340 	EXP 	testChoice: color = 'green (named)'
+14.0507 	EXP 	testChoice: color = 'green (named)'
+14.0675 	EXP 	testChoice: color = 'green (named)'
+14.0841 	EXP 	testChoice: color = 'green (named)'
+14.1007 	EXP 	testChoice: color = 'green (named)'
+14.1175 	EXP 	testChoice: color = 'green (named)'
+14.1343 	EXP 	testChoice: color = 'green (named)'
+14.1511 	EXP 	testChoice: color = 'green (named)'
+14.1675 	EXP 	testChoice: color = 'green (named)'
+14.1846 	EXP 	testChoice: color = 'green (named)'
+14.2010 	EXP 	testChoice: color = 'green (named)'
+14.2176 	EXP 	testChoice: color = 'green (named)'
+14.2343 	EXP 	testChoice: color = 'green (named)'
+14.2510 	EXP 	testChoice: color = 'green (named)'
+14.2677 	EXP 	testChoice: color = 'green (named)'
+14.2845 	EXP 	testChoice: color = 'green (named)'
+14.3010 	EXP 	testChoice: color = 'green (named)'
+14.3180 	EXP 	testChoice: color = 'green (named)'
+14.3345 	EXP 	testChoice: color = 'green (named)'
+14.3512 	EXP 	testChoice: color = 'green (named)'
+14.3678 	EXP 	testChoice: color = 'green (named)'
+14.3843 	EXP 	testChoice: color = 'green (named)'
+14.4010 	EXP 	testChoice: color = 'green (named)'
+14.4178 	EXP 	testChoice: color = 'green (named)'
+14.4343 	EXP 	testChoice: color = 'green (named)'
+14.4512 	EXP 	testChoice: color = 'green (named)'
+14.4678 	EXP 	testChoice: color = 'green (named)'
+14.4846 	EXP 	testChoice: color = 'green (named)'
+14.5012 	EXP 	testChoice: color = 'green (named)'
+14.5183 	EXP 	testChoice: color = 'green (named)'
+14.5347 	EXP 	testChoice: color = 'green (named)'
+14.5511 	EXP 	testChoice: color = 'green (named)'
+14.5679 	EXP 	testChoice: color = 'green (named)'
+14.5843 	EXP 	testChoice: color = 'green (named)'
+14.6012 	EXP 	testChoice: color = 'green (named)'
+14.6012 	EXP 	blank: autoDraw = False
+14.6313 	EXP 	Imported RowsExcel.xlsx as conditions, 5 conditions, 1 params
+14.6316 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+14.6317 	EXP 	New trial (rep=0, index=0): OrderedDict([('Rows', '0020:0025')])
+14.6400 	EXP 	choiceQ: autoDraw = False
+14.6400 	EXP 	testChoice: autoDraw = False
+14.6400 	EXP 	videogameChoice: autoDraw = False
+14.6400 	EXP 	gre: autoDraw = False
+14.6400 	EXP 	gmat: autoDraw = False
+14.6400 	EXP 	lsat: autoDraw = False
+14.6400 	EXP 	game: autoDraw = False
+14.6400 	EXP 	testChoice: color = 'green (named)'
+14.6400 	EXP 	choiceQ: autoDraw = False
+14.6400 	EXP 	testChoice: autoDraw = False
+14.6400 	EXP 	videogameChoice: autoDraw = False
+14.6400 	EXP 	gre: autoDraw = False
+14.6400 	EXP 	gmat: autoDraw = False
+14.6400 	EXP 	lsat: autoDraw = False
+14.6400 	EXP 	game: autoDraw = False
+14.6400 	EXP 	blank: autoDraw = False
+14.6400 	EXP 	videogameChoice: color = 'white (named)'
+14.6400 	EXP 	testChoice: color = 'white (named)'
+14.6400 	EXP 	choiceQ: autoDraw = False
+14.6400 	EXP 	testChoice: autoDraw = False
+14.6400 	EXP 	videogameChoice: autoDraw = False
+14.6400 	EXP 	gre: autoDraw = False
+14.6400 	EXP 	gmat: autoDraw = False
+14.6400 	EXP 	lsat: autoDraw = False
+14.6400 	EXP 	polygon: opacity = 1.0
+14.6400 	EXP 	polygon: size = array([0.32, 0.13])
+14.6400 	EXP 	polygon: ori = 0.0
+14.6400 	EXP 	polygon: lineWidth = 8.0
+14.6400 	EXP 	testQChoice: autoDraw = True
+14.6400 	EXP 	image: autoDraw = True
+14.6400 	EXP 	image_2: autoDraw = True
+14.6400 	EXP 	image_3: autoDraw = True
+15.9583 	DATA 	Keypress: 1
+15.9869 	EXP 	polygon: autoDraw = True
+16.2431 	DATA 	Keypress: 2
+16.2528 	EXP 	polygon: autoDraw = True
+16.2694 	EXP 	polygon: autoDraw = True
+16.2863 	EXP 	polygon: autoDraw = True
+16.3029 	EXP 	polygon: autoDraw = True
+16.3196 	EXP 	polygon: autoDraw = True
+16.3358 	EXP 	polygon: autoDraw = True
+16.3529 	EXP 	polygon: autoDraw = True
+16.3694 	EXP 	polygon: autoDraw = True
+16.3859 	EXP 	polygon: autoDraw = True
+16.4030 	EXP 	polygon: autoDraw = True
+16.4194 	EXP 	polygon: autoDraw = True
+16.4368 	EXP 	polygon: autoDraw = True
+16.4533 	EXP 	polygon: autoDraw = True
+16.4584 	DATA 	Keypress: 3
+16.4696 	EXP 	polygon: autoDraw = True
+16.4864 	EXP 	polygon: autoDraw = True
+16.5030 	EXP 	polygon: autoDraw = True
+16.5200 	EXP 	polygon: autoDraw = True
+16.5365 	EXP 	polygon: autoDraw = True
+16.5530 	EXP 	polygon: autoDraw = True
+16.5697 	EXP 	polygon: autoDraw = True
+16.5865 	EXP 	polygon: autoDraw = True
+16.6028 	EXP 	polygon: autoDraw = True
+16.6198 	EXP 	polygon: autoDraw = True
+16.6365 	EXP 	polygon: autoDraw = True
+16.6535 	EXP 	polygon: autoDraw = True
+16.6696 	EXP 	polygon: autoDraw = True
+16.6864 	EXP 	polygon: autoDraw = True
+16.7030 	EXP 	polygon: autoDraw = True
+16.7199 	EXP 	polygon: autoDraw = True
+16.7363 	EXP 	polygon: autoDraw = True
+16.7534 	EXP 	polygon: autoDraw = True
+16.7699 	EXP 	polygon: autoDraw = True
+16.7865 	EXP 	polygon: autoDraw = True
+16.8034 	EXP 	polygon: autoDraw = True
+16.8200 	EXP 	polygon: autoDraw = True
+16.8364 	EXP 	polygon: autoDraw = True
+16.8535 	EXP 	polygon: autoDraw = True
+16.8699 	EXP 	polygon: autoDraw = True
+16.8865 	EXP 	polygon: autoDraw = True
+16.9034 	EXP 	polygon: autoDraw = True
+16.9198 	EXP 	polygon: autoDraw = True
+16.9366 	EXP 	polygon: autoDraw = True
+16.9531 	EXP 	polygon: autoDraw = True
+16.9702 	EXP 	polygon: autoDraw = True
+16.9869 	EXP 	polygon: autoDraw = True
+17.0033 	EXP 	polygon: autoDraw = True
+17.0202 	EXP 	polygon: autoDraw = True
+17.0369 	EXP 	polygon: autoDraw = True
+17.0535 	EXP 	polygon: autoDraw = True
+17.0702 	EXP 	polygon: autoDraw = True
+17.0874 	EXP 	polygon: autoDraw = True
+17.1036 	EXP 	polygon: autoDraw = True
+17.1204 	EXP 	polygon: autoDraw = True
+17.1370 	EXP 	polygon: autoDraw = True
+17.1533 	EXP 	polygon: autoDraw = True
+17.1702 	EXP 	polygon: autoDraw = True
+17.1869 	EXP 	polygon: autoDraw = True
+17.2039 	EXP 	polygon: autoDraw = True
+17.2201 	EXP 	polygon: autoDraw = True
+17.2367 	EXP 	polygon: autoDraw = True
+17.2537 	EXP 	polygon: autoDraw = True
+17.2705 	EXP 	polygon: autoDraw = True
+17.2868 	EXP 	polygon: autoDraw = True
+17.3037 	EXP 	polygon: autoDraw = True
+17.3205 	EXP 	polygon: autoDraw = True
+17.3369 	EXP 	polygon: autoDraw = True
+17.3539 	EXP 	polygon: autoDraw = True
+17.3702 	EXP 	polygon: autoDraw = True
+17.3869 	EXP 	polygon: autoDraw = True
+17.4037 	EXP 	polygon: autoDraw = True
+17.4212 	EXP 	polygon: autoDraw = True
+17.4371 	EXP 	polygon: autoDraw = True
+17.4441 	DATA 	Keypress: return
+17.4538 	EXP 	polygon: autoDraw = True
+17.4749 	EXP 	Imported QuestionsText.xlsx as conditions, 5 conditions, 21 params
+17.4750 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+17.4754 	EXP 	New trial (rep=0, index=0): OrderedDict([('GMAT', '1) Jess: To be a woman in this century is far better than to be a woman in centuries past. Life expectancy for women has - for the first time - surpassed that for men and while only around 20℅ of college students in the late 1800s were women, today, almost 60℅ of college students are women.\n\nSam: However, women educated in the top-ranked colleges in the country earn only about 70℅ of what their male counterparts earn. Also, studies show that even today, in a number of industries, women are refused top management positions simply because they are women.\n\nWhich of the following is Jess most likely to say in response to Sam?'), ('GMATQA', '(A)Women today are healthier and live longer than women in the 1800s, who primarily died because of child birth.'), ('GMATQB', '(B)There are more women at the entry-level jobs of most industries than there are men.'), ('GMATQC', '(C)Women today are better able to juggle professional and personal lives and a number of them are proving to be successful single mothers.'), ('GMATQD', '(D)The proportion of women in the judicial and legislative branches of the country is at its highest and the country elected its first woman president recently.'), ('GMATQE', '(E)Women are allowed more freedom today and are not likely to be sacrificed at the altar of marriage or in a witch hunt.'), ('GMATAs', 'd'), ('GRE', '1) Unlike the lungs and the kidneys, the liver is an organ well suited for living-donor transplants to children because the portion of the liver must be removed from a healthy adult to replace the diseased liver of a child will be regenerated in the healthy adult within a few months.\n\nWhich of the following, if true, provides the most additional support for the conclusion drawn above?'), ('GREQA', '(A)  The success rate of liver transplants is slightly lower in children than in adults.'), ('GREQB', '(B) In removing the portion of liver for transplant there is danger of causing damage to the spleen of the donor, and that could necessitate the removal of the spleen.'), ('GREQC', '(C) There is less danger that a transplanted organ will be rejected when the organ donor is a close relative of the recipient.'), ('GREQD', '(D) There are so few suitable donors that about one-half of the babies with liver disease born in the United States each year die before they can receive a liver transplant.'), ('GREQE', '(E)Each lobe of the liver functions separately, and it is possible to extract a portion of one lobe without disrupting critical liver functions.'), ('GREA', 'e'), ('LSAT', "1)Modern workers are less competent than workers of the past.  This fact likely comes as a surprise to some because standards are higher than ever.  Employers demand higher degrees than before and more workers have bachelor's and master's degrees than at any other time.  Higher degrees do not mean more competent workers, however.  Recent evidence indicates that modern workers have poor writing ability, lack focus, and are inept at personal communication.\n\nWhich of the following, if true, most undermines the argument?"), ('LSATQA', '(A)Modern workers generally work more hours than workers in the past\n\n'), ('LSATQB', "(B)Workers of the past often obtained bachelor's and master's degrees\n\n"), ('LSATQC', '(C)Workers of the past had poor writing ability, lacked focus, and were inept at personal communication\n\n'), ('LSATQD', "(D)In the past, it was often more difficult to obtain a bachelor's or master's degree\n\n"), ('LSATQE', '(E)Modern workers are dismissed from their jobs less frequently than at any other time\n\n'), ('LSATAs', 'c')])
+17.6127 	EXP 	polygon: autoDraw = True
+17.6127 	EXP 	testQChoice: autoDraw = False
+17.6127 	EXP 	image: autoDraw = False
+17.6127 	EXP 	image_2: autoDraw = False
+17.6127 	EXP 	image_3: autoDraw = False
+17.6127 	EXP 	polygon: autoDraw = False
+17.6127 	EXP 	TextQuestion: text = 'PLACEHOLDER'
+17.6127 	EXP 	choiceA: text = 'QA'
+17.6127 	EXP 	choiceB: text = 'QB'
+17.6127 	EXP 	choiceC: text = 'QC'
+17.6127 	EXP 	choiceD: text = 'QD'
+17.6127 	EXP 	choiceE: text = 'QE'
+17.6127 	EXP 	TextQuestion: text = "1)Modern workers are less competent than workers of the past.  This fact likely comes as a surprise to some because standards are higher than ever.  Employers demand higher degrees than before and more workers have bachelor's and master's degrees than at any other time.  Higher degrees do not mean more competent workers, however.  Recent evidence indicates that modern workers have poor writing ability, lack focus, and are inept at personal communication.\n\nWhich of the following, if true, most undermines the argument?"
+17.6127 	EXP 	choiceA: text = '(A)Modern workers generally work more hours than workers in the past\n\n'
+17.6127 	EXP 	choiceB: text = "(B)Workers of the past often obtained bachelor's and master's degrees\n\n"
+17.6127 	EXP 	choiceC: text = '(C)Workers of the past had poor writing ability, lacked focus, and were inept at personal communication\n\n'
+17.6127 	EXP 	choiceD: text = "(D)In the past, it was often more difficult to obtain a bachelor's or master's degree\n\n"
+17.6127 	EXP 	choiceE: text = '(E)Modern workers are dismissed from their jobs less frequently than at any other time\n\n'
+17.6127 	EXP 	TextQuestion: autoDraw = True
+17.6127 	EXP 	choiceA: autoDraw = True
+17.6127 	EXP 	choiceB: autoDraw = True
+17.6127 	EXP 	choiceC: autoDraw = True
+17.6127 	EXP 	choiceD: autoDraw = True
+17.6127 	EXP 	choiceE: autoDraw = True
+31.1208 	DATA 	Keypress: escape
+31.2140 	EXP 	window1: mouseVisible = True

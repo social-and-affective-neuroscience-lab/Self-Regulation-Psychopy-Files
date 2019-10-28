@@ -1,7 +1,7 @@
-ï»¿PracticeDilemmas,PracticeLeftText,PracticeRightText,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun
-"â€¢ You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
+PracticeDilemmas,PracticeLeftText,PracticeRightText,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun
+"• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
 
-â€¢ You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 3,"Probability of 
+• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 3,"Probability of 
 parachute opening: 35% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die
 
 Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
@@ -9,9 +9,9 @@ Do nothing: The one skydiver will live, the group has a chance of surviving","Th
 The group ","The one skydiver died.
 
 The group of 3 skydivers was saved.",3,35, skydivers
-"â€¢ Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him
+"• Your crew sees one diver apart from the rest who is much closer to reaching the ground, and instinctively moves a few feet to the left to catch him
 
-â€¢ You know that there won't be enough time to reach the group if you wait to catch the one",Divers on right: 4,"Probability of 
+• You know that there won't be enough time to reach the group if you wait to catch the one",Skydivers on right: 4,"Probability of 
 parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
 
 Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
@@ -19,9 +19,9 @@ Do nothing: The one skydiver will live, the group has a chance of surviving","Th
 The group ","The one skydiver died.
 
 The group of 4 skydivers was saved.",4,50, skydivers
-"â€¢ If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths
+"• If nothing is done, the safety crew will catch the diver to the left, avoiding his death, but the separate group of divers will land on the ground, causing their deaths
 
-â€¢ You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught",Divers on right: 7,"Probability of 
+• You can re-direct your crew to the right, preventing the death of the group, but the one diver won't be caught",Skydivers on right: 7,"Probability of 
 parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
 
 Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
@@ -29,9 +29,9 @@ Do nothing: The one skydiver will live, the group has a chance of surviving","Th
 The group ","The one skydiver died.
 
 The group of 7 skydivers was saved.",7,50, skydivers
-"â€¢ You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
+"• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
 
-â€¢ There is no chance that the parachute will open for the one diver, given how close he is to the ground",Divers on right: 5,"Probability of 
+• There is no chance that the parachute will open for the one diver, given how close he is to the ground",Skydivers on right: 5,"Probability of 
 parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
 
 Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
@@ -39,7 +39,7 @@ Do nothing: The one skydiver will live, the group has a chance of surviving","Th
 The group ","The one skydiver died.
 
 The group of 5 skydivers was saved.",5,65, skydivers
-"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Divers on right: 8,"Probability of 
+"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Skydivers on right: 8,"Probability of 
 parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the one skydiver to die 
 
 Do nothing: The one skydiver will live, the group has a chance of surviving","The one skydiver was saved.
@@ -47,9 +47,9 @@ Do nothing: The one skydiver will live, the group has a chance of surviving","Th
 The group ","The one skydiver died.
 
 The group of 8 skydivers was saved.",8,65, skydivers
-"â€¢ You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers
+"• You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers
 
-â€¢ You know that when the sharks reach this group they will encircle them and kill them all ",Scuba divers in team: 6,"Probability EM pulse
+• You know that when the sharks reach this group they will encircle them and kill them all ",Scuba divers in team: 6,"Probability EM pulse
 will function: 35%","Plan: Shoot the one diver, leaving them to get eaten by sharks
 
 Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
@@ -57,9 +57,9 @@ Do nothing: The one diver will live, the group has a chance of surviving","The o
 The group ","The one scuba diver died.
 
 The group of 6 scuba divers was saved.",6,35, scuba divers
-"â€¢ You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks 
+"• You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks 
 
-â€¢ If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers ",Scuba divers in team: 3,"Probability EM pulse
+• If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers ",Scuba divers in team: 3,"Probability EM pulse
 will function: 65%","Plan: Shoot the one diver, leaving them to get eaten by sharks
 
 Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
@@ -67,7 +67,7 @@ Do nothing: The one diver will live, the group has a chance of surviving","The o
 The group ","The one scuba diver died.
 
 The group of 3 scuba divers was saved.",3,65, scuba divers
-"â€¢ If you shoot the one diver, all of the divers will be spared",Scuba divers in team: 7,"Probability EM pulse
+"• If you shoot the one diver, all of the divers will be spared",Scuba divers in team: 7,"Probability EM pulse
 will function: 50%","Plan: Shoot the one diver, leaving them to get eaten by sharks
 
 Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
@@ -75,9 +75,9 @@ Do nothing: The one diver will live, the group has a chance of surviving","The o
 The group ","The one scuba diver died.
 
 The group of 7 scuba divers was saved.",7,50, scuba divers
-"â€¢ You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function 
+"• You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function 
 
-â€¢ In order to ensure that the group will be spared, you must shoot the one diver now",Scuba divers in team: 9,"Probability EM pulse
+• In order to ensure that the group will be spared, you must shoot the one diver now",Scuba divers in team: 9,"Probability EM pulse
 will function: 50%","Plan: Shoot the one diver, leaving them to get eaten by sharks
 
 Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
