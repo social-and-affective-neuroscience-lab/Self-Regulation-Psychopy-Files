@@ -2,7 +2,9 @@
 
 from random import choice
 from turtle import *
+from psychopy import sound, gui, visual, core, data, event, logging, clock
 import collections
+from psychopy.hardware import keyboard
 class vector(collections.Sequence):
     """Two-dimensional vector.
     Vectors can be modified in-place.
@@ -352,6 +354,29 @@ class vector(collections.Sequence):
         name = type_self.__name__
         return '{}({!r}, {!r})'.format(name, self.x, self.y)
 
+def floor(value, size, offset=200):
+    """Floor of `value` given `size` and `offset`.
+    The floor function is best understood with a diagram of the number line::
+         -200  -100    0    100   200
+        <--|--x--|-----|--y--|--z--|-->
+    The number line shown has offset 200 denoted by the left-hand tick mark at
+    -200 and size 100 denoted by the tick marks at -100, 0, 100, and 200. The
+    floor of a value is the left-hand tick mark of the range where it lies. So
+    for the points show above: ``floor(x)`` is -200, ``floor(y)`` is 0, and
+    ``floor(z)`` is 100.
+    >>> floor(10, 100)
+    0.0
+    >>> floor(120, 100)
+    100.0
+    >>> floor(-10, 100)
+    -100.0
+    >>> floor(-150, 100)
+    -200.0
+    >>> floor(50, 167)
+    -33.0
+    """
+    return float(((value + offset) // size) * size - offset)
+
 
 state = {'score': 0}
 path = Turtle(visible=False)
@@ -386,29 +411,13 @@ tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ]
-
-def floor(value, size, offset=200):
-    """Floor of `value` given `size` and `offset`.
-    The floor function is best understood with a diagram of the number line::
-         -200  -100    0    100   200
-        <--|--x--|-----|--y--|--z--|-->
-    The number line shown has offset 200 denoted by the left-hand tick mark at
-    -200 and size 100 denoted by the tick marks at -100, 0, 100, and 200. The
-    floor of a value is the left-hand tick mark of the range where it lies. So
-    for the points show above: ``floor(x)`` is -200, ``floor(y)`` is 0, and
-    ``floor(z)`` is 100.
-    >>> floor(10, 100)
-    0.0
-    >>> floor(120, 100)
-    100.0
-    >>> floor(-10, 100)
-    -100.0
-    >>> floor(-150, 100)
-    -200.0
-    >>> floor(50, 167)
-    -33.0
-    """
-    return float(((value + offset) // size) * size - offset)
+defaultKeyboard = keyboard.Keyboard()
+spaceKey = keyboard.Keyboard()
+def displayDie():
+    display = visual.TextStim("Oh No! \n\n Press SPACE to play again")
+    display.setAutoDraw(true)
+    if spaceKey.keys == 'space':
+        continueRoutine = False
 
 
 def square(x, y):
@@ -508,6 +517,8 @@ def move():
 
     for point, course in ghosts:
         if abs(pacman - point) < 20:
+            print("You Died :(")
+            displayDie()
             return
 
     ontimer(move, 100)
@@ -518,17 +529,22 @@ def change(x, y):
         aim.x = x
         aim.y = y
 
-setup(420, 420, 370, 0)
-hideturtle()
-tracer(False)
-writer.goto(160, 160)
-writer.color('white')
-writer.write(state['score'])
-listen()
-onkey(lambda: change(5, 0), 'Right')
-onkey(lambda: change(-5, 0), 'Left')
-onkey(lambda: change(0, 5), 'Up')
-onkey(lambda: change(0, -5), 'Down')
-world()
-move()
-done()
+
+def pacmanGame():
+
+    setup(420, 420, 370, 0)
+    hideturtle()
+    tracer(False)
+    writer.goto(160, 160)
+    writer.color('white')
+    writer.write(state['score'])
+    listen()
+    onkey(lambda: change(5, 0), 'Right')
+    onkey(lambda: change(-5, 0), 'Left')
+    onkey(lambda: change(0, 5), 'Up')
+    onkey(lambda: change(0, -5), 'Down')
+    world()
+    move()
+    done()
+    
+pacmanGame()
