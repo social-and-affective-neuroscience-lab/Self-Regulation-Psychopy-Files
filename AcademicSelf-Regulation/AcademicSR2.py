@@ -1,8 +1,8 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 28, 2019, at 12:44
+    on October 28, 2019, at 12:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\tul00635\\Documents\\GitHub\\Self-Regulation-Psychopy-Files\\AcademicSelf-Regulation\\AcademicSR_lastrun.py',
+    originPath='C:\\Users\\tul00635\\Documents\\GitHub\\Self-Regulation-Psychopy-Files\\AcademicSelf-Regulation\\AcademicSR.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -282,154 +282,154 @@ spaceKey = keyboard.Keyboard()
 # Initialize components for Routine "pacman"
 pacmanClock = core.Clock()
 #Pacman variables and functions
-#from random import choice
-#from turtle import *
-#from freegames import floor, vector
-#
-#
-#state = {'score': 0}
-#path = Turtle(visible=False)
-#writer = Turtle(visible=False)
-#aim = vector(5, 0)
-#pacman = vector(-40, -80)
-#ghosts = [
-#    [vector(-180, 160), vector(5, 0)],
-#    [vector(-180, -160), vector(0, 5)],
-#    [vector(100, 160), vector(0, -5)],
-#    [vector(100, -160), vector(-5, 0)],
-#]
-#tiles = [
-#    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-#    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
-#    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0,
-#    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
-#    0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
-#    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,
-#    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
-#    0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0,
-#    0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
-#    0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
-#    0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
-#    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
-#    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
-#    0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0,
-#    0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0,
-#    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,
-#    0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
-#    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
-#    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-#    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-#]
-#
-#def square(x, y):
-#    "Draw square using path at (x, y)."
-#    path.up()
-#    path.goto(x, y)
-#    path.down()
-#    path.begin_fill()
-#
-#    for count in range(4):
-#        path.forward(20)
-#        path.left(90)
-#
-#    path.end_fill()
-#
-#def offset(point):
-#    "Return offset of point in tiles."
-#    x = (floor(point.x, 20) + 200) / 20
-#    y = (180 - floor(point.y, 20)) / 20
-#    index = int(x + y * 20)
-#    return index
-#
-#def valid(point):
-#    "Return True if point is valid in tiles."
-#    index = offset(point)
-#
-#    if tiles[index] == 0:
-#        return False
-#
-#    index = offset(point + 19)
-#
-#    if tiles[index] == 0:
-#        return False
-#
-#    return point.x % 20 == 0 or point.y % 20 == 0
-#
-#def world():
-#    "Draw world using path."
-#    bgcolor('black')
-#    path.color('blue')
-#
-#    for index in range(len(tiles)):
-#        tile = tiles[index]
-#
-#        if tile > 0:
-#            x = (index % 20) * 20 - 200
-#            y = 180 - (index // 20) * 20
-#            square(x, y)
-#
-#            if tile == 1:
-#                path.up()
-#                path.goto(x + 10, y + 10)
-#                path.dot(2, 'white')
-#
-#def move():
-#    "Move pacman and all ghosts."
-#    writer.undo()
-#    writer.write(state['score'])
-#
-#    clear()
-#
-#    if valid(pacman + aim):
-#        pacman.move(aim)
-#
-#    index = offset(pacman)
-#
-#    if tiles[index] == 1:
-#        tiles[index] = 2
-#        state['score'] += 1
-#        x = (index % 20) * 20 - 200
-#        y = 180 - (index // 20) * 20
-#        square(x, y)
-#
-#    up()
-#    goto(pacman.x + 10, pacman.y + 10)
-#    dot(20, 'yellow')
-#
-#    for point, course in ghosts:
-#        if valid(point + course):
-#            point.move(course)
-#        else:
-#            options = [
-#                vector(5, 0),
-#                vector(-5, 0),
-#                vector(0, 5),
-#                vector(0, -5),
-#            ]
-#            plan = choice(options)
-#            course.x = plan.x
-#            course.y = plan.y
-#
-#        up()
-#        goto(point.x + 10, point.y + 10)
-#        dot(20, 'red')
-#
-#    update()
-#
-#    for point, course in ghosts:
-#        if abs(pacman - point) < 20:
-#            return
-#
-#    ontimer(move, 100)
-#
-#def change(x, y):
-#    "Change pacman aim if valid."
-#    if valid(pacman + vector(x, y)):
-#        aim.x = x
-#        aim.y = y
-##End pacman vars & functs 
-#
-#
+from random import choice
+from turtle import *
+from freegames import floor, vector
+
+
+state = {'score': 0}
+path = Turtle(visible=False)
+writer = Turtle(visible=False)
+aim = vector(5, 0)
+pacman = vector(-40, -80)
+ghosts = [
+    [vector(-180, 160), vector(5, 0)],
+    [vector(-180, -160), vector(0, 5)],
+    [vector(100, 160), vector(0, -5)],
+    [vector(100, -160), vector(-5, 0)],
+]
+tiles = [
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0,
+    0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
+    0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+]
+
+def square(x, y):
+    "Draw square using path at (x, y)."
+    path.up()
+    path.goto(x, y)
+    path.down()
+    path.begin_fill()
+
+    for count in range(4):
+        path.forward(20)
+        path.left(90)
+
+    path.end_fill()
+
+def offset(point):
+    "Return offset of point in tiles."
+    x = (floor(point.x, 20) + 200) / 20
+    y = (180 - floor(point.y, 20)) / 20
+    index = int(x + y * 20)
+    return index
+
+def valid(point):
+    "Return True if point is valid in tiles."
+    index = offset(point)
+
+    if tiles[index] == 0:
+        return False
+
+    index = offset(point + 19)
+
+    if tiles[index] == 0:
+        return False
+
+    return point.x % 20 == 0 or point.y % 20 == 0
+
+def world():
+    "Draw world using path."
+    bgcolor('black')
+    path.color('blue')
+
+    for index in range(len(tiles)):
+        tile = tiles[index]
+
+        if tile > 0:
+            x = (index % 20) * 20 - 200
+            y = 180 - (index // 20) * 20
+            square(x, y)
+
+            if tile == 1:
+                path.up()
+                path.goto(x + 10, y + 10)
+                path.dot(2, 'white')
+
+def move():
+    "Move pacman and all ghosts."
+    writer.undo()
+    writer.write(state['score'])
+
+    clear()
+
+    if valid(pacman + aim):
+        pacman.move(aim)
+
+    index = offset(pacman)
+
+    if tiles[index] == 1:
+        tiles[index] = 2
+        state['score'] += 1
+        x = (index % 20) * 20 - 200
+        y = 180 - (index // 20) * 20
+        square(x, y)
+
+    up()
+    goto(pacman.x + 10, pacman.y + 10)
+    dot(20, 'yellow')
+
+    for point, course in ghosts:
+        if valid(point + course):
+            point.move(course)
+        else:
+            options = [
+                vector(5, 0),
+                vector(-5, 0),
+                vector(0, 5),
+                vector(0, -5),
+            ]
+            plan = choice(options)
+            course.x = plan.x
+            course.y = plan.y
+
+        up()
+        goto(point.x + 10, point.y + 10)
+        dot(20, 'red')
+
+    update()
+
+    for point, course in ghosts:
+        if abs(pacman - point) < 20:
+            return
+
+    ontimer(move, 100)
+
+def change(x, y):
+    "Change pacman aim if valid."
+    if valid(pacman + vector(x, y)):
+        aim.x = x
+        aim.y = y
+#End pacman vars & functs 
+
+
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -942,28 +942,14 @@ for thisAllTrial in AllTrials:
     for thisComponent in ChoiceComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    AllTrials.addData('choiceQ.started', choiceQ.tStartRefresh)
-    AllTrials.addData('choiceQ.stopped', choiceQ.tStopRefresh)
+
     # check responses
     if choiceResp.keys in ['', [], None]:  # No response was made
         choiceResp.keys = None
     AllTrials.addData('choiceResp.keys',choiceResp.keys)
     if choiceResp.keys != None:  # we had a response
         AllTrials.addData('choiceResp.rt', choiceResp.rt)
-    AllTrials.addData('choiceResp.started', choiceResp.tStartRefresh)
-    AllTrials.addData('choiceResp.stopped', choiceResp.tStopRefresh)
-    AllTrials.addData('testChoice.started', testChoice.tStartRefresh)
-    AllTrials.addData('testChoice.stopped', testChoice.tStopRefresh)
-    AllTrials.addData('videogameChoice.started', videogameChoice.tStartRefresh)
-    AllTrials.addData('videogameChoice.stopped', videogameChoice.tStopRefresh)
-    AllTrials.addData('gre.started', gre.tStartRefresh)
-    AllTrials.addData('gre.stopped', gre.tStopRefresh)
-    AllTrials.addData('gmat.started', gmat.tStartRefresh)
-    AllTrials.addData('gmat.stopped', gmat.tStopRefresh)
-    AllTrials.addData('lsat.started', lsat.tStartRefresh)
-    AllTrials.addData('lsat.stopped', lsat.tStopRefresh)
-    AllTrials.addData('game.started', game.tStartRefresh)
-    AllTrials.addData('game.stopped', game.tStopRefresh)
+
     videogameChoice.setColor('white')
     testChoice.setColor('white')
     
@@ -1016,17 +1002,7 @@ for thisAllTrial in AllTrials:
         polygon.setLineWidth(8)
         y = 0
         q = []
-        '''
-        
-        if upDown.keys == '1':
-            polygon.setPosition = [0, 0.105]
-        elif upDown.keys == '2':
-            polygon.setPosition = [0, -0.05]
-        elif upDown.keys == '3':
-            polygon.setPosition = [0, -0.2]
-        elif upDown.keys == '4':
-            polygon.setPosition = [0, -0.35]
-            '''
+
         if upDown.keys == '1':
             y = 0.105
         elif upDown.keys == '2':
@@ -1133,21 +1109,7 @@ for thisAllTrial in AllTrials:
                 polygon.setAutoDraw(True)
             if polygon.status == STARTED:  # only update if drawing
                 polygon.setPos([0,y], log=False)
-            
-            '''
-            
-            if upDown.keys == '1':
-                polygon.setPosition = [0, 0.105]
-            elif upDown.keys == '2':
-                polygon.setPosition = [0, -0.05]
-            elif upDown.keys == '3':
-                polygon.setPosition = [0, -0.2]
-            elif upDown.keys == '4':
-                polygon.setPosition = [0, -0.35]
-                '''
-            
-            
-            
+
             if upDown.keys == '1':
                 y = 0.105
             elif upDown.keys == '2':
@@ -1203,24 +1165,14 @@ for thisAllTrial in AllTrials:
         for thisComponent in testQuestionsChoiceComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        QuestionTrials.addData('testQChoice.started', testQChoice.tStartRefresh)
-        QuestionTrials.addData('testQChoice.stopped', testQChoice.tStopRefresh)
-        QuestionTrials.addData('image.started', image.tStartRefresh)
-        QuestionTrials.addData('image.stopped', image.tStopRefresh)
-        QuestionTrials.addData('image_2.started', image_2.tStartRefresh)
-        QuestionTrials.addData('image_2.stopped', image_2.tStopRefresh)
-        QuestionTrials.addData('image_3.started', image_3.tStartRefresh)
-        QuestionTrials.addData('image_3.stopped', image_3.tStopRefresh)
+
         # check responses
         if upDown.keys in ['', [], None]:  # No response was made
             upDown.keys = None
         QuestionTrials.addData('upDown.keys',upDown.keys)
         if upDown.keys != None:  # we had a response
             QuestionTrials.addData('upDown.rt', upDown.rt)
-        QuestionTrials.addData('upDown.started', upDown.tStartRefresh)
-        QuestionTrials.addData('upDown.stopped', upDown.tStopRefresh)
-        QuestionTrials.addData('polygon.started', polygon.tStartRefresh)
-        QuestionTrials.addData('polygon.stopped', polygon.tStopRefresh)
+
         if upDown.keys == '1' and enter.keys != 0:
             q = 1
         elif upDown.keys == '2' and enter.keys != 0:
@@ -1233,9 +1185,7 @@ for thisAllTrial in AllTrials:
         QuestionTrials.addData('enter.keys',enter.keys)
         if enter.keys != None:  # we had a response
             QuestionTrials.addData('enter.rt', enter.rt)
-        QuestionTrials.addData('enter.started', enter.tStartRefresh)
-        QuestionTrials.addData('enter.stopped', enter.tStopRefresh)
-        # the Routine "testQuestionsChoice" was not non-slip safe, so reset the non-slip timer
+
         routineTimer.reset()
         
         # set up handler to look after randomisation of conditions etc
@@ -1244,8 +1194,7 @@ for thisAllTrial in AllTrials:
             trialList=data.importConditions('QuestionsText.xlsx', selection=Rows),
             seed=None, name='Questions5')
         thisExp.addLoop(Questions5)  # add the loop to the experiment
-        thisQuestions5 = Questions5.trialList[0]  # so we can initialise stimuli with some values
-        # abbreviate parameter names if possible (e.g. rgb = thisQuestions5.rgb)
+        thisQuestions5 = Questions5.trialList[0]
         if thisQuestions5 != None:
             for paramName in thisQuestions5:
                 exec('{} = thisQuestions5[paramName]'.format(paramName))
@@ -1257,8 +1206,7 @@ for thisAllTrial in AllTrials:
                 for paramName in thisQuestions5:
                     exec('{} = thisQuestions5[paramName]'.format(paramName))
             
-            # ------Prepare to start Routine "testQs"-------
-            # update component parameters for each repeat
+
             TextQuestion.setText('PLACEHOLDER')
             letterKey.keys = []
             letterKey.rt = []
@@ -1713,17 +1661,14 @@ for thisAllTrial in AllTrials:
         for thisComponent in GameComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        GameTrials.addData('gameInstructions.started', gameInstructions.tStartRefresh)
-        GameTrials.addData('gameInstructions.stopped', gameInstructions.tStopRefresh)
+
         # check responses
         if spaceKey.keys in ['', [], None]:  # No response was made
             spaceKey.keys = None
         GameTrials.addData('spaceKey.keys',spaceKey.keys)
         if spaceKey.keys != None:  # we had a response
             GameTrials.addData('spaceKey.rt', spaceKey.rt)
-        GameTrials.addData('spaceKey.started', spaceKey.tStartRefresh)
-        GameTrials.addData('spaceKey.stopped', spaceKey.tStopRefresh)
-        # the Routine "Game" was not non-slip safe, so reset the non-slip timer
+
         routineTimer.reset()
         
         # set up handler to look after randomisation of conditions etc
@@ -1785,19 +1730,20 @@ for thisAllTrial in AllTrials:
                 tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
-                #setup(420, 420, 370, 0)
-                #hideturtle()
-                #tracer(False)
-                #writer.goto(160, 160)
-                #writer.color('white')
-                #writer.write(state['score'])
-                #listen()
-                #onkey(lambda: change(5, 0), 'Right')
-                #onkey(lambda: change(-5, 0), 'Left')
-                #onkey(lambda: change(0, 5), 'Up')
-                #onkey(lambda: change(0, -5), 'Down')
-                #world()
-                #move()
+                setup(420, 420, 370, 0)
+                hideturtle()
+                tracer(False)
+                writer.goto(160, 160)
+                writer.color('white')
+                writer.write(state['score'])
+                listen()
+                onkey(lambda: change(5, 0), 'Right')
+                onkey(lambda: change(-5, 0), 'Left')
+                onkey(lambda: change(0, 5), 'Up')
+                onkey(lambda: change(0, -5), 'Down')
+                world()
+                move()
+                done()
                 
                 # check for quit (typically the Esc key)
                 if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1820,7 +1766,7 @@ for thisAllTrial in AllTrials:
             for thisComponent in pacmanComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            #done()
+            done()
             # the Routine "pacman" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             thisExp.nextEntry()
@@ -1833,11 +1779,7 @@ for thisAllTrial in AllTrials:
     
     thisExp.nextEntry()
     
-# completed 5 repeats of 'AllTrials'
 
-
-# Flip one final time so any remaining win.callOnFlip() 
-# and win.timeOnFlip() tasks get executed before quitting
 win.flip()
 
 # these shouldn't be strictly necessary (should auto-save)
