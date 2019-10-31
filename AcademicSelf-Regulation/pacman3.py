@@ -342,3 +342,5 @@ def pacmanGame():
     done()
     
 pacmanGame()
+if abs(pacman - point) < 20:
+    displayEnd("Oh no! You died! :( ")

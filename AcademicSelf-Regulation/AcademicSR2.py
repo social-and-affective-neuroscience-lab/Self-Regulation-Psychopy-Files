@@ -278,13 +278,166 @@ gameInstructions = visual.TextStim(win=win, name='gameInstructions',
     languageStyle='LTR',
     depth=0.0);
 spaceKey = keyboard.Keyboard()
-
-# Initialize components for Routine "pacman"
 pacmanClock = core.Clock()
-#Pacman variables and functions
-from random import choice
-from turtle import *
-from freegames import floor, vector
+# Initialize components for Routine "pacman"
+class vector(collections.Sequence):
+    PRECISION = 6
+
+    __slots__ = ('_x', '_y', '_hash')
+
+    def __init__(self, x, y):
+        self._hash = None
+        self._x = round(x, self.PRECISION)
+        self._y = round(y, self.PRECISION)
+
+    @property
+    def x(self):
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        if self._hash is not None:
+            raise ValueError('cannot set x after hashing')
+        self._x = round(value, self.PRECISION)
+
+    @property
+    def y(self):
+        return self._y
+
+    @y.setter
+    def y(self, value):
+        if self._hash is not None:
+            raise ValueError('cannot set y after hashing')
+        self._y = round(value, self.PRECISION)
+
+    def __hash__(self):
+        if self._hash is None:
+            pair = (self.x, self.y)
+            self._hash = hash(pair)
+        return self._hash
+
+    def __len__(self):
+
+        return 2
+
+    def __getitem__(self, index):
+        if index == 0:
+            return self.x
+        if index == 1:
+            return self.y
+        raise IndexError
+
+    def copy(self):
+        type_self = type(self)
+        return type_self(self.x, self.y)
+
+    def __eq__(self, other):
+        if isinstance(other, vector):
+            return self.x == other.x and self.y == other.y
+        return NotImplemented
+
+    def __ne__(self, other):
+        if isinstance(other, vector):
+            return self.x != other.x or self.y != other.y
+        return NotImplemented
+
+    def __iadd__(self, other):
+        if self._hash is not None:
+            raise ValueError('cannot add vector after hashing')
+        elif isinstance(other, vector):
+            self.x += other.x
+            self.y += other.y
+        else:
+            self.x += other
+            self.y += other
+        return self
+
+    def __add__(self, other):
+        copy = self.copy()
+        return copy.__iadd__(other)
+
+    __radd__ = __add__
+
+    def move(self, other):
+        self.__iadd__(other)
+
+    def __isub__(self, other):
+        if self._hash is not None:
+            raise ValueError('cannot subtract vector after hashing')
+        elif isinstance(other, vector):
+            self.x -= other.x
+            self.y -= other.y
+        else:
+            self.x -= other
+            self.y -= other
+        return self
+
+    def __sub__(self, other):
+        copy = self.copy()
+        return copy.__isub__(other)
+
+    def __imul__(self, other):
+        if self._hash is not None:
+            raise ValueError('cannot multiply vector after hashing')
+        elif isinstance(other, vector):
+            self.x *= other.x
+            self.y *= other.y
+        else:
+            self.x *= other
+            self.y *= other
+        return self
+
+    def __mul__(self, other):
+        copy = self.copy()
+        return copy.__imul__(other)
+
+    __rmul__ = __mul__
+
+    def scale(self, other):
+        self.__imul__(other)
+
+    def __itruediv__(self, other):
+        if self._hash is not None:
+            raise ValueError('cannot divide vector after hashing')
+        elif isinstance(other, vector):
+            self.x /= other.x
+            self.y /= other.y
+        else:
+            self.x /= other
+            self.y /= other
+        return self
+
+    def __truediv__(self, other):
+        copy = self.copy()
+        return copy.__itruediv__(other)
+
+    def __neg__(self):
+        copy = self.copy()
+        copy.x = -copy.x
+        copy.y = -copy.y
+        return copy
+
+    def __abs__(self):
+        return (self.x ** 2 + self.y ** 2) ** 0.5
+
+    def rotate(self, angle):
+        if self._hash is not None:
+            raise ValueError('cannot rotate vector after hashing')
+        radians = angle * math.pi / 180.0
+        cosine = math.cos(radians)
+        sine = math.sin(radians)
+        x = self.x
+        y = self.y
+        self.x = x * cosine - y * sine
+        self.y = y * cosine + x * sine
+
+    def __repr__(self):
+        type_self = type(self)
+        name = type_self.__name__
+        return '{}({!r}, {!r})'.format(name, self.x, self.y)
+
+def floor(value, size, offset=200):
+    return float(((value + offset) // size) * size - offset)
 
 
 state = {'score': 0}
@@ -320,6 +473,14 @@ tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ]
+defaultKeyboard = keyboard.Keyboard()
+spaceKey = keyboard.Keyboard()
+def displayEnd(textVar):
+    display = visual.TextStim(win=win, text = textVar, font='Arial', pos=(-0.41, 0.15), color='white', height=0.06)
+    display.setAutoDraw(True)
+    if spaceKey.keys == 'space':
+        continueRoutine = False
+
 
 def square(x, y):
     "Draw square using path at (x, y)."
@@ -418,6 +579,8 @@ def move():
 
     for point, course in ghosts:
         if abs(pacman - point) < 20:
+            print("You Died :(")
+            displayEnd("Oh no! The game will restart soon")
             return
 
     ontimer(move, 100)
@@ -427,6 +590,24 @@ def change(x, y):
     if valid(pacman + vector(x, y)):
         aim.x = x
         aim.y = y
+
+
+def pacmanGame():
+
+    setup(420, 420, 370, 0)
+    hideturtle()
+    tracer(False)
+    writer.goto(160, 160)
+    writer.color('white')
+    writer.write(state['score'])
+    listen()
+    onkey(lambda: change(5, 0), 'Right')
+    onkey(lambda: change(-5, 0), 'Left')
+    onkey(lambda: change(0, 5), 'Up')
+    onkey(lambda: change(0, -5), 'Down')
+    world()
+    move()
+    done()
 #End pacman vars & functs 
 
 
