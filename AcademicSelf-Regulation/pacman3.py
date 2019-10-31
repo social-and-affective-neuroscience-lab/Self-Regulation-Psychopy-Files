@@ -5,6 +5,13 @@ from turtle import *
 from psychopy import sound, gui, visual, core, data, event, logging, clock
 import collections
 from psychopy.hardware import keyboard
+
+win = visual.Window(
+    size=(1024, 768), fullscr=False, screen=0,
+    winType='pyglet', allowGUI=False, allowStencil=False,
+    monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+    blendMode='avg', useFBO=True,
+    units='height')
 class vector(collections.Sequence):
     PRECISION = 6
 
@@ -42,6 +49,7 @@ class vector(collections.Sequence):
         return self._hash
 
     def __len__(self):
+
         return 2
 
     def __getitem__(self, index):
@@ -200,9 +208,9 @@ tiles = [
 ]
 defaultKeyboard = keyboard.Keyboard()
 spaceKey = keyboard.Keyboard()
-def displayDie():
-    display = visual.TextStim(text = "Oh No! \n\n Press SPACE to play again")
-    display.setAutoDraw(true)
+def displayEnd(textVar):
+    display = visual.TextStim(win=win, text = textVar, font='Arial', pos=(-0.41, 0.15), color='white', height=0.06)
+    display.setAutoDraw(True)
     if spaceKey.keys == 'space':
         continueRoutine = False
 
@@ -305,7 +313,7 @@ def move():
     for point, course in ghosts:
         if abs(pacman - point) < 20:
             print("You Died :(")
-            displayDie()
+            displayEnd("Oh no! The game will restart soon")
             return
 
     ontimer(move, 100)
@@ -333,5 +341,7 @@ def pacmanGame():
     world()
     move()
     done()
-    
+
 pacmanGame()
+if abs(pacman - point) < 20:
+    displayEnd("Oh no! You died! :( ")
