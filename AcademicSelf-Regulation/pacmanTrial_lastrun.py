@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 31, 2019, at 11:21
+    on October 31, 2019, at 12:55
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -86,13 +86,15 @@ from turtle import *
 from psychopy import sound, gui, visual, core, data, event, logging, clock
 import collections
 from psychopy.hardware import keyboard
-
+clock=core.Clock()
 win = visual.Window(
     size=(1024, 768), fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
+    
+#self.window = turtle.Screen()
 class vector(collections.Sequence):
     PRECISION = 6
 
@@ -401,6 +403,13 @@ def change(x, y):
         aim.x = x
         aim.y = y
 
+def end():
+    finish = clock.getTime()
+    if finish>=5.000: 
+        bye()
+endTime = 1*60
+
+
 # Initialize components for Routine "displayText"
 displayTextClock = core.Clock()
 display = visual.TextStim(win=win, name='display',
@@ -432,16 +441,15 @@ def pacmanGame():
     onkey(lambda: change(0, -5), 'Down')
     world()
     move()
-    done()
     
-pacmanGame()
-endTime = 1*60
-clock=core.Clock()
+    
+    done()
+#    end()
 
-finish = clock.getTime()
-if finish>endTime: 
-   continueRoutine = False
-   done()
+
+
+
+
 # keep track of which components have finished
 trialComponents = []
 for thisComponent in trialComponents:
@@ -489,14 +497,17 @@ for thisComponent in trialComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
-    
+pacmanGame()
 
+turtle.clear()
+turtle.bye()
 # the Routine "trial" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "displayText"-------
+routineTimer.add(3.000000)
 # update component parameters for each repeat
-display.setText('displayVar')
+display.setText('The game ended!')
 # keep track of which components have finished
 displayTextComponents = [display]
 for thisComponent in displayTextComponents:
@@ -514,7 +525,7 @@ frameN = -1
 continueRoutine = True
 
 # -------Run Routine "displayText"-------
-while continueRoutine:
+while continueRoutine and routineTimer.getTime() > 0:
     # get current time
     t = displayTextClock.getTime()
     tThisFlip = win.getFutureFlipTime(clock=displayTextClock)
@@ -523,7 +534,7 @@ while continueRoutine:
     # update/draw components on each frame
     
     # *display* updates
-    if display.status == NOT_STARTED and end == True:
+    if display.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
         # keep track of start time/frame for later
         display.frameNStart = frameN  # exact frame index
         display.tStart = t  # local t and not account for scr refresh
@@ -562,8 +573,6 @@ for thisComponent in displayTextComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('display.started', display.tStartRefresh)
 thisExp.addData('display.stopped', display.tStopRefresh)
-# the Routine "displayText" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
