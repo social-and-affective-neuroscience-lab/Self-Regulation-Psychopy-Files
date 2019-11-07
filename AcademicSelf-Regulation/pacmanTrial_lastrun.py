@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 31, 2019, at 12:55
+    on November 06, 2019, at 15:15
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -80,21 +80,20 @@ defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
+#PACMAN
 
 from random import choice
 from turtle import *
 from psychopy import sound, gui, visual, core, data, event, logging, clock
 import collections
 from psychopy.hardware import keyboard
-clock=core.Clock()
+
 win = visual.Window(
-    size=(1024, 768), fullscr=True, screen=0, 
+    size=(1024, 768), fullscr=False, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
-    
-#self.window = turtle.Screen()
 class vector(collections.Sequence):
     PRECISION = 6
 
@@ -254,6 +253,7 @@ class vector(collections.Sequence):
 def floor(value, size, offset=200):
     return float(((value + offset) // size) * size - offset)
 
+
 state = {'score': 0}
 path = Turtle(visible=False)
 writer = Turtle(visible=False)
@@ -289,11 +289,13 @@ tiles = [
 ]
 defaultKeyboard = keyboard.Keyboard()
 spaceKey = keyboard.Keyboard()
-#def displayEnd():
-#    display.setAutoDraw(True)
-#    if spaceKey.keys == 'space':
-#        continueRoutine = False
-        
+def displayEnd(textVar):
+    display = visual.TextStim(win=win, text = textVar, font='Arial', pos=(-0.41, 0.15), color='white', height=0.06)
+    display.setAutoDraw(True)
+    if spaceKey.keys == 'space':
+        continueRoutine = False
+
+
 def square(x, y):
     "Draw square using path at (x, y)."
     path.up()
@@ -330,7 +332,7 @@ def valid(point):
 
 def world():
     "Draw world using path."
-    bgcolor('grey')
+    bgcolor('black')
     path.color('blue')
 
     for index in range(len(tiles)):
@@ -392,7 +394,10 @@ def move():
     for point, course in ghosts:
         if abs(pacman - point) < 20:
             print("You Died :(")
-            displayEnd()
+            return False
+            bye()
+            continueRoutine = False
+            displayEnd("Oh no! The game will restart soon")
             return
 
     ontimer(move, 100)
@@ -403,13 +408,6 @@ def change(x, y):
         aim.x = x
         aim.y = y
 
-def end():
-    finish = clock.getTime()
-    if finish>=5.000: 
-        bye()
-endTime = 1*60
-
-
 # Initialize components for Routine "displayText"
 displayTextClock = core.Clock()
 display = visual.TextStim(win=win, name='display',
@@ -419,160 +417,237 @@ display = visual.TextStim(win=win, name='display',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+key_resp = keyboard.Keyboard()
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
-# ------Prepare to start Routine "trial"-------
-# update component parameters for each repeat
-def pacmanGame():
+# set up handler to look after randomisation of conditions etc
+trials = data.TrialHandler(nReps=5, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=[None],
+    seed=None, name='trials')
+thisExp.addLoop(trials)  # add the loop to the experiment
+thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+if thisTrial != None:
+    for paramName in thisTrial:
+        exec('{} = thisTrial[paramName]'.format(paramName))
 
-    setup(420, 420, 370, 0)
-    hideturtle()
-    tracer(False)
-    writer.goto(160, 160)
-    writer.color('white')
-    writer.write(state['score'])
-    listen()
-    onkey(lambda: change(5, 0), 'Right')
-    onkey(lambda: change(-5, 0), 'Left')
-    onkey(lambda: change(0, 5), 'Up')
-    onkey(lambda: change(0, -5), 'Down')
-    world()
-    move()
+for thisTrial in trials:
+    currentLoop = trials
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+    if thisTrial != None:
+        for paramName in thisTrial:
+            exec('{} = thisTrial[paramName]'.format(paramName))
     
-    
-    done()
-#    end()
-
-
-
-
-
-# keep track of which components have finished
-trialComponents = []
-for thisComponent in trialComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-continueRoutine = True
-
-# -------Run Routine "trial"-------
-while continueRoutine:
-    # get current time
-    t = trialClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=trialClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
+    # ------Prepare to start Routine "trial"-------
+    # update component parameters for each repeat
+    # keep track of which components have finished
+    trialComponents = []
     for thisComponent in trialComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "trial"-------
-for thisComponent in trialComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-pacmanGame()
-
-turtle.clear()
-turtle.bye()
-# the Routine "trial" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
-# ------Prepare to start Routine "displayText"-------
-routineTimer.add(3.000000)
-# update component parameters for each repeat
-display.setText('The game ended!')
-# keep track of which components have finished
-displayTextComponents = [display]
-for thisComponent in displayTextComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-displayTextClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-continueRoutine = True
-
-# -------Run Routine "displayText"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = displayTextClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=displayTextClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
+    # -------Run Routine "trial"-------
+    while continueRoutine:
+        # get current time
+        t = trialClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=trialClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        pacmanClock = core.Clock()
+        finishTime = pacmanClock.getTime()
+        import time
+        def pacmanGame():
+        #    finishTime = time.time() + 60*1
+        #    while True:
+        
+        #        pacmanGame()
+        #        time.sleep(5)
+        #        exitonclick()
+                pacmanClock.reset()
+                while finishTime < time.time() + 60*1:
+                    setup(420, 420, 370, 0)
+                    hideturtle()
+                    tracer(False)
+                    writer.goto(160, 160)
+                    writer.color('white')
+                    writer.write(state['score'])
+                    listen()
+                    onkey(lambda: change(5, 0), 'Right')
+                    onkey(lambda: change(-5, 0), 'Left')
+                    onkey(lambda: change(0, 5), 'Up')
+                    onkey(lambda: change(0, -5), 'Down')
+                    world()
+                    move()
+               
+                    exitonclick()
+        #   
+        #    if finishTime >= 60:
+        #        bye()
+        #import time
+        #import turtle as t
+        #finishTime = time.time() + 60*1
+        #while True:
+        ##    finishTime = time.time() + 60*1
+        #    pacmanGame()
+        #
+        #    exitonclick()
+        #    if time.time() > finishTime:
+        #        import turtle as t
+        #        t.bye()
+        pacmanGame()
+        
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in trialComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
     
-    # *display* updates
-    if display.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-        # keep track of start time/frame for later
-        display.frameNStart = frameN  # exact frame index
-        display.tStart = t  # local t and not account for scr refresh
-        display.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(display, 'tStartRefresh')  # time at next scr refresh
-        display.setAutoDraw(True)
-    if display.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > display.tStartRefresh + 3-frameTolerance:
-            # keep track of stop time/frame for later
-            display.tStop = t  # not accounting for scr refresh
-            display.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(display, 'tStopRefresh')  # time at next scr refresh
-            display.setAutoDraw(False)
+    # -------Ending Routine "trial"-------
+    for thisComponent in trialComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
     
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
+    turtle.bye()
+    # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
+    # ------Prepare to start Routine "displayText"-------
+    # update component parameters for each repeat
+    display.setText('The game ended!\n\nPress SPACE to continue')
+    key_resp.keys = []
+    key_resp.rt = []
+    # keep track of which components have finished
+    displayTextComponents = [display, key_resp]
     for thisComponent in displayTextComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    displayTextClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
+    continueRoutine = True
     
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
+    # -------Run Routine "displayText"-------
+    while continueRoutine:
+        # get current time
+        t = displayTextClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=displayTextClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *display* updates
+        if display.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            display.frameNStart = frameN  # exact frame index
+            display.tStart = t  # local t and not account for scr refresh
+            display.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(display, 'tStartRefresh')  # time at next scr refresh
+            display.setAutoDraw(True)
+        if display.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > display.tStartRefresh + 3-frameTolerance:
+                # keep track of stop time/frame for later
+                display.tStop = t  # not accounting for scr refresh
+                display.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(display, 'tStopRefresh')  # time at next scr refresh
+                display.setAutoDraw(False)
+        
+        # *key_resp* updates
+        waitOnFlip = False
+        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp.frameNStart = frameN  # exact frame index
+            key_resp.tStart = t  # local t and not account for scr refresh
+            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+            key_resp.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp.getKeys(keyList=['space'], waitRelease=False)
+            if len(theseKeys):
+                theseKeys = theseKeys[0]  # at least one key was pressed
+                
+                # check for quit:
+                if "escape" == theseKeys:
+                    endExpNow = True
+                key_resp.keys = theseKeys.name  # just the last key pressed
+                key_resp.rt = theseKeys.rt
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in displayTextComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "displayText"-------
+    for thisComponent in displayTextComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials.addData('display.started', display.tStartRefresh)
+    trials.addData('display.stopped', display.tStopRefresh)
+    # check responses
+    if key_resp.keys in ['', [], None]:  # No response was made
+        key_resp.keys = None
+    trials.addData('key_resp.keys',key_resp.keys)
+    if key_resp.keys != None:  # we had a response
+        trials.addData('key_resp.rt', key_resp.rt)
+    trials.addData('key_resp.started', key_resp.tStartRefresh)
+    trials.addData('key_resp.stopped', key_resp.tStopRefresh)
+    # the Routine "displayText" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    thisExp.nextEntry()
+    
+# completed 5 repeats of 'trials'
 
-# -------Ending Routine "displayText"-------
-for thisComponent in displayTextComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('display.started', display.tStartRefresh)
-thisExp.addData('display.stopped', display.tStopRefresh)
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting

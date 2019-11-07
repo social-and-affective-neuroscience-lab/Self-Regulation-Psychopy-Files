@@ -5,8 +5,8 @@ This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
     on November 01, 2019, at 14:35
 If you publish work using this script the most relevant publication is:
 
-    Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
-        PsychoPy2: Experiments in behavior made easy Behav Res 51: 195. 
+    Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019)
+        PsychoPy2: Experiments in behavior made easy Behav Res 51: 195.
         https://doi.org/10.3758/s13428-018-01193-y
 
 """
@@ -33,7 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.4'
+psychopyVersion = '3.2.0'
 expName = 'AcademicSR'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\tul00635\\Documents\\GitHub\\Self-Regulation-Psychopy-Files\\AcademicSelf-Regulation\\AcademicSR.py',
+    originPath='C:\\Users\\Jojo\\Downloads\\GitHub\\Self-Regulation-Psychopy-Files\\AcademicSelf-Regulation\\AcademicSR.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -63,10 +63,10 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=(1024, 768), fullscr=True, screen=0, 
+    size=(1024, 768), fullscr=True, screen=0,
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
-    blendMode='avg', useFBO=True, 
+    blendMode='avg', useFBO=True,
     units='height')
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
@@ -83,8 +83,8 @@ InstructionsClock = core.Clock()
 instruct = visual.TextStim(win=win, name='instruct',
     text='In this part of the study, you will be choosing between answering practice questions for standardized tests, or playing a videogame. \n\nYou will be completing 5 rounds of the chosen option, and will then be given a chance to choose again.\n\nPrior to choosing, you will be given a regulation strategy to use. Please employ this strategy while making your decision.  \n\nPress SPACE to begin!',
     font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=1.4, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0), height=0.05, wrapWidth=1.4, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 space = keyboard.Keyboard()
@@ -97,8 +97,8 @@ CueClock = core.Clock()
 regCue = visual.TextStim(win=win, name='regCue',
     text='REGULATE',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 
@@ -110,28 +110,28 @@ ChoiceClock = core.Clock()
 choiceQ = visual.TextStim(win=win, name='choiceQ',
     text="Please indicate which option you would like to complete by pressing '1' for the choice on the left, or '2' for the choice on the right. ",
     font='Arial',
-    pos=(0, 0.35), height=0.05, wrapWidth=1.4, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0.35), height=0.05, wrapWidth=1.4, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 choiceResp = keyboard.Keyboard()
 testChoice = visual.TextStim(win=win, name='testChoice',
     text='Practice Standardized Test Questions',
     font='Arial',
-    pos=(-0.41, 0.15), height=0.04, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(-0.41, 0.15), height=0.04, wrapWidth=None, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-2.0);
 videogameChoice = visual.TextStim(win=win, name='videogameChoice',
     text='Play a Videogame',
     font='Arial',
-    pos=(0.41, 0.15), height=0.04, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0.41, 0.15), height=0.04, wrapWidth=None, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-3.0);
 gre = visual.ImageStim(
     win=win,
-    name='gre', 
+    name='gre',
     image='gre.png', mask=None,
     ori=0, pos=(-.41, 0.02), size=(0.3, 0.105),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -139,7 +139,7 @@ gre = visual.ImageStim(
     texRes=128, interpolate=True, depth=-4.0)
 gmat = visual.ImageStim(
     win=win,
-    name='gmat', 
+    name='gmat',
     image='gmat.png', mask=None,
     ori=0, pos=(-0.41, -0.13), size=(0.3, 0.11),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -147,7 +147,7 @@ gmat = visual.ImageStim(
     texRes=128, interpolate=True, depth=-5.0)
 lsat = visual.ImageStim(
     win=win,
-    name='lsat', 
+    name='lsat',
     image='lsat.png', mask=None,
     ori=0, pos=(-0.41, -0.27), size=(0.3, 0.11),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -155,7 +155,7 @@ lsat = visual.ImageStim(
     texRes=128, interpolate=True, depth=-6.0)
 game = visual.ImageStim(
     win=win,
-    name='game', 
+    name='game',
     image='game.png', mask=None,
     ori=0, pos=(0.41, -0.19), size=(0.4, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -167,7 +167,7 @@ blank = visual.TextStim(win=win, name='blank',
     text=None,
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-9.0);
 
@@ -176,13 +176,13 @@ testQuestionsChoiceClock = core.Clock()
 testQChoice = visual.TextStim(win=win, name='testQChoice',
     text='What test would you like to practice questions for? Use the arrow keys to move up and down, then press ENTER to select.',
     font='Arial',
-    pos=(0, 0.35), height=0.055, wrapWidth=1.3, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0.35), height=0.055, wrapWidth=1.3, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 image = visual.ImageStim(
     win=win,
-    name='image', 
+    name='image',
     image='gre.png', mask=None,
     ori=0, pos=(0, 0.105), size=(0.3, 0.11),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -190,7 +190,7 @@ image = visual.ImageStim(
     texRes=128, interpolate=True, depth=-1.0)
 image_2 = visual.ImageStim(
     win=win,
-    name='image_2', 
+    name='image_2',
     image='gmat.png', mask=None,
     ori=0, pos=(0, -0.05), size=(0.3, 0.11),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -198,7 +198,7 @@ image_2 = visual.ImageStim(
     texRes=128, interpolate=True, depth=-2.0)
 image_3 = visual.ImageStim(
     win=win,
-    name='image_3', 
+    name='image_3',
     image='lsat.png', mask=None,
     ori=0, pos=(0, -0.2), size=(0.3, 0.11),
     color=[1,1,1], colorSpace='rgb', opacity=1,
@@ -219,8 +219,8 @@ testQsClock = core.Clock()
 TextQuestion = visual.TextStim(win=win, name='TextQuestion',
     text='default text',
     font='Arial',
-    pos=(0, 0.35), height=0.028, wrapWidth=1.45, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0.35), height=0.028, wrapWidth=1.45, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 letterKey = keyboard.Keyboard()
@@ -228,43 +228,43 @@ enterKey = keyboard.Keyboard()
 choiceA = visual.TextStim(win=win, name='choiceA',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.026, wrapWidth=1.4, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0), height=0.026, wrapWidth=1.4, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-3.0);
 choiceB = visual.TextStim(win=win, name='choiceB',
     text='default text',
     font='Arial',
-    pos=(0, -0.1), height=0.026, wrapWidth=1.4, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, -0.1), height=0.026, wrapWidth=1.4, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-4.0);
 choiceC = visual.TextStim(win=win, name='choiceC',
     text='default text',
     font='Arial',
-    pos=(0, -0.2), height=0.026, wrapWidth=1.4, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, -0.2), height=0.026, wrapWidth=1.4, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-5.0);
 choiceD = visual.TextStim(win=win, name='choiceD',
     text='default text',
     font='Arial',
-    pos=(0, -0.3), height=0.026, wrapWidth=1.4, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, -0.3), height=0.026, wrapWidth=1.4, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-6.0);
 choiceE = visual.TextStim(win=win, name='choiceE',
     text='default text',
     font='Arial',
-    pos=(0, -0.4), height=0.026, wrapWidth=1.4, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, -0.4), height=0.026, wrapWidth=1.4, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-7.0);
 conBlank = visual.TextStim(win=win, name='conBlank',
     text=None,
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=-9.0);
 
@@ -273,8 +273,8 @@ GameClock = core.Clock()
 gameInstructions = visual.TextStim(win=win, name='gameInstructions',
     text='You will be playing a version of Pacman. You will be playing as the yellow dot. Your goal is to gather as many points while avoiding the red dots. \n\nWhen you are ready, press SPACE!',
     font='Arial',
-    pos=(0, 0), height=0.07, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    pos=(0, 0), height=0.07, wrapWidth=None, ori=0,
+    color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
 spaceKey = keyboard.Keyboard()
@@ -605,6 +605,9 @@ def change(x, y):
         aim.x = x
         aim.y = y
 
+#End pacman vars & functs
+
+
 
 def pacmanGame():
 
@@ -628,7 +631,7 @@ def pacmanGame():
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
-routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
+routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine
 
 # ------Prepare to start Routine "Instructions"-------
 # update component parameters for each repeat
@@ -658,7 +661,7 @@ while continueRoutine:
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
-    
+
     # *instruct* updates
     if instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
@@ -667,7 +670,7 @@ while continueRoutine:
         instruct.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(instruct, 'tStartRefresh')  # time at next scr refresh
         instruct.setAutoDraw(True)
-    
+
     # *space* updates
     waitOnFlip = False
     if space.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -685,7 +688,7 @@ while continueRoutine:
         theseKeys = space.getKeys(keyList=['space'], waitRelease=False)
         if len(theseKeys):
             theseKeys = theseKeys[0]  # at least one key was pressed
-            
+
             # check for quit:
             if "escape" == theseKeys:
                 endExpNow = True
@@ -693,11 +696,11 @@ while continueRoutine:
             space.rt = theseKeys.rt
             # a response ends the routine
             continueRoutine = False
-    
+
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
         core.quit()
-    
+
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
@@ -706,7 +709,7 @@ while continueRoutine:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
-    
+
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
@@ -730,7 +733,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-AllTrials = data.TrialHandler(nReps=5, method='sequential', 
+AllTrials = data.TrialHandler(nReps=5, method='sequential',
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='AllTrials')
@@ -747,7 +750,7 @@ for thisAllTrial in AllTrials:
     if thisAllTrial != None:
         for paramName in thisAllTrial:
             exec('{} = thisAllTrial[paramName]'.format(paramName))
-    
+
     # ------Prepare to start Routine "ISI"-------
     # update component parameters for each repeat
     # keep track of which components have finished
@@ -765,7 +768,7 @@ for thisAllTrial in AllTrials:
     ISIClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     continueRoutine = True
-    
+
     # -------Run Routine "ISI"-------
     while continueRoutine:
         # get current time
@@ -774,11 +777,11 @@ for thisAllTrial in AllTrials:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
+
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
-        
+
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -787,18 +790,18 @@ for thisAllTrial in AllTrials:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
-        
+
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
-    
+
     # -------Ending Routine "ISI"-------
     for thisComponent in ISIComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # the Routine "ISI" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-    
+
     # ------Prepare to start Routine "Cue"-------
     routineTimer.add(3.000000)
     # update component parameters for each repeat
@@ -817,7 +820,7 @@ for thisAllTrial in AllTrials:
     CueClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     continueRoutine = True
-    
+
     # -------Run Routine "Cue"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
@@ -826,7 +829,7 @@ for thisAllTrial in AllTrials:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
+
         # *regCue* updates
         if regCue.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -843,11 +846,11 @@ for thisAllTrial in AllTrials:
                 regCue.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(regCue, 'tStopRefresh')  # time at next scr refresh
                 regCue.setAutoDraw(False)
-        
+
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
-        
+
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -856,18 +859,18 @@ for thisAllTrial in AllTrials:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
-        
+
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
-    
+
     # -------Ending Routine "Cue"-------
     for thisComponent in CueComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     AllTrials.addData('regCue.started', regCue.tStartRefresh)
     AllTrials.addData('regCue.stopped', regCue.tStopRefresh)
-    
+
     # ------Prepare to start Routine "ISI"-------
     # update component parameters for each repeat
     # keep track of which components have finished
@@ -885,7 +888,7 @@ for thisAllTrial in AllTrials:
     ISIClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     continueRoutine = True
-    
+
     # -------Run Routine "ISI"-------
     while continueRoutine:
         # get current time
@@ -894,11 +897,11 @@ for thisAllTrial in AllTrials:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
+
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
-        
+
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -907,18 +910,18 @@ for thisAllTrial in AllTrials:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
-        
+
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
-    
+
     # -------Ending Routine "ISI"-------
     for thisComponent in ISIComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     # the Routine "ISI" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-    
+
     # ------Prepare to start Routine "Choice"-------
     # update component parameters for each repeat
     choiceResp.keys = []
@@ -939,7 +942,7 @@ for thisAllTrial in AllTrials:
     ChoiceClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     continueRoutine = True
-    
+
     # -------Run Routine "Choice"-------
     while continueRoutine:
         # get current time
@@ -948,7 +951,7 @@ for thisAllTrial in AllTrials:
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
+
         # *choiceQ* updates
         if choiceQ.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -964,7 +967,7 @@ for thisAllTrial in AllTrials:
                 choiceQ.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(choiceQ, 'tStopRefresh')  # time at next scr refresh
                 choiceQ.setAutoDraw(False)
-        
+
         # *choiceResp* updates
         waitOnFlip = False
         if choiceResp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -989,13 +992,13 @@ for thisAllTrial in AllTrials:
             theseKeys = choiceResp.getKeys(keyList=['1', '2'], waitRelease=False)
             if len(theseKeys):
                 theseKeys = theseKeys[0]  # at least one key was pressed
-                
+
                 # check for quit:
                 if "escape" == theseKeys:
                     endExpNow = True
                 choiceResp.keys = theseKeys.name  # just the last key pressed
                 choiceResp.rt = theseKeys.rt
-        
+
         # *testChoice* updates
         if testChoice.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1011,7 +1014,7 @@ for thisAllTrial in AllTrials:
                 testChoice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(testChoice, 'tStopRefresh')  # time at next scr refresh
                 testChoice.setAutoDraw(False)
-        
+
         # *videogameChoice* updates
         if videogameChoice.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1027,7 +1030,7 @@ for thisAllTrial in AllTrials:
                 videogameChoice.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(videogameChoice, 'tStopRefresh')  # time at next scr refresh
                 videogameChoice.setAutoDraw(False)
-        
+
         # *gre* updates
         if gre.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1043,7 +1046,7 @@ for thisAllTrial in AllTrials:
                 gre.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(gre, 'tStopRefresh')  # time at next scr refresh
                 gre.setAutoDraw(False)
-        
+
         # *gmat* updates
         if gmat.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1059,7 +1062,7 @@ for thisAllTrial in AllTrials:
                 gmat.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(gmat, 'tStopRefresh')  # time at next scr refresh
                 gmat.setAutoDraw(False)
-        
+
         # *lsat* updates
         if lsat.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1075,7 +1078,7 @@ for thisAllTrial in AllTrials:
                 lsat.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(lsat, 'tStopRefresh')  # time at next scr refresh
                 lsat.setAutoDraw(False)
-        
+
         # *game* updates
         if game.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
@@ -1095,10 +1098,10 @@ for thisAllTrial in AllTrials:
             testChoice.setColor('green')
         if choiceResp.keys == '2':
             videogameChoice.setColor('green')
-        
+
         if choiceResp.keys == '2' or choiceResp.keys == '1':
             choiceResp.status = FINISHED
-        
+
         # *blank* updates
         if blank.status == NOT_STARTED and len(choiceResp.keys) > 0:
             # keep track of start time/frame for later
@@ -1115,11 +1118,11 @@ for thisAllTrial in AllTrials:
                 blank.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(blank, 'tStopRefresh')  # time at next scr refresh
                 blank.setAutoDraw(False)
-        
+
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
-        
+
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -1128,11 +1131,11 @@ for thisAllTrial in AllTrials:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
-        
+
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
-    
+
     # -------Ending Routine "Choice"-------
     for thisComponent in ChoiceComponents:
         if hasattr(thisComponent, "setAutoDraw"):
@@ -1161,7 +1164,7 @@ for thisAllTrial in AllTrials:
     AllTrials.addData('game.stopped', game.tStopRefresh)
     videogameChoice.setColor('white')
     testChoice.setColor('white')
-    
+
     if blank.status == FINISHED:
         choiceQ.setAutoDraw(False)
         testChoice.setAutoDraw(False)
@@ -1169,8 +1172,8 @@ for thisAllTrial in AllTrials:
         gre.setAutoDraw(False)
         gmat.setAutoDraw(False)
         lsat.setAutoDraw(False)
-        continueRoutine = False 
-        
+        continueRoutine = False
+
     if choiceResp.keys == '1':
         doTestPractice = 1
         doGame = 0
@@ -1181,9 +1184,9 @@ for thisAllTrial in AllTrials:
     AllTrials.addData('blank.stopped', blank.tStopRefresh)
     # the Routine "Choice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-    
+
     # set up handler to look after randomisation of conditions etc
-    QuestionTrials = data.TrialHandler(nReps=doTestPractice, method='random', 
+    QuestionTrials = data.TrialHandler(nReps=doTestPractice, method='random',
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('RowsExcel.xlsx'),
         seed=None, name='QuestionTrials')
@@ -1193,14 +1196,14 @@ for thisAllTrial in AllTrials:
     if thisQuestionTrial != None:
         for paramName in thisQuestionTrial:
             exec('{} = thisQuestionTrial[paramName]'.format(paramName))
-    
+
     for thisQuestionTrial in QuestionTrials:
         currentLoop = QuestionTrials
         # abbreviate parameter names if possible (e.g. rgb = thisQuestionTrial.rgb)
         if thisQuestionTrial != None:
             for paramName in thisQuestionTrial:
                 exec('{} = thisQuestionTrial[paramName]'.format(paramName))
-        
+
         # ------Prepare to start Routine "testQuestionsChoice"-------
         # update component parameters for each repeat
         upDown.keys = []
@@ -1212,7 +1215,7 @@ for thisAllTrial in AllTrials:
         y = 0
         q = []
         '''
-        
+
         if upDown.keys == '1':
             polygon.setPosition = [0, 0.105]
         elif upDown.keys == '2':
@@ -1228,9 +1231,9 @@ for thisAllTrial in AllTrials:
             y = -0.05
         elif upDown.keys == '3':
             y = -0.2
-            
-        
-        
+
+
+
         enter.keys = []
         enter.rt = []
         # keep track of which components have finished
@@ -1248,7 +1251,7 @@ for thisAllTrial in AllTrials:
         testQuestionsChoiceClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         continueRoutine = True
-        
+
         # -------Run Routine "testQuestionsChoice"-------
         while continueRoutine:
             # get current time
@@ -1257,7 +1260,7 @@ for thisAllTrial in AllTrials:
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-            
+
             # *testQChoice* updates
             if testQChoice.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
@@ -1266,7 +1269,7 @@ for thisAllTrial in AllTrials:
                 testQChoice.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(testQChoice, 'tStartRefresh')  # time at next scr refresh
                 testQChoice.setAutoDraw(True)
-            
+
             # *image* updates
             if image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
@@ -1275,7 +1278,7 @@ for thisAllTrial in AllTrials:
                 image.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(image, 'tStartRefresh')  # time at next scr refresh
                 image.setAutoDraw(True)
-            
+
             # *image_2* updates
             if image_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
@@ -1284,7 +1287,7 @@ for thisAllTrial in AllTrials:
                 image_2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(image_2, 'tStartRefresh')  # time at next scr refresh
                 image_2.setAutoDraw(True)
-            
+
             # *image_3* updates
             if image_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
@@ -1293,7 +1296,7 @@ for thisAllTrial in AllTrials:
                 image_3.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(image_3, 'tStartRefresh')  # time at next scr refresh
                 image_3.setAutoDraw(True)
-            
+
             # *upDown* updates
             waitOnFlip = False
             if upDown.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1311,13 +1314,13 @@ for thisAllTrial in AllTrials:
                 theseKeys = upDown.getKeys(keyList=['1', '2', '3'], waitRelease=False)
                 if len(theseKeys):
                     theseKeys = theseKeys[0]  # at least one key was pressed
-                    
+
                     # check for quit:
                     if "escape" == theseKeys:
                         endExpNow = True
                     upDown.keys = theseKeys.name  # just the last key pressed
                     upDown.rt = theseKeys.rt
-            
+
             # *polygon* updates
             if polygon.status == NOT_STARTED and upDown.keys == '1' or upDown.keys == '2' or upDown.keys == '3' or upDown.keys == '4':
                 # keep track of start time/frame for later
@@ -1328,9 +1331,9 @@ for thisAllTrial in AllTrials:
                 polygon.setAutoDraw(True)
             if polygon.status == STARTED:  # only update if drawing
                 polygon.setPos([0,y], log=False)
-            
+
             '''
-            
+
             if upDown.keys == '1':
                 polygon.setPosition = [0, 0.105]
             elif upDown.keys == '2':
@@ -1340,17 +1343,17 @@ for thisAllTrial in AllTrials:
             elif upDown.keys == '4':
                 polygon.setPosition = [0, -0.35]
                 '''
-            
-            
-            
+
+
+
             if upDown.keys == '1':
                 y = 0.105
             elif upDown.keys == '2':
                 y = -0.05
             elif upDown.keys == '3':
                 y = -0.2
-                
-            
+
+
             # *enter* updates
             waitOnFlip = False
             if enter.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1368,7 +1371,7 @@ for thisAllTrial in AllTrials:
                 theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
                 if len(theseKeys):
                     theseKeys = theseKeys[0]  # at least one key was pressed
-                    
+
                     # check for quit:
                     if "escape" == theseKeys:
                         endExpNow = True
@@ -1376,11 +1379,11 @@ for thisAllTrial in AllTrials:
                     enter.rt = theseKeys.rt
                     # a response ends the routine
                     continueRoutine = False
-            
+
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
-            
+
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1389,11 +1392,11 @@ for thisAllTrial in AllTrials:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
-            
+
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
-        
+
         # -------Ending Routine "testQuestionsChoice"-------
         for thisComponent in testQuestionsChoiceComponents:
             if hasattr(thisComponent, "setAutoDraw"):
@@ -1432,9 +1435,9 @@ for thisAllTrial in AllTrials:
         QuestionTrials.addData('enter.stopped', enter.tStopRefresh)
         # the Routine "testQuestionsChoice" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
-        
+
         # set up handler to look after randomisation of conditions etc
-        Questions5 = data.TrialHandler(nReps=1, method='sequential', 
+        Questions5 = data.TrialHandler(nReps=1, method='sequential',
             extraInfo=expInfo, originPath=-1,
             trialList=data.importConditions('QuestionsText.xlsx', selection=Rows),
             seed=None, name='Questions5')
@@ -1444,14 +1447,14 @@ for thisAllTrial in AllTrials:
         if thisQuestions5 != None:
             for paramName in thisQuestions5:
                 exec('{} = thisQuestions5[paramName]'.format(paramName))
-        
+
         for thisQuestions5 in Questions5:
             currentLoop = Questions5
             # abbreviate parameter names if possible (e.g. rgb = thisQuestions5.rgb)
             if thisQuestions5 != None:
                 for paramName in thisQuestions5:
                     exec('{} = thisQuestions5[paramName]'.format(paramName))
-            
+
             # ------Prepare to start Routine "testQs"-------
             # update component parameters for each repeat
             TextQuestion.setText('PLACEHOLDER')
@@ -1465,7 +1468,7 @@ for thisAllTrial in AllTrials:
             choiceD.setText('QD')
             choiceE.setText('QE')
             answerKey = []
-            
+
             if q == 3:
                 TextQuestion.setText(LSAT)
                 choiceA.setText(LSATQA)
@@ -1474,7 +1477,7 @@ for thisAllTrial in AllTrials:
                 choiceD.setText(LSATQD)
                 choiceE.setText(LSATQE)
                 answerKey = (LSATAs)
-                
+
             if q == 2:
                 TextQuestion.setText(GMAT)
                 choiceA.setText(GMATQA)
@@ -1483,7 +1486,7 @@ for thisAllTrial in AllTrials:
                 choiceD.setText(GMATQD)
                 choiceE.setText(GMATQE)
                 answerKey = (GMATAs)
-                
+
             if q == 1:
                 TextQuestion.setText(GRE)
                 choiceA.setText(GREQA)
@@ -1492,7 +1495,7 @@ for thisAllTrial in AllTrials:
                 choiceD.setText(GREQD)
                 choiceE.setText(GREQE)
                 answerKey = (GREA)
-                
+
             # keep track of which components have finished
             testQsComponents = [TextQuestion, letterKey, enterKey, choiceA, choiceB, choiceC, choiceD, choiceE, conBlank]
             for thisComponent in testQsComponents:
@@ -1508,7 +1511,7 @@ for thisAllTrial in AllTrials:
             testQsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
             frameN = -1
             continueRoutine = True
-            
+
             # -------Run Routine "testQs"-------
             while continueRoutine:
                 # get current time
@@ -1517,7 +1520,7 @@ for thisAllTrial in AllTrials:
                 tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
-                
+
                 # *TextQuestion* updates
                 if TextQuestion.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
@@ -1533,7 +1536,7 @@ for thisAllTrial in AllTrials:
                         TextQuestion.frameNStop = frameN  # exact frame index
                         win.timeOnFlip(TextQuestion, 'tStopRefresh')  # time at next scr refresh
                         TextQuestion.setAutoDraw(False)
-                
+
                 # *letterKey* updates
                 waitOnFlip = False
                 if letterKey.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1558,13 +1561,13 @@ for thisAllTrial in AllTrials:
                     theseKeys = letterKey.getKeys(keyList=['a', 'b', 'c', 'd', 'e'], waitRelease=False)
                     if len(theseKeys):
                         theseKeys = theseKeys[0]  # at least one key was pressed
-                        
+
                         # check for quit:
                         if "escape" == theseKeys:
                             endExpNow = True
                         letterKey.keys = theseKeys.name  # just the last key pressed
                         letterKey.rt = theseKeys.rt
-                
+
                 # *enterKey* updates
                 waitOnFlip = False
                 if enterKey.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1589,13 +1592,13 @@ for thisAllTrial in AllTrials:
                     theseKeys = enterKey.getKeys(keyList=['return'], waitRelease=False)
                     if len(theseKeys):
                         theseKeys = theseKeys[0]  # at least one key was pressed
-                        
+
                         # check for quit:
                         if "escape" == theseKeys:
                             endExpNow = True
                         enterKey.keys = theseKeys.name  # just the last key pressed
                         enterKey.rt = theseKeys.rt
-                
+
                 # *choiceA* updates
                 if choiceA.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
@@ -1611,7 +1614,7 @@ for thisAllTrial in AllTrials:
                         choiceA.frameNStop = frameN  # exact frame index
                         win.timeOnFlip(choiceA, 'tStopRefresh')  # time at next scr refresh
                         choiceA.setAutoDraw(False)
-                
+
                 # *choiceB* updates
                 if choiceB.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
@@ -1627,7 +1630,7 @@ for thisAllTrial in AllTrials:
                         choiceB.frameNStop = frameN  # exact frame index
                         win.timeOnFlip(choiceB, 'tStopRefresh')  # time at next scr refresh
                         choiceB.setAutoDraw(False)
-                
+
                 # *choiceC* updates
                 if choiceC.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
@@ -1643,7 +1646,7 @@ for thisAllTrial in AllTrials:
                         choiceC.frameNStop = frameN  # exact frame index
                         win.timeOnFlip(choiceC, 'tStopRefresh')  # time at next scr refresh
                         choiceC.setAutoDraw(False)
-                
+
                 # *choiceD* updates
                 if choiceD.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
@@ -1659,7 +1662,7 @@ for thisAllTrial in AllTrials:
                         choiceD.frameNStop = frameN  # exact frame index
                         win.timeOnFlip(choiceD, 'tStopRefresh')  # time at next scr refresh
                         choiceD.setAutoDraw(False)
-                
+
                 # *choiceE* updates
                 if choiceE.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
@@ -1685,7 +1688,7 @@ for thisAllTrial in AllTrials:
                     choiceD.setColor('green')
                 if (letterKey.keys == 'e' and enterKey.keys == 'return') and answerKey == 'e':
                     choiceE.setColor('green')
-                    
+
                 if (letterKey.keys == 'a' and enterKey.keys == 'return') and answerKey != 'a':
                     choiceA.setColor('red')
                 if (letterKey.keys == 'b' and enterKey.keys == 'return') and answerKey != 'b':
@@ -1696,7 +1699,7 @@ for thisAllTrial in AllTrials:
                     choiceD.setColor('red')
                 if (letterKey.keys == 'e' and enterKey.keys == 'return') and answerKey != 'e':
                     choiceE.setColor('red')
-                
+
                 if (enterKey.keys == 'return' and letterKey.keys != 'a') and answerKey == 'a':
                     choiceA.setColor('green')
                 if (enterKey.keys == 'return' and letterKey.keys != 'b') and answerKey == 'b':
@@ -1707,8 +1710,8 @@ for thisAllTrial in AllTrials:
                     choiceD.setColor('green')
                 if (enterKey.keys == 'return' and letterKey.keys != 'e') and answerKey == 'e':
                     choiceE.setColor('green')
-                
-                
+
+
                 # *conBlank* updates
                 if conBlank.status == NOT_STARTED and enterKey.keys == 'return':
                     # keep track of start time/frame for later
@@ -1725,11 +1728,11 @@ for thisAllTrial in AllTrials:
                         conBlank.frameNStop = frameN  # exact frame index
                         win.timeOnFlip(conBlank, 'tStopRefresh')  # time at next scr refresh
                         conBlank.setAutoDraw(False)
-                
+
                 # check for quit (typically the Esc key)
                 if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                     core.quit()
-                
+
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
                     break
@@ -1738,11 +1741,11 @@ for thisAllTrial in AllTrials:
                     if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                         continueRoutine = True
                         break  # at least one component has not yet finished
-                
+
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
-            
+
             # -------Ending Routine "testQs"-------
             for thisComponent in testQsComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
@@ -1775,7 +1778,7 @@ for thisAllTrial in AllTrials:
             Questions5.addData('choiceD.stopped', choiceD.tStopRefresh)
             Questions5.addData('choiceE.started', choiceE.tStartRefresh)
             Questions5.addData('choiceE.stopped', choiceE.tStopRefresh)
-            
+
             if conBlank.status == FINISHED:
                 choiceA.setAutoDraw(False)
                 choiceB.setAutoDraw(False)
@@ -1783,9 +1786,9 @@ for thisAllTrial in AllTrials:
                 choiceD.setAutoDraw(False)
                 choiceE.setAutoDraw(False)
                 continueRoutine = False
-            
-            
-            
+
+
+
             choiceA.setColor('white')
             choiceB.setColor('white')
             choiceC.setColor('white')
@@ -1796,16 +1799,16 @@ for thisAllTrial in AllTrials:
             # the Routine "testQs" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             thisExp.nextEntry()
-            
+
         # completed 1 repeats of 'Questions5'
-        
+
         thisExp.nextEntry()
-        
+
     # completed doTestPractice repeats of 'QuestionTrials'
-    
-    
+
+
     # set up handler to look after randomisation of conditions etc
-    GameTrials = data.TrialHandler(nReps=doGame, method='random', 
+    GameTrials = data.TrialHandler(nReps=doGame, method='random',
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='GameTrials')
@@ -1815,14 +1818,14 @@ for thisAllTrial in AllTrials:
     if thisGameTrial != None:
         for paramName in thisGameTrial:
             exec('{} = thisGameTrial[paramName]'.format(paramName))
-    
+
     for thisGameTrial in GameTrials:
         currentLoop = GameTrials
         # abbreviate parameter names if possible (e.g. rgb = thisGameTrial.rgb)
         if thisGameTrial != None:
             for paramName in thisGameTrial:
                 exec('{} = thisGameTrial[paramName]'.format(paramName))
-        
+
         # ------Prepare to start Routine "Game"-------
         # update component parameters for each repeat
         spaceKey.keys = []
@@ -1842,7 +1845,7 @@ for thisAllTrial in AllTrials:
         GameClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         continueRoutine = True
-        
+
         # -------Run Routine "Game"-------
         while continueRoutine:
             # get current time
@@ -1851,7 +1854,7 @@ for thisAllTrial in AllTrials:
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-            
+
             # *gameInstructions* updates
             if gameInstructions.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
@@ -1860,7 +1863,7 @@ for thisAllTrial in AllTrials:
                 gameInstructions.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(gameInstructions, 'tStartRefresh')  # time at next scr refresh
                 gameInstructions.setAutoDraw(True)
-            
+
             # *spaceKey* updates
             waitOnFlip = False
             if spaceKey.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1878,7 +1881,7 @@ for thisAllTrial in AllTrials:
                 theseKeys = spaceKey.getKeys(keyList=['space'], waitRelease=False)
                 if len(theseKeys):
                     theseKeys = theseKeys[0]  # at least one key was pressed
-                    
+
                     # check for quit:
                     if "escape" == theseKeys:
                         endExpNow = True
@@ -1886,11 +1889,11 @@ for thisAllTrial in AllTrials:
                     spaceKey.rt = theseKeys.rt
                     # a response ends the routine
                     continueRoutine = False
-            
+
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
-            
+
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
@@ -1899,11 +1902,11 @@ for thisAllTrial in AllTrials:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
-            
+
             # refresh the screen
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
-        
+
         # -------Ending Routine "Game"-------
         for thisComponent in GameComponents:
             if hasattr(thisComponent, "setAutoDraw"):
@@ -1920,9 +1923,9 @@ for thisAllTrial in AllTrials:
         GameTrials.addData('spaceKey.stopped', spaceKey.tStopRefresh)
         # the Routine "Game" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
-        
+
         # set up handler to look after randomisation of conditions etc
-        trials = data.TrialHandler(nReps=5, method='random', 
+        trials = data.TrialHandler(nReps=5, method='random',
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='trials')
@@ -1932,14 +1935,14 @@ for thisAllTrial in AllTrials:
         if thisTrial != None:
             for paramName in thisTrial:
                 exec('{} = thisTrial[paramName]'.format(paramName))
-        
+
         for thisTrial in trials:
             currentLoop = trials
             # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
             if thisTrial != None:
                 for paramName in thisTrial:
                     exec('{} = thisTrial[paramName]'.format(paramName))
-            
+
             # ------Prepare to start Routine "pacman"-------
             # update component parameters for each repeat
             setup(420, 420, 370, 0)
@@ -1971,7 +1974,7 @@ for thisAllTrial in AllTrials:
             pacmanClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
             frameN = -1
             continueRoutine = True
-            
+
             # -------Run Routine "pacman"-------
             while continueRoutine:
                 # get current time
@@ -1982,6 +1985,7 @@ for thisAllTrial in AllTrials:
                 # update/draw components on each frame
                 #setup(420, 420, 370, 0)
                 #hideturtle()
+                pacmanGame()
                 #tracer(False)
                 #writer.goto(160, 160)
                 #writer.color('white')
@@ -1993,11 +1997,11 @@ for thisAllTrial in AllTrials:
                 #onkey(lambda: change(0, -5), 'Down')
                 #world()
                 #move()
-                
+
                 # check for quit (typically the Esc key)
                 if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                     core.quit()
-                
+
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
                     break
@@ -2006,11 +2010,11 @@ for thisAllTrial in AllTrials:
                     if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                         continueRoutine = True
                         break  # at least one component has not yet finished
-                
+
                 # refresh the screen
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
-            
+
             # -------Ending Routine "pacman"-------
             for thisComponent in pacmanComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
@@ -2019,19 +2023,19 @@ for thisAllTrial in AllTrials:
             # the Routine "pacman" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             thisExp.nextEntry()
-            
+
         # completed 5 repeats of 'trials'
-        
+
         thisExp.nextEntry()
-        
+
     # completed doGame repeats of 'GameTrials'
-    
+
     thisExp.nextEntry()
-    
+
 # completed 5 repeats of 'AllTrials'
 
 
-# Flip one final time so any remaining win.callOnFlip() 
+# Flip one final time so any remaining win.callOnFlip()
 # and win.timeOnFlip() tasks get executed before quitting
 win.flip()
 

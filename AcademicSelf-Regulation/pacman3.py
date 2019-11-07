@@ -333,22 +333,23 @@ def pacmanGame():
 #        time.sleep(5)
 #        exitonclick()
         pacmanClock.reset()
-        setup(420, 420, 370, 0)
-        hideturtle()
-        tracer(False)
-        writer.goto(160, 160)
-        writer.color('white')
-        writer.write(state['score'])
-        listen()
-        onkey(lambda: change(5, 0), 'Right')
-        onkey(lambda: change(-5, 0), 'Left')
-        onkey(lambda: change(0, 5), 'Up')
-        onkey(lambda: change(0, -5), 'Down')
-        world()
-        move()
-        if finishTime < time.time() + 60*1:
+        while finishTime < time.time() + 60*1:
+            setup(420, 420, 370, 0)
+            hideturtle()
+            tracer(False)
+            writer.goto(160, 160)
+            writer.color('white')
+            writer.write(state['score'])
+            listen()
+            onkey(lambda: change(5, 0), 'Right')
+            onkey(lambda: change(-5, 0), 'Left')
+            onkey(lambda: change(0, 5), 'Up')
+            onkey(lambda: change(0, -5), 'Down')
+            world()
+            move()
+        
             done()
-   
+#   
 #    if finishTime >= 60:
 #        bye()
 #import time
