@@ -263,3 +263,205 @@ Do nothing: The one customer will live, the group has a chance of surviving","Th
 The group  ","The one customer on the patio died.
 
 The 13 customers in the main dining room were saved.",13,50, customers in the main dining room
+"Workers in the 
+office building: 8","Probability the Bomb Squad
+will arrive in time: 35%","• There has been a bomb planted in two buildings, drawing from the same set of wires
+
+• You are a citizen who has found the wires that control the bomb","Plan: Cut the green wire, blowing up the person in the home
+
+Do Nothing: The one person will live, the office group has a chance of surviving if the Bomb Squad comes ","The one person in the home lived.
+
+The group ","The one person in the home died. 
+
+The 8 workers in the office building were saved.",8,35, workers in the office building
+"Workers in the 
+office building: 7","Probability the Bomb Squad
+will arrive in time: 65%","• The red wire is connected to the bomb in a small office building, which will explode if that wire is cut
+
+• The green wire is connected to the bomb in a small home, where one person lives, and will explode if that wire is cut ","Plan: Cut the green wire, blowing up the person in the home
+
+Do Nothing: The one person will live, the office group has a chance of surviving if the Bomb Squad comes ","The one person in the home lived.
+
+The group ","The one person in the home died. 
+
+The 7 workers in the office building were saved.",7,65, workers in the office building
+"Workers in the 
+office building: 12","Probability the Bomb Squad
+will arrive in time: 50%","• The time on the bomb is counting down, but you have time to cut one of the wires without risking harm to yourself 
+
+• If you do nothing, the bomb will default to blow up the office building  ","Plan: Cut the green wire, blowing up the person in the home
+
+Do Nothing: The one person will live, the office group has a chance of surviving if the Bomb Squad comes ","The one person in the home lived.
+
+The group ","The one person in the home died. 
+
+The 12 workers in the office building were saved.",12,50, workers in the office building
+"Workers in the 
+office building: 9","Probability the Bomb Squad
+will arrive in time: 50%",• You also know that there is a chance that the Bomb Squad will arrive in time to completely disable the bomb,"Plan: Cut the green wire, blowing up the person in the home
+
+Do Nothing: The one person will live, the office group has a chance of surviving if the Bomb Squad comes ","The one person in the home lived.
+
+The group ","The one person in the home died. 
+
+The 9 workers in the office building were saved.",9,50, workers in the office building
+"Workers in the 
+office building: 10","Probability the Bomb Squad
+will arrive in time: 35%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Cut the green wire, blowing up the person in the home
+
+Do Nothing: The one person will live, the office group has a chance of surviving if the Bomb Squad comes ","The one person in the home lived.
+
+The group ","The one person in the home died. 
+
+The 10 workers in the office building were saved.",10,35, workers in the office building
+"People in the
+submarine: 5","Probability the oxygen 
+tanks will work: 50","•You are a worker on a large submarine
+
+• The upper section of the submarine has a hole in it that is gradually letting water in","Plan: Open the hatch, killing the one crewmember there
+
+Do Nothing: The one crewmember in the lower section will live, the group has a chance of escape","The one person lived.
+
+The group ","The one crewmember died.
+
+The group of crewmembers were saved.",5,50,group of crewmembers
+"People in the
+submarine: 12","Probability the oxygen 
+tanks will work: 65","• The way out is through the lower section
+
+ • There is an emergency access hatch between the upper and lower sections of the ship","Plan: Open the hatch, killing the one crewmember there
+
+Do Nothing: The one crewmember in the lower section will live, the group has a chance of escape","The one person lived.
+
+The group ","The one crewmember died.
+
+The group of crewmembers were saved.",12,65,group of crewmembers
+"People in the
+submarine: 7","Probability the oxygen 
+tanks will work: 35","• You can press an emergency switch, which would open the hatch but in doing so would crush and kill the one crewmember who is working below it
+
+• There is a group of crewmembers in the upper section of the submarine, who are beginning to drown","Plan: Open the hatch, killing the one crewmember there
+
+Do Nothing: The one crewmember in the lower section will live, the group has a chance of escape","The one person lived.
+
+The group ","The one crewmember died.
+
+The group of crewmembers were saved.",7,35,group of crewmembers
+"People in the
+submarine: 4","Probability the oxygen 
+tanks will work: 50","• There is a chance that one of the crewmembers will break a window, allowing them to escape","Plan: Open the hatch, killing the one crewmember there
+
+Do Nothing: The one crewmember in the lower section will live, the group has a chance of escape","The one person lived.
+
+The group ","The one crewmember died.
+
+The group of crewmembers were saved.",4,50,group of crewmembers
+"People in the
+submarine: 8","Probability the oxygen 
+tanks will work: 65","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Open the hatch, killing the one crewmember there
+
+Do Nothing: The one crewmember in the lower section will live, the group has a chance of escape","The one person lived.
+
+The group ","The one crewmember died.
+
+The group of crewmembers were saved.",8,65,group of crewmembers
+"Tourists in the 
+enclosure: 8","Probability the tourists
+will escape: 50%","• You are working in a security room of a zoo and can see all of the exhibits through the security cameras
+
+• You see that a group of tourists have gone beyond a safety gate and are now stuck in the right side of a lion enclosure, with a lion gradually approaching them ","Plan: Throw the bait to the left, leaving the zookeeper to die
+
+Do Nothing: The zookeeper will live, the tourists have a chance of escaping up the ladder","The zookeeper lived.
+
+The tourists ","The one zookeeper died. 
+
+The 8 tourists in the lion enclosure escaped.",8,50, tourists in the enclosure
+"Tourists in the 
+enclosure: 4","Probability the tourists
+will escape: 35%","• You also see that there is a zookeeper at on the left side of the enclosure who is cleaning the area
+
+• You can release bait to get the lion’s attention using your security console, but you can only direct the lion’s attention in one direction","Plan: Throw the bait to the left, leaving the zookeeper to die
+
+Do Nothing: The zookeeper will live, the tourists have a chance of escaping up the ladder","The zookeeper lived.
+
+The tourists ","The one zookeeper died. 
+
+The 4 tourists in the lion enclosure escaped.",4,35, tourists in the enclosure
+"Tourists in the 
+enclosure: 9","Probability the tourists
+will escape: 65%","• There is a single ladder in the middle of the enclosure which leads to safety
+
+•  If you throw the bait in the direction of the zookeeper, the lion will definitely attack and kill the zookeeper, but the group will be able to escape to safety ","Plan: Throw the bait to the left, leaving the zookeeper to die
+
+Do Nothing: The zookeeper will live, the tourists have a chance of escaping up the ladder","The zookeeper lived.
+
+The tourists ","The one zookeeper died. 
+
+The 9 tourists in the lion enclosure escaped.",9,65, tourists in the enclosure
+"Tourists in the 
+enclosure: 7","Probability the tourists
+will escape: 50%","• However, there is a chance that the group will make it to the ladder before the lion reaches them. ","Plan: Throw the bait to the left, leaving the zookeeper to die
+
+Do Nothing: The zookeeper will live, the tourists have a chance of escaping up the ladder","The zookeeper lived.
+
+The tourists ","The one zookeeper died. 
+
+The 7 tourists in the lion enclosure escaped.",7,50, tourists in the enclosure
+"Tourists in the 
+enclosure: 5","Probability the tourists
+will escape: 65%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the bait to the left, leaving the zookeeper to die
+
+Do Nothing: The zookeeper will live, the tourists have a chance of escaping up the ladder","The zookeeper lived.
+
+The tourists ","The one zookeeper died. 
+
+The 5 tourists in the lion enclosure escaped.",5,65, tourists in the enclosure
+"People in the swimming
+pool: 6","Probability the wire
+will be caught in time: 50%","•There is a live wire dangling from an electric pole
+
+ • There is an electrician at the top of the pole trying to gather the wire before it falls into a pool below, where a group of people are swimming","Plan: Throw the rock, redirecting the wire and killing the pedestrian
+
+Do Nothing: The pedestrian will live, the people in the swimming pool have a chance of surviving if the wire is caught","The one person lived.
+
+The people in the swimming pool ","The one person died.
+
+The people in the swimming pool were saved.",6,50, people in the swimming pool
+"People in the swimming
+pool: 11","Probability the wire
+will be caught in time: 35%","•There is a sizeable rock on the ground near you, which you can throw at the wire to redirect where it falls
+
+","Plan: Throw the rock, redirecting the wire and killing the pedestrian
+
+Do Nothing: The pedestrian will live, the people in the swimming pool have a chance of surviving if the wire is caught","The one person lived.
+
+The people in the swimming pool ","The one person died.
+
+The people in the swimming pool were saved.",11,35, people in the swimming pool
+"People in the swimming
+pool: 9","Probability the wire
+will be caught in time: 65%","•  If you do this, the wire will land on a sole pedestrian on the sidewalk, electrocuting and killing that person","Plan: Throw the rock, redirecting the wire and killing the pedestrian
+
+Do Nothing: The pedestrian will live, the people in the swimming pool have a chance of surviving if the wire is caught","The one person lived.
+
+The people in the swimming pool ","The one person died.
+
+The people in the swimming pool were saved.",9,65, people in the swimming pool
+"People in the swimming
+pool: 4","Probability the wire
+will be caught in time: 35%","• However, the electrician might be able to catch the wire before it falls","Plan: Throw the rock, redirecting the wire and killing the pedestrian
+
+Do Nothing: The pedestrian will live, the people in the swimming pool have a chance of surviving if the wire is caught","The one person lived.
+
+The people in the swimming pool ","The one person died.
+
+The people in the swimming pool were saved.",4,35, people in the swimming pool
+"People in the swimming
+pool: 3","Probability the wire
+will be caught in time: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the rock, redirecting the wire and killing the pedestrian
+
+Do Nothing: The pedestrian will live, the people in the swimming pool have a chance of surviving if the wire is caught","The one person lived.
+
+The people in the swimming pool ","The one person died.
+
+The people in the swimming pool were saved.",3,50, people in the swimming pool
