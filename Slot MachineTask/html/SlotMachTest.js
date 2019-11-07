@@ -2,13 +2,13 @@
  * Slotmachtest Test *
  *********************/
 
-import { PsychoJS } from 'https://pavlovia.org/lib/core.js';
-import * as core from 'https://pavlovia.org/lib/core.js';
-import { TrialHandler } from 'https://pavlovia.org/lib/data.js';
-import { Scheduler } from 'https://pavlovia.org/lib/util.js';
-import * as util from 'https://pavlovia.org/lib/util.js';
-import * as visual from 'https://pavlovia.org/lib/visual.js';
-import { Sound } from 'https://pavlovia.org/lib/sound.js';
+import { PsychoJS } from 'https://pavlovia.org/lib/core-3.2.js';
+import * as core from 'https://pavlovia.org/lib/core-3.2.js';
+import { TrialHandler } from 'https://pavlovia.org/lib/data-3.2.js';
+import { Scheduler } from 'https://pavlovia.org/lib/util-3.2.js';
+import * as util from 'https://pavlovia.org/lib/util-3.2.js';
+import * as visual from 'https://pavlovia.org/lib/visual-3.2.js';
+import { Sound } from 'https://pavlovia.org/lib/sound-3.2.js';
 
 // init psychoJS:
 var psychoJS = new PsychoJS({
@@ -63,6 +63,9 @@ const mainLoopLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(mainLoopLoopBegin, mainLoopLoopScheduler);
 flowScheduler.add(mainLoopLoopScheduler);
 flowScheduler.add(mainLoopLoopEnd);
+flowScheduler.add(ThankYouRoutineBegin);
+flowScheduler.add(ThankYouRoutineEachFrame);
+flowScheduler.add(ThankYouRoutineEnd);
 flowScheduler.add(quitPsychoJS, '', true);
 
 // quit if user presses Cancel in dialog box:
@@ -73,7 +76,7 @@ psychoJS.start({expName, expInfo});
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '3.2.0';
+  expInfo['psychopyVersion'] = '3.2.4';
   expInfo['OS'] = window.navigator.platform;
 
   // store frame rate of monitor if we can measure it successfully
@@ -98,22 +101,32 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0, 0], height: 1.0,  wrapWidth: 1.6, ori: 0,
+    pos: [0, 0], height: 1.0,  wrapWidth: 1.5, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
   
   space = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  earnings = 0
+  earningsStr = "$" + str(earnings)
+  subID = parseInt(expInfo['participant'])
+  
+  FiftyGamble = [1,0]
+  SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]
+  ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+  
+  earning=0
+  chosenMoney = 0
   // Initialize components for Routine "Inst2"
   Inst2Clock = new util.Clock();
   instruct2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'instruct2',
-    text: 'You will be given regulation intsructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the gamble, press "1". To choose the sure option, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press enter!',
+    text: 'You will be given regulation instructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press enter!',
     font: 'Arial',
     units : undefined, 
-    pos: [0, 0], height: 0.065,  wrapWidth: 1.6, ori: 0,
+    pos: [0, 0], height: 0.06,  wrapWidth: 1.5, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
@@ -138,7 +151,7 @@ function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'REGULATE',
+    text: 'EMPHASIZE',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.13,  wrapWidth: undefined, ori: 0,
@@ -162,8 +175,7 @@ function experimentInit() {
   // Initialize components for Routine "Practice"
   PracticeClock = new util.Clock();
   Line = new visual.ShapeStim ({
-    win: psychoJS.window, name: 'Line',
-    units: 'from exp settings',
+    win: psychoJS.window, name: 'Line', 
     vertices: [[-[1.0, 1.0][0]/2.0, 0], [+[1.0, 1.0][0]/2.0, 0]],
     ori: 90, pos: [0, 0],
     lineWidth: 1.0, lineColor: new util.Color(1.0),
@@ -217,16 +229,6 @@ function experimentInit() {
     depth: -5.0 
   });
   
-  earnings = 0
-  earningsStr = "$" + str(earnings)
-  subID = parseInt(expInfo['participant'])
-  
-  FiftyGamble = [1,0]
-  SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]
-  ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
-  
-  earning=0
-  chosenMoney = 0
   blank = new visual.TextStim({
     win: psychoJS.window,
     name: 'blank',
@@ -239,8 +241,7 @@ function experimentInit() {
   });
   
   moneyBank = new visual.Rect ({
-    win: psychoJS.window, name: 'moneyBank',
-    units: 'from exp settings',
+    win: psychoJS.window, name: 'moneyBank', 
     width: [0.46, 0.24][0], height: [0.46, 0.24][1],
     ori: 0, pos: [0.68, (- 0.42)],
     lineWidth: 8, lineColor: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),
@@ -254,7 +255,7 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0.67, (- 0.42)], height: 0.1,  wrapWidth: undefined, ori: 0,
+    pos: [0.64, (- 0.42)], height: 0.09,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: -9.0 
   });
@@ -264,13 +265,15 @@ function experimentInit() {
   text_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_2',
-    text: 'You will now begin the full task.',
+    text: 'You will now begin the full task.\n\nPress SPACE to start!',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: 0.0 
   });
+  
+  key_resp = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "isi"
   isiClock = new util.Clock();
@@ -314,8 +317,7 @@ function experimentInit() {
   // Initialize components for Routine "Practice"
   PracticeClock = new util.Clock();
   Line = new visual.ShapeStim ({
-    win: psychoJS.window, name: 'Line',
-    units: 'from exp settings',
+    win: psychoJS.window, name: 'Line', 
     vertices: [[-[1.0, 1.0][0]/2.0, 0], [+[1.0, 1.0][0]/2.0, 0]],
     ori: 90, pos: [0, 0],
     lineWidth: 1.0, lineColor: new util.Color(1.0),
@@ -369,16 +371,6 @@ function experimentInit() {
     depth: -5.0 
   });
   
-  earnings = 0
-  earningsStr = "$" + str(earnings)
-  subID = parseInt(expInfo['participant'])
-  
-  FiftyGamble = [1,0]
-  SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]
-  ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
-  
-  earning=0
-  chosenMoney = 0
   blank = new visual.TextStim({
     win: psychoJS.window,
     name: 'blank',
@@ -391,8 +383,7 @@ function experimentInit() {
   });
   
   moneyBank = new visual.Rect ({
-    win: psychoJS.window, name: 'moneyBank',
-    units: 'from exp settings',
+    win: psychoJS.window, name: 'moneyBank', 
     width: [0.46, 0.24][0], height: [0.46, 0.24][1],
     ori: 0, pos: [0.68, (- 0.42)],
     lineWidth: 8, lineColor: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),
@@ -406,9 +397,22 @@ function experimentInit() {
     text: 'default text',
     font: 'Arial',
     units : undefined, 
-    pos: [0.67, (- 0.42)], height: 0.1,  wrapWidth: undefined, ori: 0,
+    pos: [0.64, (- 0.42)], height: 0.09,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
     depth: -9.0 
+  });
+  
+  // Initialize components for Routine "ThankYou"
+  ThankYouClock = new util.Clock();
+  text_3 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_3',
+    text: '"Thank you for playing!"/n/n\n\n"Your total earnings are $" earnings',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: 0.0 
   });
   
   // Create some handy timers
@@ -426,9 +430,9 @@ function InstrRoutineBegin() {
   // update component parameters for each repeat
   Instructions.setColor(new util.Color('white'));
   Instructions.setPos([0, 0]);
-  Instructions.setText('In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble,  which will be shown on the left side of the screen, or choosing a sure option, which will be on the right side of the screen. \n\nFor each gamble, you will have a chance of either winning money or winning nothing, while the sure option guarantees payoff. \n\nPress space to continue. ');
+  Instructions.setText('In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble or choosing a sure option. \n\nFor each gamble, you will have a chance of either winning money, losing money, or gaining nothing, while the sure option guarantees a win or loss. \n\nPress space to continue. ');
   Instructions.setFont('Arial');
-  Instructions.setHeight(0.065);
+  Instructions.setHeight(0.06);
   space.keys = undefined;
   space.rt = undefined;
   // keep track of which components have finished
@@ -1333,11 +1337,13 @@ function BeginInstRoutineBegin() {
   t = 0;
   BeginInstClock.reset(); // clock
   frameN = -1;
-  routineTimer.add(3.000000);
   // update component parameters for each repeat
+  key_resp.keys = undefined;
+  key_resp.rt = undefined;
   // keep track of which components have finished
   BeginInstComponents = [];
   BeginInstComponents.push(text_2);
+  BeginInstComponents.push(key_resp);
   
   for (const thisComponent of BeginInstComponents)
     if ('status' in thisComponent)
@@ -1362,10 +1368,34 @@ function BeginInstRoutineEachFrame() {
     text_2.setAutoDraw(true);
   }
 
-  frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-  if (text_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-    text_2.setAutoDraw(false);
+  
+  // *key_resp* updates
+  if (t >= 0.0 && key_resp.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    key_resp.tStart = t;  // (not accounting for frame time here)
+    key_resp.frameNStart = frameN;  // exact frame index
+    // keyboard checking is just starting
+    psychoJS.window.callOnFlip(function() { key_resp.clock.reset(); });  // t=0 on next screen flip
+    psychoJS.window.callOnFlip(function() { key_resp.start(); }); // start on screen flip
+    psychoJS.window.callOnFlip(function() { key_resp.clearEvents(); });
   }
+
+  if (key_resp.status === PsychoJS.Status.STARTED) {
+    let theseKeys = key_resp.getKeys({keyList: ['space'], waitRelease: false});
+    
+    // check for quit:
+    if (theseKeys.length > 0 && theseKeys[0].name === 'escape') {
+      psychoJS.experiment.experimentEnded = true;
+    }
+    
+    if (theseKeys.length > 0) {  // at least one key was pressed
+      key_resp.keys = theseKeys[0].name;  // just the last key pressed
+      key_resp.rt = theseKeys[0].rt;
+      // a response ends the routine
+      continueRoutine = false;
+    }
+  }
+  
   // check for quit (typically the Esc key)
   if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
     return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
@@ -1384,7 +1414,7 @@ function BeginInstRoutineEachFrame() {
     }
   
   // refresh the screen if continuing
-  if (continueRoutine && routineTimer.getTime() > 0) {
+  if (continueRoutine) {
     return Scheduler.Event.FLIP_REPEAT;
   }
   else {
@@ -1401,6 +1431,17 @@ function BeginInstRoutineEnd() {
   }
   earnings = 0;
   earning = 0;
+  earningsText.setText("$0.00")
+  psychoJS.experiment.addData('key_resp.keys', key_resp.keys);
+  if (typeof key_resp.keys !== undefined) {  // we had a response
+      psychoJS.experiment.addData('key_resp.rt', key_resp.rt);
+      routineTimer.reset();
+      }
+  
+  key_resp.stop();
+  // the Routine "BeginInst" was not non-slip safe, so reset the non-slip timer
+  routineTimer.reset();
+  
   return Scheduler.Event.NEXT;
 }
 
@@ -1476,6 +1517,78 @@ function CueRoutineEnd() {
       thisComponent.setAutoDraw(false);
     }
   }
+  return Scheduler.Event.NEXT;
+}
+
+function ThankYouRoutineBegin() {
+  //------Prepare to start Routine 'ThankYou'-------
+  t = 0;
+  ThankYouClock.reset(); // clock
+  frameN = -1;
+  // update component parameters for each repeat
+  // keep track of which components have finished
+  ThankYouComponents = [];
+  ThankYouComponents.push(text_3);
+  
+  for (const thisComponent of ThankYouComponents)
+    if ('status' in thisComponent)
+      thisComponent.status = PsychoJS.Status.NOT_STARTED;
+  
+  return Scheduler.Event.NEXT;
+}
+
+function ThankYouRoutineEachFrame() {
+  //------Loop for each frame of Routine 'ThankYou'-------
+  let continueRoutine = true; // until we're told otherwise
+  // get current time
+  t = ThankYouClock.getTime();
+  frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+  // update/draw components on each frame
+  
+  // *text_3* updates
+  if (t >= 0.0 && text_3.status === PsychoJS.Status.NOT_STARTED) {
+    // keep track of start time/frame for later
+    text_3.tStart = t;  // (not accounting for frame time here)
+    text_3.frameNStart = frameN;  // exact frame index
+    text_3.setAutoDraw(true);
+  }
+
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
+  }
+  
+  // check if the Routine should terminate
+  if (!continueRoutine) {  // a component has requested a forced-end of Routine
+    return Scheduler.Event.NEXT;
+  }
+  
+  continueRoutine = false;  // reverts to True if at least one component still running
+  for (const thisComponent of ThankYouComponents)
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+      continueRoutine = true;
+      break;
+    }
+  
+  // refresh the screen if continuing
+  if (continueRoutine) {
+    return Scheduler.Event.FLIP_REPEAT;
+  }
+  else {
+    return Scheduler.Event.NEXT;
+  }
+}
+
+function ThankYouRoutineEnd() {
+  //------Ending Routine 'ThankYou'-------
+  for (const thisComponent of ThankYouComponents) {
+    if (typeof thisComponent.setAutoDraw === 'function') {
+      thisComponent.setAutoDraw(false);
+    }
+  }
+  // the Routine "ThankYou" was not non-slip safe, so reset the non-slip timer
+  routineTimer.reset();
+  
   return Scheduler.Event.NEXT;
 }
 
