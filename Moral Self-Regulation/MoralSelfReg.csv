@@ -1,6 +1,6 @@
-MainLeftText,MainRightText,MainDilemmas,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun
+MainLeftText,MainRightText,MainDilemmas,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun,riskyAdDis,Evgamble,sureGroup,sureGroupText
 "Workers in 
-Room A: 4","Probability of 
+Room A: 5","Probability of 
 escape: 35%","• There has been an accident in the basement of an office building
 
 • A pipe has broken and is releasing a lethal gas into the building's ventilation system","Plan: Hit the button to divert the gas to Room B, killing the one worker there
@@ -9,9 +9,10 @@ Do nothing: The one worker will live, the group in Room A has a chance of escapi
 
 The group ","The workers in Room B died. 
 
-The 4 workers in Room A were saved.",4,35, workers in Room A
+The 4 workers in Room A were saved.",5,50, workers in Room A,ad,3,3,"Workers in 
+Room B: 3"
 "Workers in 
-Room A: 3","Probability of 
+Room A: 10","Probability of 
 escape: 50%","• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there
 
 • You are the building manager","Plan: Hit the button to divert the gas to Room B, killing the one worker there
@@ -20,9 +21,10 @@ Do nothing: The one worker will live, the group in Room A has a chance of escapi
 
 The group ","The workers in Room B died. 
 
-The 3 workers in Room A were saved.",3,50, workers in Room A
+The 3 workers in Room A were saved.",10,35, workers in Room A,dis,3.5,4,"Workers in 
+Room B: 4"
 "Workers in 
-Room A: 7","Probability of 
+Room A: 6","Probability of 
 escape: 65%","• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors
 
 • You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the one worker there","Plan: Hit the button to divert the gas to Room B, killing the one worker there
@@ -31,9 +33,10 @@ Do nothing: The one worker will live, the group in Room A has a chance of escapi
 
 The group ","The workers in Room B died. 
 
-The 7 workers in Room A were saved.",7,65, workers in Room A
+The 7 workers in Room A were saved.",6,65, workers in Room A,EQUAL,~4,4,"Workers in 
+Room B: 4"
 "Workers in 
-Room A: 6","Probability of 
+Room A: 10","Probability of 
 escape: 50%","• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them
 
 • This would be impossible for the one worker in Room B","Plan: Hit the button to divert the gas to Room B, killing the one worker there
@@ -42,18 +45,20 @@ Do nothing: The one worker will live, the group in Room A has a chance of escapi
 
 The group ","The workers in Room B died. 
 
-The 6 workers in Room A were saved.",6,50, workers in Room A
+The 6 workers in Room A were saved.",10,35, workers in Room A,ad,3.5,3,"Workers in 
+Room B: 3"
 "Workers in 
-Room A: 11","Probability of 
+Room A: 5","Probability of 
 escape: 65%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Hit the button to divert the gas to Room B, killing the one worker there
 
 Do nothing: The one worker will live, the group in Room A has a chance of escaping","The workers in Room B lived.
 
 The group ","The workers in Room B died. 
 
-The 11 workers in Room A were saved.",11,65, workers in Room A
+The 11 workers in Room A were saved.",5,65, workers in Room A,dis,3.25,4,"Workers in 
+Room B: 4"
 "People on 
-bus: 3","Probability bus will 
+bus: 7","Probability bus will 
 drive to safety: 35%","• You are operating a crane in front of a tall bridge when an earthquake hits
 
 • As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge
@@ -63,9 +68,9 @@ Do nothing: The person in the car will live, the people in the bus have a chance
 
 The group  ","The people in the car died. 
 
-The 3 people on the bus were saved.",3,35, people on the bus
+The 3 people on the bus were saved.",7,50, people on the bus,dis,3.5,2,People in the car: 2
 "People on 
-bus: 6","Probability bus will 
+bus: 9","Probability bus will 
 drive to safety: 35%","• If nothing is done, the bus will soon plummet and all of these people will be killed
 
 • You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board","Plan: Move your crane to push the bus, certainly killing the person in the car
@@ -74,9 +79,9 @@ Do nothing: The person in the car will live, the people in the bus have a chance
 
 The group  ","The people in the car died. 
 
-The 6 people on the bus were saved.",6,35, people on the bus
+The 6 people on the bus were saved.",9,65, people on the bus,EQUAL,~6,6,People in the car: 6
 "People on 
-bus: 17","Probability bus will 
+bus: 6","Probability bus will 
 drive to safety: 50%","• However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car
 
 • If you move the crane, this part will certainly collapse and the one person in that car will be killed","Plan: Move your crane to push the bus, certainly killing the person in the car
@@ -85,9 +90,9 @@ Do nothing: The person in the car will live, the people in the bus have a chance
 
 The group  ","The people in the car died. 
 
-The 17 people on the bus were saved.",17,50, people on the bus
+The 17 people on the bus were saved.",6,35, people on the bus,EQUAL,~2,2,People in the car: 2
 "People on 
-bus: 12","Probability bus will 
+bus: 10","Probability bus will 
 drive to safety: 65%","• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board
  
 • There is no chance that the car will be able to avoid falling if you move your crane ","Plan: Move your crane to push the bus, certainly killing the person in the car
@@ -96,18 +101,18 @@ Do nothing: The person in the car will live, the people in the bus have a chance
 
 The group  ","The people in the car died. 
 
-The 12 people on the bus were saved.",12,65, people on the bus
+The 12 people on the bus were saved.",10,65, people on the bus,ad,6.5,7,People in the car: 7
 "People on 
-bus: 14","Probability bus will 
+bus: 7","Probability bus will 
 drive to safety: 35%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Move your crane to push the bus, certainly killing the person in the car
 
 Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The people in the car lived.
 
 The group  ","The people in the car died. 
 
-The 14 people on the bus were saved.",14,35, people on the bus
+The 14 people on the bus were saved.",7,50, people on the bus,ad,-3.5,4,People in the car: 4
 "Individuals drowning
- to the west: 4","Probability of alternate 
+ to the west: 11","Probability of alternate 
 rescue boat reaching them: 50%","• You are driving a rescue boat in the ocean, heading east towards one drowning man
 
 • You receive a distress signal informing you that a small boat has capsized in the opposite direction","Plan: Change your course to head towards the group, leaving the man to die
@@ -116,9 +121,9 @@ Do nothing: The man will live, the group has a chance of surviving","The people 
 
 The group  ","The people in the east died.
 
-The 4 individuals drowning in the west were saved.",4,50, individuals drowing to the west
+The 4 individuals drowning in the west were saved.",11,50, individuals drowing to the west,dis,5.5,5,People drowning in the east: 5
 "Individuals drowning
- to the west: 6","Probability of alternate 
+ to the west: 10","Probability of alternate 
 rescue boat reaching them: 35%","• All of the people aboard the capsized boat are now drowning
 
 • You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them","Plan: Change your course to head towards the group, leaving the man to die
@@ -127,9 +132,9 @@ Do nothing: The man will live, the group has a chance of surviving","The people 
 
 The group  ","The people in the east died.
 
-The 6 individuals drowning in the west were saved.",6,35, individuals drowing to the west
+The 6 individuals drowning in the west were saved.",10,65, individuals drowing to the west,ad,6.5,6,People drowning in the east: 6
 "Individuals drowning
- to the west: 11","Probability of alternate 
+ to the west: 8","Probability of alternate 
 rescue boat reaching them: 50%","• However, if you do this, the one man to the east will certainly die
 
 • If you do nothing and hold your course, the one man will be saved, but you will not reach the people to the west in time to save them","Plan: Change your course to head towards the group, leaving the man to die
@@ -138,9 +143,9 @@ Do nothing: The man will live, the group has a chance of surviving","The people 
 
 The group  ","The people in the east died.
 
-The 11 individuals drowning in the west were saved.",11,50, individuals drowing to the west
+The 11 individuals drowning in the west were saved.",8,50, individuals drowing to the west,dis,4,3,People drowning in the east: 3
 "Individuals drowning
- to the west: 4","Probability of alternate 
+ to the west: 8","Probability of alternate 
 rescue boat reaching them: 65%","• You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the one drowning man
 
 • But there is a chance the rescue boat will reach the group drowning to the west","Plan: Change your course to head towards the group, leaving the man to die
@@ -149,18 +154,18 @@ Do nothing: The man will live, the group has a chance of surviving","The people 
 
 The group  ","The people in the east died.
 
-The 4 individuals drowning in the west were saved.",4,65, individuals drowing to the west
+The 4 individuals drowning in the west were saved.",8,35, individuals drowing to the west,EQUAL,~3,2,People drowning in the east: 2
 "Individuals drowning
- to the west: 7","Probability of alternate 
+ to the west: 12","Probability of alternate 
 rescue boat reaching them: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Change your course to head towards the group, leaving the man to die
 
 Do nothing: The man will live, the group has a chance of surviving","The people in the east lived.
 
 The group  ","The people in the east died.
 
-The 7 individuals drowning in the west were saved.",7,50, individuals drowing to the west
+The 7 individuals drowning in the west were saved.",12,50, individuals drowing to the west,EQUAL,6,6,People drowning in the east: 6
 "Repairmen on 
-main track: 3","Probability of 
+main track: 6","Probability of 
 evacuation: 35%","• You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track
 
 • It is moving so fast that anyone it hits will die immediately","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
@@ -169,7 +174,7 @@ Do nothing: The repairman will live, the group has a chance of evacuating","The 
 
 The group ","The repairmen on the sidetrack died.
 
-The 3 repairmen on the track were saved.",3,35, repairmen on the main track
+The 3 repairmen on the track were saved.",6,50, repairmen on the main track,EQUAL,3,3,Pedestrians on left tracks: 3
 "Repairmen on 
 main track: 7","Probability of 
 evacuation: 65%","• The boxcar is headed towards a tunneled section in which a group of repairmen are working
@@ -180,9 +185,9 @@ Do nothing: The repairman will live, the group has a chance of evacuating","The 
 
 The group ","The repairmenon the sidetrack  died.
 
-The 7 repairmen on the track were saved.",7,65, repairmen on the main track
+The 7 repairmen on the track were saved.",7,35, repairmen on the main track,ad,2.45,3,Pedestrians on left tracks: 3
 "Repairmen on 
-main track: 9","Probability of 
+main track: 5","Probability of 
 evacuation: 65%","• If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all
 
 • If you hit the switch, the repairmen on the main track will be spared but the one repairman on the sidetrack will be hit by the boxcar and die","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
@@ -191,9 +196,9 @@ Do nothing: The repairman will live, the group has a chance of evacuating","The 
 
 The group ","The repairmen on the sidetrack  died.
 
-The 9 repairmen on the track were saved.",9,65, repairmen on the main track
+The 9 repairmen on the track were saved.",5,65, repairmen on the main track,dis,-3.25,2,Pedestrians on left tracks: 3
 "Repairmen on 
-main track: 2","Probability of 
+main track: 6","Probability of 
 evacuation:  50%","• You know that there is a chance an alarm on the main track will be triggered in time to alert the repairmen to evacuate before the boxcar arrives
 
 • There is no such alarm on the sidetrack, and therefore no chance the one workman would evacuate in time","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
@@ -202,18 +207,18 @@ Do nothing: The repairman will live, the group has a chance of evacuating","The 
 
 The group ","The repairmen on the sidetrack died.
 
-The 2 repairmen on the track were saved.",2,50, repairmen on the main track
+The 2 repairmen on the track were saved.",6,65, repairmen on the main track,EQUAL,~4,4,Pedestrians on left tracks: 3
 "Repairmen on 
-main track: 4","Probability of 
+main track: 7","Probability of 
 evacuation: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the one repairman
 
 Do nothing: The repairman will live, the group has a chance of evacuating","The repairmen on the sidetrack lived.
 
 The group ","The repairmen on the sidetrack died.
 
-The 4 repairmen on the track were saved.",4,50, repairmen on the main track
+The 4 repairmen on the track were saved.",7,35, repairmen on the main track,dis,2.45,2,Pedestrians on left tracks: 2
 "Customers in main
-dining room: 9","Probability customers
+dining room: 6","Probability customers
 will be spared: 35%","• You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining room, in which a number of customers are eating
 
 • If nothing is done the grenade will explode and the walls of the main dining room will collapse and kill these customers","Plan: Throw the grenade onto the patio, killing the one customer there
@@ -222,9 +227,9 @@ Do nothing: The one customer will live, the group has a chance of surviving","Th
 
 The group  ","The customers on the patio died.
 
-The 9 customers in the main dining room were saved.",9,35, customers in the main dining room
+The 9 customers in the main dining room were saved.",6,35, customers in the main dining room,dis,2.1,3,Customers on the patio: 3
 "Customers in main
-dining room: 7","Probability customers
+dining room: 14","Probability customers
 will be spared: 50%","• There is only one other location the grenade could be thrown before it explodes, and that is the patio outside of the main dining room
 
 • There is one customer sitting on the patio, and he would certainly be killed if the grenade is thrown there","Plan: Throw the grenade onto the patio, killing the one customer there
@@ -233,18 +238,18 @@ Do nothing: The one customer will live, the group has a chance of surviving","Th
 
 The group  ","The customers on the patio died.
 
-The 7 customers in the main dining room were saved.",7,50, customers in the main dining room
+The 7 customers in the main dining room were saved.",14,50, customers in the main dining room,EQUAL,7,7,Customers on the patio: 7
 "Customers in main
-dining room: 18","Probability customers
+dining room: 5","Probability customers
 will be spared: 35%","• You have time to run out and throw the grenade to the patio, without risking any harm to yourself","Plan: Throw the grenade onto the patio, killing the one customer there
 
 Do nothing: The one customer will live, the group has a chance of surviving","The customers on the patio lived.
 
 The group  ","The customers on the patio died.
 
-The 18 customers in the main dining room were saved.",18,35, customers in the main dining room
+The 18 customers in the main dining room were saved.",5,50, customers in the main dining room,AD,2.5,2,Customers on the patio: 2
 "Customers in main
-dining room: 25","Probability customers
+dining room: 7","Probability customers
 will be spared: 65%","• If you do this, the customers in the dining room will live but the one on the patio will die 
 
 • You also know that there is a chance that the dining room walls will withstand the blast of the grenade explosion, and the customers would be spared","Plan: Throw the grenade onto the patio, killing the one customer there
@@ -253,18 +258,18 @@ Do nothing: The one customer will live, the group has a chance of surviving","Th
 
 The group  ","The customers on the patio died.
 
-The 25 customers in the main dining room were saved.",25,65, customers in the main dining room
+The 25 customers in the main dining room were saved.",7,35, customers in the main dining room,ad,2.45,2,Customers on the patio: 2
 "Customers in main
-dining room: 13","Probability customers
+dining room: 9","Probability customers
 will be spared: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the grenade onto the patio, killing the one customer there
 
 Do nothing: The one customer will live, the group has a chance of surviving","The customers on the patio lived.
 
 The group  ","The customers on the patio died.
 
-The 13 customers in the main dining room were saved.",13,50, customers in the main dining room
+The 13 customers in the main dining room were saved.",9,65, customers in the main dining room,dis,5.85,7,Customers on the patio: 7
 "Workers in the 
-office building: 8","Probability the Bomb Squad
+office building: 4","Probability the Bomb Squad
 will arrive in time: 35%","• There has been a bomb planted in two buildings, drawing from the same set of wires
 
 • You are a citizen who has found the wires that control the bomb","Plan: Cut the green wire, blowing up the person in the home
@@ -273,7 +278,7 @@ Do Nothing: The one person will live, the office group has a chance of surviving
 
 The group ","The family in the home died. 
 
-The 8 workers in the office building were saved.",8,35, workers in the office building
+The 8 workers in the office building were saved.",4,65, workers in the office building,ad,2.6,3,Family members in the home: 3
 "Workers in the 
 office building: 7","Probability the Bomb Squad
 will arrive in time: 65%","• The red wire is connected to the bomb in a small office building, which will explode if that wire is cut
@@ -284,9 +289,9 @@ Do Nothing: The one person will live, the office group has a chance of surviving
 
 The group ","The family in the home died. 
 
-The 7 workers in the office building were saved.",7,65, workers in the office building
+The 7 workers in the office building were saved.",7,65, workers in the office building,dis,4.55,4,Family members in the home: 4
 "Workers in the 
-office building: 12","Probability the Bomb Squad
+office building: 13","Probability the Bomb Squad
 will arrive in time: 50%","• The time on the bomb is counting down, but you have time to cut one of the wires without risking harm to yourself 
 
 • If you do nothing, the bomb will default to blow up the office building  ","Plan: Cut the green wire, blowing up the person in the home
@@ -295,7 +300,7 @@ Do Nothing: The one person will live, the office group has a chance of surviving
 
 The group ","The family in the home died. 
 
-The 12 workers in the office building were saved.",12,50, workers in the office building
+The 12 workers in the office building were saved.",13,35, workers in the office building,DIS,4.55,4,Family members in the home: 4
 "Workers in the 
 office building: 9","Probability the Bomb Squad
 will arrive in time: 50%",• You also know that there is a chance that the Bomb Squad will arrive in time to completely disable the bomb,"Plan: Cut the green wire, blowing up the person in the home
@@ -304,18 +309,18 @@ Do Nothing: The one person will live, the office group has a chance of surviving
 
 The group ","The family in the home died. 
 
-The 9 workers in the office building were saved.",9,50, workers in the office building
+The 9 workers in the office building were saved.",9,35, workers in the office building,EQUAL,~3,3,Family members in the home: 3
 "Workers in the 
-office building: 10","Probability the Bomb Squad
+office building: 6","Probability the Bomb Squad
 will arrive in time: 35%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Cut the green wire, blowing up the person in the home
 
 Do Nothing: The one person will live, the office group has a chance of surviving if the Bomb Squad comes ","The family in the home lived.
 
 The group ","The family in the home died. 
 
-The 10 workers in the office building were saved.",10,35, workers in the office building
+The 10 workers in the office building were saved.",6,50, workers in the office building,dis,3,2,Family members in the home: 2
 "Passengers in the
-submarine: 5","Probability the oxygen 
+submarine: 8","Probability the oxygen 
 tanks will work: 50","•You are a worker on a large submarine
 
 • The upper section of the submarine has a hole in it that is gradually letting water in","Plan: Open the hatch, killing the crewmembers there
@@ -324,9 +329,9 @@ Do Nothing: The one crewmember in the lower section will live, the group has a c
 
 The group ","The crewmembers died.
 
-The group of passengers were saved.",5,50, group of passengers
+The group of passengers were saved.",8,35, group of passengers,equal,4,4,Crewmembers in the lower section: 4
 "People in the
-submarine: 12","Probability the oxygen 
+submarine: 7","Probability the oxygen 
 tanks will work: 65","• The way out is through the lower section
 
  • There is an emergency access hatch between the upper and lower sections of the ship","Plan: Open the hatch, killing the one crewmember there
@@ -335,9 +340,9 @@ Do Nothing: The one crewmember in the lower section will live, the group has a c
 
 The group ","The crewmembers died.
 
-The group of passengers were saved.",12,65, group of passengers
+The group of passengers were saved.",7,50, group of passengers,ad,-3.5,4,Crewmembers in the lower section: 4
 "People in the
-submarine: 7","Probability the oxygen 
+submarine: 6","Probability the oxygen 
 tanks will work: 35","• You can press an emergency switch, which would open the hatch but in doing so would crush and kill the one crewmember who is working below it
 
 • There is a group of crewmembers in the upper section of the submarine, who are beginning to drown","Plan: Open the hatch, killing the one crewmember there
@@ -346,27 +351,27 @@ Do Nothing: The one crewmember in the lower section will live, the group has a c
 
 The group ","The crewmembers died.
 
-The group of passengers were saved.",7,35, group of passengers
+The group of passengers were saved.",6,50, group of passengers,dis,3,5,Crewmembers in the lower section: 5
 "People in the
-submarine: 4","Probability the oxygen 
+submarine: 10","Probability the oxygen 
 tanks will work: 50","• There is a chance that one of the crewmembers will break a window, allowing them to escape","Plan: Open the hatch, killing the one crewmember there
 
 Do Nothing: The one crewmember in the lower section will live, the group has a chance of escape","The crewmembers lived.
 
 The group ","The crewmembers died.
 
-The group of passengers were saved.",4,50, group of passengers
+The group of passengers were saved.",10,50, group of passengers,EQUAL,5,5,Crewmembers in the lower section: 5
 "People in the
-submarine: 8","Probability the oxygen 
+submarine: 9","Probability the oxygen 
 tanks will work: 65","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Open the hatch, killing the one crewmember there
 
 Do Nothing: The one crewmember in the lower section will live, the group has a chance of escape","The crewmembers lived.
 
 The group ","The crewmembers died.
 
-The group of passengers were saved.",8,65, group of passengers
+The group of passengers were saved.",9,65, group of passengers,ad,5.85,8,Crewmembers in the lower section: 8
 "Tourists in the 
-enclosure: 8","Probability the tourists
+enclosure: 11","Probability the tourists
 will escape: 50%","• You are working in a security room of a zoo and can see all of the exhibits through the security cameras
 
 • You see that a group of tourists have gone beyond a safety gate and are now stuck in the right side of a lion enclosure, with a lion gradually approaching them ","Plan: Throw the bait to the left, leaving the zookeeper to die
@@ -375,7 +380,7 @@ Do Nothing: The zookeeper will live, the tourists have a chance of escaping up t
 
 The tourists ","The zookeepers died. 
 
-The 8 tourists in the lion enclosure escaped.",8,50, tourists in the enclosure
+The 8 tourists in the lion enclosure escaped.",11,35, tourists in the enclosure,DIS,3.85,3,Zookeepers in the enclosure: 3
 "Tourists in the 
 enclosure: 4","Probability the tourists
 will escape: 35%","• You also see that there is a zookeeper at on the left side of the enclosure who is cleaning the area
@@ -386,9 +391,9 @@ Do Nothing: The zookeeper will live, the tourists have a chance of escaping up t
 
 The tourists ","The zookeepers died. 
 
-The 4 tourists in the lion enclosure escaped.",4,35, tourists in the enclosure
+The 4 tourists in the lion enclosure escaped.",4,50, tourists in the enclosure,EQUAL,2,2,Zookeepers in the enclosure: 2
 "Tourists in the 
-enclosure: 9","Probability the tourists
+enclosure: 7","Probability the tourists
 will escape: 65%","• There is a single ladder in the middle of the enclosure which leads to safety
 
 •  If you throw the bait in the direction of the zookeeper, the lion will definitely attack and kill the zookeeper, but the group will be able to escape to safety ","Plan: Throw the bait to the left, leaving the zookeeper to die
@@ -397,27 +402,27 @@ Do Nothing: The zookeeper will live, the tourists have a chance of escaping up t
 
 The tourists ","The zookeepers died. 
 
-The 9 tourists in the lion enclosure escaped.",9,65, tourists in the enclosure
+The 9 tourists in the lion enclosure escaped.",7,35, tourists in the enclosure,AD,2.45,2,Zookeepers in the enclosure: 2
 "Tourists in the 
-enclosure: 7","Probability the tourists
+enclosure: 8","Probability the tourists
 will escape: 50%","• However, there is a chance that the group will make it to the ladder before the lion reaches them. ","Plan: Throw the bait to the left, leaving the zookeeper to die
 
 Do Nothing: The zookeeper will live, the tourists have a chance of escaping up the ladder","The zookeepers lived.
 
 The tourists ","The zookeepers died. 
 
-The 7 tourists in the lion enclosure escaped.",7,50, tourists in the enclosure
+The 7 tourists in the lion enclosure escaped.",8,65, tourists in the enclosure,EQUAL,~5,5,Zookeepers in the enclosure: 5
 "Tourists in the 
-enclosure: 5","Probability the tourists
+enclosure: 3","Probability the tourists
 will escape: 65%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the bait to the left, leaving the zookeeper to die
 
 Do Nothing: The zookeeper will live, the tourists have a chance of escaping up the ladder","The zookeepers lived.
 
 The tourists ","The zookeepers died. 
 
-The 5 tourists in the lion enclosure escaped.",5,65, tourists in the enclosure
+The 5 tourists in the lion enclosure escaped.",3,65, tourists in the enclosure,EQUAL,~2,2,Zookeepers in the enclosure: 2
 "People in the swimming
-pool: 6","Probability the wire
+pool: 13","Probability the wire
 will be caught in time: 50%","•There is a live wire dangling from an electric pole
 
  • There is an electrician at the top of the pole trying to gather the wire before it falls into a pool below, where a group of people are swimming","Plan: Throw the rock, redirecting the wire and killing the pedestrian
@@ -426,9 +431,9 @@ Do Nothing: The pedestrian will live, the people in the swimming pool have a cha
 
 The people in the swimming pool ","The pedestrians died.
 
-The people in the swimming pool were saved.",6,50, people in the swimming pool
+The people in the swimming pool were saved.",13,65, people in the swimming pool,ad,8.45,9,Pedestrians on the sidewalk: 9
 "People in the swimming
-pool: 11","Probability the wire
+pool: 9","Probability the wire
 will be caught in time: 35%","•There is a sizeable rock on the ground near you, which you can throw at the wire to redirect where it falls
 
 ","Plan: Throw the rock, redirecting the wire and killing the pedestrian
@@ -437,7 +442,7 @@ Do Nothing: The pedestrian will live, the people in the swimming pool have a cha
 
 The people in the swimming pool ","The pedestrians died.
 
-The people in the swimming pool were saved.",11,35, people in the swimming pool
+The people in the swimming pool were saved.",9,50, people in the swimming pool,ad,4.5,4,Pedestrians on the sidewalk: 4
 "People in the swimming
 pool: 9","Probability the wire
 will be caught in time: 65%","•  If you do this, the wire will land on a sole pedestrian on the sidewalk, electrocuting and killing that person","Plan: Throw the rock, redirecting the wire and killing the pedestrian
@@ -446,26 +451,26 @@ Do Nothing: The pedestrian will live, the people in the swimming pool have a cha
 
 The people in the swimming pool ","The pedestrians died.
 
-The people in the swimming pool were saved.",9,65, people in the swimming pool
+The people in the swimming pool were saved.",9,35, people in the swimming pool,EQUAL,~3,3,Pedestrians on the sidewalk: 3
 "People in the swimming
-pool: 4","Probability the wire
+pool: 7","Probability the wire
 will be caught in time: 35%","• However, the electrician might be able to catch the wire before it falls","Plan: Throw the rock, redirecting the wire and killing the pedestrian
 
 Do Nothing: The pedestrian will live, the people in the swimming pool have a chance of surviving if the wire is caught","The pedestrians lived.
 
 The people in the swimming pool ","The pedestrians died.
 
-The people in the swimming pool were saved.",4,35, people in the swimming pool
+The people in the swimming pool were saved.",7,65, people in the swimming pool,ad,4.55,4,Pedestrians on the sidewalk: 4
 "People in the swimming
-pool: 3","Probability the wire
+pool: 6","Probability the wire
 will be caught in time: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the rock, redirecting the wire and killing the pedestrian
 
 Do Nothing: The pedestrian will live, the people in the swimming pool have a chance of surviving if the wire is caught","The pedestrians lived.
 
 The people in the swimming pool ","The pedestrians died.
 
-The people in the swimming pool were saved.",3,50, people in the swimming pool
-Scuba divers in team: 6,"Probability EM pulse
+The people in the swimming pool were saved.",6,50, people in the swimming pool,equal,3,3,Pedestrians on the sidewalk: 3
+Scuba divers in team: 10,"Probability EM pulse
 will function: 35%","• You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers
 
 • You know that when the sharks reach this group they will encircle them and kill them all ","Plan: Shoot the one diver, leaving them to get eaten by sharks
@@ -474,8 +479,8 @@ Do nothing: The one diver will live, the group has a chance of surviving","The o
  
 The group ","The one scuba diver died.
 
-The group of 6 scuba divers was saved.",6,35, scuba divers
-Scuba divers in team: 3,"Probability EM pulse
+The group of 6 scuba divers was saved.",10,35, scuba divers,DIS,3.5,2,Scuba divers in the east: 2
+Scuba divers in team: 5,"Probability EM pulse
 will function: 65%","• You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks 
 
 • If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers ","Plan: Shoot the one diver, leaving them to get eaten by sharks
@@ -484,7 +489,7 @@ Do nothing: The one diver will live, the group has a chance of surviving","The o
  
 The group ","The one scuba diver died.
 
-The group of 3 scuba divers was saved.",3,65, scuba divers
+The group of 3 scuba divers was saved.",5,35, scuba divers,ad,-1.75,2,Scuba divers in the east: 2
 Scuba divers in team: 7,"Probability EM pulse
 will function: 50%","• If you shoot the one diver, all of the divers will be spared","Plan: Shoot the one diver, leaving them to get eaten by sharks
 
@@ -492,8 +497,8 @@ Do nothing: The one diver will live, the group has a chance of surviving","The o
  
 The group ","The one scuba diver died.
 
-The group of 7 scuba divers was saved.",7,50, scuba divers
-Scuba divers in team: 9,"Probability EM pulse
+The group of 7 scuba divers was saved.",7,65, scuba divers,dis,4.55,5,Scuba divers in the east: 5
+Scuba divers in team: 8,"Probability EM pulse
 will function: 50%","• You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function 
 
 • In order to ensure that the group will be spared, you must shoot the one diver now","Plan: Shoot the one diver, leaving them to get eaten by sharks
@@ -502,16 +507,16 @@ Do nothing: The one diver will live, the group has a chance of surviving","The o
  
 The group ","The one scuba diver died.
 
-The group of 9 scuba divers  was saved.",9,50, scuba divers
-Scuba divers in team: 4,"Probability EM pulse
+The group of 9 scuba divers  was saved.",8,50, scuba divers,DIS,4,6,Scuba divers in the east: 6
+Scuba divers in team: 6,"Probability EM pulse
 will function: 35%","Consider each of the following scenarios and, for each one, determine what course of action you will take. ","Plan: Shoot the one diver, leaving them to get eaten by sharks
 
 Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved. 
  
 The group ","The one scuba diver died.
 
-The group of 4 scuba divers was saved.",4,35, scuba divers
-People in the car: ,Probability the people in the car will be able to escape in time: ,"• You are standing on a footbridge that is going over train tracks
+The group of 4 scuba divers was saved.",6,65, scuba divers,EQUAL,~4,4,Scuba divers in the east: 4
+People in the car: 10,Probability the people in the car will be able to escape in time: ,"• You are standing on a footbridge that is going over train tracks
 
 • Below you see a car has gotten stuck on the train tracks, and a train is quickly approaching","Plan: Push the pedestrians over, causing them to hit the train and die
 
@@ -519,8 +524,8 @@ Do nothing: The pedestrians will live, the people in the car have a chance of su
 
 The people in the car","The pedestrians died,
 
-The people in the car were saved.",,65,people in the car
-People in the car: ,Probability the people in the car will be able to escape in time: ,"• There is a small group of pedestrians leaning over the footbridge
+The people in the car were saved.",10,50,people in the car,equal,5,5,Pedestrians on the bridge: 5
+People in the car: 7,Probability the people in the car will be able to escape in time: ,"• There is a small group of pedestrians leaning over the footbridge
 
 • You know that if you push the pedestrians over the bridge, they will hit the oncoming train, causing it to stop before it reaches the car","Plan: Push the pedestrians over, causing them to hit the train and die
 
@@ -528,8 +533,8 @@ Do nothing: The pedestrians will live, the people in the car have a chance of su
 
 The people in the car","The pedestrians died,
 
-The people in the car were saved.",,50,people in the car
-People in the car: ,Probability the people in the car will be able to escape in time: ,"• You also know that there is some chance the people in the car will be able to escape before the train comes
+The people in the car were saved.",7,50,people in the car,ad,-3.5,4,Pedestrians on the bridge: 4
+People in the car: 4,Probability the people in the car will be able to escape in time: ,"• You also know that there is some chance the people in the car will be able to escape before the train comes
 
 • If you push the pedestrians, they will certainly fall to their deaths","Plan: Push the pedestrians over, causing them to hit the train and die
 
@@ -537,47 +542,47 @@ Do nothing: The pedestrians will live, the people in the car have a chance of su
 
 The people in the car","The pedestrians died,
 
-The people in the car were saved.",,35,people in the car
-People in the car: ,Probability the people in the car will be able to escape in time: ,"• In order to ensure the people in the car will be saved, you would have to push the pedestrian now","Plan: Push the pedestrians over, causing them to hit the train and die
+The people in the car were saved.",4,65,people in the car,DIS,2.6,2,Pedestrians on the bridge: 2
+People in the car: 6,Probability the people in the car will be able to escape in time: ,"• In order to ensure the people in the car will be saved, you would have to push the pedestrian now","Plan: Push the pedestrians over, causing them to hit the train and die
 
 Do nothing: The pedestrians will live, the people in the car have a chance of surviving","The pedestrians lived.
 
 The people in the car","The pedestrians died,
 
-The people in the car were saved.",,65,people in the car
-People in the car: ,Probability the people in the car will be able to escape in time: ,"Consider each of the following scenarios and, for each one, determine what course of action you will take. ","Plan: Push the pedestrians over, causing them to hit the train and die
+The people in the car were saved.",6,35,people in the car,ad,2.1,5,Pedestrians on the bridge: 5
+People in the car: 12,Probability the people in the car will be able to escape in time: ,"Consider each of the following scenarios and, for each one, determine what course of action you will take. ","Plan: Push the pedestrians over, causing them to hit the train and die
 
 Do nothing: The pedestrians will live, the people in the car have a chance of surviving","The pedestrians lived.
 
 The people in the car","The pedestrians died,
 
-The people in the car were saved.",,50,people in the car
-Engineers in the cargo bay:,,"• Engineers and astronauts are working on the cargo bay of a space station, and you are watching them from the control center on Earth 
+The people in the car were saved.",12,50,people in the car,equal,6,6,Pedestrians on the bridge: 6
+Engineers in the cargo bay: 10,,"• Engineers and astronauts are working on the cargo bay of a space station, and you are watching them from the control center on Earth 
 
 •A fire suddenly breaks out in the east cargo bay where the engineers are working","Plan: Push the button, opening the compartment door","The astronaunts lived.
 
 The engineers ","The astronauts died.
 
-The engineers were saved.",,,engineers
-Engineers in the cargo bay:,,"• There is a sealing mechanism that would into two sections, securely sealing the occupants of each from the harsh conditions of space
+The engineers were saved.",10,35,engineers,dis,3.5,7,Astronauts in outer space: 7
+Engineers in the cargo bay: 6,,"• There is a sealing mechanism that would into two sections, securely sealing the occupants of each from the harsh conditions of space
 
 •  You can press a button that opens the compartment door to open, immediately extinguishing the fire but causing the engineers to be sucked into space, leaving them to die",,"The astronaunts lived.
 
 The engineers ","The astronauts died.
 
-The engineers were saved.",,,engineers
-Engineers in the cargo bay:,,• You also know that there is some chance the engineers may be able to put out the fire before a deadly explosion occurs,,"The astronaunts lived.
+The engineers were saved.",6,65,engineers,dis,3.9,3,Astronauts in outer space: 3
+Engineers in the cargo bay: 8,,• You also know that there is some chance the engineers may be able to put out the fire before a deadly explosion occurs,,"The astronaunts lived.
 
 The engineers ","The astronauts died.
 
-The engineers were saved.",,,engineers
-Engineers in the cargo bay:,,"• To ensure the engineers' safety, you would have to push the button now",,"The astronaunts lived.
+The engineers were saved.",8,65,engineers,ad,5.2,4,Astronauts in outer space: 4
+Engineers in the cargo bay: 11,,"• To ensure the engineers' safety, you would have to push the button now",,"The astronaunts lived.
 
 The engineers ","The astronauts died.
 
-The engineers were saved.",,,engineers
-Engineers in the cargo bay:,,"Consider each of the following scenarios and, for each one, determine what course of action you will take. ",,"The astronaunts lived.
+The engineers were saved.",11,35,engineers,equal,~3,3,Astronauts in outer space: 3
+Engineers in the cargo bay: 8,,"Consider each of the following scenarios and, for each one, determine what course of action you will take. ",,"The astronaunts lived.
 
 The engineers ","The astronauts died.
 
-The engineers were saved.",,,engineers
+The engineers were saved.",8,35,engineers,AD,2.8,2,Astronauts in outer space: 2
