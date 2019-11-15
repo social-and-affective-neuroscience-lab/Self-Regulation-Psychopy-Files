@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
@@ -579,7 +579,7 @@ for thisCueLoop in CueLoop:
     CueLoop.addData('isiText.stopped', isiText.tStopRefresh)
     
     # set up handler to look after randomisation of conditions etc
-    randomPresent = data.TrialHandler(nReps= , method='random', 
+    randomPresent = data.TrialHandler(nReps= 1, method='random', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('spreadsheet5.xlsx', selection=Rows),
         seed=None, name='randomPresent')
