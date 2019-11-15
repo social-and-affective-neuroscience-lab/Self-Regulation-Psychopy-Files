@@ -1,0 +1,56 @@
+18.9142 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+20.3517 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023F4D329780>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000023F4D3CAF60>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+20.3517 	EXP 	window1: recordFrameIntervals = False
+20.5179 	EXP 	window1: recordFrameIntervals = True
+20.7017 	EXP 	window1: recordFrameIntervals = False
+20.9687 	EXP 	Created Instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='Instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.45)
+20.9874 	EXP 	Created cueText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cueText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+20.9963 	EXP 	Created sendInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='sendInstructions', opacity=1.0, ori=0, pos=array([ 0.  , -0.11]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+21.0071 	EXP 	Created Player1Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player1Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.0098 	EXP 	Created Player1Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player1Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+21.9177 	EXP 	Created Feedback = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Feedback', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.9224 	EXP 	Created sendInst2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='sendInst2', opacity=1.0, ori=0, pos=array([ 0.  , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+21.9256 	EXP 	Created Player2Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player2Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.9277 	EXP 	Created Player2Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player2Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+21.9321 	EXP 	Created Feedback2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Feedback2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.9640 	EXP 	Instructions: autoDraw = True
+23.3665 	EXP 	Imported DictatorGame.xlsx as conditions, 10 conditions, 5 params
+23.3667 	EXP 	Created sequence: random, trialTypes=10, nReps=2, seed=None
+23.3669 	EXP 	New trial (rep=0, index=0): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+23.3823 	DATA 	Keypress: space
+23.3863 	EXP 	Instructions: autoDraw = False
+23.3863 	EXP 	cueText: text = 'REACT'
+23.3863 	EXP 	cueText: autoDraw = True
+28.3466 	EXP 	Imported DictatorGame.xlsx as conditions, 10 conditions, 5 params
+28.3468 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+28.3470 	EXP 	New trial (rep=0, index=0): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', '1patterns.png'), ('Player2', '3pattern.png')])
+28.4432 	EXP 	cueText: autoDraw = False
+28.4432 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. '
+28.4432 	EXP 	Player1Name: text = 'Player 1'
+28.4432 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+28.4432 	EXP 	Player1Pic: size = array([0.2, 0.2])
+28.4432 	EXP 	Player1Pic: image = '1patterns.png'
+28.4432 	EXP 	sendInstructions: autoDraw = True
+28.4432 	EXP 	Player1Name: autoDraw = True
+28.4432 	EXP 	Player1Pic: autoDraw = True
+36.5024 	DATA 	Keypress: 5
+38.3375 	DATA 	Keypress: 5
+38.4207 	DATA 	Keypress: 6
+38.7710 	DATA 	Keypress: 3
+38.9043 	DATA 	Keypress: 4
+39.1543 	DATA 	Keypress: 5
+39.4713 	DATA 	Keypress: 6
+39.5871 	DATA 	Keypress: 5
+39.8381 	DATA 	Keypress: 4
+40.1387 	DATA 	Keypress: 5
+40.7057 	DATA 	Keypress: 4
+40.8230 	DATA 	Keypress: 5
+41.0058 	DATA 	Keypress: 6
+41.2062 	DATA 	Keypress: 3
+41.3396 	DATA 	Keypress: 4
+41.4728 	DATA 	Keypress: 5
+41.8894 	DATA 	Keypress: 5
+41.8896 	DATA 	Keypress: 4
+42.2581 	DATA 	Keypress: 6
+42.3741 	DATA 	Keypress: return
+42.4175 	EXP 	window1: mouseVisible = True

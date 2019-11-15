@@ -1,0 +1,8 @@
+﻿Rows,CueType1,CueType2,selectBlock,CueLoop.thisRepN,CueLoop.thisTrialN,CueLoop.thisN,CueLoop.thisIndex,randomPresent.thisRepN,randomPresent.thisTrialN,randomPresent.thisN,randomPresent.thisIndex,SelfishGiver.thisRepN,SelfishGiver.thisTrialN,SelfishGiver.thisN,SelfishGiver.thisIndex,GenerousGiver.thisRepN,GenerousGiver.thisTrialN,GenerousGiver.thisN,GenerousGiver.thisIndex,Instructions.started,Instructions.stopped,begin.keys,begin.rt,begin.started,begin.stopped,isiText.started,isiText.stopped,cueText.started,cueText.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,,,,,,,6.632286199834198,None,space,1.7080460998695344,6.632286199834198,None,,,,,1,001,2019_Nov_14_1252,TrustGame,3.2.4,60.20074540639971,
+None,REGULATE,REACT,2,0,0,0,3,0,0,0,4,,,,,,,,,,,,,,,17.37857919977978,None,10.391430399846286,None,1,001,2019_Nov_14_1252,TrustGame,3.2.4,60.20074540639971,
+None,REGULATE,REACT,2,0,0,0,3,0,1,1,2,,,,,,,,,,,,,,,19.3793630998116,19.3793630998116,,,1,001,2019_Nov_14_1252,TrustGame,3.2.4,60.20074540639971,
+None,REGULATE,REACT,1,0,0,0,3,0,2,2,0,,,,,,,,,,,,,,,21.38121909997426,21.38121909997426,,,1,001,2019_Nov_14_1252,TrustGame,3.2.4,60.20074540639971,
+None,REGULATE,REACT,1,0,0,0,3,0,3,3,1,,,,,,,,,,,,,,,23.382648599799722,23.382648599799722,,,1,001,2019_Nov_14_1252,TrustGame,3.2.4,60.20074540639971,
+None,REGULATE,REACT,1,0,0,0,3,0,4,4,6,,,,,,,,,,,,,,,25.38429079996422,25.38429079996422,,,1,001,2019_Nov_14_1252,TrustGame,3.2.4,60.20074540639971,
+None,REGULATE,REACT,1,0,0,0,3,0,5,5,7,,,,,,,,,,,,,,,27.385928299976513,27.385928299976513,,,1,001,2019_Nov_14_1252,TrustGame,3.2.4,60.20074540639971,

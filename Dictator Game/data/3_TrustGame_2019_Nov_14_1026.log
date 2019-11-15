@@ -1,0 +1,490 @@
+10.5419 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+12.0344 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000017DE14A3898>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000017DE14390B8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.0344 	EXP 	window1: recordFrameIntervals = False
+12.2007 	EXP 	window1: recordFrameIntervals = True
+12.3845 	EXP 	window1: recordFrameIntervals = False
+12.6169 	EXP 	Created Instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='Instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.45)
+12.6366 	EXP 	Created cueText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cueText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+12.6460 	EXP 	Created sendInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='sendInstructions', opacity=1.0, ori=0, pos=array([ 0.  , -0.11]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+12.6575 	EXP 	Created Player1Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player1Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+12.6600 	EXP 	Created Player1Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player1Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+12.6605 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+12.6645 	EXP 	Created Feedback = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Feedback', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+12.6689 	EXP 	Created sendInst2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='sendInst2', opacity=1.0, ori=0, pos=array([ 0.  , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+12.6720 	EXP 	Created Player2Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player2Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+12.6736 	EXP 	Created Player2Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player2Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+12.6776 	EXP 	Created Feedback2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Feedback2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+12.7090 	EXP 	Instructions: autoDraw = True
+13.5485 	EXP 	Imported DictatorGame.xlsx as conditions, 10 conditions, 5 params
+13.5487 	EXP 	Created sequence: random, trialTypes=10, nReps=2, seed=None
+13.5490 	EXP 	New trial (rep=0, index=0): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+13.5627 	DATA 	Keypress: space
+13.5667 	EXP 	Instructions: autoDraw = False
+13.5667 	EXP 	cueText: text = 'REACT'
+13.5667 	EXP 	cueText: autoDraw = True
+13.6367 	DATA 	Keypress: space
+18.5279 	EXP 	Imported DictatorGame.xlsx as conditions, 10 conditions, 5 params
+18.5281 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+18.5283 	EXP 	New trial (rep=0, index=0): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', '1patterns.png'), ('Player2', '3pattern.png')])
+18.6057 	EXP 	cueText: autoDraw = False
+18.6057 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. '
+18.6057 	EXP 	Player1Name: text = 'Player 1'
+18.6057 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+18.6057 	EXP 	Player1Pic: size = array([0.2, 0.2])
+18.6057 	EXP 	Player1Pic: image = '1patterns.png'
+18.6057 	EXP 	text: text = ''
+18.6057 	EXP 	sendInstructions: autoDraw = True
+18.6057 	EXP 	Player1Name: autoDraw = True
+18.6057 	EXP 	Player1Pic: autoDraw = True
+18.6057 	EXP 	text: autoDraw = True
+19.6067 	EXP 	text: autoDraw = False
+21.6767 	DATA 	Keypress: 6
+21.6919 	EXP 	text: text = '6'
+22.5944 	DATA 	Keypress: 5
+22.6093 	EXP 	text: text = '65'
+22.6780 	DATA 	Keypress: 6
+22.6925 	EXP 	text: text = '656'
+23.1279 	DATA 	Keypress: d
+23.1427 	EXP 	text: text = '656d'
+23.2118 	DATA 	Keypress: f
+23.2265 	EXP 	text: text = '656df'
+23.2279 	DATA 	Keypress: g
+23.2434 	EXP 	text: text = '656dfg'
+23.8621 	DATA 	Keypress: 2
+23.8623 	DATA 	Keypress: 3
+23.8695 	DATA 	Keypress: 4
+23.8773 	EXP 	text: text = '656dfg2'
+23.8944 	EXP 	text: text = '656dfg24'
+24.1130 	DATA 	Keypress: 5
+24.1278 	EXP 	text: text = '656dfg245'
+24.2967 	DATA 	Keypress: 5
+24.3123 	EXP 	text: text = '656dfg2455'
+24.3962 	DATA 	Keypress: 7
+24.4139 	EXP 	text: text = '656dfg24557'
+24.7491 	DATA 	Keypress: 6
+24.7781 	EXP 	text: text = '656dfg245576'
+24.8628 	DATA 	Keypress: 7
+24.8787 	EXP 	text: text = '656dfg2455767'
+25.0126 	DATA 	Keypress: 6
+25.0287 	EXP 	text: text = '656dfg24557676'
+25.0630 	DATA 	Keypress: 5
+25.0799 	EXP 	text: text = '656dfg245576765'
+25.1304 	DATA 	Keypress: 7
+25.1477 	EXP 	text: text = '656dfg2455767657'
+25.2973 	DATA 	Keypress: 5
+25.2974 	DATA 	Keypress: 4
+25.3143 	EXP 	text: text = '656dfg24557676575'
+25.5307 	DATA 	Keypress: 5
+25.5308 	DATA 	Keypress: 4
+25.5480 	EXP 	text: text = '656dfg245576765755'
+25.8132 	DATA 	Keypress: 5
+25.8133 	DATA 	Keypress: 4
+25.8305 	EXP 	text: text = '656dfg2455767657555'
+26.0304 	DATA 	Keypress: 5
+26.0305 	DATA 	Keypress: 4
+26.0479 	EXP 	text: text = '656dfg24557676575555'
+27.5179 	DATA 	Keypress: k
+27.5180 	DATA 	Keypress: l
+27.5498 	EXP 	text: text = '656dfg24557676575555k'
+27.7652 	DATA 	Keypress: semicolon
+27.7653 	DATA 	Keypress: k
+27.7904 	EXP 	text: text = '656dfg24557676575555ksemicolon'
+28.2489 	DATA 	Keypress: return
+28.3020 	EXP 	sendInstructions: autoDraw = False
+28.3020 	EXP 	Player1Name: autoDraw = False
+28.3020 	EXP 	Player1Pic: autoDraw = False
+28.3020 	EXP 	text: autoDraw = False
+28.3020 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+28.3020 	EXP 	Feedback: autoDraw = True
+29.3169 	DATA 	Keypress: d
+29.6838 	DATA 	Keypress: f
+29.7004 	DATA 	Keypress: j
+29.8696 	DATA 	Keypress: g
+29.8697 	DATA 	Keypress: h
+29.9012 	DATA 	Keypress: k
+30.0352 	DATA 	Keypress: f
+30.0516 	DATA 	Keypress: j
+30.1516 	DATA 	Keypress: g
+30.1517 	DATA 	Keypress: h
+30.2848 	DATA 	Keypress: e
+30.3011 	DATA 	Keypress: semicolon
+30.3012 	DATA 	Keypress: r
+30.3679 	DATA 	Keypress: o
+30.4522 	DATA 	Keypress: i
+30.9354 	DATA 	Keypress: num_5
+31.0522 	DATA 	Keypress: num_7
+31.2023 	DATA 	Keypress: num_6
+31.3358 	DATA 	Keypress: num_7
+31.3360 	DATA 	Keypress: num_8
+31.5363 	DATA 	Keypress: 4
+31.5364 	DATA 	Keypress: 3
+31.7196 	DATA 	Keypress: 5
+31.8368 	DATA 	Keypress: u
+31.8369 	DATA 	Keypress: 3
+31.9029 	DATA 	Keypress: 4
+31.9190 	DATA 	Keypress: 9
+32.0532 	DATA 	Keypress: 5
+32.0533 	DATA 	Keypress: 7
+32.0534 	DATA 	Keypress: 8
+32.2676 	EXP 	New trial (rep=0, index=1): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+32.2871 	EXP 	Feedback: autoDraw = False
+32.2871 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. '
+32.2871 	EXP 	Player1Name: text = 'Player 1'
+32.2871 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+32.2871 	EXP 	Player1Pic: size = array([0.2, 0.2])
+32.2871 	EXP 	Player1Pic: image = '1patterns.png'
+32.2871 	EXP 	text: text = ''
+32.2871 	EXP 	sendInstructions: autoDraw = True
+32.2871 	EXP 	Player1Name: autoDraw = True
+32.2871 	EXP 	Player1Pic: autoDraw = True
+32.2871 	EXP 	text: autoDraw = True
+32.4524 	DATA 	Keypress: f
+32.4673 	EXP 	text: text = 'f'
+32.5359 	DATA 	Keypress: j
+32.5511 	EXP 	text: text = 'fj'
+32.6047 	DATA 	Keypress: h
+32.6344 	EXP 	text: text = 'fjh'
+32.6860 	DATA 	Keypress: f
+32.6861 	DATA 	Keypress: d
+32.7009 	EXP 	text: text = 'fjhf'
+32.7203 	DATA 	Keypress: m
+32.7358 	EXP 	text: text = 'fjhfm'
+32.7373 	DATA 	Keypress: period
+32.7551 	EXP 	text: text = 'fjhfmperiod'
+32.8367 	DATA 	Keypress: b
+32.8554 	EXP 	text: text = 'fjhfmperiodb'
+32.8866 	DATA 	Keypress: f
+32.9050 	EXP 	text: text = 'fjhfmperiodbf'
+33.3014 	EXP 	text: autoDraw = False
+33.3722 	DATA 	Keypress: d
+33.4029 	EXP 	text: text = 'fjhfmperiodbfd'
+33.4202 	DATA 	Keypress: f
+33.4363 	EXP 	text: text = 'fjhfmperiodbfdf'
+33.4879 	DATA 	Keypress: j
+33.5045 	EXP 	text: text = 'fjhfmperiodbfdfj'
+34.0544 	DATA 	Keypress: j
+34.0717 	EXP 	text: text = 'fjhfmperiodbfdfjj'
+34.1044 	DATA 	Keypress: k
+34.1153 	DATA 	Keypress: d
+34.1216 	EXP 	text: text = 'fjhfmperiodbfdfjjk'
+34.1389 	EXP 	text: text = 'fjhfmperiodbfdfjjkd'
+34.1894 	DATA 	Keypress: h
+34.2053 	EXP 	text: text = 'fjhfmperiodbfdfjjkdh'
+34.2376 	DATA 	Keypress: f
+34.2561 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhf'
+34.3046 	DATA 	Keypress: k
+34.3217 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfk'
+34.4370 	DATA 	Keypress: h
+34.4553 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkh'
+34.5207 	DATA 	Keypress: d
+34.5389 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhd'
+34.5407 	DATA 	Keypress: l
+34.5598 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdl'
+34.5743 	DATA 	Keypress: k
+34.5941 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlk'
+34.6178 	DATA 	Keypress: f
+34.6388 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkf'
+34.7216 	DATA 	Keypress: g
+34.7407 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfg'
+34.8066 	DATA 	Keypress: h
+34.8272 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfgh'
+38.7082 	DATA 	Keypress: k
+38.7282 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghk'
+38.8769 	DATA 	Keypress: h
+38.9111 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkh'
+38.9591 	DATA 	Keypress: d
+38.9796 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhd'
+39.0585 	DATA 	Keypress: k
+39.0768 	DATA 	Keypress: f
+39.0819 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdk'
+39.1054 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkf'
+39.1911 	DATA 	Keypress: g
+39.2130 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfg'
+39.2301 	DATA 	Keypress: h
+39.2649 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfgh'
+39.3588 	DATA 	Keypress: k
+39.3828 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghk'
+39.3917 	DATA 	Keypress: j
+39.3921 	DATA 	Keypress: d
+39.4059 	DATA 	Keypress: f
+39.4288 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkj'
+39.5583 	DATA 	Keypress: h
+39.5811 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjh'
+39.6253 	DATA 	Keypress: f
+39.6484 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhf'
+39.7259 	DATA 	Keypress: k
+39.7491 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhfk'
+40.9268 	DATA 	Keypress: j
+40.9516 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhfkj'
+41.0767 	DATA 	Keypress: h
+41.0768 	DATA 	Keypress: d
+41.1006 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhfkjh'
+41.1929 	DATA 	Keypress: g
+41.1930 	DATA 	Keypress: k
+41.2181 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhfkjhg'
+41.3438 	DATA 	Keypress: h
+41.3439 	DATA 	Keypress: d
+41.3699 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhfkjhgh'
+41.3931 	DATA 	Keypress: f
+41.4184 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhfkjhghf'
+41.5438 	DATA 	Keypress: g
+41.5690 	EXP 	text: text = 'fjhfmperiodbfdfjjkdhfkhdlkfghkhdkfghkjhfkjhghfg'
+41.9108 	DATA 	Keypress: return
+41.9253 	EXP 	sendInstructions: autoDraw = False
+41.9253 	EXP 	Player1Name: autoDraw = False
+41.9253 	EXP 	Player1Pic: autoDraw = False
+41.9253 	EXP 	text: autoDraw = False
+41.9253 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+41.9253 	EXP 	Feedback: autoDraw = True
+42.4281 	DATA 	Keypress: k
+42.5625 	DATA 	Keypress: h
+42.6112 	DATA 	Keypress: d
+42.6451 	DATA 	Keypress: f
+42.7113 	DATA 	Keypress: j
+42.7286 	DATA 	Keypress: k
+42.8116 	DATA 	Keypress: g
+42.8617 	DATA 	Keypress: h
+42.9786 	DATA 	Keypress: k
+43.0618 	DATA 	Keypress: f
+43.0619 	DATA 	Keypress: d
+45.0138 	DATA 	Keypress: k
+45.1968 	DATA 	Keypress: f
+45.1969 	DATA 	Keypress: d
+45.3143 	DATA 	Keypress: h
+45.4969 	DATA 	Keypress: f
+45.5976 	DATA 	Keypress: h
+45.7972 	DATA 	Keypress: g
+45.8973 	DATA 	Keypress: h
+45.9145 	EXP 	New trial (rep=0, index=2): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+45.9325 	EXP 	Feedback: autoDraw = False
+45.9325 	EXP 	Feedback: autoDraw = False
+45.9325 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. '
+45.9325 	EXP 	Player1Name: text = 'Player 1'
+45.9325 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+45.9325 	EXP 	Player1Pic: size = array([0.2, 0.2])
+45.9325 	EXP 	Player1Pic: image = '1patterns.png'
+45.9325 	EXP 	text: text = ''
+45.9325 	EXP 	sendInstructions: autoDraw = True
+45.9325 	EXP 	Player1Name: autoDraw = True
+45.9325 	EXP 	Player1Pic: autoDraw = True
+45.9325 	EXP 	text: autoDraw = True
+46.5478 	DATA 	Keypress: h
+46.5623 	EXP 	text: text = 'h'
+46.8326 	DATA 	Keypress: h
+46.8464 	EXP 	text: text = 'hh'
+46.9458 	EXP 	text: autoDraw = False
+47.6487 	DATA 	Keypress: h
+47.6633 	EXP 	text: text = 'hhh'
+48.6854 	DATA 	Keypress: h
+48.7143 	EXP 	text: text = 'hhhh'
+48.8823 	DATA 	Keypress: h
+48.8975 	EXP 	text: text = 'hhhhh'
+49.1664 	DATA 	Keypress: d
+49.1813 	EXP 	text: text = 'hhhhhd'
+49.2170 	DATA 	Keypress: f
+49.2311 	EXP 	text: text = 'hhhhhdf'
+49.3831 	DATA 	Keypress: h
+49.3979 	EXP 	text: text = 'hhhhhdfh'
+49.4855 	DATA 	Keypress: g
+49.5146 	EXP 	text: text = 'hhhhhdfhg'
+49.7843 	DATA 	Keypress: 3
+49.8013 	EXP 	text: text = 'hhhhhdfhg3'
+49.8198 	DATA 	Keypress: 4
+49.8487 	EXP 	text: text = 'hhhhhdfhg34'
+50.1009 	DATA 	Keypress: 5
+50.1010 	DATA 	Keypress: 6
+50.1168 	EXP 	text: text = 'hhhhhdfhg345'
+50.2532 	DATA 	Keypress: 4
+50.2824 	EXP 	text: text = 'hhhhhdfhg3454'
+50.3013 	DATA 	Keypress: 7
+50.3014 	DATA 	Keypress: 3
+50.3173 	EXP 	text: text = 'hhhhhdfhg34547'
+50.3354 	DATA 	Keypress: 6
+50.3514 	EXP 	text: text = 'hhhhhdfhg345476'
+50.4845 	DATA 	Keypress: 5
+50.5004 	EXP 	text: text = 'hhhhhdfhg3454765'
+50.5180 	DATA 	Keypress: 3
+50.5272 	DATA 	Keypress: 8
+50.5350 	EXP 	text: text = 'hhhhhdfhg34547653'
+50.5504 	DATA 	Keypress: 7
+50.5557 	EXP 	text: text = 'hhhhhdfhg345476538'
+50.5749 	EXP 	text: text = 'hhhhhdfhg3454765387'
+50.5983 	DATA 	Keypress: 6
+50.6162 	EXP 	text: text = 'hhhhhdfhg34547653876'
+50.7014 	DATA 	Keypress: 5
+50.7189 	EXP 	text: text = 'hhhhhdfhg345476538765'
+51.4524 	DATA 	Keypress: j
+51.4693 	EXP 	text: text = 'hhhhhdfhg345476538765j'
+51.5020 	DATA 	Keypress: g
+51.5197 	EXP 	text: text = 'hhhhhdfhg345476538765jg'
+51.5683 	DATA 	Keypress: d
+51.5861 	EXP 	text: text = 'hhhhhdfhg345476538765jgd'
+51.7525 	DATA 	Keypress: f
+51.7702 	EXP 	text: text = 'hhhhhdfhg345476538765jgdf'
+51.7723 	DATA 	Keypress: h
+51.7895 	EXP 	text: text = 'hhhhhdfhg345476538765jgdfh'
+51.8685 	DATA 	Keypress: g
+51.8864 	EXP 	text: text = 'hhhhhdfhg345476538765jgdfhg'
+51.9686 	DATA 	Keypress: s
+51.9868 	EXP 	text: text = 'hhhhhdfhg345476538765jgdfhgs'
+52.0190 	DATA 	Keypress: j
+52.0373 	EXP 	text: text = 'hhhhhdfhg345476538765jgdfhgsj'
+52.1354 	DATA 	Keypress: g
+52.1535 	EXP 	text: text = 'hhhhhdfhg345476538765jgdfhgsjg'
+52.1579 	DATA 	Keypress: f
+52.1916 	EXP 	text: text = 'hhhhhdfhg345476538765jgdfhgsjgf'
+52.4857 	DATA 	Keypress: return
+52.5007 	EXP 	sendInstructions: autoDraw = False
+52.5007 	EXP 	Player1Name: autoDraw = False
+52.5007 	EXP 	Player1Pic: autoDraw = False
+52.5007 	EXP 	text: autoDraw = False
+52.5007 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+52.5007 	EXP 	Feedback: autoDraw = True
+56.4896 	EXP 	New trial (rep=0, index=3): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+56.5079 	EXP 	Feedback: autoDraw = False
+56.5079 	EXP 	Feedback: autoDraw = False
+56.5079 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. '
+56.5079 	EXP 	Player1Name: text = 'Player 1'
+56.5079 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+56.5079 	EXP 	Player1Pic: size = array([0.2, 0.2])
+56.5079 	EXP 	Player1Pic: image = '1patterns.png'
+56.5079 	EXP 	text: text = ''
+56.5079 	EXP 	sendInstructions: autoDraw = True
+56.5079 	EXP 	Player1Name: autoDraw = True
+56.5079 	EXP 	Player1Pic: autoDraw = True
+56.5079 	EXP 	text: autoDraw = True
+57.5213 	EXP 	text: autoDraw = False
+57.6602 	DATA 	Keypress: 4
+57.6884 	EXP 	text: text = '4'
+59.9420 	DATA 	Keypress: 6
+59.9575 	EXP 	text: text = '46'
+61.7773 	DATA 	Keypress: 6
+61.7917 	EXP 	text: text = '466'
+61.9960 	DATA 	Keypress: 6
+62.0253 	EXP 	text: text = '4666'
+62.3636 	DATA 	Keypress: 5
+62.3922 	EXP 	text: text = '46665'
+62.5110 	DATA 	Keypress: 6
+62.5256 	EXP 	text: text = '466656'
+63.3458 	DATA 	Keypress: f
+63.3604 	EXP 	text: text = '466656f'
+63.3625 	DATA 	Keypress: g
+63.3767 	EXP 	text: text = '466656fg'
+63.7449 	DATA 	Keypress: f
+63.7600 	EXP 	text: text = '466656fgf'
+64.1457 	DATA 	Keypress: 5
+64.1608 	EXP 	text: text = '466656fgf5'
+64.1629 	DATA 	Keypress: 4
+64.1778 	EXP 	text: text = '466656fgf54'
+64.4299 	DATA 	Keypress: 6
+64.4468 	EXP 	text: text = '466656fgf546'
+64.6126 	DATA 	Keypress: 5
+64.6287 	EXP 	text: text = '466656fgf5465'
+64.6459 	DATA 	Keypress: 4
+64.6627 	EXP 	text: text = '466656fgf54654'
+64.8125 	DATA 	Keypress: 6
+64.8286 	EXP 	text: text = '466656fgf546546'
+64.9299 	DATA 	Keypress: 5
+64.9300 	DATA 	Keypress: 4
+64.9469 	EXP 	text: text = '466656fgf5465465'
+65.1303 	DATA 	Keypress: 6
+65.1473 	EXP 	text: text = '466656fgf54654656'
+65.3297 	DATA 	Keypress: 5
+65.3299 	DATA 	Keypress: 4
+65.3477 	EXP 	text: text = '466656fgf546546565'
+65.4970 	DATA 	Keypress: 6
+65.5141 	EXP 	text: text = '466656fgf5465465656'
+66.1143 	DATA 	Keypress: 2
+66.1267 	DATA 	Keypress: 3
+66.1319 	EXP 	text: text = '466656fgf54654656562'
+66.1507 	EXP 	text: text = '466656fgf546546565623'
+66.2142 	DATA 	Keypress: 4
+66.2143 	DATA 	Keypress: 7
+66.2324 	EXP 	text: text = '466656fgf5465465656234'
+66.3809 	DATA 	Keypress: 2
+66.3989 	EXP 	text: text = '466656fgf54654656562342'
+66.4010 	DATA 	Keypress: 3
+66.4202 	EXP 	text: text = '466656fgf546546565623423'
+66.4476 	DATA 	Keypress: 9
+66.4686 	EXP 	text: text = '466656fgf5465465656234239'
+66.5648 	DATA 	Keypress: 4
+66.5649 	DATA 	Keypress: 7
+66.5650 	DATA 	Keypress: 8
+66.5840 	EXP 	text: text = '466656fgf54654656562342394'
+66.6846 	DATA 	Keypress: 9
+66.7159 	EXP 	text: text = '466656fgf546546565623423949'
+66.7177 	DATA 	Keypress: 2
+66.7380 	EXP 	text: text = '466656fgf5465465656234239492'
+66.8485 	DATA 	Keypress: 7
+66.8487 	DATA 	Keypress: 3
+66.8686 	EXP 	text: text = '466656fgf54654656562342394927'
+67.2984 	DATA 	Keypress: return
+67.3130 	EXP 	sendInstructions: autoDraw = False
+67.3130 	EXP 	Player1Name: autoDraw = False
+67.3130 	EXP 	Player1Pic: autoDraw = False
+67.3130 	EXP 	text: autoDraw = False
+67.3130 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+67.3130 	EXP 	Feedback: autoDraw = True
+71.3016 	EXP 	New trial (rep=0, index=4): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+71.3268 	EXP 	Feedback: autoDraw = False
+71.3268 	EXP 	Feedback: autoDraw = False
+71.3268 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. '
+71.3268 	EXP 	Player1Name: text = 'Player 1'
+71.3268 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+71.3268 	EXP 	Player1Pic: size = array([0.2, 0.2])
+71.3268 	EXP 	Player1Pic: image = '1patterns.png'
+71.3268 	EXP 	text: text = ''
+71.3268 	EXP 	sendInstructions: autoDraw = True
+71.3268 	EXP 	Player1Name: autoDraw = True
+71.3268 	EXP 	Player1Pic: autoDraw = True
+71.3268 	EXP 	text: autoDraw = True
+71.8209 	DATA 	Keypress: 7
+71.8500 	EXP 	text: text = '7'
+71.9879 	DATA 	Keypress: 6
+72.0019 	EXP 	text: text = '76'
+72.1520 	DATA 	Keypress: 8
+72.1590 	DATA 	Keypress: 7
+72.1673 	EXP 	text: text = '768'
+72.1840 	EXP 	text: text = '7687'
+72.3337 	EXP 	text: autoDraw = False
+72.8199 	DATA 	Keypress: 7
+72.8343 	EXP 	text: text = '76877'
+73.0697 	DATA 	Keypress: 7
+73.0843 	EXP 	text: text = '768777'
+73.2861 	DATA 	Keypress: 6
+73.3013 	EXP 	text: text = '7687776'
+73.4064 	DATA 	Keypress: 7
+73.4347 	EXP 	text: text = '76877767'
+73.5222 	DATA 	Keypress: 6
+73.5375 	EXP 	text: text = '768777676'
+73.6371 	DATA 	Keypress: 7
+73.6522 	EXP 	text: text = '7687776767'
+73.8702 	DATA 	Keypress: 3
+73.8854 	EXP 	text: text = '76877767673'
+73.9208 	DATA 	Keypress: 2
+73.9209 	DATA 	Keypress: 7
+73.9210 	DATA 	Keypress: 8
+73.9371 	EXP 	text: text = '768777676732'
+73.9869 	DATA 	Keypress: 4
+74.0034 	EXP 	text: text = '7687776767324'
+74.0060 	DATA 	Keypress: 6
+74.0215 	EXP 	text: text = '76877767673246'
+74.1898 	DATA 	Keypress: 7
+74.2195 	EXP 	text: text = '768777676732467'
+74.2215 	DATA 	Keypress: 3
+74.2383 	EXP 	text: text = '7687776767324673'
+74.2710 	DATA 	Keypress: 2
+74.2881 	EXP 	text: text = '76877767673246732'
+74.3040 	DATA 	Keypress: 6
+74.3221 	EXP 	text: text = '768777676732467326'
+74.3240 	DATA 	Keypress: 4
+74.3401 	EXP 	text: text = '7687776767324673264'
+74.7547 	DATA 	Keypress: return
+74.7690 	EXP 	sendInstructions: autoDraw = False
+74.7690 	EXP 	Player1Name: autoDraw = False
+74.7690 	EXP 	Player1Pic: autoDraw = False
+74.7690 	EXP 	text: autoDraw = False
+74.7690 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+74.7690 	EXP 	Feedback: autoDraw = True
+76.3566 	DATA 	Keypress: escape
+76.6018 	EXP 	window1: mouseVisible = True

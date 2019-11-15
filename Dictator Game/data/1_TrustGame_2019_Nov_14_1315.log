@@ -1,0 +1,127 @@
+12.1466 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+13.0456 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000253F2F51FD0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000253F3048CF8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.0457 	EXP 	window1: recordFrameIntervals = False
+13.2119 	EXP 	window1: recordFrameIntervals = True
+13.3954 	EXP 	window1: recordFrameIntervals = False
+13.6382 	EXP 	Created Instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='Instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.45)
+13.6507 	EXP 	Created isiText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='isiText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+13.6519 	EXP 	Created cueText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cueText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+13.6536 	EXP 	Created isiText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='isiText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+13.6652 	EXP 	Created sendInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='sendInstructions', opacity=1.0, ori=0, pos=array([ 0.  , -0.11]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+13.6814 	EXP 	Created Player1Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player1Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.6841 	EXP 	Created Player1Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player1Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+13.6852 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([ 0.  , -0.35]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+13.6987 	EXP 	Created dollarSign = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='dollarSign', opacity=1.0, ori=0, pos=array([-0.05, -0.35]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.7020 	EXP 	Created Feedback = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='Feedback', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.7039 	EXP 	Created isiText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='isiText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+13.7072 	EXP 	Created sendInst2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='sendInst2', opacity=1.0, ori=0, pos=array([ 0.  , -0.11]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+13.7102 	EXP 	Created Player2Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player2Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.7122 	EXP 	Created Player2Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player2Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+13.7126 	EXP 	Created text2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text2', opacity=1.0, ori=0, pos=array([ 0.  , -0.35]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+13.7158 	EXP 	Created dollar2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='dollar2', opacity=1.0, ori=0, pos=array([-0.05, -0.35]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.7357 	EXP 	Created Feedback2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Feedback2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13.7672 	EXP 	Instructions: autoDraw = True
+15.1766 	EXP 	Imported DictatorGame.xlsx as conditions, 6 conditions, 3 params
+15.1769 	EXP 	Created sequence: random, trialTypes=6, nReps=1, seed=None
+15.1771 	EXP 	New trial (rep=0, index=0): OrderedDict([('Rows', '041:050'), ('CueType1', 'REGULATE'), ('CueType2', 'REACT')])
+15.1796 	DATA 	Keypress: space
+15.1833 	EXP 	Instructions: autoDraw = False
+15.1833 	EXP 	isiText: autoDraw = True
+17.1848 	EXP 	isiText: autoDraw = False
+17.1848 	EXP 	cueText: text = ''
+17.1848 	EXP 	cueText: text = 'REACT'
+17.1848 	EXP 	cueText: autoDraw = True
+22.1693 	EXP 	cueText: autoDraw = False
+22.1693 	EXP 	isiText: autoDraw = True
+24.1603 	EXP 	Imported spreadsheet5.xlsx as conditions, 9 conditions, 2 params
+24.1605 	EXP 	Created sequence: random, trialTypes=9, nReps=1, seed=None
+24.1607 	EXP 	New trial (rep=0, index=0): OrderedDict([('nReps1', 1), ('nReps2', 1)])
+24.1609 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+24.1610 	EXP 	New trial (rep=0, index=0): None
+24.2949 	EXP 	isiText: autoDraw = False
+24.2949 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\n\nPlease indicate how many dollars you will give to Player 1:\n'
+24.2949 	EXP 	Player1Name: text = 'Player 1'
+24.2949 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+24.2949 	EXP 	Player1Pic: size = array([0.2, 0.2])
+24.2949 	EXP 	Player1Pic: image = '1patterns.png'
+24.2949 	EXP 	text: text = ''
+24.2949 	EXP 	text: text = ''
+24.2949 	EXP 	Player1Pic: image = '1patterns.png'
+24.2949 	EXP 	dollarSign: text = '$'
+24.2949 	EXP 	sendInstructions: autoDraw = True
+24.2949 	EXP 	Player1Name: autoDraw = True
+24.2949 	EXP 	Player1Pic: autoDraw = True
+24.2949 	EXP 	text: autoDraw = True
+24.2949 	EXP 	dollarSign: autoDraw = True
+41.1867 	DATA 	Keypress: 5
+41.2019 	EXP 	text: text = '5'
+42.3881 	DATA 	Keypress: return
+42.4376 	EXP 	sendInstructions: autoDraw = False
+42.4376 	EXP 	Player1Name: autoDraw = False
+42.4376 	EXP 	Player1Pic: autoDraw = False
+42.4376 	EXP 	text: autoDraw = False
+42.4376 	EXP 	dollarSign: autoDraw = False
+42.4376 	EXP 	Feedback: text = 'You gave Player 1 $5\n\nPlayer 1 received  $15\n\nPlayer 1 chose to give you $3'
+42.4376 	EXP 	Feedback: autoDraw = True
+46.9233 	EXP 	Feedback: autoDraw = False
+46.9233 	EXP 	isiText: autoDraw = True
+48.8918 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+48.8919 	EXP 	New trial (rep=0, index=0): None
+48.9640 	EXP 	isiText: autoDraw = False
+48.9640 	EXP 	sendInst2: text = 'You have been given $5 to use. You have the opportunity to send money to Player 2. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 2 will then have the opportunity to give some money amount back to you. \n\nPlease type how much money you would like to give Player 2 : '
+48.9640 	EXP 	Player2Name: text = 'Player 2'
+48.9640 	EXP 	Player2Pic: pos = array([0.  , 0.36])
+48.9640 	EXP 	Player2Pic: size = array([0.2, 0.2])
+48.9640 	EXP 	Player2Pic: image = '3pattern.png'
+48.9640 	EXP 	Player2Pic: image = '3pattern.png'
+48.9640 	EXP 	text2: text = ''
+48.9640 	EXP 	dollar2: text = '$'
+48.9640 	EXP 	sendInst2: autoDraw = True
+48.9640 	EXP 	Player2Name: autoDraw = True
+48.9640 	EXP 	Player2Pic: autoDraw = True
+48.9640 	EXP 	text2: autoDraw = True
+48.9640 	EXP 	dollar2: autoDraw = True
+52.2133 	DATA 	Keypress: 4
+52.2278 	EXP 	text2: text = '4'
+52.9472 	DATA 	Keypress: return
+53.0134 	EXP 	sendInst2: autoDraw = False
+53.0134 	EXP 	Player2Name: autoDraw = False
+53.0134 	EXP 	Player2Pic: autoDraw = False
+53.0134 	EXP 	text2: autoDraw = False
+53.0134 	EXP 	dollar2: autoDraw = False
+53.0134 	EXP 	Feedback2: text = 'You gave Player 2 $4\n\nPlayer 2 received  $12\n\nPlayer 2 chose to give you $8'
+53.0134 	EXP 	Feedback2: autoDraw = True
+56.9650 	EXP 	New trial (rep=0, index=1): OrderedDict([('nReps1', 1), ('nReps2', 1)])
+56.9652 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+56.9653 	EXP 	New trial (rep=0, index=0): None
+56.9915 	EXP 	Feedback2: autoDraw = False
+56.9915 	EXP 	sendInstructions: text = 'You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\n\nPlease indicate how many dollars you will give to Player 1:\n'
+56.9915 	EXP 	Player1Name: text = 'Player 1'
+56.9915 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+56.9915 	EXP 	Player1Pic: size = array([0.2, 0.2])
+56.9915 	EXP 	Player1Pic: image = '1patterns.png'
+56.9915 	EXP 	text: text = ''
+56.9915 	EXP 	text: text = ''
+56.9915 	EXP 	Player1Pic: image = '1patterns.png'
+56.9915 	EXP 	dollarSign: text = '$'
+56.9915 	EXP 	sendInstructions: autoDraw = True
+56.9915 	EXP 	Player1Name: autoDraw = True
+56.9915 	EXP 	Player1Pic: autoDraw = True
+56.9915 	EXP 	text: autoDraw = True
+56.9915 	EXP 	dollarSign: autoDraw = True
+58.7179 	DATA 	Keypress: 5
+58.7330 	EXP 	text: text = '5'
+59.3687 	DATA 	Keypress: return
+59.3833 	EXP 	sendInstructions: autoDraw = False
+59.3833 	EXP 	Player1Name: autoDraw = False
+59.3833 	EXP 	Player1Pic: autoDraw = False
+59.3833 	EXP 	text: autoDraw = False
+59.3833 	EXP 	dollarSign: autoDraw = False
+59.3833 	EXP 	Feedback: text = 'You gave Player 1 $5\n\nPlayer 1 received  $15\n\nPlayer 1 chose to give you $3'
+59.3833 	EXP 	Feedback: autoDraw = True
+63.8873 	EXP 	Feedback: autoDraw = False
+63.8873 	EXP 	Feedback: autoDraw = False
+63.8873 	EXP 	isiText: autoDraw = True
+65.8725 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+65.8726 	EXP 	New trial (rep=0, index=0): None
+65.9217 	EXP 	window1: mouseVisible = True

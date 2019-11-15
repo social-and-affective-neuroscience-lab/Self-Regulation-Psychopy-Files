@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 21, 2019, at 10:04
+    on November 14, 2019, at 14:35
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -83,7 +83,7 @@ InstrClock = core.Clock()
 Instructions = visual.TextStim(win=win, name='Instructions',
     text='default text',
     font='Arial',
-    pos=[0,0], height=1.0, wrapWidth=1.6, ori=0, 
+    pos=[0,0], height=1.0, wrapWidth=1.4, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -94,7 +94,7 @@ Inst2Clock = core.Clock()
 instruct2 = visual.TextStim(win=win, name='instruct2',
     text='You will be presented with two monetary offers, differing in the time at which you would receive the money. \n\nIf you would prefer the offer on the left, press "1"\n\nIf you would prefer the offer on the right, press "2"\n\nYou will have four seconds to make your choice once the offers are presented.\n\nFirst you will be playing some practice rounds. When you are ready, press ENTER to begin!',
     font='Arial',
-    pos=(0, 0), height=0.065, wrapWidth=1.6, ori=0, 
+    pos=(0, 0), height=0.06, wrapWidth=1.4, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -203,7 +203,7 @@ isi2 = visual.TextStim(win=win, name='isi2',
 # Initialize components for Routine "Cue"
 CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
-    text='default text',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.15, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -290,7 +290,7 @@ Instructions.setColor('white', colorSpace='rgb')
 Instructions.setPos((0, 0))
 Instructions.setText('In this task you will be choosing between two different monetary rewards. \n\nYou will be given a regulation strategy prior to a block of trials. Please employ the strategy given while making decisions.\n\nPress SPACE to continue.\n')
 Instructions.setFont('Arial')
-Instructions.setHeight(0.065)
+Instructions.setHeight(0.06)
 space.keys = []
 space.rt = []
 # keep track of which components have finished
@@ -1158,7 +1158,11 @@ for thisMainLoop in mainLoop:
     # ------Prepare to start Routine "Cue"-------
     routineTimer.add(2.000000)
     # update component parameters for each repeat
-    cue.setText(CueType)
+    cue.setText('')
+    if subID%2 == 0 :
+        cue.setText(CueType1)
+    if subID%2 == 1 :
+        cue.setText(CueType2)
     # keep track of which components have finished
     CueComponents = [cue]
     for thisComponent in CueComponents:
@@ -1600,7 +1604,6 @@ for thisMainLoop in mainLoop:
 
 
 # ------Prepare to start Routine "Ending"-------
-routineTimer.add(5.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 EndingComponents = [ThankYou]
@@ -1619,7 +1622,7 @@ frameN = -1
 continueRoutine = True
 
 # -------Run Routine "Ending"-------
-while continueRoutine and routineTimer.getTime() > 0:
+while continueRoutine:
     # get current time
     t = EndingClock.getTime()
     tThisFlip = win.getFutureFlipTime(clock=EndingClock)
@@ -1635,14 +1638,6 @@ while continueRoutine and routineTimer.getTime() > 0:
         ThankYou.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(ThankYou, 'tStartRefresh')  # time at next scr refresh
         ThankYou.setAutoDraw(True)
-    if ThankYou.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > ThankYou.tStartRefresh + 5-frameTolerance:
-            # keep track of stop time/frame for later
-            ThankYou.tStop = t  # not accounting for scr refresh
-            ThankYou.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(ThankYou, 'tStopRefresh')  # time at next scr refresh
-            ThankYou.setAutoDraw(False)
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1667,6 +1662,8 @@ for thisComponent in EndingComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('ThankYou.started', ThankYou.tStartRefresh)
 thisExp.addData('ThankYou.stopped', ThankYou.tStopRefresh)
+# the Routine "Ending" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting

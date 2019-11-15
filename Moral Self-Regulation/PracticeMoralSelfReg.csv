@@ -47,49 +47,8 @@ Do nothing: The one skydiver will live, the group has a chance of surviving","Th
 The group ","The one skydiver died.
 
 The group of 8 skydivers was saved.",8,65, skydivers
-"• You are working on a ship when you see a large group of sharks in the distance heading towards a team of scuba divers
-
-• You know that when the sharks reach this group they will encircle them and kill them all ",Scuba divers in team: 6,"Probability EM pulse
-will function: 35%","Plan: Shoot the one diver, leaving them to get eaten by sharks
-
-Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
- 
-The group ","The one scuba diver died.
-
-The group of 6 scuba divers was saved.",6,35, scuba divers
-"• You also know that there is one scuba diver separate from this group who is closer to you and currently not in the path of the sharks 
-
-• If you shoot this one diver with a harpoon, he will certainly die and the sharks will sense his presence and switch trajectory away from his team of divers ",Scuba divers in team: 3,"Probability EM pulse
-will function: 65%","Plan: Shoot the one diver, leaving them to get eaten by sharks
-
-Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
- 
-The group ","The one scuba diver died.
-
-The group of 3 scuba divers was saved.",3,65, scuba divers
-"• If you shoot the one diver, all of the divers will be spared",Scuba divers in team: 7,"Probability EM pulse
-will function: 50%","Plan: Shoot the one diver, leaving them to get eaten by sharks
-
-Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
- 
-The group ","The one scuba diver died.
-
-The group of 7 scuba divers was saved.",7,50, scuba divers
-"• You also know that the divers are carrying an electromagnetic (EM) pulse that will deter the sharks, but given the team's current depth there is only a small chance that the pulse will function 
-
-• In order to ensure that the group will be spared, you must shoot the one diver now",Scuba divers in team: 9,"Probability EM pulse
-will function: 50%","Plan: Shoot the one diver, leaving them to get eaten by sharks
-
-Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved.
- 
-The group ","The one scuba diver died.
-
-The group of 9 scuba divers  was saved.",9,50, scuba divers
-"Consider each of the following scenarios and, for each one, determine what course of action you will take. ",Scuba divers in team: 4,"Probability EM pulse
-will function: 35%","Plan: Shoot the one diver, leaving them to get eaten by sharks
-
-Do nothing: The one diver will live, the group has a chance of surviving","The one scuba diver was saved. 
- 
-The group ","The one scuba diver died.
-
-The group of 4 scuba divers was saved.",4,35, scuba divers
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

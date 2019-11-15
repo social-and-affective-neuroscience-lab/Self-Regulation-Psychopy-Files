@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 07, 2019, at 14:02
+    on November 13, 2019, at 12:01
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -461,8 +461,8 @@ earningsText = visual.TextStim(win=win, name='earningsText',
 
 # Initialize components for Routine "ThankYou"
 ThankYouClock = core.Clock()
-text_3 = visual.TextStim(win=win, name='text_3',
-    text='"Thank you for playing!"/n/n\n\n"Your total earnings are $" earnings',
+tyText = visual.TextStim(win=win, name='tyText',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -818,7 +818,7 @@ thisExp.addData('text.stopped', text.tStopRefresh)
 # set up handler to look after randomisation of conditions etc
 PracticeLoop = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('PracticeSlotMach.csv', selection='0:3'),
+    trialList=data.importConditions('PracticeSlotMach.xlsx', selection='0:3'),
     seed=None, name='PracticeLoop')
 thisExp.addLoop(PracticeLoop)  # add the loop to the experiment
 thisPracticeLoop = PracticeLoop.trialList[0]  # so we can initialise stimuli with some values
@@ -950,15 +950,15 @@ for thisPracticeLoop in PracticeLoop:
         leftVarText= (sureWinLoss)
         leftVarMoney= (sure)
     
-    GambleAmt.setText(leftVarMoney)
-    SureAmt.setText(rightVarMoney)
+    GambleAmtVar = "$" + '%.2f' % leftVarMoney
+    GambleAmt.setText(GambleAmtVar)
+    SureAmtVar = "$" + '%.2f' % rightVarMoney
+    SureAmt.setText(SureAmtVar)
     GambleProb.setText(leftVarText)
     SureProb.setText(rightVarText)
     
-    leftMoney = float(leftVarMoney[1:])
-    
-    rightMoney = float(rightVarMoney[1:])
-    
+    leftMoney = float(leftVarMoney)
+    rightMoney = float(rightVarMoney)
     WinLossType = int(WinLossCode)
     
     
@@ -1366,8 +1366,8 @@ for thisPracticeLoop in PracticeLoop:
 
 # ------Prepare to start Routine "BeginInst"-------
 # update component parameters for each repeat
-earning = 0
-earnings = 0
+earning = 6
+earnings = 6
 earningsStr = "$" + '%.2f' % earnings
 earningsText.setText('$' + earningsStr)
 key_resp.keys = []
@@ -1455,8 +1455,8 @@ for thisComponent in BeginInstComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('text_2.started', text_2.tStartRefresh)
 thisExp.addData('text_2.stopped', text_2.tStopRefresh)
-earnings = 0
-earning = 0
+earnings = 6
+earning = 6
 earningsStr = "$" + '%.2f' % earnings
 earningsText.setText('$' + earningsStr)
 # check responses
@@ -1474,7 +1474,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 mainLoop = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('PracticeSlotMach.csv'),
+    trialList=data.importConditions('PracticeSlotMach.xlsx'),
     seed=None, name='mainLoop')
 thisExp.addLoop(mainLoop)  # add the loop to the experiment
 thisMainLoop = mainLoop.trialList[0]  # so we can initialise stimuli with some values
@@ -1629,8 +1629,8 @@ for thisMainLoop in mainLoop:
             thisComponent.setAutoDraw(False)
     mainLoop.addData('cue.started', cue.tStartRefresh)
     mainLoop.addData('cue.stopped', cue.tStopRefresh)
-    earning = 0
-    earnings = 0
+    earning = 6
+    earnings = 6
     
     # set up handler to look after randomisation of conditions etc
     trials = data.TrialHandler(nReps=1, method='random', 
@@ -1768,15 +1768,15 @@ for thisMainLoop in mainLoop:
             leftVarText= (sureWinLoss)
             leftVarMoney= (sure)
         
-        GambleAmt.setText(leftVarMoney)
-        SureAmt.setText(rightVarMoney)
+        GambleAmtVar = "$" + '%.2f' % leftVarMoney
+        GambleAmt.setText(GambleAmtVar)
+        SureAmtVar = "$" + '%.2f' % rightVarMoney
+        SureAmt.setText(SureAmtVar)
         GambleProb.setText(leftVarText)
         SureProb.setText(rightVarText)
         
-        leftMoney = float(leftVarMoney[1:])
-        
-        rightMoney = float(rightVarMoney[1:])
-        
+        leftMoney = float(leftVarMoney)
+        rightMoney = float(rightVarMoney)
         WinLossType = int(WinLossCode)
         
         
@@ -2186,8 +2186,12 @@ for thisMainLoop in mainLoop:
 
 # ------Prepare to start Routine "ThankYou"-------
 # update component parameters for each repeat
+#
+#return earnings;
+#earningsStr = "$" + '%.2f' % earnings
+tyText.setText("Thank you for playing!\n\nYour total earnings are " + earningsStr)
 # keep track of which components have finished
-ThankYouComponents = [text_3]
+ThankYouComponents = [tyText]
 for thisComponent in ThankYouComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -2211,14 +2215,14 @@ while continueRoutine:
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *text_3* updates
-    if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *tyText* updates
+    if tyText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        text_3.frameNStart = frameN  # exact frame index
-        text_3.tStart = t  # local t and not account for scr refresh
-        text_3.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
-        text_3.setAutoDraw(True)
+        tyText.frameNStart = frameN  # exact frame index
+        tyText.tStart = t  # local t and not account for scr refresh
+        tyText.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(tyText, 'tStartRefresh')  # time at next scr refresh
+        tyText.setAutoDraw(True)
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2241,8 +2245,8 @@ while continueRoutine:
 for thisComponent in ThankYouComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('text_3.started', text_3.tStartRefresh)
-thisExp.addData('text_3.stopped', text_3.tStopRefresh)
+thisExp.addData('tyText.started', tyText.tStartRefresh)
+thisExp.addData('tyText.stopped', tyText.tStopRefresh)
 # the Routine "ThankYou" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 

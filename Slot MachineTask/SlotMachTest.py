@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 21, 2019, at 15:05
+    on November 13, 2019, at 13:27
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -83,96 +83,17 @@ InstrClock = core.Clock()
 Instructions = visual.TextStim(win=win, name='Instructions',
     text='default text',
     font='Arial',
-    pos=[0,0], height=1.0, wrapWidth=1.6, ori=0, 
+    pos=[0,0], height=1.0, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 space = keyboard.Keyboard()
-
-# Initialize components for Routine "Inst2"
-Inst2Clock = core.Clock()
-instruct2 = visual.TextStim(win=win, name='instruct2',
-    text='You will be given regulation intsructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press enter!',
-    font='Arial',
-    pos=(0, 0), height=0.065, wrapWidth=1.6, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-enter = keyboard.Keyboard()
-
-# Initialize components for Routine "isi"
-isiClock = core.Clock()
-isi2 = visual.TextStim(win=win, name='isi2',
-    text='default text',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
-# Initialize components for Routine "PracticeCue"
-PracticeCueClock = core.Clock()
-text = visual.TextStim(win=win, name='text',
-    text='REGULATE',
-    font='Arial',
-    pos=(0, 0), height=0.13, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
-# Initialize components for Routine "isi"
-isiClock = core.Clock()
-isi2 = visual.TextStim(win=win, name='isi2',
-    text='default text',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
-# Initialize components for Routine "Practice"
-PracticeClock = core.Clock()
-Line = visual.Line(
-    win=win, name='Line',
-    start=(-[1.0, 1.0][0]/2.0, 0), end=(+[1.0, 1.0][0]/2.0, 0),
-    ori=90, pos=(0, 0),
-    lineWidth=1.0, lineColor=1.0, lineColorSpace='rgb',
-    fillColor=1.0, fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-choice = keyboard.Keyboard()
-GambleAmt = visual.TextStim(win=win, name='GambleAmt',
-    text=None,
-    font='Arial',
-    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-2.0);
-SureAmt = visual.TextStim(win=win, name='SureAmt',
-    text=None,
-    font='Arial',
-    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-3.0);
-GambleProb = visual.TextStim(win=win, name='GambleProb',
-    text=None,
-    font='Arial',
-    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-4.0);
-SureProb = visual.TextStim(win=win, name='SureProb',
-    text=None,
-    font='Arial',
-    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-5.0);
 import numpy
 from numpy import random
 
 earnings = 0
-earningsStr = "$" + str(earnings)
+earningsStr = "$" + '%.2f' % earnings
+
 subID = int(expInfo['participant'])
 
 FiftyGamble = [1,0]
@@ -335,6 +256,86 @@ def earningsFunct(gamProb, chosenMoney, WinLossType, earning):
            earning -= chosenMoney
            print('Lost Money earnings:')
            print(earning)
+
+# Initialize components for Routine "Inst2"
+Inst2Clock = core.Clock()
+instruct2 = visual.TextStim(win=win, name='instruct2',
+    text='You will be given regulation instructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press enter!',
+    font='Arial',
+    pos=(0, 0), height=0.06, wrapWidth=1.5, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+enter = keyboard.Keyboard()
+
+# Initialize components for Routine "isi"
+isiClock = core.Clock()
+isi2 = visual.TextStim(win=win, name='isi2',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+# Initialize components for Routine "PracticeCue"
+PracticeCueClock = core.Clock()
+text = visual.TextStim(win=win, name='text',
+    text='EMPHASIZE',
+    font='Arial',
+    pos=(0, 0), height=0.13, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+# Initialize components for Routine "isi"
+isiClock = core.Clock()
+isi2 = visual.TextStim(win=win, name='isi2',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+# Initialize components for Routine "Practice"
+PracticeClock = core.Clock()
+Line = visual.Line(
+    win=win, name='Line',
+    start=(-[1.0, 1.0][0]/2.0, 0), end=(+[1.0, 1.0][0]/2.0, 0),
+    ori=90, pos=(0, 0),
+    lineWidth=1.0, lineColor=1.0, lineColorSpace='rgb',
+    fillColor=1.0, fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+choice = keyboard.Keyboard()
+GambleAmt = visual.TextStim(win=win, name='GambleAmt',
+    text=None,
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+SureAmt = visual.TextStim(win=win, name='SureAmt',
+    text=None,
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+GambleProb = visual.TextStim(win=win, name='GambleProb',
+    text=None,
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+SureProb = visual.TextStim(win=win, name='SureProb',
+    text=None,
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-5.0);
 blank = visual.TextStim(win=win, name='blank',
     text=None,
     font='Arial',
@@ -352,7 +353,7 @@ moneyBank = visual.Rect(
 earningsText = visual.TextStim(win=win, name='earningsText',
     text='default text',
     font='Arial',
-    pos=(0.67, -0.42), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0.64, -0.42), height=0.09, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
@@ -436,173 +437,6 @@ SureProb = visual.TextStim(win=win, name='SureProb',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
-import numpy
-from numpy import random
-
-earnings = 0
-earningsStr = "$" + str(earnings)
-subID = int(expInfo['participant'])
-
-FiftyGamble = [1,0]
-SixtyGamble = [1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0]
-ThirtyGamble = [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
-
-earning=0
-chosenMoney = 0
-
-
-#probability =[]
-def gamProbability(gamProb):
-    probs = int(gamProb)
-    if probs == 65:
-        probability = SixtyGamble
-        print('65% gamble')
-    if probs == 35:
-        probability = ThirtyGamble
-        print('35% gamble')
-    if probs == 50:
-        probability = FiftyGamble
-        print('50% gamble')
-def gambleFunc(gamProb):
-    probs = int(gamProb)
-    if probs == 65:
-        probability = SixtyGamble
-        #print('65% gamble')
-    if probs == 35:
-        probability = ThirtyGamble
-        print('35% gamble')
-    if probs == 50:
-        probability = FiftyGamble
-        print('50% gamble')
-    result = random.choice(probability)
-    print('gamble result:')
-    print(result)
-
-def loseFunc(chosenMoney, earning):
-    earning -= chosenMoney
-    print('Lost Money earnings:')
-    print(earning)
-def winFunc(chosenMoney, earning):
-    earning += chosenMoney
-    print('Won money earnings:')
-    print(earning)
-
-def earningsFunct(gamProb, chosenMoney, WinLossType, earning):
-   if subID%2==0:   #gambles are on left side of screen
-       if choice.keys == '1' and WinLossType== 1 : 
-           print('gambled during win condition')
-           #gamProbability(gamProb)
-           probs = int(gamProb)
-           if probs == 65:
-               probability = SixtyGamble
-               print('65% gamble')
-           if probs == 35:
-               probability = ThirtyGamble
-               print('35% gamble')
-           if probs == 50:
-               probability = FiftyGamble
-               print('50% gamble')
-           result = random.choice(probability)
-           print('gamble result:')
-           print(result)
-           if result == 1:   #win
-               earning += chosenMoney
-               print('Won money earnings:')
-               print(earning)
-       #    if result == 0: #lose
-        #       earnings += 0
-   
-       if choice.keys == '1' and WinLossType==0:  
-           print('gambled during lose condition')
-           #gamProbability(gamProb)
-           probs = int(gamProb)
-           if probs == 65:
-               probability = SixtyGamble
-        #print('65% gamble')
-           if probs == 35:
-               probability = ThirtyGamble
-               print('35% gamble')
-           if probs == 50:
-               probability = FiftyGamble
-               print('50% gamble')
-           result = random.choice(probability)
-           print('gamble result:')
-           print(result)           
-           if result == 1: #lose
-               earning -= chosenMoney
-               print('Lost Money earnings:')
-               print(earning)
-     #      if result == 0: #win
-     #          earnings += 0
-                
-       if choice.keys == '2'and WinLossType ==1:
-           print('did not gamble for win')
-           earning += chosenMoney
-           print('Won money earnings:')
-           print(earning)       
-       if choice.keys == '2' and WinLossType == 0: 
-           print('did not gamble for loss')
-           earning -= chosenMoney
-           print('Lost Money earnings:')
-           print(earning)
-
-
-   if subID%2==1:  #gambles are on right side of screen
-       if choice.keys == '2' and WinLossType == 1: 
-           print('gambled during win condition')
-           #gamProbability(gamProb)
-           probs = int(gamProb)
-           if probs == 65:
-               probability = SixtyGamble
-               print('65% gamble')
-           if probs == 35:
-               probability = ThirtyGamble
-               print('35% gamble')
-           if probs == 50:
-               probability = FiftyGamble
-               print('50% gamble')
-           result = random.choice(probability)
-           print('gamble result:')
-           print(result)           
-           if result == 1: #win
-               winFunc(chosenMoney, earning)
-    #       if result == 0: #lost
-    #           earnings += 0
-        
-        
-       if choice.keys == '2' and WinLossType == 0: 
-           print('gambled during lose condition')
-           #gamProbability(gamProb)
-           probs = int(gamProb)
-           if probs == 65:
-               probability = SixtyGamble
-               print('65% gamble')
-           if probs == 35:
-               probability = ThirtyGamble
-               print('35% gamble')
-           if probs == 50:
-               probability = FiftyGamble
-               print('50% gamble')
-           result = random.choice(probability)
-           print('gamble result:')
-           print(result)           
-           if result == 1: #lose
-               earning -= chosenMoney
-               print('Lost Money earnings:')
-               print(earning)
-     #      if result == 0: #win
-     #          earnings += 0
-                
-       if choice.keys == '1' and WinLossType == 1:
-           print('did not gamble for win')
-           earning += chosenMoney
-           print('Won money earnings:')
-           print(earning)
-       if choice.keys == '1' and WinLossType == 0: 
-           print('did not gamble for lose condition')
-           earning -= chosenMoney
-           print('Lost Money earnings:')
-           print(earning)
 blank = visual.TextStim(win=win, name='blank',
     text=None,
     font='Arial',
@@ -620,10 +454,20 @@ moneyBank = visual.Rect(
 earningsText = visual.TextStim(win=win, name='earningsText',
     text='default text',
     font='Arial',
-    pos=(0.67, -0.42), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0.64, -0.42), height=0.09, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-9.0);
+
+# Initialize components for Routine "ThankYou"
+ThankYouClock = core.Clock()
+tyText = visual.TextStim(win=win, name='tyText',
+    text=None,
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -635,7 +479,7 @@ Instructions.setColor('white', colorSpace='rgb')
 Instructions.setPos((0, 0))
 Instructions.setText('In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble or choosing a sure option. \n\nFor each gamble, you will have a chance of either winning money, losing money, or gaining nothing, while the sure option guarantees a win or loss. \n\nPress space to continue. ')
 Instructions.setFont('Arial')
-Instructions.setHeight(0.065)
+Instructions.setHeight(0.06)
 space.keys = []
 space.rt = []
 # keep track of which components have finished
@@ -974,7 +818,7 @@ thisExp.addData('text.stopped', text.tStopRefresh)
 # set up handler to look after randomisation of conditions etc
 PracticeLoop = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('PracticeSlotMach.csv', selection='0:3'),
+    trialList=data.importConditions('PracticeSlotMach.xlsx', selection='0:3'),
     seed=None, name='PracticeLoop')
 thisExp.addLoop(PracticeLoop)  # add the loop to the experiment
 thisPracticeLoop = PracticeLoop.trialList[0]  # so we can initialise stimuli with some values
@@ -1106,15 +950,15 @@ for thisPracticeLoop in PracticeLoop:
         leftVarText= (sureWinLoss)
         leftVarMoney= (sure)
     
-    GambleAmt.setText(leftVarMoney)
-    SureAmt.setText(rightVarMoney)
+    GambleAmtVar = "$" + '%.2f' % leftVarMoney
+    GambleAmt.setText(GambleAmtVar)
+    SureAmtVar = "$" + '%.2f' % rightVarMoney
+    SureAmt.setText(SureAmtVar)
     GambleProb.setText(leftVarText)
     SureProb.setText(rightVarText)
     
-    leftMoney = float(leftVarMoney[1:])
-    
-    rightMoney = float(rightVarMoney[1:])
-    
+    leftMoney = float(leftVarMoney)
+    rightMoney = float(rightVarMoney)
     WinLossType = int(WinLossCode)
     
     
@@ -1265,9 +1109,11 @@ for thisPracticeLoop in PracticeLoop:
         if choice.keys == '1':
             GambleAmt.setColor('green')
             chosenMoney = leftMoney
+            choice.status = FINISHED
         if choice.keys == '2':
             SureAmt.setColor('green')
             chosenMoney = rightMoney
+            choice.status = FINISHED
             
         if (choice.keys == '1' or choice.keys == '2') and blank.status == NOT_STARTED:
             blank.tStart = t
@@ -1493,8 +1339,8 @@ for thisPracticeLoop in PracticeLoop:
                earnings = earnings - chosenMoney
                print('Lost sure Money earnings:')
                print(earnings)
-        earningsStr= str(earnings)
-        earningsText.setText(earningsStr)
+        earningsStr = "$" + '%.2f' % earnings
+        earningsText.setText('$' + earningsStr)
     GambleAmt.setColor('white')
     SureAmt.setColor('white')
     
@@ -1520,8 +1366,10 @@ for thisPracticeLoop in PracticeLoop:
 
 # ------Prepare to start Routine "BeginInst"-------
 # update component parameters for each repeat
-earning = 0
-earnings = 0
+earning = 6
+earnings = 6
+earningsStr = "$" + '%.2f' % earnings
+earningsText.setText('$' + earningsStr)
 key_resp.keys = []
 key_resp.rt = []
 # keep track of which components have finished
@@ -1607,8 +1455,10 @@ for thisComponent in BeginInstComponents:
         thisComponent.setAutoDraw(False)
 thisExp.addData('text_2.started', text_2.tStartRefresh)
 thisExp.addData('text_2.stopped', text_2.tStopRefresh)
-earnings = 0
-earning = 0
+earnings = 6
+earning = 6
+earningsStr = "$" + '%.2f' % earnings
+earningsText.setText('$' + earningsStr)
 # check responses
 if key_resp.keys in ['', [], None]:  # No response was made
     key_resp.keys = None
@@ -1624,7 +1474,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 mainLoop = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('SlotMachine.xlsx'),
+    trialList=data.importConditions('PracticeSlotMach.xlsx'),
     seed=None, name='mainLoop')
 thisExp.addLoop(mainLoop)  # add the loop to the experiment
 thisMainLoop = mainLoop.trialList[0]  # so we can initialise stimuli with some values
@@ -1779,6 +1629,8 @@ for thisMainLoop in mainLoop:
             thisComponent.setAutoDraw(False)
     mainLoop.addData('cue.started', cue.tStartRefresh)
     mainLoop.addData('cue.stopped', cue.tStopRefresh)
+    earning = 6
+    earnings = 6
     
     # set up handler to look after randomisation of conditions etc
     trials = data.TrialHandler(nReps=1, method='random', 
@@ -1916,15 +1768,15 @@ for thisMainLoop in mainLoop:
             leftVarText= (sureWinLoss)
             leftVarMoney= (sure)
         
-        GambleAmt.setText(leftVarMoney)
-        SureAmt.setText(rightVarMoney)
+        GambleAmtVar = "$" + '%.2f' % leftVarMoney
+        GambleAmt.setText(GambleAmtVar)
+        SureAmtVar = "$" + '%.2f' % rightVarMoney
+        SureAmt.setText(SureAmtVar)
         GambleProb.setText(leftVarText)
         SureProb.setText(rightVarText)
         
-        leftMoney = float(leftVarMoney[1:])
-        
-        rightMoney = float(rightVarMoney[1:])
-        
+        leftMoney = float(leftVarMoney)
+        rightMoney = float(rightVarMoney)
         WinLossType = int(WinLossCode)
         
         
@@ -2075,9 +1927,11 @@ for thisMainLoop in mainLoop:
             if choice.keys == '1':
                 GambleAmt.setColor('green')
                 chosenMoney = leftMoney
+                choice.status = FINISHED
             if choice.keys == '2':
                 SureAmt.setColor('green')
                 chosenMoney = rightMoney
+                choice.status = FINISHED
                 
             if (choice.keys == '1' or choice.keys == '2') and blank.status == NOT_STARTED:
                 blank.tStart = t
@@ -2303,8 +2157,8 @@ for thisMainLoop in mainLoop:
                    earnings = earnings - chosenMoney
                    print('Lost sure Money earnings:')
                    print(earnings)
-            earningsStr= str(earnings)
-            earningsText.setText(earningsStr)
+            earningsStr = "$" + '%.2f' % earnings
+            earningsText.setText('$' + earningsStr)
         GambleAmt.setColor('white')
         SureAmt.setColor('white')
         
@@ -2329,6 +2183,72 @@ for thisMainLoop in mainLoop:
     
 # completed 1 repeats of 'mainLoop'
 
+
+# ------Prepare to start Routine "ThankYou"-------
+# update component parameters for each repeat
+#
+#return earnings;
+#earningsStr = "$" + '%.2f' % earnings
+tyText.setText("Thank you for playing!\n\nYour total earnings are " + earningsStr)
+# keep track of which components have finished
+ThankYouComponents = [tyText]
+for thisComponent in ThankYouComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+ThankYouClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
+
+# -------Run Routine "ThankYou"-------
+while continueRoutine:
+    # get current time
+    t = ThankYouClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=ThankYouClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *tyText* updates
+    if tyText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        tyText.frameNStart = frameN  # exact frame index
+        tyText.tStart = t  # local t and not account for scr refresh
+        tyText.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(tyText, 'tStartRefresh')  # time at next scr refresh
+        tyText.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in ThankYouComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "ThankYou"-------
+for thisComponent in ThankYouComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('tyText.started', tyText.tStartRefresh)
+thisExp.addData('tyText.stopped', tyText.tStopRefresh)
+# the Routine "ThankYou" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting

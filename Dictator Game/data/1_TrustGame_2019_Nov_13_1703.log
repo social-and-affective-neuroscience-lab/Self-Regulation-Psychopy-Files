@@ -1,0 +1,193 @@
+8.3463 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+9.7556 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001AD4C98B7B8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001AD4C91EF98>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.7556 	EXP 	window1: recordFrameIntervals = False
+9.9221 	EXP 	window1: recordFrameIntervals = True
+10.1050 	EXP 	window1: recordFrameIntervals = False
+10.3366 	EXP 	Created Instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='Instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.45)
+10.3562 	EXP 	Created cueText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cueText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.3606 	EXP 	Created sendInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='sendInstructions', opacity=1.0, ori=0, pos=array([ 0.  , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+10.3723 	EXP 	Created Player1Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player1Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.3747 	EXP 	Created Player1Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player1Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+10.3788 	EXP 	Created Feedback = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Feedback', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.3825 	EXP 	Created sendInst2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='sendInst2', opacity=1.0, ori=0, pos=array([ 0.  , -0.15]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+10.3856 	EXP 	Created Player2Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player2Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.3876 	EXP 	Created Player2Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player2Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+10.3918 	EXP 	Created Feedback2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Feedback2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.4231 	EXP 	Instructions: autoDraw = True
+11.7696 	EXP 	Imported DictatorGame.xlsx as conditions, 10 conditions, 5 params
+11.7698 	EXP 	Created sequence: random, trialTypes=10, nReps=5, seed=None
+11.7701 	EXP 	New trial (rep=0, index=0): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+11.7880 	DATA 	Keypress: space
+11.7920 	EXP 	Instructions: autoDraw = False
+11.7920 	EXP 	cueText: text = 'REGULATE'
+11.7920 	EXP 	cueText: autoDraw = True
+16.7494 	EXP 	Imported DictatorGame.xlsx as conditions, 10 conditions, 5 params
+16.7496 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+16.7498 	EXP 	New trial (rep=0, index=0): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', '1patterns.png'), ('Player2', '3pattern.png')])
+16.8457 	EXP 	cueText: autoDraw = False
+16.8457 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+16.8457 	EXP 	Player1Name: text = 'Player 1'
+16.8457 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+16.8457 	EXP 	Player1Pic: size = array([0.2, 0.2])
+16.8457 	EXP 	Player1Pic: image = '1patterns.png'
+16.8457 	EXP 	sendInstructions: autoDraw = True
+16.8457 	EXP 	Player1Name: autoDraw = True
+16.8457 	EXP 	Player1Pic: autoDraw = True
+32.8964 	DATA 	Keypress: 1
+33.6984 	DATA 	Keypress: return
+33.7715 	EXP 	sendInstructions: autoDraw = False
+33.7715 	EXP 	Player1Name: autoDraw = False
+33.7715 	EXP 	Player1Pic: autoDraw = False
+33.7715 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+33.7715 	EXP 	Feedback: autoDraw = True
+37.7287 	EXP 	New trial (rep=0, index=1): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+37.7476 	EXP 	Feedback: autoDraw = False
+37.7476 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+37.7476 	EXP 	Player1Name: text = 'Player 1'
+37.7476 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+37.7476 	EXP 	Player1Pic: size = array([0.2, 0.2])
+37.7476 	EXP 	Player1Pic: image = '1patterns.png'
+37.7476 	EXP 	sendInstructions: autoDraw = True
+37.7476 	EXP 	Player1Name: autoDraw = True
+37.7476 	EXP 	Player1Pic: autoDraw = True
+42.8888 	DATA 	Keypress: 2
+43.5743 	DATA 	Keypress: return
+43.5833 	EXP 	sendInstructions: autoDraw = False
+43.5833 	EXP 	Player1Name: autoDraw = False
+43.5833 	EXP 	Player1Pic: autoDraw = False
+43.5833 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+43.5833 	EXP 	Feedback: autoDraw = True
+47.5715 	EXP 	New trial (rep=0, index=2): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+47.5907 	EXP 	Feedback: autoDraw = False
+47.5907 	EXP 	Feedback: autoDraw = False
+47.5907 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+47.5907 	EXP 	Player1Name: text = 'Player 1'
+47.5907 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+47.5907 	EXP 	Player1Pic: size = array([0.2, 0.2])
+47.5907 	EXP 	Player1Pic: image = '1patterns.png'
+47.5907 	EXP 	sendInstructions: autoDraw = True
+47.5907 	EXP 	Player1Name: autoDraw = True
+47.5907 	EXP 	Player1Pic: autoDraw = True
+49.3263 	DATA 	Keypress: 2
+49.7305 	DATA 	Keypress: return
+49.7388 	EXP 	sendInstructions: autoDraw = False
+49.7388 	EXP 	Player1Name: autoDraw = False
+49.7388 	EXP 	Player1Pic: autoDraw = False
+49.7388 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+49.7388 	EXP 	Feedback: autoDraw = True
+53.7267 	EXP 	New trial (rep=0, index=3): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+53.7448 	EXP 	Feedback: autoDraw = False
+53.7448 	EXP 	Feedback: autoDraw = False
+53.7448 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+53.7448 	EXP 	Player1Name: text = 'Player 1'
+53.7448 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+53.7448 	EXP 	Player1Pic: size = array([0.2, 0.2])
+53.7448 	EXP 	Player1Pic: image = '1patterns.png'
+53.7448 	EXP 	sendInstructions: autoDraw = True
+53.7448 	EXP 	Player1Name: autoDraw = True
+53.7448 	EXP 	Player1Pic: autoDraw = True
+54.6679 	DATA 	Keypress: return
+54.6762 	EXP 	sendInstructions: autoDraw = False
+54.6762 	EXP 	Player1Name: autoDraw = False
+54.6762 	EXP 	Player1Pic: autoDraw = False
+54.6762 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+54.6762 	EXP 	Feedback: autoDraw = True
+58.6640 	EXP 	New trial (rep=0, index=4): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+58.6830 	EXP 	Feedback: autoDraw = False
+58.6830 	EXP 	Feedback: autoDraw = False
+58.6830 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+58.6830 	EXP 	Player1Name: text = 'Player 1'
+58.6830 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+58.6830 	EXP 	Player1Pic: size = array([0.2, 0.2])
+58.6830 	EXP 	Player1Pic: image = '1patterns.png'
+58.6830 	EXP 	sendInstructions: autoDraw = True
+58.6830 	EXP 	Player1Name: autoDraw = True
+58.6830 	EXP 	Player1Pic: autoDraw = True
+59.8709 	DATA 	Keypress: return
+59.8797 	EXP 	sendInstructions: autoDraw = False
+59.8797 	EXP 	Player1Name: autoDraw = False
+59.8797 	EXP 	Player1Pic: autoDraw = False
+59.8797 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+59.8797 	EXP 	Feedback: autoDraw = True
+63.8691 	EXP 	New trial (rep=0, index=5): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+63.8868 	EXP 	Feedback: autoDraw = False
+63.8868 	EXP 	Feedback: autoDraw = False
+63.8868 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+63.8868 	EXP 	Player1Name: text = 'Player 1'
+63.8868 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+63.8868 	EXP 	Player1Pic: size = array([0.2, 0.2])
+63.8868 	EXP 	Player1Pic: image = '1patterns.png'
+63.8868 	EXP 	sendInstructions: autoDraw = True
+63.8868 	EXP 	Player1Name: autoDraw = True
+63.8868 	EXP 	Player1Pic: autoDraw = True
+65.2767 	DATA 	Keypress: return
+65.2850 	EXP 	sendInstructions: autoDraw = False
+65.2850 	EXP 	Player1Name: autoDraw = False
+65.2850 	EXP 	Player1Pic: autoDraw = False
+65.2850 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+65.2850 	EXP 	Feedback: autoDraw = True
+69.2734 	EXP 	New trial (rep=0, index=6): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REGULATE'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+69.2971 	EXP 	Feedback: autoDraw = False
+69.2971 	EXP 	Feedback: autoDraw = False
+69.2971 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+69.2971 	EXP 	Player1Name: text = 'Player 1'
+69.2971 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+69.2971 	EXP 	Player1Pic: size = array([0.2, 0.2])
+69.2971 	EXP 	Player1Pic: image = '1patterns.png'
+69.2971 	EXP 	sendInstructions: autoDraw = True
+69.2971 	EXP 	Player1Name: autoDraw = True
+69.2971 	EXP 	Player1Pic: autoDraw = True
+73.1487 	DATA 	Keypress: return
+73.1577 	EXP 	sendInstructions: autoDraw = False
+73.1577 	EXP 	Player1Name: autoDraw = False
+73.1577 	EXP 	Player1Pic: autoDraw = False
+73.1577 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+73.1577 	EXP 	Feedback: autoDraw = True
+77.1460 	EXP 	New trial (rep=0, index=7): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+77.1647 	EXP 	Feedback: autoDraw = False
+77.1647 	EXP 	Feedback: autoDraw = False
+77.1647 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+77.1647 	EXP 	Player1Name: text = 'Player 1'
+77.1647 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+77.1647 	EXP 	Player1Pic: size = array([0.2, 0.2])
+77.1647 	EXP 	Player1Pic: image = '1patterns.png'
+77.1647 	EXP 	sendInstructions: autoDraw = True
+77.1647 	EXP 	Player1Name: autoDraw = True
+77.1647 	EXP 	Player1Pic: autoDraw = True
+77.9845 	DATA 	Keypress: lshift
+79.1544 	DATA 	Keypress: return
+79.1627 	EXP 	sendInstructions: autoDraw = False
+79.1627 	EXP 	Player1Name: autoDraw = False
+79.1627 	EXP 	Player1Pic: autoDraw = False
+79.1627 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+79.1627 	EXP 	Feedback: autoDraw = True
+83.1515 	EXP 	New trial (rep=0, index=8): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+83.1697 	EXP 	Feedback: autoDraw = False
+83.1697 	EXP 	Feedback: autoDraw = False
+83.1697 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+83.1697 	EXP 	Player1Name: text = 'Player 1'
+83.1697 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+83.1697 	EXP 	Player1Pic: size = array([0.2, 0.2])
+83.1697 	EXP 	Player1Pic: image = '1patterns.png'
+83.1697 	EXP 	sendInstructions: autoDraw = True
+83.1697 	EXP 	Player1Name: autoDraw = True
+83.1697 	EXP 	Player1Pic: autoDraw = True
+83.8080 	DATA 	Keypress: return
+83.8167 	EXP 	sendInstructions: autoDraw = False
+83.8167 	EXP 	Player1Name: autoDraw = False
+83.8167 	EXP 	Player1Pic: autoDraw = False
+83.8167 	EXP 	Feedback: text = '"You gave Player 1 "\n\n"Player 1 received "\n\n"Player 1 chose to give you "'
+83.8167 	EXP 	Feedback: autoDraw = True
+87.8048 	EXP 	New trial (rep=0, index=9): OrderedDict([('textTypePlayer1', 'Please indicate how many dollars you will give Player 1:   '), ('CueType', 'REACT'), ('textTypePlayer2', 'Please indicate how many dollars you will give Player 2:   '), ('Player1', None), ('Player2', None)])
+87.8228 	EXP 	Feedback: autoDraw = False
+87.8228 	EXP 	Feedback: autoDraw = False
+87.8228 	EXP 	sendInstructions: text = 'You have been given$5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\nPlease indicate how many dollars you would like to give Player 1 : '
+87.8228 	EXP 	Player1Name: text = 'Player 1'
+87.8228 	EXP 	Player1Pic: pos = array([0.  , 0.36])
+87.8228 	EXP 	Player1Pic: size = array([0.2, 0.2])
+87.8228 	EXP 	Player1Pic: image = '1patterns.png'
+87.8228 	EXP 	sendInstructions: autoDraw = True
+87.8228 	EXP 	Player1Name: autoDraw = True
+87.8228 	EXP 	Player1Pic: autoDraw = True
+88.9445 	DATA 	Keypress: escape
+89.0528 	EXP 	window1: mouseVisible = True

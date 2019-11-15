@@ -1,0 +1,4 @@
+﻿PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,sure,gamble,gambleProb,Rows,CueType,gambleWinLoss,sureWinLoss,WinLossCode,plus,Instructions.started,Instructions.stopped,space.keys,space.rt,space.started,space.stopped,instruct2.started,instruct2.stopped,enter.keys,enter.rt,enter.started,enter.stopped,isi2.started,isi2.stopped,text.started,text.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,11.162428500014357,None,space,2.6482801999663934,11.162428500014357,None,,,,,,,,,,,2,001,2019_Nov_12_1112,SlotMachTest,3.2.4,59.829975163510596,
+,,,,,,,,,,,,,,,,,,,13.838642599992454,None,return,0.7250855000456795,13.838642599992454,None,,,,,2,001,2019_Nov_12_1112,SlotMachTest,3.2.4,59.829975163510596,
+,,,,,,,,,,,,,,,,,,,,,,,,,18.608296099933796,None,16.590543400030583,None,,,,,,,
