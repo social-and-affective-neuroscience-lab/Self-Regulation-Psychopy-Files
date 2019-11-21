@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 14, 2019, at 14:00
+    on November 21, 2019, at 12:18
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -125,7 +125,7 @@ CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.13, wrapWidth=1.5, ori=0, 
+    pos=(0, 0), height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -153,21 +153,21 @@ conBlank = visual.TextStim(win=win, name='conBlank',
 RemText = visual.TextStim(win=win, name='RemText',
     text='default text',
     font='Arial',
-    pos=(0, 0.32), height=0.055, wrapWidth=1.5, ori=0, 
+    pos=(0, 0.32), height=0.045, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 leftText = visual.TextStim(win=win, name='leftText',
     text='default text',
     font='Arial',
-    pos=(-0.5, 0.0), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0.45, 0.05), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 rightText = visual.TextStim(win=win, name='rightText',
     text='default text',
     font='Arial',
-    pos=(0.5, 0.0), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0.5, -0.04), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
@@ -233,6 +233,13 @@ Question = visual.TextStim(win=win, name='Question',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-8.0);
+sureGroup = visual.TextStim(win=win, name='sureGroup',
+    text='default text',
+    font='Arial',
+    pos=(-0.5, 0), height=0.05, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-9.0);
 
 # Initialize components for Routine "ISI"
 ISIClock = core.Clock()
@@ -311,7 +318,7 @@ CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.13, wrapWidth=1.5, ori=0, 
+    pos=(0, 0), height=0.1, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -339,21 +346,21 @@ conBlank2 = visual.TextStim(win=win, name='conBlank2',
 RemText2 = visual.TextStim(win=win, name='RemText2',
     text='default text',
     font='Arial',
-    pos=(0, 0.32), height=0.055, wrapWidth=1.5, ori=0, 
+    pos=(0, 0.32), height=0.045, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 leftText2 = visual.TextStim(win=win, name='leftText2',
     text='default text',
     font='Arial',
-    pos=(-0.5, 0.0), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0.4, 0.05), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 rightText2 = visual.TextStim(win=win, name='rightText2',
     text='default text',
     font='Arial',
-    pos=(0.5, 0.0), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0.4, -0.04), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
@@ -419,6 +426,13 @@ Question2 = visual.TextStim(win=win, name='Question2',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-8.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='default text',
+    font='Arial',
+    pos=(-0.5, 0), height=0.045, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-9.0);
 
 # Initialize components for Routine "ISI"
 ISIClock = core.Clock()
@@ -671,7 +685,7 @@ for thisPracticeLoop in PracticeLoop:
     # set up handler to look after randomisation of conditions etc
     PracticeQs = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('PracticeMoralSelfReg.csv', selection=rows),
+        trialList=data.importConditions('PracticeMoralSelfReg.xlsx', selection='0:5'),
         seed=None, name='PracticeQs')
     thisExp.addLoop(PracticeQs)  # add the loop to the experiment
     thisPracticeQ = PracticeQs.trialList[0]  # so we can initialise stimuli with some values
@@ -938,7 +952,7 @@ for thisPracticeLoop in PracticeLoop:
     # set up handler to look after randomisation of conditions etc
     practiceAs = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('PracticeMoralSelfReg.csv', selection=rows),
+        trialList=data.importConditions('PracticeMoralSelfReg.xlsx', selection='0:5'),
         seed=None, name='practiceAs')
     thisExp.addLoop(practiceAs)  # add the loop to the experiment
     thisPracticeA = practiceAs.trialList[0]  # so we can initialise stimuli with some values
@@ -1034,8 +1048,9 @@ for thisPracticeLoop in PracticeLoop:
         Yes.setText("Implement the plan ('y')")
         No.setText("Do nothing ('n')")
         Question.setText('What do you do?')
+        sureGroup.setText(sureGroupText)
         # keep track of which components have finished
-        PracticeAnswersComponents = [key_resp, conBlank, RemText, leftText, rightText, Yes, No, Question]
+        PracticeAnswersComponents = [key_resp, conBlank, RemText, leftText, rightText, Yes, No, Question, sureGroup]
         for thisComponent in PracticeAnswersComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1209,6 +1224,22 @@ for thisPracticeLoop in PracticeLoop:
                     win.timeOnFlip(Question, 'tStopRefresh')  # time at next scr refresh
                     Question.setAutoDraw(False)
             
+            # *sureGroup* updates
+            if sureGroup.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                sureGroup.frameNStart = frameN  # exact frame index
+                sureGroup.tStart = t  # local t and not account for scr refresh
+                sureGroup.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(sureGroup, 'tStartRefresh')  # time at next scr refresh
+                sureGroup.setAutoDraw(True)
+            if sureGroup.status == STARTED:
+                if bool(conBlank.status == FINISHED):
+                    # keep track of stop time/frame for later
+                    sureGroup.tStop = t  # not accounting for scr refresh
+                    sureGroup.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(sureGroup, 'tStopRefresh')  # time at next scr refresh
+                    sureGroup.setAutoDraw(False)
+            
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
@@ -1273,7 +1304,7 @@ for thisPracticeLoop in PracticeLoop:
             if result == 1:   #win
                 print('The group escaped!')
                 print(earnings)
-                chanceResult = (" was saved.")
+                chanceResult = (" were saved.")
             if result == 0: #lose
                 print('The group died! :(')
                 chanceResult = (' died.')
@@ -1288,11 +1319,14 @@ for thisPracticeLoop in PracticeLoop:
             rightText.setAutoDraw(False)
             Yes.setAutoDraw(False)
             No.setAutoDraw(False)
+            sureGroup.setAutoDraw(False)
             RemText.setAutoDraw(False)
             Question.setAutoDraw(False)
             continueRoutine = False 
         practiceAs.addData('Question.started', Question.tStartRefresh)
         practiceAs.addData('Question.stopped', Question.tStopRefresh)
+        practiceAs.addData('sureGroup.started', sureGroup.tStartRefresh)
+        practiceAs.addData('sureGroup.stopped', sureGroup.tStopRefresh)
         # the Routine "PracticeAnswers" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -1377,7 +1411,7 @@ for thisPracticeLoop in PracticeLoop:
         numPeople = str(groupNum)
         groupResult = str(chanceResult)
         nounStr = str(Noun)
-        resultGroup = ("of " + numPeople + nounStr + groupResult)
+        resultGroup = (numPeople + nounStr + groupResult)
         
         if choseCode == 1:
             FeedbackVar.setText(ChosePlan)
@@ -1629,7 +1663,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 MainLoop = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('moralRows2.xlsx'),
+    trialList=data.importConditions('moralRows2.csv'),
     seed=None, name='MainLoop')
 thisExp.addLoop(MainLoop)  # add the loop to the experiment
 thisMainLoop = MainLoop.trialList[0]  # so we can initialise stimuli with some values
@@ -1717,7 +1751,7 @@ for thisMainLoop in MainLoop:
     # set up handler to look after randomisation of conditions etc
     MainQs = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('MoralSelfReg.csv', selection=rows2),
+        trialList=data.importConditions('PracticeMoralSelfReg.xlsx', selection=rows2),
         seed=None, name='MainQs')
     thisExp.addLoop(MainQs)  # add the loop to the experiment
     thisMainQ = MainQs.trialList[0]  # so we can initialise stimuli with some values
@@ -1735,7 +1769,7 @@ for thisMainLoop in MainLoop:
         
         # ------Prepare to start Routine "MainDilemmas"-------
         # update component parameters for each repeat
-        text.setText(MainDilemmas)
+        text.setText(PracticeDilemmas)
         key_resp_2.keys = []
         key_resp_2.rt = []
         # keep track of which components have finished
@@ -1984,7 +2018,7 @@ for thisMainLoop in MainLoop:
     # set up handler to look after randomisation of conditions etc
     trials_2 = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('MoralSelfReg.csv', selection=rows2),
+        trialList=data.importConditions('PracticeMoralSelfReg.xlsx', selection=rows2),
         seed=None, name='trials_2')
     thisExp.addLoop(trials_2)  # add the loop to the experiment
     thisTrial_2 = trials_2.trialList[0]  # so we can initialise stimuli with some values
@@ -2075,13 +2109,14 @@ for thisMainLoop in MainLoop:
         key_resp_3.rt = []
         conBlank2.setText('')
         RemText2.setText(Reminder)
-        leftText2.setText(MainLeftText)
-        rightText2.setText(MainRightText)
+        leftText2.setText(PracticeLeftText)
+        rightText2.setText(PracticeRightText)
         yes2.setText("Implement the plan ('y')")
         no2.setText("Do nothing ('n')")
         Question2.setText('What do you do?')
+        text_2.setText(sureGroupText)
         # keep track of which components have finished
-        MainAnswers_2Components = [key_resp_3, conBlank2, RemText2, leftText2, rightText2, yes2, no2, Question2]
+        MainAnswers_2Components = [key_resp_3, conBlank2, RemText2, leftText2, rightText2, yes2, no2, Question2, text_2]
         for thisComponent in MainAnswers_2Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2255,6 +2290,22 @@ for thisMainLoop in MainLoop:
                     win.timeOnFlip(Question2, 'tStopRefresh')  # time at next scr refresh
                     Question2.setAutoDraw(False)
             
+            # *text_2* updates
+            if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_2.frameNStart = frameN  # exact frame index
+                text_2.tStart = t  # local t and not account for scr refresh
+                text_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+                text_2.setAutoDraw(True)
+            if text_2.status == STARTED:
+                if bool(conBlank2.status == FINISHED):
+                    # keep track of stop time/frame for later
+                    text_2.tStop = t  # not accounting for scr refresh
+                    text_2.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
+                    text_2.setAutoDraw(False)
+            
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
@@ -2334,11 +2385,14 @@ for thisMainLoop in MainLoop:
             rightText2.setAutoDraw(False)
             yes2.setAutoDraw(False)
             no2.setAutoDraw(False)
+            text_2.setAutoDraw(False)
             RemText2.setAutoDraw(False)
             Question2.setAutoDraw(False)
             continueRoutine = False 
         trials_2.addData('Question2.started', Question2.tStartRefresh)
         trials_2.addData('Question2.stopped', Question2.tStopRefresh)
+        trials_2.addData('text_2.started', text_2.tStartRefresh)
+        trials_2.addData('text_2.stopped', text_2.tStopRefresh)
         # the Routine "MainAnswers_2" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -2423,7 +2477,7 @@ for thisMainLoop in MainLoop:
         numPeople = str(groupNum)
         groupResult = str(chanceResult)
         nounStr = str(Noun)
-        resultGroup = ("of " + numPeople + nounStr + groupResult)
+        resultGroup = (numPeople + nounStr + groupResult)
         
         if choseCode == 1:
             FeedbackVar.setText(ChosePlan)

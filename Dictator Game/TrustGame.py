@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 14, 2019, at 13:40
+    on November 18, 2019, at 09:05
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -118,6 +118,11 @@ isiText = visual.TextStim(win=win, name='isiText',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+
+# Initialize components for Routine "code_6"
+code_6Clock = core.Clock()
+nReps1=0
+nReps2=0
 
 # Initialize components for Routine "sendMoney1"
 sendMoney1Clock = core.Clock()
@@ -579,340 +584,35 @@ for thisCueLoop in CueLoop:
     CueLoop.addData('isiText.stopped', isiText.tStopRefresh)
     
     # set up handler to look after randomisation of conditions etc
-    randomPresent = data.TrialHandler(nReps= 1, method='random', 
+    trials = data.TrialHandler(nReps=1, method='random', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('spreadsheet5.xlsx', selection=Rows),
-        seed=None, name='randomPresent')
-    thisExp.addLoop(randomPresent)  # add the loop to the experiment
-    thisRandomPresent = randomPresent.trialList[0]  # so we can initialise stimuli with some values
-    # abbreviate parameter names if possible (e.g. rgb = thisRandomPresent.rgb)
-    if thisRandomPresent != None:
-        for paramName in thisRandomPresent:
-            exec('{} = thisRandomPresent[paramName]'.format(paramName))
+        trialList=data.importConditions('spreadsheet5.xlsx'),
+        seed=None, name='trials')
+    thisExp.addLoop(trials)  # add the loop to the experiment
+    thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+    if thisTrial != None:
+        for paramName in thisTrial:
+            exec('{} = thisTrial[paramName]'.format(paramName))
     
-    for thisRandomPresent in randomPresent:
-        currentLoop = randomPresent
-        # abbreviate parameter names if possible (e.g. rgb = thisRandomPresent.rgb)
-        if thisRandomPresent != None:
-            for paramName in thisRandomPresent:
-                exec('{} = thisRandomPresent[paramName]'.format(paramName))
+    for thisTrial in trials:
+        currentLoop = trials
+        # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+        if thisTrial != None:
+            for paramName in thisTrial:
+                exec('{} = thisTrial[paramName]'.format(paramName))
         
-        # set up handler to look after randomisation of conditions etc
-        SelfishGiver = data.TrialHandler(nReps=nReps1, method='sequential', 
-            extraInfo=expInfo, originPath=-1,
-            trialList=[None],
-            seed=None, name='SelfishGiver')
-        thisExp.addLoop(SelfishGiver)  # add the loop to the experiment
-        thisSelfishGiver = SelfishGiver.trialList[0]  # so we can initialise stimuli with some values
-        # abbreviate parameter names if possible (e.g. rgb = thisSelfishGiver.rgb)
-        if thisSelfishGiver != None:
-            for paramName in thisSelfishGiver:
-                exec('{} = thisSelfishGiver[paramName]'.format(paramName))
-        
-        for thisSelfishGiver in SelfishGiver:
-            currentLoop = SelfishGiver
-            # abbreviate parameter names if possible (e.g. rgb = thisSelfishGiver.rgb)
-            if thisSelfishGiver != None:
-                for paramName in thisSelfishGiver:
-                    exec('{} = thisSelfishGiver[paramName]'.format(paramName))
-            
-            # ------Prepare to start Routine "sendMoney1"-------
-            # update component parameters for each repeat
-            sendInstructions.setText('You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\n\nPlease indicate how many dollars you will give to Player 1:\n')
-            Player1Name.setText('Player 1')
-            Player1Pic.setPos((0, 0.36))
-            Player1Pic.setSize((0.2, 0.2))
-            Player1Pic.setImage('1patterns.png')
-            enter.keys = []
-            enter.rt = []
-            text.setText('')
-            modify = False
-            text.text = ''
-            event.clearEvents('keyboard')
-            giveMoney = 0
-            if subID%2==0:
-                Player1Pic.setImage('3pattern.png')
-            if subID%2==1:
-                Player1Pic.setImage('1patterns.png')
-            dollarSign.setText('$')
-            # keep track of which components have finished
-            sendMoney1Components = [sendInstructions, Player1Name, Player1Pic, enter, text, dollarSign]
-            for thisComponent in sendMoney1Components:
-                thisComponent.tStart = None
-                thisComponent.tStop = None
-                thisComponent.tStartRefresh = None
-                thisComponent.tStopRefresh = None
-                if hasattr(thisComponent, 'status'):
-                    thisComponent.status = NOT_STARTED
-            # reset timers
-            t = 0
-            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-            sendMoney1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-            frameN = -1
-            continueRoutine = True
-            
-            # -------Run Routine "sendMoney1"-------
-            while continueRoutine:
-                # get current time
-                t = sendMoney1Clock.getTime()
-                tThisFlip = win.getFutureFlipTime(clock=sendMoney1Clock)
-                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-                # update/draw components on each frame
-                
-                # *sendInstructions* updates
-                if sendInstructions.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    sendInstructions.frameNStart = frameN  # exact frame index
-                    sendInstructions.tStart = t  # local t and not account for scr refresh
-                    sendInstructions.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(sendInstructions, 'tStartRefresh')  # time at next scr refresh
-                    sendInstructions.setAutoDraw(True)
-                
-                # *Player1Name* updates
-                if Player1Name.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    Player1Name.frameNStart = frameN  # exact frame index
-                    Player1Name.tStart = t  # local t and not account for scr refresh
-                    Player1Name.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(Player1Name, 'tStartRefresh')  # time at next scr refresh
-                    Player1Name.setAutoDraw(True)
-                
-                # *Player1Pic* updates
-                if Player1Pic.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    Player1Pic.frameNStart = frameN  # exact frame index
-                    Player1Pic.tStart = t  # local t and not account for scr refresh
-                    Player1Pic.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(Player1Pic, 'tStartRefresh')  # time at next scr refresh
-                    Player1Pic.setAutoDraw(True)
-                
-                # *enter* updates
-                waitOnFlip = False
-                if enter.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    enter.frameNStart = frameN  # exact frame index
-                    enter.tStart = t  # local t and not account for scr refresh
-                    enter.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(enter, 'tStartRefresh')  # time at next scr refresh
-                    enter.status = STARTED
-                    # keyboard checking is just starting
-                    waitOnFlip = True
-                    win.callOnFlip(enter.clock.reset)  # t=0 on next screen flip
-                    win.callOnFlip(enter.clearEvents, eventType='keyboard')  # clear events on next screen flip
-                if enter.status == STARTED and not waitOnFlip:
-                    theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
-                    if len(theseKeys):
-                        theseKeys = theseKeys[0]  # at least one key was pressed
-                        
-                        # check for quit:
-                        if "escape" == theseKeys:
-                            endExpNow = True
-                        enter.keys = theseKeys.name  # just the last key pressed
-                        enter.rt = theseKeys.rt
-                        # a response ends the routine
-                        continueRoutine = False
-                
-                # *text* updates
-                if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    text.frameNStart = frameN  # exact frame index
-                    text.tStart = t  # local t and not account for scr refresh
-                    text.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
-                    text.setAutoDraw(True)
-                keys = event.getKeys(keyList=['0','1','2','3','4','5','return', 'backspace'])
-                if len(keys):
-                    if 'backspace' in keys:
-                        text.text = text.text[:-1]
-                    elif 'return' in keys:
-                        continueRoutine = False
-                    else:
-                        if modify:
-                            text.text = text.text + keys[0].upper()
-                            modify = False
-                        else:
-                            text.text = text.text + keys[0]
-                if '5' in keys:
-                    giveMoney = 5
-                if '4' in keys:
-                    giveMoney = 4
-                if '3' in keys:
-                    giveMoney = 3
-                if '2' in keys:
-                    giveMoney =2
-                if '1' in keys:
-                    giveMoney = 1
-                if '0' in keys:
-                    giveMoney = 0
-                if '' in keys:
-                    giveMoney = 0
-                    
-                
-                
-                # *dollarSign* updates
-                if dollarSign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    dollarSign.frameNStart = frameN  # exact frame index
-                    dollarSign.tStart = t  # local t and not account for scr refresh
-                    dollarSign.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(dollarSign, 'tStartRefresh')  # time at next scr refresh
-                    dollarSign.setAutoDraw(True)
-                
-                # check for quit (typically the Esc key)
-                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                    core.quit()
-                
-                # check if all components have finished
-                if not continueRoutine:  # a component has requested a forced-end of Routine
-                    break
-                continueRoutine = False  # will revert to True if at least one component still running
-                for thisComponent in sendMoney1Components:
-                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                        continueRoutine = True
-                        break  # at least one component has not yet finished
-                
-                # refresh the screen
-                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                    win.flip()
-            
-            # -------Ending Routine "sendMoney1"-------
-            for thisComponent in sendMoney1Components:
-                if hasattr(thisComponent, "setAutoDraw"):
-                    thisComponent.setAutoDraw(False)
-            SelfishGiver.addData('sendInstructions.started', sendInstructions.tStartRefresh)
-            SelfishGiver.addData('sendInstructions.stopped', sendInstructions.tStopRefresh)
-            SelfishGiver.addData('Player1Name.started', Player1Name.tStartRefresh)
-            SelfishGiver.addData('Player1Name.stopped', Player1Name.tStopRefresh)
-            SelfishGiver.addData('Player1Pic.started', Player1Pic.tStartRefresh)
-            SelfishGiver.addData('Player1Pic.stopped', Player1Pic.tStopRefresh)
-            # check responses
-            if enter.keys in ['', [], None]:  # No response was made
-                enter.keys = None
-            SelfishGiver.addData('enter.keys',enter.keys)
-            if enter.keys != None:  # we had a response
-                SelfishGiver.addData('enter.rt', enter.rt)
-            SelfishGiver.addData('enter.started', enter.tStartRefresh)
-            SelfishGiver.addData('enter.stopped', enter.tStopRefresh)
-            SelfishGiver.addData('text.started', text.tStartRefresh)
-            SelfishGiver.addData('text.stopped', text.tStopRefresh)
-            thisExp.addData("typedWord", text.text)
-            
-                
-            print(giveMoney)
-            
-            giveMoneyStr = "$" + str(giveMoney)
-            SelfishGiver.addData('dollarSign.started', dollarSign.tStartRefresh)
-            SelfishGiver.addData('dollarSign.stopped', dollarSign.tStopRefresh)
-            # the Routine "sendMoney1" was not non-slip safe, so reset the non-slip timer
-            routineTimer.reset()
-            
-            # ------Prepare to start Routine "Giver1"-------
-            routineTimer.add(5.000000)
-            # update component parameters for each repeat
-            backTransfer = 0
-            
-            receiveMoney = giveMoney * 3
-            receiveMoneyStr = '$' + str(receiveMoney)
-            
-            array1 = [0,1]
-            array2 = [0,1,2]
-            array3 = [1,2,3,4]
-            array4 = [2,3,4,5]
-            array5 = [3,4,5,6,7]
-            if giveMoney == 0:
-                backTransfer = 0
-            if giveMoney == 1:
-                backTransfer = random.choice(array1)
-            if giveMoney == 2:
-                backTransfer = random.choice(array2)
-            if giveMoney == 3:
-                backTransfer = random.choice(array3)
-            if giveMoney == 4:
-                backTransfer = random.choice(array4)
-            if giveMoney == 5:
-                backTransfer = random.choice(array5)
-            
-            backTransferStr = "$" + str(backTransfer)
-            
-            textString = ("You gave Player 1 " + giveMoneyStr + "\n\nPlayer 1 received  "+ receiveMoneyStr + "\n\nPlayer 1 chose to give you "+ backTransferStr)
-            Feedback.setText(textString)
-            # keep track of which components have finished
-            Giver1Components = [Feedback]
-            for thisComponent in Giver1Components:
-                thisComponent.tStart = None
-                thisComponent.tStop = None
-                thisComponent.tStartRefresh = None
-                thisComponent.tStopRefresh = None
-                if hasattr(thisComponent, 'status'):
-                    thisComponent.status = NOT_STARTED
-            # reset timers
-            t = 0
-            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-            Giver1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-            frameN = -1
-            continueRoutine = True
-            
-            # -------Run Routine "Giver1"-------
-            while continueRoutine and routineTimer.getTime() > 0:
-                # get current time
-                t = Giver1Clock.getTime()
-                tThisFlip = win.getFutureFlipTime(clock=Giver1Clock)
-                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-                # update/draw components on each frame
-                
-                # *Feedback* updates
-                if Feedback.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    Feedback.frameNStart = frameN  # exact frame index
-                    Feedback.tStart = t  # local t and not account for scr refresh
-                    Feedback.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(Feedback, 'tStartRefresh')  # time at next scr refresh
-                    Feedback.setAutoDraw(True)
-                if Feedback.status == STARTED:
-                    # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > Feedback.tStartRefresh + 5-frameTolerance:
-                        # keep track of stop time/frame for later
-                        Feedback.tStop = t  # not accounting for scr refresh
-                        Feedback.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(Feedback, 'tStopRefresh')  # time at next scr refresh
-                        Feedback.setAutoDraw(False)
-                
-                # check for quit (typically the Esc key)
-                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                    core.quit()
-                
-                # check if all components have finished
-                if not continueRoutine:  # a component has requested a forced-end of Routine
-                    break
-                continueRoutine = False  # will revert to True if at least one component still running
-                for thisComponent in Giver1Components:
-                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                        continueRoutine = True
-                        break  # at least one component has not yet finished
-                
-                # refresh the screen
-                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                    win.flip()
-            
-            # -------Ending Routine "Giver1"-------
-            for thisComponent in Giver1Components:
-                if hasattr(thisComponent, "setAutoDraw"):
-                    thisComponent.setAutoDraw(False)
-            SelfishGiver.addData('Feedback.started', Feedback.tStartRefresh)
-            SelfishGiver.addData('Feedback.stopped', Feedback.tStopRefresh)
-            thisExp.nextEntry()
-            
-        # completed nReps1 repeats of 'SelfishGiver'
-        
-        
-        # ------Prepare to start Routine "isi"-------
-        routineTimer.add(2.000000)
+        # ------Prepare to start Routine "code_6"-------
         # update component parameters for each repeat
+        if selectBlock=='1':
+         nReps1=1
+         nReps2=0
+        elif selectBlock=='2':
+         nReps1=0
+         nReps2=1
         # keep track of which components have finished
-        isiComponents = [isiText]
-        for thisComponent in isiComponents:
+        code_6Components = []
+        for thisComponent in code_6Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
             thisComponent.tStartRefresh = None
@@ -922,35 +622,18 @@ for thisCueLoop in CueLoop:
         # reset timers
         t = 0
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        isiClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        code_6Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         continueRoutine = True
         
-        # -------Run Routine "isi"-------
-        while continueRoutine and routineTimer.getTime() > 0:
+        # -------Run Routine "code_6"-------
+        while continueRoutine:
             # get current time
-            t = isiClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=isiClock)
+            t = code_6Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=code_6Clock)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-            
-            # *isiText* updates
-            if isiText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                isiText.frameNStart = frameN  # exact frame index
-                isiText.tStart = t  # local t and not account for scr refresh
-                isiText.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(isiText, 'tStartRefresh')  # time at next scr refresh
-                isiText.setAutoDraw(True)
-            if isiText.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > isiText.tStartRefresh + 2-frameTolerance:
-                    # keep track of stop time/frame for later
-                    isiText.tStop = t  # not accounting for scr refresh
-                    isiText.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(isiText, 'tStopRefresh')  # time at next scr refresh
-                    isiText.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -960,7 +643,7 @@ for thisCueLoop in CueLoop:
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
             continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in isiComponents:
+            for thisComponent in code_6Components:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
@@ -969,327 +652,729 @@ for thisCueLoop in CueLoop:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # -------Ending Routine "isi"-------
-        for thisComponent in isiComponents:
+        # -------Ending Routine "code_6"-------
+        for thisComponent in code_6Components:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        randomPresent.addData('isiText.started', isiText.tStartRefresh)
-        randomPresent.addData('isiText.stopped', isiText.tStopRefresh)
+        # the Routine "code_6" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
         # set up handler to look after randomisation of conditions etc
-        GenerousGiver = data.TrialHandler(nReps=nReps2, method='sequential', 
+        randomPresent = data.TrialHandler(nReps= 1, method='sequential', 
             extraInfo=expInfo, originPath=-1,
-            trialList=[None],
-            seed=None, name='GenerousGiver')
-        thisExp.addLoop(GenerousGiver)  # add the loop to the experiment
-        thisGenerousGiver = GenerousGiver.trialList[0]  # so we can initialise stimuli with some values
-        # abbreviate parameter names if possible (e.g. rgb = thisGenerousGiver.rgb)
-        if thisGenerousGiver != None:
-            for paramName in thisGenerousGiver:
-                exec('{} = thisGenerousGiver[paramName]'.format(paramName))
+            trialList=data.importConditions('spreadsheet5.xlsx', selection=Rows),
+            seed=None, name='randomPresent')
+        thisExp.addLoop(randomPresent)  # add the loop to the experiment
+        thisRandomPresent = randomPresent.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisRandomPresent.rgb)
+        if thisRandomPresent != None:
+            for paramName in thisRandomPresent:
+                exec('{} = thisRandomPresent[paramName]'.format(paramName))
         
-        for thisGenerousGiver in GenerousGiver:
-            currentLoop = GenerousGiver
+        for thisRandomPresent in randomPresent:
+            currentLoop = randomPresent
+            # abbreviate parameter names if possible (e.g. rgb = thisRandomPresent.rgb)
+            if thisRandomPresent != None:
+                for paramName in thisRandomPresent:
+                    exec('{} = thisRandomPresent[paramName]'.format(paramName))
+            
+            # set up handler to look after randomisation of conditions etc
+            SelfishGiver = data.TrialHandler(nReps=nReps1, method='random', 
+                extraInfo=expInfo, originPath=-1,
+                trialList=[None],
+                seed=None, name='SelfishGiver')
+            thisExp.addLoop(SelfishGiver)  # add the loop to the experiment
+            thisSelfishGiver = SelfishGiver.trialList[0]  # so we can initialise stimuli with some values
+            # abbreviate parameter names if possible (e.g. rgb = thisSelfishGiver.rgb)
+            if thisSelfishGiver != None:
+                for paramName in thisSelfishGiver:
+                    exec('{} = thisSelfishGiver[paramName]'.format(paramName))
+            
+            for thisSelfishGiver in SelfishGiver:
+                currentLoop = SelfishGiver
+                # abbreviate parameter names if possible (e.g. rgb = thisSelfishGiver.rgb)
+                if thisSelfishGiver != None:
+                    for paramName in thisSelfishGiver:
+                        exec('{} = thisSelfishGiver[paramName]'.format(paramName))
+                
+                # ------Prepare to start Routine "sendMoney1"-------
+                # update component parameters for each repeat
+                sendInstructions.setText('You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\n\nPlease indicate how many dollars you will give to Player 1:\n')
+                Player1Name.setText('Player 1')
+                Player1Pic.setPos((0, 0.36))
+                Player1Pic.setSize((0.2, 0.2))
+                Player1Pic.setImage('1patterns.png')
+                enter.keys = []
+                enter.rt = []
+                text.setText('')
+                modify = False
+                text.text = ''
+                event.clearEvents('keyboard')
+                giveMoney = 0
+                if subID%2==0:
+                    Player1Pic.setImage('3pattern.png')
+                if subID%2==1:
+                    Player1Pic.setImage('1patterns.png')
+                dollarSign.setText('$')
+                # keep track of which components have finished
+                sendMoney1Components = [sendInstructions, Player1Name, Player1Pic, enter, text, dollarSign]
+                for thisComponent in sendMoney1Components:
+                    thisComponent.tStart = None
+                    thisComponent.tStop = None
+                    thisComponent.tStartRefresh = None
+                    thisComponent.tStopRefresh = None
+                    if hasattr(thisComponent, 'status'):
+                        thisComponent.status = NOT_STARTED
+                # reset timers
+                t = 0
+                _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+                sendMoney1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+                frameN = -1
+                continueRoutine = True
+                
+                # -------Run Routine "sendMoney1"-------
+                while continueRoutine:
+                    # get current time
+                    t = sendMoney1Clock.getTime()
+                    tThisFlip = win.getFutureFlipTime(clock=sendMoney1Clock)
+                    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                    # update/draw components on each frame
+                    
+                    # *sendInstructions* updates
+                    if sendInstructions.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        sendInstructions.frameNStart = frameN  # exact frame index
+                        sendInstructions.tStart = t  # local t and not account for scr refresh
+                        sendInstructions.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(sendInstructions, 'tStartRefresh')  # time at next scr refresh
+                        sendInstructions.setAutoDraw(True)
+                    
+                    # *Player1Name* updates
+                    if Player1Name.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Player1Name.frameNStart = frameN  # exact frame index
+                        Player1Name.tStart = t  # local t and not account for scr refresh
+                        Player1Name.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Player1Name, 'tStartRefresh')  # time at next scr refresh
+                        Player1Name.setAutoDraw(True)
+                    
+                    # *Player1Pic* updates
+                    if Player1Pic.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Player1Pic.frameNStart = frameN  # exact frame index
+                        Player1Pic.tStart = t  # local t and not account for scr refresh
+                        Player1Pic.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Player1Pic, 'tStartRefresh')  # time at next scr refresh
+                        Player1Pic.setAutoDraw(True)
+                    
+                    # *enter* updates
+                    waitOnFlip = False
+                    if enter.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        enter.frameNStart = frameN  # exact frame index
+                        enter.tStart = t  # local t and not account for scr refresh
+                        enter.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(enter, 'tStartRefresh')  # time at next scr refresh
+                        enter.status = STARTED
+                        # keyboard checking is just starting
+                        waitOnFlip = True
+                        win.callOnFlip(enter.clock.reset)  # t=0 on next screen flip
+                        win.callOnFlip(enter.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                    if enter.status == STARTED and not waitOnFlip:
+                        theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
+                        if len(theseKeys):
+                            theseKeys = theseKeys[0]  # at least one key was pressed
+                            
+                            # check for quit:
+                            if "escape" == theseKeys:
+                                endExpNow = True
+                            enter.keys = theseKeys.name  # just the last key pressed
+                            enter.rt = theseKeys.rt
+                            # a response ends the routine
+                            continueRoutine = False
+                    
+                    # *text* updates
+                    if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        text.frameNStart = frameN  # exact frame index
+                        text.tStart = t  # local t and not account for scr refresh
+                        text.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+                        text.setAutoDraw(True)
+                    keys = event.getKeys(keyList=['0','1','2','3','4','5','return', 'backspace'])
+                    if len(keys):
+                        if 'backspace' in keys:
+                            text.text = text.text[:-1]
+                        elif 'return' in keys:
+                            continueRoutine = False
+                        else:
+                            if modify:
+                                text.text = text.text + keys[0].upper()
+                                modify = False
+                            else:
+                                text.text = text.text + keys[0]
+                    if '5' in keys:
+                        giveMoney = 5
+                    if '4' in keys:
+                        giveMoney = 4
+                    if '3' in keys:
+                        giveMoney = 3
+                    if '2' in keys:
+                        giveMoney =2
+                    if '1' in keys:
+                        giveMoney = 1
+                    if '0' in keys:
+                        giveMoney = 0
+                    if '' in keys:
+                        giveMoney = 0
+                        
+                    
+                    
+                    # *dollarSign* updates
+                    if dollarSign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        dollarSign.frameNStart = frameN  # exact frame index
+                        dollarSign.tStart = t  # local t and not account for scr refresh
+                        dollarSign.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(dollarSign, 'tStartRefresh')  # time at next scr refresh
+                        dollarSign.setAutoDraw(True)
+                    
+                    # check for quit (typically the Esc key)
+                    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                        core.quit()
+                    
+                    # check if all components have finished
+                    if not continueRoutine:  # a component has requested a forced-end of Routine
+                        break
+                    continueRoutine = False  # will revert to True if at least one component still running
+                    for thisComponent in sendMoney1Components:
+                        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                            continueRoutine = True
+                            break  # at least one component has not yet finished
+                    
+                    # refresh the screen
+                    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                        win.flip()
+                
+                # -------Ending Routine "sendMoney1"-------
+                for thisComponent in sendMoney1Components:
+                    if hasattr(thisComponent, "setAutoDraw"):
+                        thisComponent.setAutoDraw(False)
+                SelfishGiver.addData('sendInstructions.started', sendInstructions.tStartRefresh)
+                SelfishGiver.addData('sendInstructions.stopped', sendInstructions.tStopRefresh)
+                SelfishGiver.addData('Player1Name.started', Player1Name.tStartRefresh)
+                SelfishGiver.addData('Player1Name.stopped', Player1Name.tStopRefresh)
+                SelfishGiver.addData('Player1Pic.started', Player1Pic.tStartRefresh)
+                SelfishGiver.addData('Player1Pic.stopped', Player1Pic.tStopRefresh)
+                # check responses
+                if enter.keys in ['', [], None]:  # No response was made
+                    enter.keys = None
+                SelfishGiver.addData('enter.keys',enter.keys)
+                if enter.keys != None:  # we had a response
+                    SelfishGiver.addData('enter.rt', enter.rt)
+                SelfishGiver.addData('enter.started', enter.tStartRefresh)
+                SelfishGiver.addData('enter.stopped', enter.tStopRefresh)
+                SelfishGiver.addData('text.started', text.tStartRefresh)
+                SelfishGiver.addData('text.stopped', text.tStopRefresh)
+                thisExp.addData("typedWord", text.text)
+                
+                    
+                print(giveMoney)
+                
+                giveMoneyStr = "$" + str(giveMoney)
+                SelfishGiver.addData('dollarSign.started', dollarSign.tStartRefresh)
+                SelfishGiver.addData('dollarSign.stopped', dollarSign.tStopRefresh)
+                # the Routine "sendMoney1" was not non-slip safe, so reset the non-slip timer
+                routineTimer.reset()
+                
+                # ------Prepare to start Routine "Giver1"-------
+                routineTimer.add(5.000000)
+                # update component parameters for each repeat
+                backTransfer = 0
+                
+                receiveMoney = giveMoney * 3
+                receiveMoneyStr = '$' + str(receiveMoney)
+                
+                array1 = [0,1]
+                array2 = [0,1,2]
+                array3 = [1,2,3,4]
+                array4 = [2,3,4,5]
+                array5 = [3,4,5,6,7]
+                if giveMoney == 0:
+                    backTransfer = 0
+                if giveMoney == 1:
+                    backTransfer = random.choice(array1)
+                if giveMoney == 2:
+                    backTransfer = random.choice(array2)
+                if giveMoney == 3:
+                    backTransfer = random.choice(array3)
+                if giveMoney == 4:
+                    backTransfer = random.choice(array4)
+                if giveMoney == 5:
+                    backTransfer = random.choice(array5)
+                
+                backTransferStr = "$" + str(backTransfer)
+                
+                textString = ("You gave Player 1 " + giveMoneyStr + "\n\nPlayer 1 received  "+ receiveMoneyStr + "\n\nPlayer 1 chose to give you "+ backTransferStr)
+                Feedback.setText(textString)
+                # keep track of which components have finished
+                Giver1Components = [Feedback]
+                for thisComponent in Giver1Components:
+                    thisComponent.tStart = None
+                    thisComponent.tStop = None
+                    thisComponent.tStartRefresh = None
+                    thisComponent.tStopRefresh = None
+                    if hasattr(thisComponent, 'status'):
+                        thisComponent.status = NOT_STARTED
+                # reset timers
+                t = 0
+                _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+                Giver1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+                frameN = -1
+                continueRoutine = True
+                
+                # -------Run Routine "Giver1"-------
+                while continueRoutine and routineTimer.getTime() > 0:
+                    # get current time
+                    t = Giver1Clock.getTime()
+                    tThisFlip = win.getFutureFlipTime(clock=Giver1Clock)
+                    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                    # update/draw components on each frame
+                    
+                    # *Feedback* updates
+                    if Feedback.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Feedback.frameNStart = frameN  # exact frame index
+                        Feedback.tStart = t  # local t and not account for scr refresh
+                        Feedback.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Feedback, 'tStartRefresh')  # time at next scr refresh
+                        Feedback.setAutoDraw(True)
+                    if Feedback.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > Feedback.tStartRefresh + 5-frameTolerance:
+                            # keep track of stop time/frame for later
+                            Feedback.tStop = t  # not accounting for scr refresh
+                            Feedback.frameNStop = frameN  # exact frame index
+                            win.timeOnFlip(Feedback, 'tStopRefresh')  # time at next scr refresh
+                            Feedback.setAutoDraw(False)
+                    
+                    # check for quit (typically the Esc key)
+                    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                        core.quit()
+                    
+                    # check if all components have finished
+                    if not continueRoutine:  # a component has requested a forced-end of Routine
+                        break
+                    continueRoutine = False  # will revert to True if at least one component still running
+                    for thisComponent in Giver1Components:
+                        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                            continueRoutine = True
+                            break  # at least one component has not yet finished
+                    
+                    # refresh the screen
+                    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                        win.flip()
+                
+                # -------Ending Routine "Giver1"-------
+                for thisComponent in Giver1Components:
+                    if hasattr(thisComponent, "setAutoDraw"):
+                        thisComponent.setAutoDraw(False)
+                SelfishGiver.addData('Feedback.started', Feedback.tStartRefresh)
+                SelfishGiver.addData('Feedback.stopped', Feedback.tStopRefresh)
+                thisExp.nextEntry()
+                
+            # completed nReps1 repeats of 'SelfishGiver'
+            
+            
+            # ------Prepare to start Routine "isi"-------
+            routineTimer.add(2.000000)
+            # update component parameters for each repeat
+            # keep track of which components have finished
+            isiComponents = [isiText]
+            for thisComponent in isiComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            isiClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+            frameN = -1
+            continueRoutine = True
+            
+            # -------Run Routine "isi"-------
+            while continueRoutine and routineTimer.getTime() > 0:
+                # get current time
+                t = isiClock.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=isiClock)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                
+                # *isiText* updates
+                if isiText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    isiText.frameNStart = frameN  # exact frame index
+                    isiText.tStart = t  # local t and not account for scr refresh
+                    isiText.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(isiText, 'tStartRefresh')  # time at next scr refresh
+                    isiText.setAutoDraw(True)
+                if isiText.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > isiText.tStartRefresh + 2-frameTolerance:
+                        # keep track of stop time/frame for later
+                        isiText.tStop = t  # not accounting for scr refresh
+                        isiText.frameNStop = frameN  # exact frame index
+                        win.timeOnFlip(isiText, 'tStopRefresh')  # time at next scr refresh
+                        isiText.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                    core.quit()
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in isiComponents:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # -------Ending Routine "isi"-------
+            for thisComponent in isiComponents:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            randomPresent.addData('isiText.started', isiText.tStartRefresh)
+            randomPresent.addData('isiText.stopped', isiText.tStopRefresh)
+            
+            # set up handler to look after randomisation of conditions etc
+            GenerousGiver = data.TrialHandler(nReps=nReps2, method='random', 
+                extraInfo=expInfo, originPath=-1,
+                trialList=[None],
+                seed=None, name='GenerousGiver')
+            thisExp.addLoop(GenerousGiver)  # add the loop to the experiment
+            thisGenerousGiver = GenerousGiver.trialList[0]  # so we can initialise stimuli with some values
             # abbreviate parameter names if possible (e.g. rgb = thisGenerousGiver.rgb)
             if thisGenerousGiver != None:
                 for paramName in thisGenerousGiver:
                     exec('{} = thisGenerousGiver[paramName]'.format(paramName))
             
-            # ------Prepare to start Routine "sendMoney2"-------
-            # update component parameters for each repeat
-            sendInst2.setText('You have been given $5 to use. You have the opportunity to send money to Player 2. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 2 will then have the opportunity to give some money amount back to you. \n\nPlease type how much money you would like to give Player 2 : ')
-            Player2Name.setText('Player 2')
-            Player2Pic.setPos((0, 0.36))
-            Player2Pic.setSize((0.2, 0.2))
-            Player2Pic.setImage('3pattern.png')
-            enter2.keys = []
-            enter2.rt = []
-            if subID%2==0:
-                Player2Pic.setImage('1patterns.png')
-            if subID%2==1:
+            for thisGenerousGiver in GenerousGiver:
+                currentLoop = GenerousGiver
+                # abbreviate parameter names if possible (e.g. rgb = thisGenerousGiver.rgb)
+                if thisGenerousGiver != None:
+                    for paramName in thisGenerousGiver:
+                        exec('{} = thisGenerousGiver[paramName]'.format(paramName))
+                
+                # ------Prepare to start Routine "sendMoney2"-------
+                # update component parameters for each repeat
+                sendInst2.setText('You have been given $5 to use. You have the opportunity to send money to Player 2. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 2 will then have the opportunity to give some money amount back to you. \n\nPlease type how much money you would like to give Player 2 : ')
+                Player2Name.setText('Player 2')
+                Player2Pic.setPos((0, 0.36))
+                Player2Pic.setSize((0.2, 0.2))
                 Player2Pic.setImage('3pattern.png')
-                
-            
-            modify = False
-            text_2.text = ''
-            event.clearEvents('keyboard')
-            giveMoney = 0
-            
-            dollar2.setText('$')
-            # keep track of which components have finished
-            sendMoney2Components = [sendInst2, Player2Name, Player2Pic, text_2, enter2, dollar2]
-            for thisComponent in sendMoney2Components:
-                thisComponent.tStart = None
-                thisComponent.tStop = None
-                thisComponent.tStartRefresh = None
-                thisComponent.tStopRefresh = None
-                if hasattr(thisComponent, 'status'):
-                    thisComponent.status = NOT_STARTED
-            # reset timers
-            t = 0
-            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-            sendMoney2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-            frameN = -1
-            continueRoutine = True
-            
-            # -------Run Routine "sendMoney2"-------
-            while continueRoutine:
-                # get current time
-                t = sendMoney2Clock.getTime()
-                tThisFlip = win.getFutureFlipTime(clock=sendMoney2Clock)
-                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-                # update/draw components on each frame
-                
-                # *sendInst2* updates
-                if sendInst2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    sendInst2.frameNStart = frameN  # exact frame index
-                    sendInst2.tStart = t  # local t and not account for scr refresh
-                    sendInst2.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(sendInst2, 'tStartRefresh')  # time at next scr refresh
-                    sendInst2.setAutoDraw(True)
-                
-                # *Player2Name* updates
-                if Player2Name.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    Player2Name.frameNStart = frameN  # exact frame index
-                    Player2Name.tStart = t  # local t and not account for scr refresh
-                    Player2Name.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(Player2Name, 'tStartRefresh')  # time at next scr refresh
-                    Player2Name.setAutoDraw(True)
-                
-                # *Player2Pic* updates
-                if Player2Pic.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    Player2Pic.frameNStart = frameN  # exact frame index
-                    Player2Pic.tStart = t  # local t and not account for scr refresh
-                    Player2Pic.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(Player2Pic, 'tStartRefresh')  # time at next scr refresh
-                    Player2Pic.setAutoDraw(True)
-                
-                # *text_2* updates
-                if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    text_2.frameNStart = frameN  # exact frame index
-                    text_2.tStart = t  # local t and not account for scr refresh
-                    text_2.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
-                    text_2.setAutoDraw(True)
-                
-                # *enter2* updates
-                waitOnFlip = False
-                if enter2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    enter2.frameNStart = frameN  # exact frame index
-                    enter2.tStart = t  # local t and not account for scr refresh
-                    enter2.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(enter2, 'tStartRefresh')  # time at next scr refresh
-                    enter2.status = STARTED
-                    # keyboard checking is just starting
-                    waitOnFlip = True
-                    win.callOnFlip(enter2.clock.reset)  # t=0 on next screen flip
-                    win.callOnFlip(enter2.clearEvents, eventType='keyboard')  # clear events on next screen flip
-                if enter2.status == STARTED and not waitOnFlip:
-                    theseKeys = enter2.getKeys(keyList=['return'], waitRelease=False)
-                    if len(theseKeys):
-                        theseKeys = theseKeys[0]  # at least one key was pressed
-                        
-                        # check for quit:
-                        if "escape" == theseKeys:
-                            endExpNow = True
-                        enter2.keys = theseKeys.name  # just the last key pressed
-                        enter2.rt = theseKeys.rt
-                        # a response ends the routine
-                        continueRoutine = False
-                keys = event.getKeys(keyList=['0','1','2','3','4','5','return', 'backspace'])
-                if len(keys):
-                    if 'backspace' in keys:
-                        text_2.text = text_2.text[:-1]
-                    elif 'return' in keys:
-                        continueRoutine = False
-                    else:
-                        if modify:
-                            text_2.text = text_2.text + keys[0].upper()
-                            modify = False
-                        else:
-                            text_2.text = text_2.text + keys[0]
-                if '5' in keys:
-                    giveMoney = 5
-                if '4' in keys:
-                    giveMoney = 4
-                if '3' in keys:
-                    giveMoney = 3
-                if '2' in keys:
-                    giveMoney =2
-                if '1' in keys:
-                    giveMoney = 1
-                if '0' in keys:
-                    giveMoney = 0
-                if '' in keys:
-                    giveMoney = 0
+                enter2.keys = []
+                enter2.rt = []
+                if subID%2==0:
+                    Player2Pic.setImage('1patterns.png')
+                if subID%2==1:
+                    Player2Pic.setImage('3pattern.png')
                     
                 
+                modify = False
+                text_2.text = ''
+                event.clearEvents('keyboard')
+                giveMoney = 0
                 
-                # *dollar2* updates
-                if dollar2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    dollar2.frameNStart = frameN  # exact frame index
-                    dollar2.tStart = t  # local t and not account for scr refresh
-                    dollar2.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(dollar2, 'tStartRefresh')  # time at next scr refresh
-                    dollar2.setAutoDraw(True)
-                
-                # check for quit (typically the Esc key)
-                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                    core.quit()
-                
-                # check if all components have finished
-                if not continueRoutine:  # a component has requested a forced-end of Routine
-                    break
-                continueRoutine = False  # will revert to True if at least one component still running
+                dollar2.setText('$')
+                # keep track of which components have finished
+                sendMoney2Components = [sendInst2, Player2Name, Player2Pic, text_2, enter2, dollar2]
                 for thisComponent in sendMoney2Components:
-                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                        continueRoutine = True
-                        break  # at least one component has not yet finished
+                    thisComponent.tStart = None
+                    thisComponent.tStop = None
+                    thisComponent.tStartRefresh = None
+                    thisComponent.tStopRefresh = None
+                    if hasattr(thisComponent, 'status'):
+                        thisComponent.status = NOT_STARTED
+                # reset timers
+                t = 0
+                _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+                sendMoney2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+                frameN = -1
+                continueRoutine = True
                 
-                # refresh the screen
-                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                    win.flip()
-            
-            # -------Ending Routine "sendMoney2"-------
-            for thisComponent in sendMoney2Components:
-                if hasattr(thisComponent, "setAutoDraw"):
-                    thisComponent.setAutoDraw(False)
-            GenerousGiver.addData('sendInst2.started', sendInst2.tStartRefresh)
-            GenerousGiver.addData('sendInst2.stopped', sendInst2.tStopRefresh)
-            GenerousGiver.addData('Player2Name.started', Player2Name.tStartRefresh)
-            GenerousGiver.addData('Player2Name.stopped', Player2Name.tStopRefresh)
-            GenerousGiver.addData('Player2Pic.started', Player2Pic.tStartRefresh)
-            GenerousGiver.addData('Player2Pic.stopped', Player2Pic.tStopRefresh)
-            GenerousGiver.addData('text_2.started', text_2.tStartRefresh)
-            GenerousGiver.addData('text_2.stopped', text_2.tStopRefresh)
-            # check responses
-            if enter2.keys in ['', [], None]:  # No response was made
-                enter2.keys = None
-            GenerousGiver.addData('enter2.keys',enter2.keys)
-            if enter2.keys != None:  # we had a response
-                GenerousGiver.addData('enter2.rt', enter2.rt)
-            GenerousGiver.addData('enter2.started', enter2.tStartRefresh)
-            GenerousGiver.addData('enter2.stopped', enter2.tStopRefresh)
-            thisExp.addData("typedWord", text_2.text)
-            
+                # -------Run Routine "sendMoney2"-------
+                while continueRoutine:
+                    # get current time
+                    t = sendMoney2Clock.getTime()
+                    tThisFlip = win.getFutureFlipTime(clock=sendMoney2Clock)
+                    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                    # update/draw components on each frame
+                    
+                    # *sendInst2* updates
+                    if sendInst2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        sendInst2.frameNStart = frameN  # exact frame index
+                        sendInst2.tStart = t  # local t and not account for scr refresh
+                        sendInst2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(sendInst2, 'tStartRefresh')  # time at next scr refresh
+                        sendInst2.setAutoDraw(True)
+                    
+                    # *Player2Name* updates
+                    if Player2Name.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Player2Name.frameNStart = frameN  # exact frame index
+                        Player2Name.tStart = t  # local t and not account for scr refresh
+                        Player2Name.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Player2Name, 'tStartRefresh')  # time at next scr refresh
+                        Player2Name.setAutoDraw(True)
+                    
+                    # *Player2Pic* updates
+                    if Player2Pic.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Player2Pic.frameNStart = frameN  # exact frame index
+                        Player2Pic.tStart = t  # local t and not account for scr refresh
+                        Player2Pic.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Player2Pic, 'tStartRefresh')  # time at next scr refresh
+                        Player2Pic.setAutoDraw(True)
+                    
+                    # *text_2* updates
+                    if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        text_2.frameNStart = frameN  # exact frame index
+                        text_2.tStart = t  # local t and not account for scr refresh
+                        text_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+                        text_2.setAutoDraw(True)
+                    
+                    # *enter2* updates
+                    waitOnFlip = False
+                    if enter2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        enter2.frameNStart = frameN  # exact frame index
+                        enter2.tStart = t  # local t and not account for scr refresh
+                        enter2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(enter2, 'tStartRefresh')  # time at next scr refresh
+                        enter2.status = STARTED
+                        # keyboard checking is just starting
+                        waitOnFlip = True
+                        win.callOnFlip(enter2.clock.reset)  # t=0 on next screen flip
+                        win.callOnFlip(enter2.clearEvents, eventType='keyboard')  # clear events on next screen flip
+                    if enter2.status == STARTED and not waitOnFlip:
+                        theseKeys = enter2.getKeys(keyList=['return'], waitRelease=False)
+                        if len(theseKeys):
+                            theseKeys = theseKeys[0]  # at least one key was pressed
+                            
+                            # check for quit:
+                            if "escape" == theseKeys:
+                                endExpNow = True
+                            enter2.keys = theseKeys.name  # just the last key pressed
+                            enter2.rt = theseKeys.rt
+                            # a response ends the routine
+                            continueRoutine = False
+                    keys = event.getKeys(keyList=['0','1','2','3','4','5','return', 'backspace'])
+                    if len(keys):
+                        if 'backspace' in keys:
+                            text_2.text = text_2.text[:-1]
+                        elif 'return' in keys:
+                            continueRoutine = False
+                        else:
+                            if modify:
+                                text_2.text = text_2.text + keys[0].upper()
+                                modify = False
+                            else:
+                                text_2.text = text_2.text + keys[0]
+                    if '5' in keys:
+                        giveMoney = 5
+                    if '4' in keys:
+                        giveMoney = 4
+                    if '3' in keys:
+                        giveMoney = 3
+                    if '2' in keys:
+                        giveMoney =2
+                    if '1' in keys:
+                        giveMoney = 1
+                    if '0' in keys:
+                        giveMoney = 0
+                    if '' in keys:
+                        giveMoney = 0
+                        
+                    
+                    
+                    # *dollar2* updates
+                    if dollar2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        dollar2.frameNStart = frameN  # exact frame index
+                        dollar2.tStart = t  # local t and not account for scr refresh
+                        dollar2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(dollar2, 'tStartRefresh')  # time at next scr refresh
+                        dollar2.setAutoDraw(True)
+                    
+                    # check for quit (typically the Esc key)
+                    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                        core.quit()
+                    
+                    # check if all components have finished
+                    if not continueRoutine:  # a component has requested a forced-end of Routine
+                        break
+                    continueRoutine = False  # will revert to True if at least one component still running
+                    for thisComponent in sendMoney2Components:
+                        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                            continueRoutine = True
+                            break  # at least one component has not yet finished
+                    
+                    # refresh the screen
+                    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                        win.flip()
                 
-            print(giveMoney)
-            
-            giveMoneyStr = "$" + str(giveMoney)
-            GenerousGiver.addData('dollar2.started', dollar2.tStartRefresh)
-            GenerousGiver.addData('dollar2.stopped', dollar2.tStopRefresh)
-            # the Routine "sendMoney2" was not non-slip safe, so reset the non-slip timer
-            routineTimer.reset()
-            
-            # ------Prepare to start Routine "Giver2"-------
-            routineTimer.add(5.000000)
-            # update component parameters for each repeat
-            backTransfer = 0
-            
-            receiveMoney = giveMoney * 3
-            receiveMoneyStr = '$' + str(receiveMoney)
-            
-            array1 = [1,2]
-            array2 = [3,4,5]
-            array3 = [4,5,6,7]
-            array4 = [6,7,8,9,10]
-            array5 = [8,9,10,11,12]
-            if giveMoney == 0:
+                # -------Ending Routine "sendMoney2"-------
+                for thisComponent in sendMoney2Components:
+                    if hasattr(thisComponent, "setAutoDraw"):
+                        thisComponent.setAutoDraw(False)
+                GenerousGiver.addData('sendInst2.started', sendInst2.tStartRefresh)
+                GenerousGiver.addData('sendInst2.stopped', sendInst2.tStopRefresh)
+                GenerousGiver.addData('Player2Name.started', Player2Name.tStartRefresh)
+                GenerousGiver.addData('Player2Name.stopped', Player2Name.tStopRefresh)
+                GenerousGiver.addData('Player2Pic.started', Player2Pic.tStartRefresh)
+                GenerousGiver.addData('Player2Pic.stopped', Player2Pic.tStopRefresh)
+                GenerousGiver.addData('text_2.started', text_2.tStartRefresh)
+                GenerousGiver.addData('text_2.stopped', text_2.tStopRefresh)
+                # check responses
+                if enter2.keys in ['', [], None]:  # No response was made
+                    enter2.keys = None
+                GenerousGiver.addData('enter2.keys',enter2.keys)
+                if enter2.keys != None:  # we had a response
+                    GenerousGiver.addData('enter2.rt', enter2.rt)
+                GenerousGiver.addData('enter2.started', enter2.tStartRefresh)
+                GenerousGiver.addData('enter2.stopped', enter2.tStopRefresh)
+                thisExp.addData("typedWord", text_2.text)
+                
+                    
+                print(giveMoney)
+                
+                giveMoneyStr = "$" + str(giveMoney)
+                GenerousGiver.addData('dollar2.started', dollar2.tStartRefresh)
+                GenerousGiver.addData('dollar2.stopped', dollar2.tStopRefresh)
+                # the Routine "sendMoney2" was not non-slip safe, so reset the non-slip timer
+                routineTimer.reset()
+                
+                # ------Prepare to start Routine "Giver2"-------
+                routineTimer.add(5.000000)
+                # update component parameters for each repeat
                 backTransfer = 0
-            if giveMoney == 1:
-                backTransfer = random.choice(array1)
-            if giveMoney == 2:
-                backTransfer = random.choice(array2)
-            if giveMoney == 3:
-                backTransfer = random.choice(array3)
-            if giveMoney == 4:
-                backTransfer = random.choice(array4)
-            if giveMoney == 5:
-                backTransfer = random.choice(array5)
-            
-            backTransferStr = "$" + str(backTransfer)
-            
-            text2 = ("You gave Player 2 " + giveMoneyStr + "\n\nPlayer 2 received  "+ receiveMoneyStr + "\n\nPlayer 2 chose to give you "+ backTransferStr)
-            Feedback2.setText(text2)
-            # keep track of which components have finished
-            Giver2Components = [Feedback2]
-            for thisComponent in Giver2Components:
-                thisComponent.tStart = None
-                thisComponent.tStop = None
-                thisComponent.tStartRefresh = None
-                thisComponent.tStopRefresh = None
-                if hasattr(thisComponent, 'status'):
-                    thisComponent.status = NOT_STARTED
-            # reset timers
-            t = 0
-            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-            Giver2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-            frameN = -1
-            continueRoutine = True
-            
-            # -------Run Routine "Giver2"-------
-            while continueRoutine and routineTimer.getTime() > 0:
-                # get current time
-                t = Giver2Clock.getTime()
-                tThisFlip = win.getFutureFlipTime(clock=Giver2Clock)
-                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-                # update/draw components on each frame
                 
-                # *Feedback2* updates
-                if Feedback2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    Feedback2.frameNStart = frameN  # exact frame index
-                    Feedback2.tStart = t  # local t and not account for scr refresh
-                    Feedback2.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(Feedback2, 'tStartRefresh')  # time at next scr refresh
-                    Feedback2.setAutoDraw(True)
-                if Feedback2.status == STARTED:
-                    # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > Feedback2.tStartRefresh + 5-frameTolerance:
-                        # keep track of stop time/frame for later
-                        Feedback2.tStop = t  # not accounting for scr refresh
-                        Feedback2.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(Feedback2, 'tStopRefresh')  # time at next scr refresh
-                        Feedback2.setAutoDraw(False)
+                receiveMoney = giveMoney * 3
+                receiveMoneyStr = '$' + str(receiveMoney)
                 
-                # check for quit (typically the Esc key)
-                if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                    core.quit()
+                array1 = [1,2]
+                array2 = [3,4,5]
+                array3 = [4,5,6,7]
+                array4 = [6,7,8,9,10]
+                array5 = [8,9,10,11,12]
+                if giveMoney == 0:
+                    backTransfer = 0
+                if giveMoney == 1:
+                    backTransfer = random.choice(array1)
+                if giveMoney == 2:
+                    backTransfer = random.choice(array2)
+                if giveMoney == 3:
+                    backTransfer = random.choice(array3)
+                if giveMoney == 4:
+                    backTransfer = random.choice(array4)
+                if giveMoney == 5:
+                    backTransfer = random.choice(array5)
                 
-                # check if all components have finished
-                if not continueRoutine:  # a component has requested a forced-end of Routine
-                    break
-                continueRoutine = False  # will revert to True if at least one component still running
+                backTransferStr = "$" + str(backTransfer)
+                
+                text2 = ("You gave Player 2 " + giveMoneyStr + "\n\nPlayer 2 received  "+ receiveMoneyStr + "\n\nPlayer 2 chose to give you "+ backTransferStr)
+                Feedback2.setText(text2)
+                # keep track of which components have finished
+                Giver2Components = [Feedback2]
                 for thisComponent in Giver2Components:
-                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                        continueRoutine = True
-                        break  # at least one component has not yet finished
+                    thisComponent.tStart = None
+                    thisComponent.tStop = None
+                    thisComponent.tStartRefresh = None
+                    thisComponent.tStopRefresh = None
+                    if hasattr(thisComponent, 'status'):
+                        thisComponent.status = NOT_STARTED
+                # reset timers
+                t = 0
+                _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+                Giver2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+                frameN = -1
+                continueRoutine = True
                 
-                # refresh the screen
-                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                    win.flip()
+                # -------Run Routine "Giver2"-------
+                while continueRoutine and routineTimer.getTime() > 0:
+                    # get current time
+                    t = Giver2Clock.getTime()
+                    tThisFlip = win.getFutureFlipTime(clock=Giver2Clock)
+                    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                    # update/draw components on each frame
+                    
+                    # *Feedback2* updates
+                    if Feedback2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Feedback2.frameNStart = frameN  # exact frame index
+                        Feedback2.tStart = t  # local t and not account for scr refresh
+                        Feedback2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Feedback2, 'tStartRefresh')  # time at next scr refresh
+                        Feedback2.setAutoDraw(True)
+                    if Feedback2.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > Feedback2.tStartRefresh + 5-frameTolerance:
+                            # keep track of stop time/frame for later
+                            Feedback2.tStop = t  # not accounting for scr refresh
+                            Feedback2.frameNStop = frameN  # exact frame index
+                            win.timeOnFlip(Feedback2, 'tStopRefresh')  # time at next scr refresh
+                            Feedback2.setAutoDraw(False)
+                    
+                    # check for quit (typically the Esc key)
+                    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                        core.quit()
+                    
+                    # check if all components have finished
+                    if not continueRoutine:  # a component has requested a forced-end of Routine
+                        break
+                    continueRoutine = False  # will revert to True if at least one component still running
+                    for thisComponent in Giver2Components:
+                        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                            continueRoutine = True
+                            break  # at least one component has not yet finished
+                    
+                    # refresh the screen
+                    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                        win.flip()
+                
+                # -------Ending Routine "Giver2"-------
+                for thisComponent in Giver2Components:
+                    if hasattr(thisComponent, "setAutoDraw"):
+                        thisComponent.setAutoDraw(False)
+                GenerousGiver.addData('Feedback2.started', Feedback2.tStartRefresh)
+                GenerousGiver.addData('Feedback2.stopped', Feedback2.tStopRefresh)
+                thisExp.nextEntry()
+                
+            # completed nReps2 repeats of 'GenerousGiver'
             
-            # -------Ending Routine "Giver2"-------
-            for thisComponent in Giver2Components:
-                if hasattr(thisComponent, "setAutoDraw"):
-                    thisComponent.setAutoDraw(False)
-            GenerousGiver.addData('Feedback2.started', Feedback2.tStartRefresh)
-            GenerousGiver.addData('Feedback2.stopped', Feedback2.tStopRefresh)
             thisExp.nextEntry()
             
-        # completed nReps2 repeats of 'GenerousGiver'
+        # completed   repeats of 'randomPresent'
         
         thisExp.nextEntry()
         
-    # completed   repeats of 'randomPresent'
+    # completed 1 repeats of 'trials'
     
     thisExp.nextEntry()
     

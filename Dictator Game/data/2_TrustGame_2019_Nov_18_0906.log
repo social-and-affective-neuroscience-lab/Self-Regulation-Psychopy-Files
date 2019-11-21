@@ -1,0 +1,126 @@
+5.3914 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+6.4981 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019A4692EA58>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000019A4664E278>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.4981 	EXP 	window1: recordFrameIntervals = False
+6.6647 	EXP 	window1: recordFrameIntervals = True
+6.8479 	EXP 	window1: recordFrameIntervals = False
+7.0978 	EXP 	Created Instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='Instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.45)
+7.1106 	EXP 	Created isiText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='isiText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.1120 	EXP 	Created cueText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cueText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+7.1140 	EXP 	Created isiText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='isiText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.1262 	EXP 	Created sendInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='sendInstructions', opacity=1.0, ori=0, pos=array([ 0.  , -0.11]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+7.1426 	EXP 	Created Player1Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player1Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.1452 	EXP 	Created Player1Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player1Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+7.1471 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([ 0.  , -0.35]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+7.1606 	EXP 	Created dollarSign = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='dollarSign', opacity=1.0, ori=0, pos=array([-0.05, -0.35]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.1640 	EXP 	Created Feedback = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='Feedback', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.1660 	EXP 	Created isiText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='isiText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.1691 	EXP 	Created sendInst2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='sendInst2', opacity=1.0, ori=0, pos=array([ 0.  , -0.11]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+7.1724 	EXP 	Created Player2Name = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Player2Name', opacity=1.0, ori=0, pos=array([0. , 0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.1746 	EXP 	Created Player2Pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Player2Pic', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+7.1750 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([ 0.  , -0.35]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+7.1785 	EXP 	Created dollar2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='dollar2', opacity=1.0, ori=0, pos=array([-0.05, -0.35]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.1816 	EXP 	Created Feedback2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='Feedback2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.2145 	EXP 	Created tyText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='tyText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Thank you for playing!', units='height', win=Window(...), wrapWidth=1)
+7.2475 	EXP 	Instructions: autoDraw = True
+8.8980 	EXP 	Imported DictatorGame.xlsx as conditions, 6 conditions, 3 params
+8.8986 	EXP 	Created sequence: random, trialTypes=6, nReps=1, seed=None
+8.8989 	EXP 	New trial (rep=0, index=0): OrderedDict([('Rows', '041:050'), ('CueType1', 'REGULATE'), ('CueType2', 'REACT')])
+8.9016 	DATA 	Keypress: space
+8.9053 	EXP 	Instructions: autoDraw = False
+8.9053 	EXP 	isiText: autoDraw = True
+10.9090 	EXP 	isiText: autoDraw = False
+10.9090 	EXP 	cueText: text = ''
+10.9090 	EXP 	cueText: text = 'REGULATE'
+10.9090 	EXP 	cueText: autoDraw = True
+16.8895 	EXP 	cueText: autoDraw = False
+16.8895 	EXP 	isiText: autoDraw = True
+18.8815 	EXP 	Imported spreadsheet5.xlsx as conditions, 60 conditions, 1 params
+18.8817 	EXP 	Created sequence: random, trialTypes=60, nReps=1, seed=None
+18.8819 	EXP 	New trial (rep=0, index=0): OrderedDict([('selectBlock', 2)])
+18.8919 	EXP 	Imported spreadsheet5.xlsx as conditions, 9 conditions, 1 params
+18.8921 	EXP 	Created sequence: sequential, trialTypes=9, nReps=1, seed=None
+18.8924 	EXP 	New trial (rep=0, index=0): OrderedDict([('selectBlock', 1)])
+18.8925 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+18.8984 	EXP 	isiText: autoDraw = False
+18.8984 	EXP 	isiText: autoDraw = True
+20.8945 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+20.8947 	EXP 	New trial (rep=0, index=1): OrderedDict([('selectBlock', 2)])
+20.8948 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+20.9101 	EXP 	isiText: autoDraw = False
+20.9101 	EXP 	isiText: autoDraw = True
+22.8949 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+22.8951 	EXP 	New trial (rep=0, index=2): OrderedDict([('selectBlock', 2)])
+22.8953 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+22.9115 	EXP 	isiText: autoDraw = False
+22.9115 	EXP 	isiText: autoDraw = True
+24.8968 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+24.8970 	EXP 	New trial (rep=0, index=3): OrderedDict([('selectBlock', 1)])
+24.8972 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+24.9136 	EXP 	isiText: autoDraw = False
+24.9136 	EXP 	isiText: autoDraw = True
+26.8987 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+26.8989 	EXP 	New trial (rep=0, index=4): OrderedDict([('selectBlock', 2)])
+26.8991 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+26.9144 	EXP 	isiText: autoDraw = False
+26.9144 	EXP 	isiText: autoDraw = True
+28.9003 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+28.9005 	EXP 	New trial (rep=0, index=5): OrderedDict([('selectBlock', 2)])
+28.9006 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+28.9162 	EXP 	isiText: autoDraw = False
+28.9162 	EXP 	isiText: autoDraw = True
+30.8852 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+30.8854 	EXP 	New trial (rep=0, index=6): OrderedDict([('selectBlock', 1)])
+30.8856 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+30.9010 	EXP 	isiText: autoDraw = False
+30.9010 	EXP 	isiText: autoDraw = True
+32.8873 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+32.8875 	EXP 	New trial (rep=0, index=7): OrderedDict([('selectBlock', 1)])
+32.8876 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+32.9030 	EXP 	isiText: autoDraw = False
+32.9030 	EXP 	isiText: autoDraw = True
+34.8892 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+34.8894 	EXP 	New trial (rep=0, index=8): OrderedDict([('selectBlock', 2)])
+34.8895 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+34.9047 	EXP 	isiText: autoDraw = False
+34.9047 	EXP 	isiText: autoDraw = True
+36.8898 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+36.8901 	EXP 	New trial (rep=0, index=1): OrderedDict([('selectBlock', 1)])
+36.8982 	EXP 	Imported spreadsheet5.xlsx as conditions, 9 conditions, 1 params
+36.8984 	EXP 	Created sequence: sequential, trialTypes=9, nReps=1, seed=None
+36.8986 	EXP 	New trial (rep=0, index=0): OrderedDict([('selectBlock', 1)])
+36.8988 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+36.9081 	EXP 	isiText: autoDraw = False
+36.9081 	EXP 	isiText: autoDraw = True
+38.8936 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+38.8938 	EXP 	New trial (rep=0, index=1): OrderedDict([('selectBlock', 2)])
+38.8939 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+38.9081 	EXP 	isiText: autoDraw = False
+38.9081 	EXP 	isiText: autoDraw = False
+38.9081 	EXP 	isiText: autoDraw = True
+40.8933 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+40.8935 	EXP 	New trial (rep=0, index=2): OrderedDict([('selectBlock', 2)])
+40.8937 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+40.9092 	EXP 	isiText: autoDraw = False
+40.9092 	EXP 	isiText: autoDraw = True
+42.8960 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+42.8962 	EXP 	New trial (rep=0, index=3): OrderedDict([('selectBlock', 1)])
+42.8964 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+42.9113 	EXP 	isiText: autoDraw = False
+42.9113 	EXP 	isiText: autoDraw = True
+44.8977 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+44.8979 	EXP 	New trial (rep=0, index=4): OrderedDict([('selectBlock', 2)])
+44.8981 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+44.9128 	EXP 	isiText: autoDraw = False
+44.9128 	EXP 	isiText: autoDraw = True
+46.8982 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+46.8983 	EXP 	New trial (rep=0, index=5): OrderedDict([('selectBlock', 2)])
+46.8985 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+46.9148 	EXP 	isiText: autoDraw = False
+46.9148 	EXP 	isiText: autoDraw = True
+48.9005 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+48.9007 	EXP 	New trial (rep=0, index=6): OrderedDict([('selectBlock', 1)])
+48.9009 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+48.9162 	EXP 	isiText: autoDraw = False
+48.9162 	EXP 	isiText: autoDraw = True
+49.2863 	DATA 	Keypress: escape
+49.3780 	EXP 	window1: mouseVisible = True

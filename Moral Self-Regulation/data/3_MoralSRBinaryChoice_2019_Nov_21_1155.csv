@@ -1,0 +1,465 @@
+﻿Instructions,rows,CueInstructions1,CueInstructions2,PracticeDilemmas,PracticeLeftText,PracticeRightText,Reminder,ChoseNothing,ChosePlan,GroupNumber,GroupProb,Noun,sureGroupText,rows2,IntroLoop.thisRepN,IntroLoop.thisTrialN,IntroLoop.thisN,IntroLoop.thisIndex,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeQs.thisRepN,PracticeQs.thisTrialN,PracticeQs.thisN,PracticeQs.thisIndex,practiceAs.thisRepN,practiceAs.thisTrialN,practiceAs.thisN,practiceAs.thisIndex,MainLoop.thisRepN,MainLoop.thisTrialN,MainLoop.thisN,MainLoop.thisIndex,MainQs.thisRepN,MainQs.thisTrialN,MainQs.thisN,MainQs.thisIndex,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,InstText.started,InstText.stopped,space.keys,space.rt,space.started,space.stopped,isi.started,isi.stopped,practiceQs.started,practiceQs.stopped,space1.keys,space1.rt,space1.started,space1.stopped,cue.started,cue.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,conBlank.started,conBlank.stopped,RemText.started,RemText.stopped,leftText.started,leftText.stopped,rightText.started,rightText.stopped,Yes.started,Yes.stopped,No.started,No.stopped,Question.started,Question.stopped,sureGroup.started,sureGroup.stopped,FeedbackVar.started,FeedbackVar.stopped,isi_2.started,isi_2.stopped,instructions2.started,instructions2.stopped,key_resp_4.keys,key_resp_4.rt,key_resp_4.started,key_resp_4.stopped,text.started,text.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,key_resp_3.keys,key_resp_3.rt,key_resp_3.started,key_resp_3.stopped,conBlank2.started,conBlank2.stopped,RemText2.started,RemText2.stopped,leftText2.started,leftText2.stopped,rightText2.started,rightText2.stopped,yes2.started,yes2.stopped,no2.started,no2.stopped,Question2.started,Question2.stopped,text_2.started,text_2.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+"In this study you will be asked to evaluate a number of moral dilemmas under various conditions. 
+
+You will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.
+
+For each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. 
+
+When you are done reading each screen, you can press SPACE to move on to the next one.
+
+However, please try your best to get the fullest understanding of the scenario as described thus far before moving on to the next screen.",,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,12.120312799999738,None,space,2.7503900000010617,12.120312799999738,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+"The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma:
+
+a) a number of people involved in part of the scenario, and 
+
+b) a likelihood that something will happen
+
+You will be evaluating this scenario given a number of variations of these features.
+
+The fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.",,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,14.963372399999571,None,space,0.09955519999857643,14.963372399999571,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+"After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.
+
+Before you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be reminded of this after this screen.
+
+First, you will see a "+" in the middle of the screen. Any time that this is up, all you need to do is fixate on the "+" and prepare to respond to the next trial. 
+
+Next, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a judgment of its moral acceptibility.
+
+You will then indicate the course of action you would like to take in each scenario; by pressing either 'y' on your keyboard to indicate 'Yes', or 'n' to indicate 'No.'
+",,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,15.21602030000031,None,space,0.006626799999139621,15.21602030000031,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+"After you answer you will again see a "+" in the middle of the screen, followed by the next trial. This will occur for 10 different variations of each scenario. 
+
+It is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.
+
+You will only have 10 seconds to respond to each variation. If the "+" appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the "+" and wait for the next trial. 
+
+Once you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don't worry.",,,,,,,,,,,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,15.34699130000081,None,space,0.05182740000054764,15.34699130000081,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+"Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they've given. Don't think of your answers as "written in stone." All we want from you is a thoughtful first response.
+
+While we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it's okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. 
+
+Note, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. ",,,,,,,,,,,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,15.53317749999951,None,space,0.40948870000102033,15.53317749999951,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+"In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.
+
+Likewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this happens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. 
+
+For example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. ",,,,,,,,,,,,,,,0,5,5,5,,,,,,,,,,,,,,,,,,,,,,,,,16.0808178999996,None,space,0.07004570000026433,16.0808178999996,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+"When you are done reading this screen you will begin two practice scenarios. 
+
+Once again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale, and press ENTER to submit your rating. 
+
+While you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.
+
+Furthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.
+
+Press SPACE to begin the practice trials!
+",,,,,,,,,,,,,,,0,6,6,6,,,,,,,,,,,,,,,,,,,,,,,,,16.266111099999762,None,space,0.02897540000049048,16.266111099999762,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
+
+• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 6,"Probability of 
+parachute opening: 35% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 3 skydivers on the left were saved.
+ 
+The ","The 3 skydivers on the left died.
+
+The 6 skydivers on the right were saved.",6,35, skydivers on the right,Skydivers on the left: 3,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,16.322897300000477,None,18.382344800000283,None,space,0.600739399998929,18.382344800000283,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• Your crew sees a smaller group of divers apart from the rest who are much closer to reaching the ground, and instinctively moves a few feet to the left to catch them
+
+• You know that there won't be enough time to reach the group on the right if you wait to catch the group on the left",Skydivers on right: 9,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 4 skydivers on the left were saved.
+ 
+The ","The 4 skydivers on the left died.
+
+The 9 skydivers on the right were saved.",9,50, skydivers on the right,Skydivers on the left: 4,,,,,,0,0,0,0,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,19.041659000000436,None,space,0.16533609999896726,19.041659000000436,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• If nothing is done, the safety crew will catch the divers to the left, avoiding their death, but the separate group of divers will land on the ground, causing their deaths
+
+• You can re-direct your crew to the right, preventing the death of the group, but the divers on the left won't be caught",Skydivers on right: 5,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 2 skydivers on the left were saved.
+ 
+The ","The 2 skydivers on the left died.
+
+The 5 skydivers on the right were saved.",5,50, skydivers on the right,Skydivers on the left: 2,,,,,,0,0,0,0,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,19.266914100000577,None,space,0.16386879999845405,19.266914100000577,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
+
+• There is no chance that the parachute will open for the one diver, given how close he is to the ground",Skydivers on right: 4,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 3 skydivers on the left were saved.
+ 
+The ","The 3 skydivers on the left died.
+
+The 4 skydivers on the right were saved.",4,65, skydivers on the right,Skydivers on the left: 3,,,,,,0,0,0,0,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,19.48612189999949,None,space,0.15269309999894176,19.48612189999949,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Skydivers on right: 8,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 5 skydivers on the left were saved.
+ 
+The ","The 5 skydivers on the left died.
+
+The 8 skydivers on the right were saved.",8,65, skydivers on the right,Skydivers on the left: 5,,,,,,0,0,0,0,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,19.671551200000977,None,space,1.0871280000010302,19.671551200000977,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall 
+
+• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them",Skydivers on right: 6,"Probability of 
+parachute opening: 35% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 3 skydivers on the left were saved.
+ 
+The ","The 3 skydivers on the left died.
+
+The 6 skydivers on the right were saved.",6,35, skydivers on the right,Skydivers on the left: 3,,,,,,0,0,0,0,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,43.245349000000715,None,,,,,,,22.790375000000495,None,n,8.370972400000028,32.85177769999973,None,41.24379880000015,None,32.85177769999973,None,32.85177769999973,None,32.85177769999973,None,32.85177769999973,None,32.85177769999973,None,32.85177769999973,None,32.85177769999973,None,45.28153320000092,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• Your crew sees a smaller group of divers apart from the rest who are much closer to reaching the ground, and instinctively moves a few feet to the left to catch them
+
+• You know that there won't be enough time to reach the group on the right if you wait to catch the group on the left",Skydivers on right: 9,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 4 skydivers on the left were saved.
+ 
+The ","The 4 skydivers on the left died.
+
+The 9 skydivers on the right were saved.",9,50, skydivers on the right,Skydivers on the left: 4,,,,,,0,0,0,0,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,55.7889269999996,None,,,,,,,,,y,2.500686499999574,51.265974500000084,None,53.78735229999984,None,51.265974500000084,None,51.265974500000084,None,51.265974500000084,None,51.265974500000084,None,51.265974500000084,None,51.265974500000084,None,51.265974500000084,None,57.80617610000081,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• If nothing is done, the safety crew will catch the divers to the left, avoiding their death, but the separate group of divers will land on the ground, causing their deaths
+
+• You can re-direct your crew to the right, preventing the death of the group, but the divers on the left won't be caught",Skydivers on right: 5,"Probability of 
+parachute opening: 50% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 2 skydivers on the left were saved.
+ 
+The ","The 2 skydivers on the left died.
+
+The 5 skydivers on the right were saved.",5,50, skydivers on the right,Skydivers on the left: 2,,,,,,0,0,0,0,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,69.55029350000041,None,,,,,,,,,n,3.7275976999990235,63.7990774000009,None,67.54882829999951,None,63.7990774000009,None,63.7990774000009,None,63.7990774000009,None,63.7990774000009,None,63.7990774000009,None,63.7990774000009,None,63.7990774000009,None,71.56752410000081,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths
+
+• There is no chance that the parachute will open for the one diver, given how close he is to the ground",Skydivers on right: 4,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 3 skydivers on the left were saved.
+ 
+The ","The 3 skydivers on the left died.
+
+The 4 skydivers on the right were saved.",4,65, skydivers on the right,Skydivers on the left: 3,,,,,,0,0,0,0,,,,,0,3,3,3,,,,,,,,,,,,,,,,,,,81.89395830000103,None,,,,,,,,,n,2.294363200000589,77.56831039999997,None,79.89228879999973,None,77.56831039999997,None,77.56831039999997,None,77.56831039999997,None,77.56831039999997,None,77.56831039999997,None,77.56831039999997,None,77.56831039999997,None,83.91055030000098,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Skydivers on right: 8,"Probability of 
+parachute opening: 65% ","Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die 
+
+Do nothing: The skydivers on the left will live, the group on the right  has a chance of surviving","The 5 skydivers on the left were saved.
+ 
+The ","The 5 skydivers on the left died.
+
+The 8 skydivers on the right were saved.",8,65, skydivers on the right,Skydivers on the left: 5,,,,,,0,0,0,0,,,,,0,4,4,4,,,,,,,,,,,,,,,,,,,95.47201689999929,None,,,,,,,,,y,3.5412417000006826,89.90536109999994,None,93.47008520000054,None,89.90536109999994,None,89.90536109999994,None,89.90536109999994,None,89.90536109999994,None,89.90536109999994,None,89.90536109999994,None,89.90536109999994,None,97.48726630000056,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,000:005,EMPHASIZE,DE-EMPHASIZE,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,101.47645929999999,None,104.4792551999999,None,space,4.58356570000069,104.4792551999999,None,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• There has been an accident in the basement of an office building
+
+• A pipe has broken and is releasing a lethal gas into the building's ventilation system",Workers in Room A: 5,Probability of escape: 35%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 3 workers in Room B lived.
+
+The ","The 3 workers in Room B died. 
+
+The 5 workers in Room A were saved.",5,50, workers in Room A,Workers in Room B: 3,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,109.08280849999937,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,111.11787709999953,None,space,3.06494770000063,111.11787709999953,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there
+
+• You are the building manager",Workers in Room A: 10,Probability of escape: 50%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 4 workers in Room B lived.
+
+The ","The 4 workers in Room B died. 
+
+The 10 workers in Room A were saved.",10,35, workers in Room A,Workers in Room B: 4,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,114.22273830000086,None,space,0.43992699999944307,114.22273830000086,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors
+
+• You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the workers there",Workers in Room A: 6,Probability of escape: 65%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 4 workers in Room B lived.
+
+The ","The 4 workers in Room B died. 
+
+The 6 workers in Room A were saved.",6,65, workers in Room A,Workers in Room B: 4,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,114.72676580000007,None,space,0.271835600000486,114.72676580000007,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them
+
+• This would be impossible for the workers in Room B",Workers in Room A: 12,Probability of escape: 50%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 6 workers in Room B lived.
+
+The ","The 6 workers in Room B died. 
+
+The 12 workers in Room A were saved.",12,50, workers in Room A,Workers in Room B: 6,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,115.03952279999976,None,space,0.6152313000002323,115.03952279999976,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Workers in Room A: 5,Probability of escape: 65%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 4 workers in Room B lived.
+
+The ","The 4 workers in Room B died. 
+
+The 5 workers in Room A were saved.",5,65, workers in Room A,Workers in Room B: 4,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,115.68255390000013,None,space,1.1080425000000105,115.68255390000013,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• There has been an accident in the basement of an office building
+
+• A pipe has broken and is releasing a lethal gas into the building's ventilation system",Workers in Room A: 5,Probability of escape: 35%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 3 workers in Room B lived.
+
+The ","The 3 workers in Room B died. 
+
+The 5 workers in Room A were saved.",5,50, workers in Room A,Workers in Room B: 3,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,0,0,0,,,,,,,141.69349239999974,None,,,,,,,118.80778880000071,None,,,,,,,,,,,,,,,,,,,,,143.71318210000027,None,,,,,,,,,,,,,,,n,10.811073900000338,128.85977730000013,None,139.69202570000016,None,128.85977730000013,None,128.85977730000013,None,128.85977730000013,None,128.85977730000013,None,128.85977730000013,None,128.85977730000013,None,128.85977730000013,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• If nothing is done, the gas will travel upward to Room A and cause the death of all workers there
+
+• You are the building manager",Workers in Room A: 10,Probability of escape: 50%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 4 workers in Room B lived.
+
+The ","The 4 workers in Room B died. 
+
+The 10 workers in Room A were saved.",10,35, workers in Room A,Workers in Room B: 4,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,1,1,1,,,,,,,153.82029990000046,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,155.83645230000002,None,,,,,,,,,,,,,,,y,2.0874299999995856,149.71113909999985,None,151.8186998000001,None,149.71113909999985,None,149.71113909999985,None,149.71113909999985,None,149.71113909999985,None,149.71113909999985,None,149.71113909999985,None,149.71113909999985,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You know that the only way to avoid the deaths of the workers in Room A is to block the main vent immediately by hitting a button that will close one of the vent doors
+
+• You also know that if you close the vent door the gas will be diverted into a different room, Room B, and cause the death of the workers there",Workers in Room A: 6,Probability of escape: 65%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 4 workers in Room B lived.
+
+The ","The 4 workers in Room B died. 
+
+The 6 workers in Room A were saved.",6,65, workers in Room A,Workers in Room B: 4,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,2,2,2,,,,,,,167.33135080000102,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,169.347588300001,None,,,,,,,,,,,,,,,y,3.4726215999999113,161.8300218000004,None,165.3297848000002,None,161.8300218000004,None,161.8300218000004,None,161.8300218000004,None,161.8300218000004,None,161.8300218000004,None,161.8300218000004,None,161.8300218000004,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You are also aware that there is a chance that the workers in Room A will escape before the gas reaches them
+
+• This would be impossible for the workers in Room B",Workers in Room A: 12,Probability of escape: 50%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 6 workers in Room B lived.
+
+The ","The 6 workers in Room B died. 
+
+The 12 workers in Room A were saved.",12,50, workers in Room A,Workers in Room B: 6,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,3,3,3,,,,,,,179.05773989999943,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,181.07350399999996,None,,,,,,,,,,,,,,,y,1.6826935999997659,175.34790260000045,None,177.05636159999995,None,175.34790260000045,None,175.34790260000045,None,175.34790260000045,None,175.34790260000045,None,175.34790260000045,None,175.34790260000045,None,175.34790260000045,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",Workers in Room A: 5,Probability of escape: 65%,"Plan: Hit the button to divert the gas to Room B, killing the workers there
+
+Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 4 workers in Room B lived.
+
+The ","The 4 workers in Room B died. 
+
+The 5 workers in Room A were saved.",5,65, workers in Room A,Workers in Room B: 4,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,,,,,0,4,4,4,,,,,,,190.95096139999987,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,192.966215800001,None,,,,,,,,,,,,,,,y,1.8451174000001629,187.0737635000005,None,188.94958390000102,None,187.0737635000005,None,187.0737635000005,None,187.0737635000005,None,187.0737635000005,None,187.0737635000005,None,187.0737635000005,None,187.0737635000005,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,,,,,,,,,,,005:0010,,,,,,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• You are operating a crane in front of a tall bridge when an earthquake hits
+
+• As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge
+",People on bus: 7,"Probability bus will 
+drive to safety: 35%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 2 people in the car lived.
+
+The ","The 2 people in the car died. 
+
+The 7 people on the bus were saved.",7,50, people on the bus,People in the car: 2,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,0,0,0,0,,,,,,,,,,,196.95595660000072,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,199.00233649999973,None,space,3.2604319999991276,199.00233649999973,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• If nothing is done, the bus will soon plummet and all of these people will be killed
+
+• You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board",People on bus: 9,"Probability bus will 
+drive to safety: 35%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 6 people in the car lived.
+
+The ","The 6 people in the car died. 
+
+The 9 people on the bus were saved.",9,65, people on the bus,People in the car: 6,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,202.32149170000048,None,space,1.9252364999993006,202.32149170000048,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car
+
+• If you move the crane, this part will certainly collapse and the people in that car will be killed",People on bus: 6,"Probability bus will 
+drive to safety: 50%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 2 people in the car lived.
+
+The ","The 2 people in the car died. 
+
+The 6 people on the bus were saved.",6,35, people on the bus,People in the car: 2,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,204.3130708000008,None,space,0.8140297999998438,204.3130708000008,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board
+ 
+• There is no chance that the car will be able to avoid falling if you move your crane ",People on bus: 10,"Probability bus will 
+drive to safety: 65%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 7 people in the car lived.
+
+The ","The 7 people in the car died. 
+
+The 10 people on the bus were saved.",10,65, people on the bus,People in the car: 7,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,205.1717776000005,None,space,0.7068507000003592,205.1717776000005,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",People on bus: 7,"Probability bus will 
+drive to safety: 35%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 4 people in the car lived.
+
+The ","The 4 people in the car died. 
+
+The 7 people on the bus were saved.",7,50, people on the bus,People in the car: 4,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,205.90628660000039,None,space,0.836273999999321,205.90628660000039,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• You are operating a crane in front of a tall bridge when an earthquake hits
+
+• As a result of the earthquake, a gap has formed in the bridge, and a bus carrying a number of people is now partially hanging off of this gap in the bridge
+",People on bus: 7,"Probability bus will 
+drive to safety: 35%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 2 people in the car lived.
+
+The ","The 2 people in the car died. 
+
+The 7 people on the bus were saved.",7,50, people on the bus,People in the car: 2,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,0,0,0,,,,,,,222.5437949999996,None,,,,,,,208.76576690000002,None,,,,,,,,,,,,,,,,,,,,,224.56013019999955,None,,,,,,,,,,,,,,,n,1.7166008000003785,218.8021659999995,None,220.54230869999992,None,218.8021659999995,None,218.8021659999995,None,218.8021659999995,None,218.8021659999995,None,218.8021659999995,None,218.8021659999995,None,218.8021659999995,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• If nothing is done, the bus will soon plummet and all of these people will be killed
+
+• You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board",People on bus: 9,"Probability bus will 
+drive to safety: 35%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 6 people in the car lived.
+
+The ","The 6 people in the car died. 
+
+The 9 people on the bus were saved.",9,65, people on the bus,People in the car: 6,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,1,1,1,,,,,,,239.32419420000042,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,241.34029999999984,None,,,,,,,,,,,,,,,y,6.750213700001041,230.55263820000073,None,237.32286589999967,None,230.55263820000073,None,230.55263820000073,None,230.55263820000073,None,230.55263820000073,None,230.55263820000073,None,230.55263820000073,None,230.55263820000073,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• However, you are also aware that in its current position your crane is supporting one small part of the bridge on which there is currently a single car
+
+• If you move the crane, this part will certainly collapse and the people in that car will be killed",People on bus: 6,"Probability bus will 
+drive to safety: 50%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 2 people in the car lived.
+
+The ","The 2 people in the car died. 
+
+The 6 people on the bus were saved.",6,35, people on the bus,People in the car: 2,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,2,2,2,,,,,,,251.5845386000001,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,253.59983250000005,None,,,,,,,,,,,,,,,n,2.2190702999996574,247.33945370000038,None,249.58317999999963,None,247.33945370000038,None,247.33945370000038,None,247.33945370000038,None,247.33945370000038,None,247.33945370000038,None,247.33945370000038,None,247.33945370000038,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"• You also know that there is a chance the bus will be able to drive back onto the bridge, preventing the deaths of everyone on board
+ 
+• There is no chance that the car will be able to avoid falling if you move your crane ",People on bus: 10,"Probability bus will 
+drive to safety: 65%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 7 people in the car lived.
+
+The ","The 7 people in the car died. 
+
+The 10 people on the bus were saved.",10,65, people on the bus,People in the car: 7,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,3,3,3,,,,,,,290.4169681000003,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,292.4322819000008,None,,,,,,,,,,,,,,,n,28.790353099999265,259.60012260000076,None,288.4152288999994,None,259.60012260000076,None,259.60012260000076,None,259.60012260000076,None,259.60012260000076,None,259.60012260000076,None,259.60012260000076,None,259.60012260000076,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",People on bus: 7,"Probability bus will 
+drive to safety: 35%","Plan: Move your crane to push the bus, certainly killing the people in the car
+
+Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 4 people in the car lived.
+
+The ","The 4 people in the car died. 
+
+The 7 people on the bus were saved.",7,50, people on the bus,People in the car: 4,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,,,,,0,4,4,4,,,,,,,303.5777309999994,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,305.5938210000004,None,,,,,,,,,,,,,,,y,3.1258366000001843,298.43268870000065,None,301.5762185000003,None,298.43268870000065,None,298.43268870000065,None,298.43268870000065,None,298.43268870000065,None,298.43268870000065,None,298.43268870000065,None,298.43268870000065,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,EMPHASIZE,DE-EMPHASIZE,,,,,,,,,,,0010:015,,,,,,,,,,,,,,,,,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You are driving a rescue boat in the ocean, heading east towards a group of drowning people
+
+• You receive a distress signal informing you that a small boat has capsized in the opposite direction",People drowning in the west: 11,"Probability of alternate 
+rescue boat reaching them: 50%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 5 people in the east lived.
+
+The ","The 5 people in the east died.
+
+The 11 people in the west were saved.",11,50, people drowing in the west,People drowning in the east: 5,015:019,,,,,,,,,,,,,,,,,0,2,2,2,0,0,0,0,,,,,,,,,,,309.5828665000008,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,311.6541309999993,None,space,4.432580099999541,311.6541309999993,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• All of the people aboard the capsized boat are now drowning
+
+• You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them",People drowning in the west: 10,"Probability of alternate 
+rescue boat reaching them: 35%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 6 people in the east lived.
+
+The ","The 6 people in the east died.
+
+The 10 people in the west were saved.",10,65, people drowing in the west,People drowning in the east: 6,015:019,,,,,,,,,,,,,,,,,0,2,2,2,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,316.1300840999993,None,space,3.2205543000000034,316.1300840999993,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• However, if you do this, the people drowning in the east will certainly die
+
+• If you do nothing and hold your course, the people in the east will be saved, but you will not reach the people to the west in time to save them",People drowning in the west: 8,"Probability of alternate 
+rescue boat reaching them: 50%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 3 people in the east lived.
+
+The ","The 3 people in the east died.
+
+The 8 people in the west were saved.",8,50, people drowing in the west,People drowning in the east: 3,015:019,,,,,,,,,,,,,,,,,0,2,2,2,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,319.4047762000009,None,space,6.249859100000322,319.4047762000009,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the people in the east
+
+• But there is a chance the rescue boat will reach the group drowning to the west",People drowning in the west: 8,"Probability of alternate 
+rescue boat reaching them: 65%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 2 people in the east lived.
+
+The ","The 2 people in the east died.
+
+The 8 people in the west were saved.",8,35, people drowing in the west,People drowning in the east: 2,015:019,,,,,,,,,,,,,,,,,0,2,2,2,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,325.7001478000002,None,space,5.938312999998743,325.7001478000002,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You are driving a rescue boat in the ocean, heading east towards a group of drowning people
+
+• You receive a distress signal informing you that a small boat has capsized in the opposite direction",People drowning in the west: 11,"Probability of alternate 
+rescue boat reaching them: 50%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 5 people in the east lived.
+
+The ","The 5 people in the east died.
+
+The 11 people in the west were saved.",11,50, people drowing in the west,People drowning in the east: 5,015:019,,,,,,,,,,,,,,,,,0,2,2,2,,,,,0,0,0,0,,,,,,,415.9211971000004,None,,,,,,,333.66934299999957,None,,,,,,,,,,,,,,,,,,,,,417.938309000001,None,,,,,,,,,,,,,,,n,70.18904830000065,343.70543420000104,None,413.9194387000007,None,343.70543420000104,None,343.70543420000104,None,343.70543420000104,None,343.70543420000104,None,343.70543420000104,None,343.70543420000104,None,343.70543420000104,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• All of the people aboard the capsized boat are now drowning
+
+• You know that if you immediately change course and go full speed, bearing west, you will reach these people in time to save them",People drowning in the west: 10,"Probability of alternate 
+rescue boat reaching them: 35%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 6 people in the east lived.
+
+The ","The 6 people in the east died.
+
+The 10 people in the west were saved.",10,65, people drowing in the west,People drowning in the east: 6,015:019,,,,,,,,,,,,,,,,,0,2,2,2,,,,,0,1,1,1,,,,,,,428.79810709999947,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,430.8171715999997,None,,,,,,,,,,,,,,,n,2.835087499999645,423.93923949999953,None,426.7967578000007,None,423.93923949999953,None,423.93923949999953,None,423.93923949999953,None,423.93923949999953,None,423.93923949999953,None,423.93923949999953,None,423.93923949999953,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• However, if you do this, the people drowning in the east will certainly die
+
+• If you do nothing and hold your course, the people in the east will be saved, but you will not reach the people to the west in time to save them",People drowning in the west: 8,"Probability of alternate 
+rescue boat reaching them: 50%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 3 people in the east lived.
+
+The ","The 3 people in the east died.
+
+The 8 people in the west were saved.",8,50, people drowing in the west,People drowning in the east: 3,015:019,,,,,,,,,,,,,,,,,0,2,2,2,,,,,0,2,2,2,,,,,,,441.45883440000034,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,443.4764040000009,None,,,,,,,,,,,,,,,n,2.6143367999993643,436.8160977999996,None,439.4572884999998,None,436.8160977999996,None,436.8160977999996,None,436.8160977999996,None,436.8160977999996,None,436.8160977999996,None,436.8160977999996,None,436.8160977999996,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You also know that the only other rescue boat in the area is much further to the west, so would be unable to reach the people in the east
+
+• But there is a chance the rescue boat will reach the group drowning to the west",People drowning in the west: 8,"Probability of alternate 
+rescue boat reaching them: 65%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 2 people in the east lived.
+
+The ","The 2 people in the east died.
+
+The 8 people in the west were saved.",8,35, people drowing in the west,People drowning in the east: 2,015:019,,,,,,,,,,,,,,,,,0,2,2,2,,,,,0,3,3,3,,,,,,,476.02066399999967,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,478.0376735000009,None,,,,,,,,,,,,,,,n,24.519600499999797,449.4707053000002,None,474.0192771000002,None,449.4707053000002,None,449.4707053000002,None,449.4707053000002,None,449.4707053000002,None,449.4707053000002,None,449.4707053000002,None,449.4707053000002,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,,,,,,,,,,,015:019,,,,,,,,,,,,,,,,,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",People drowning in the west: 12,"Probability of alternate 
+rescue boat reaching them: 50%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 6 people in the east lived.
+
+The ","The 6 people in the east died.
+
+The 12 people in the west were saved.",12,50, people drowing in the west,People drowning in the east: 6,019:023,,,,,,,,,,,,,,,,,0,3,3,3,0,0,0,0,,,,,,,,,,,482.0260579000005,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,484.04663729999993,None,space,32.5041326999999,484.04663729999993,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• You are operating the switch at a railroad station when you see an empty, out of control boxcar coming down the main track
+
+• It is moving so fast that anyone it hits will die immediately",Repairmen on main track: 6,Probability of evacuation: 35%,"Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the repairmen there
+
+Do nothing: The repairmen on the sidetrack will live, the other group has a chance of evacuating","The 3 repairmen on the sidetrack lived.
+
+The ","The 3 repairmen on the sidetrack died.
+
+The 6 repairmen on the track were saved.",6,50, repairmen on the main track,Repairmen on sidetrack: 3,019:023,,,,,,,,,,,,,,,,,0,3,3,3,0,1,1,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,516.5952114000011,None,space,1.939363699999376,516.5952114000011,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• The boxcar is headed towards a tunneled section in which a group of repairmen are working
+
+• You can flip the switch, redirecting the boxcar to a sidetrack on which there is a smaller group of repairman working",Repairmen on main track: 7,Probability of evacuation: 65%,"Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the repairmen there
+
+Do nothing: The repairmen on the sidetrack will live, the other group has a chance of evacuating","The 3 repairmen on the sidetrack lived.
+
+The ","The 3 repairmenon the sidetrack died.
+
+The 7 repairmen on the track were saved.",7,35, repairmen on the main track,Repairmen on sidetrack: 3,019:023,,,,,,,,,,,,,,,,,0,3,3,3,0,2,2,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,518.5848729999998,None,space,0.9095962999999756,518.5848729999998,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"• If you do nothing, the boxcar will continue toward the repairmen in the tunnel on the main track and kill them all
+
+• If you hit the switch, the repairmen on the main track will be spared but the other repairman on the sidetrack will be hit by the boxcar and will die",Repairmen on main track: 5,Probability of evacuation: 65%,"Plan: Hit the switch, redirecting the boxcar onto the sidetrack, killing the repairmen there
+
+Do nothing: The repairmen on the sidetrack will live, the other group has a chance of evacuating","The 2 repairmen on the sidetrack lived.
+
+The ","The 2 repairmen on the sidetrack died.
+
+The 5 repairmen on the track were saved.",5,65, repairmen on the main track,Repairmen on sidetrack: 2,019:023,,,,,,,,,,,,,,,,,0,3,3,3,0,3,3,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,519.561066100001,None,space,0.7972296999996615,519.561066100001,None,,,,,,,,,,,,,,,,,,,,,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,DE-EMPHASIZE,EMPHASIZE,"Consider each of the following scenarios and, for each one, determine what course of action you will take.",People drowning in the west: 12,"Probability of alternate 
+rescue boat reaching them: 50%","Plan: Change your course to head towards the group, leaving the people in the east to die
+
+Do nothing: The group in the east will live, the group in the west has a chance of surviving","The 6 people in the east lived.
+
+The ","The 6 people in the east died.
+
+The 12 people in the west were saved.",12,50, people drowing in the west,People drowning in the east: 6,019:023,,,,,,,,,,,,,,,,,0,3,3,3,,,,,0,0,0,0,,,,,,,540.4078382999996,None,,,,,,,522.3777946000009,None,,,,,,,,,,,,,,,,,,,,,542.4269497999994,None,,,,,,,,,,,,,,,n,5.978478500001074,532.3957403000004,None,538.4061284,None,532.3957403000004,None,532.3957403000004,None,532.3957403000004,None,532.3957403000004,None,532.3957403000004,None,532.3957403000004,None,532.3957403000004,None,3,001,2019_Nov_21_1155,MoralSRBinaryChoice,3.2.4,60.12397563795828,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,546.4125077000008,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
