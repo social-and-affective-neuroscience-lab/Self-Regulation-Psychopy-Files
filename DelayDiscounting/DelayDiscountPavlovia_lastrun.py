@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 14, 2019, at 14:35
+    on November 22, 2019, at 10:42
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -94,7 +94,7 @@ Inst2Clock = core.Clock()
 instruct2 = visual.TextStim(win=win, name='instruct2',
     text='You will be presented with two monetary offers, differing in the time at which you would receive the money. \n\nIf you would prefer the offer on the left, press "1"\n\nIf you would prefer the offer on the right, press "2"\n\nYou will have four seconds to make your choice once the offers are presented.\n\nFirst you will be playing some practice rounds. When you are ready, press ENTER to begin!',
     font='Arial',
-    pos=(0, 0), height=0.06, wrapWidth=1.4, ori=0, 
+    pos=(0, 0), height=0.055, wrapWidth=1.4, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -290,7 +290,7 @@ Instructions.setColor('white', colorSpace='rgb')
 Instructions.setPos((0, 0))
 Instructions.setText('In this task you will be choosing between two different monetary rewards. \n\nYou will be given a regulation strategy prior to a block of trials. Please employ the strategy given while making decisions.\n\nPress SPACE to continue.\n')
 Instructions.setFont('Arial')
-Instructions.setHeight(0.06)
+Instructions.setHeight(0.055)
 space.keys = []
 space.rt = []
 # keep track of which components have finished
