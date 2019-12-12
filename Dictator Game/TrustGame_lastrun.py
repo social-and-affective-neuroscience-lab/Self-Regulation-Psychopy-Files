@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 18, 2019, at 09:43
+    on December 12, 2019, at 09:12
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -104,7 +104,7 @@ CueClock = core.Clock()
 cueText = visual.TextStim(win=win, name='cueText',
     text=None,
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.12, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -456,7 +456,7 @@ for thisCueLoop in CueLoop:
     CueLoop.addData('isiText.stopped', isiText.tStopRefresh)
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(6.000000)
+    routineTimer.add(5.000000)
     # update component parameters for each repeat
     cueText.setText('')
     if subID%2==0:
@@ -498,7 +498,7 @@ for thisCueLoop in CueLoop:
             cueText.setAutoDraw(True)
         if cueText.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cueText.tStartRefresh + 6-frameTolerance:
+            if tThisFlipGlobal > cueText.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 cueText.tStop = t  # not accounting for scr refresh
                 cueText.frameNStop = frameN  # exact frame index
