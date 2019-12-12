@@ -41,7 +41,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
         <Param name="name" updates="None" val="Instructions" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -53,9 +53,9 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="In this part of the study you will be given a regulation strategy to use while viewing pictures of food.&amp;#10;&amp;#10;Then you will use a rating scale to indicate how much you are craving the food item.&amp;#10;&amp;#10;You will first be completing a few practice rounds.&amp;#10;&amp;#10;When you are ready, press space to start!" valType="str"/>
+        <Param name="text" updates="constant" val="In this part of the study you will be given a regulation strategy to use while viewing pictures of food.&amp;#10;&amp;#10;Then you will use a rating scale to indicate how much you are craving the food item. Please use the mouse to select a rating, then press ENTER to submit your answer.&amp;#10;&amp;#10;You will first be completing a few practice rounds.&amp;#10;&amp;#10;When you are ready, press SPACE to start!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="1.45" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="space">
         <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
@@ -85,7 +85,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.12" valType="code"/>
         <Param name="name" updates="None" val="cue" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -95,7 +95,7 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="set every repeat" val="$CueType" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -117,7 +117,7 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="2" valType="code"/>
+        <Param name="startVal" updates="None" val="5" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="2" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
@@ -205,7 +205,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
         <Param name="name" updates="None" val="ratingQ" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -215,26 +215,26 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="time (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="set every repeat" val="How much are you craving this food?" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.3" valType="code"/>
       </TextComponent>
       <RatingScaleComponent name="rating">
-        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="categoryChoices" updates="constant" val="1,2,3,4,5,6,7" valType="str"/>
         <Param name="customize_everything" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="disappear" updates="constant" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
         <Param name="high" updates="constant" val="7" valType="code"/>
-        <Param name="labels" updates="constant" val="Not at all, Very Much" valType="str"/>
+        <Param name="labels" updates="constant" val="" valType="str"/>
         <Param name="low" updates="constant" val="1" valType="code"/>
         <Param name="marker" updates="constant" val="triangle" valType="str"/>
         <Param name="markerStart" updates="constant" val="" valType="str"/>
         <Param name="name" updates="None" val="rating" valType="code"/>
-        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
+        <Param name="pos" updates="constant" val="0, -0.35" valType="str"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="scaleDescription" updates="constant" val="" valType="str"/>
         <Param name="showAccept" updates="constant" val="True" valType="bool"/>
@@ -244,7 +244,7 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="time (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
         <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
         <Param name="storeRating" updates="constant" val="True" valType="bool"/>
         <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
@@ -252,6 +252,30 @@
         <Param name="tickHeight" updates="constant" val="" valType="str"/>
         <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
       </RatingScaleComponent>
+      <TextComponent name="text_3">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.1)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Not at all                                                Very Much" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
     </Routine>
     <Routine name="Pic">
       <ImageComponent name="Image">
@@ -279,6 +303,32 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
+    </Routine>
+    <Routine name="ThankYou">
+      <TextComponent name="ty">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+        <Param name="name" updates="None" val="ty" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Thank you for participating!&amp;#10;&amp;#10;You have completed this part of the study" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="1.4" valType="code"/>
+      </TextComponent>
     </Routine>
   </Routines>
   <Flow>
@@ -340,5 +390,6 @@
     <Routine name="isi"/>
     <LoopTerminator name="mainTrials"/>
     <LoopTerminator name="trials_2"/>
+    <Routine name="ThankYou"/>
   </Flow>
 </PsychoPy2experiment>

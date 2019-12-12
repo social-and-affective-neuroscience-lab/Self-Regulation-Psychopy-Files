@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on October 21, 2019, at 12:03
+    on December 12, 2019, at 11:23
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -81,9 +81,9 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "intro"
 introClock = core.Clock()
 Instructions = visual.TextStim(win=win, name='Instructions',
-    text='In this part of the study you will be given a regulation strategy to use while viewing pictures of food.\n\nThen you will use a rating scale to indicate how much you are craving the food item.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press space to start!',
+    text='In this part of the study you will be given a regulation strategy to use while viewing pictures of food.\n\nThen you will use a rating scale to indicate how much you are craving the food item. Please use the mouse to select a rating, then press ENTER to submit your answer.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press SPACE to start!',
     font='Arial',
-    pos=(0, 0), height=0.07, wrapWidth=1.5, ori=0, 
+    pos=(0, 0), height=0.06, wrapWidth=1.45, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -94,7 +94,7 @@ CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.12, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -122,11 +122,18 @@ ratingsClock = core.Clock()
 ratingQ = visual.TextStim(win=win, name='ratingQ',
     text='default text',
     font='Arial',
-    pos=(0, 0.15), height=0.08, wrapWidth=1.3, ori=0, 
+    pos=(0, 0.15), height=0.07, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.4], low=1, high=7, labels=['Not at all', ' Very Much'], scale='')
+rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.35], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='default text',
+    font='Arial',
+    pos=(0, -0.1), height=0.04, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -154,7 +161,7 @@ CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.12, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -182,11 +189,18 @@ ratingsClock = core.Clock()
 ratingQ = visual.TextStim(win=win, name='ratingQ',
     text='default text',
     font='Arial',
-    pos=(0, 0.15), height=0.08, wrapWidth=1.3, ori=0, 
+    pos=(0, 0.15), height=0.07, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.4], low=1, high=7, labels=['Not at all', ' Very Much'], scale='')
+rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.35], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='default text',
+    font='Arial',
+    pos=(0, -0.1), height=0.04, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -321,7 +335,7 @@ for thisPracticeLoop in practiceLoop:
             exec('{} = thisPracticeLoop[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(4.000000)
+    routineTimer.add(7.000000)
     # update component parameters for each repeat
     cue.setText(CueType)
     ISI.setText('+')
@@ -360,7 +374,7 @@ for thisPracticeLoop in practiceLoop:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -368,7 +382,7 @@ for thisPracticeLoop in practiceLoop:
                 cue.setAutoDraw(False)
         
         # *ISI* updates
-        if ISI.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
+        if ISI.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
             # keep track of start time/frame for later
             ISI.frameNStart = frameN  # exact frame index
             ISI.tStart = t  # local t and not account for scr refresh
@@ -501,12 +515,13 @@ for thisPracticeLoop in practiceLoop:
         trials.addData('Image.stopped', Image.tStopRefresh)
         
         # ------Prepare to start Routine "ratings"-------
-        routineTimer.add(3.000000)
+        routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How much are you craving this food?')
         rating.reset()
+        text_3.setText('Not at all                                                Very Much')
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, rating]
+        ratingsComponents = [ratingQ, rating, text_3]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -540,7 +555,7 @@ for thisPracticeLoop in practiceLoop:
                 ratingQ.setAutoDraw(True)
             if ratingQ.status == STARTED:
                 # is it time to stop? (based on local clock)
-                if tThisFlip > 3-frameTolerance:
+                if tThisFlip > 5-frameTolerance:
                     # keep track of stop time/frame for later
                     ratingQ.tStop = t  # not accounting for scr refresh
                     ratingQ.frameNStop = frameN  # exact frame index
@@ -554,6 +569,23 @@ for thisPracticeLoop in practiceLoop:
                 rating.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
                 rating.setAutoDraw(True)
+            
+            # *text_3* updates
+            if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_3.frameNStart = frameN  # exact frame index
+                text_3.tStart = t  # local t and not account for scr refresh
+                text_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+                text_3.setAutoDraw(True)
+            if text_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > text_3.tStartRefresh + 5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    text_3.tStop = t  # not accounting for scr refresh
+                    text_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_3, 'tStopRefresh')  # time at next scr refresh
+                    text_3.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -583,6 +615,8 @@ for thisPracticeLoop in practiceLoop:
         trials.addData('rating.rt', rating.getRT())
         trials.addData('rating.started', rating.tStart)
         trials.addData('rating.stopped', rating.tStop)
+        trials.addData('text_3.started', text_3.tStartRefresh)
+        trials.addData('text_3.stopped', text_3.tStopRefresh)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)
@@ -781,7 +815,7 @@ for thisTrial_2 in trials_2:
             exec('{} = thisTrial_2[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(4.000000)
+    routineTimer.add(7.000000)
     # update component parameters for each repeat
     cue.setText(CueType)
     ISI.setText('+')
@@ -820,7 +854,7 @@ for thisTrial_2 in trials_2:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -828,7 +862,7 @@ for thisTrial_2 in trials_2:
                 cue.setAutoDraw(False)
         
         # *ISI* updates
-        if ISI.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
+        if ISI.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
             # keep track of start time/frame for later
             ISI.frameNStart = frameN  # exact frame index
             ISI.tStart = t  # local t and not account for scr refresh
@@ -961,12 +995,13 @@ for thisTrial_2 in trials_2:
         mainTrials.addData('Image.stopped', Image.tStopRefresh)
         
         # ------Prepare to start Routine "ratings"-------
-        routineTimer.add(3.000000)
+        routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How much are you craving this food?')
         rating.reset()
+        text_3.setText('Not at all                                                Very Much')
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, rating]
+        ratingsComponents = [ratingQ, rating, text_3]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1000,7 +1035,7 @@ for thisTrial_2 in trials_2:
                 ratingQ.setAutoDraw(True)
             if ratingQ.status == STARTED:
                 # is it time to stop? (based on local clock)
-                if tThisFlip > 3-frameTolerance:
+                if tThisFlip > 5-frameTolerance:
                     # keep track of stop time/frame for later
                     ratingQ.tStop = t  # not accounting for scr refresh
                     ratingQ.frameNStop = frameN  # exact frame index
@@ -1014,6 +1049,23 @@ for thisTrial_2 in trials_2:
                 rating.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
                 rating.setAutoDraw(True)
+            
+            # *text_3* updates
+            if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_3.frameNStart = frameN  # exact frame index
+                text_3.tStart = t  # local t and not account for scr refresh
+                text_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+                text_3.setAutoDraw(True)
+            if text_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > text_3.tStartRefresh + 5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    text_3.tStop = t  # not accounting for scr refresh
+                    text_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_3, 'tStopRefresh')  # time at next scr refresh
+                    text_3.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1043,6 +1095,8 @@ for thisTrial_2 in trials_2:
         mainTrials.addData('rating.rt', rating.getRT())
         mainTrials.addData('rating.started', rating.tStart)
         mainTrials.addData('rating.stopped', rating.tStop)
+        mainTrials.addData('text_3.started', text_3.tStartRefresh)
+        mainTrials.addData('text_3.stopped', text_3.tStopRefresh)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)
