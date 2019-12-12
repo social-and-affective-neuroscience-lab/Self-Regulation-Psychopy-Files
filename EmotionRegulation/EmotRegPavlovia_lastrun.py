@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 21, 2019, at 14:27
+    on December 12, 2019, at 10:25
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -81,7 +81,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "intro"
 introClock = core.Clock()
 Instructions = visual.TextStim(win=win, name='Instructions',
-    text='In this part of the study you will be given a regulation strategy to use while viewing various pictures.\n\nThen you will use a rating scale to indicate how you feel in the present moment. Use the number keys 1-7 to make a reponse, then press ENTER to move on. You will have 5 seconds to make a response once you see the rating scale.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press SPACE to start!',
+    text='In this part of the study you will be given a regulation strategy to use while viewing various pictures.\n\nThen you will use a rating scale to indicate how you feel in the present moment. Use the mouse to select a rating, then press ENTER to move on. You will have 5 seconds to make a response once you see the rating scale.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press SPACE to start!',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -89,12 +89,22 @@ Instructions = visual.TextStim(win=win, name='Instructions',
     depth=0.0);
 space = keyboard.Keyboard()
 
+# Initialize components for Routine "isi"
+isiClock = core.Clock()
+Iti = visual.TextStim(win=win, name='Iti',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
 # Initialize components for Routine "Cue"
 CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
     text=None,
     font='Arial',
-    pos=(0, 0), height=0.13, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.12, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -126,14 +136,14 @@ ratingQ = visual.TextStim(win=win, name='ratingQ',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
 text_2 = visual.TextStim(win=win, name='text_2',
     text='default text',
     font='Arial',
     pos=(-0.02, -0.1), height=0.035, wrapWidth=1.6, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-2.0);
+    depth=-1.0);
+rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -156,12 +166,22 @@ text = visual.TextStim(win=win, name='text',
     depth=0.0);
 key_resp = keyboard.Keyboard()
 
+# Initialize components for Routine "isi"
+isiClock = core.Clock()
+Iti = visual.TextStim(win=win, name='Iti',
+    text='default text',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
 # Initialize components for Routine "Cue"
 CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
     text=None,
     font='Arial',
-    pos=(0, 0), height=0.13, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.12, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -193,14 +213,14 @@ ratingQ = visual.TextStim(win=win, name='ratingQ',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
 text_2 = visual.TextStim(win=win, name='text_2',
     text='default text',
     font='Arial',
     pos=(-0.02, -0.1), height=0.035, wrapWidth=1.6, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-2.0);
+    depth=-1.0);
+rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -208,6 +228,16 @@ Iti = visual.TextStim(win=win, name='Iti',
     text='default text',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+# Initialize components for Routine "TY"
+TYClock = core.Clock()
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='Thank you for participating!\n\nYou have completed this part of the study',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -315,6 +345,76 @@ thisExp.nextEntry()
 # the Routine "intro" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# ------Prepare to start Routine "isi"-------
+routineTimer.add(2.000000)
+# update component parameters for each repeat
+Iti.setText('+')
+# keep track of which components have finished
+isiComponents = [Iti]
+for thisComponent in isiComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+isiClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
+
+# -------Run Routine "isi"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = isiClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=isiClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *Iti* updates
+    if Iti.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        Iti.frameNStart = frameN  # exact frame index
+        Iti.tStart = t  # local t and not account for scr refresh
+        Iti.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(Iti, 'tStartRefresh')  # time at next scr refresh
+        Iti.setAutoDraw(True)
+    if Iti.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > Iti.tStartRefresh + 2-frameTolerance:
+            # keep track of stop time/frame for later
+            Iti.tStop = t  # not accounting for scr refresh
+            Iti.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(Iti, 'tStopRefresh')  # time at next scr refresh
+            Iti.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in isiComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "isi"-------
+for thisComponent in isiComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('Iti.started', Iti.tStartRefresh)
+thisExp.addData('Iti.stopped', Iti.tStopRefresh)
+
 # set up handler to look after randomisation of conditions etc
 practiceLoop = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
@@ -335,7 +435,7 @@ for thisPracticeLoop in practiceLoop:
             exec('{} = thisPracticeLoop[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(4.000000)
+    routineTimer.add(7.000000)
     # update component parameters for each repeat
     cue.setText('')
     ISI.setText('+')
@@ -380,7 +480,7 @@ for thisPracticeLoop in practiceLoop:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -388,7 +488,7 @@ for thisPracticeLoop in practiceLoop:
                 cue.setAutoDraw(False)
         
         # *ISI* updates
-        if ISI.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
+        if ISI.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
             # keep track of start time/frame for later
             ISI.frameNStart = frameN  # exact frame index
             ISI.tStart = t  # local t and not account for scr refresh
@@ -524,10 +624,10 @@ for thisPracticeLoop in practiceLoop:
         routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
-        rating.reset()
         text_2.setText('Very Negative                                                 Very Positive')
+        rating.reset()
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, rating, text_2]
+        ratingsComponents = [ratingQ, text_2, rating]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -567,14 +667,6 @@ for thisPracticeLoop in practiceLoop:
                     ratingQ.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(ratingQ, 'tStopRefresh')  # time at next scr refresh
                     ratingQ.setAutoDraw(False)
-            # *rating* updates
-            if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                rating.frameNStart = frameN  # exact frame index
-                rating.tStart = t  # local t and not account for scr refresh
-                rating.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
-                rating.setAutoDraw(True)
             
             # *text_2* updates
             if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -592,6 +684,15 @@ for thisPracticeLoop in practiceLoop:
                     text_2.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
                     text_2.setAutoDraw(False)
+            # *rating* updates
+            if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                rating.frameNStart = frameN  # exact frame index
+                rating.tStart = t  # local t and not account for scr refresh
+                rating.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
+                rating.setAutoDraw(True)
+            continueRoutine &= rating.noResponse  # a response ends the trial
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -616,13 +717,13 @@ for thisPracticeLoop in practiceLoop:
                 thisComponent.setAutoDraw(False)
         trials.addData('ratingQ.started', ratingQ.tStartRefresh)
         trials.addData('ratingQ.stopped', ratingQ.tStopRefresh)
+        trials.addData('text_2.started', text_2.tStartRefresh)
+        trials.addData('text_2.stopped', text_2.tStopRefresh)
         # store data for trials (TrialHandler)
         trials.addData('rating.response', rating.getRating())
         trials.addData('rating.rt', rating.getRT())
         trials.addData('rating.started', rating.tStart)
         trials.addData('rating.stopped', rating.tStop)
-        trials.addData('text_2.started', text_2.tStartRefresh)
-        trials.addData('text_2.stopped', text_2.tStopRefresh)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)
@@ -801,6 +902,76 @@ thisExp.nextEntry()
 # the Routine "BeginInstr" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# ------Prepare to start Routine "isi"-------
+routineTimer.add(2.000000)
+# update component parameters for each repeat
+Iti.setText('+')
+# keep track of which components have finished
+isiComponents = [Iti]
+for thisComponent in isiComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+isiClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
+
+# -------Run Routine "isi"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = isiClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=isiClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *Iti* updates
+    if Iti.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        Iti.frameNStart = frameN  # exact frame index
+        Iti.tStart = t  # local t and not account for scr refresh
+        Iti.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(Iti, 'tStartRefresh')  # time at next scr refresh
+        Iti.setAutoDraw(True)
+    if Iti.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > Iti.tStartRefresh + 2-frameTolerance:
+            # keep track of stop time/frame for later
+            Iti.tStop = t  # not accounting for scr refresh
+            Iti.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(Iti, 'tStopRefresh')  # time at next scr refresh
+            Iti.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in isiComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "isi"-------
+for thisComponent in isiComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('Iti.started', Iti.tStartRefresh)
+thisExp.addData('Iti.stopped', Iti.tStopRefresh)
+
 # set up handler to look after randomisation of conditions etc
 trials_2 = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
@@ -821,7 +992,7 @@ for thisTrial_2 in trials_2:
             exec('{} = thisTrial_2[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(4.000000)
+    routineTimer.add(7.000000)
     # update component parameters for each repeat
     cue.setText('')
     ISI.setText('+')
@@ -866,7 +1037,7 @@ for thisTrial_2 in trials_2:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -874,7 +1045,7 @@ for thisTrial_2 in trials_2:
                 cue.setAutoDraw(False)
         
         # *ISI* updates
-        if ISI.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
+        if ISI.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
             # keep track of start time/frame for later
             ISI.frameNStart = frameN  # exact frame index
             ISI.tStart = t  # local t and not account for scr refresh
@@ -1010,10 +1181,10 @@ for thisTrial_2 in trials_2:
         routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
-        rating.reset()
         text_2.setText('Very Negative                                                 Very Positive')
+        rating.reset()
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, rating, text_2]
+        ratingsComponents = [ratingQ, text_2, rating]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1053,14 +1224,6 @@ for thisTrial_2 in trials_2:
                     ratingQ.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(ratingQ, 'tStopRefresh')  # time at next scr refresh
                     ratingQ.setAutoDraw(False)
-            # *rating* updates
-            if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                rating.frameNStart = frameN  # exact frame index
-                rating.tStart = t  # local t and not account for scr refresh
-                rating.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
-                rating.setAutoDraw(True)
             
             # *text_2* updates
             if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1078,6 +1241,15 @@ for thisTrial_2 in trials_2:
                     text_2.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
                     text_2.setAutoDraw(False)
+            # *rating* updates
+            if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                rating.frameNStart = frameN  # exact frame index
+                rating.tStart = t  # local t and not account for scr refresh
+                rating.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
+                rating.setAutoDraw(True)
+            continueRoutine &= rating.noResponse  # a response ends the trial
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1102,13 +1274,13 @@ for thisTrial_2 in trials_2:
                 thisComponent.setAutoDraw(False)
         mainTrials.addData('ratingQ.started', ratingQ.tStartRefresh)
         mainTrials.addData('ratingQ.stopped', ratingQ.tStopRefresh)
+        mainTrials.addData('text_2.started', text_2.tStartRefresh)
+        mainTrials.addData('text_2.stopped', text_2.tStopRefresh)
         # store data for mainTrials (TrialHandler)
         mainTrials.addData('rating.response', rating.getRating())
         mainTrials.addData('rating.rt', rating.getRT())
         mainTrials.addData('rating.started', rating.tStart)
         mainTrials.addData('rating.stopped', rating.tStop)
-        mainTrials.addData('text_2.started', text_2.tStartRefresh)
-        mainTrials.addData('text_2.stopped', text_2.tStopRefresh)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)
@@ -1187,6 +1359,68 @@ for thisTrial_2 in trials_2:
     
 # completed 1 repeats of 'trials_2'
 
+
+# ------Prepare to start Routine "TY"-------
+# update component parameters for each repeat
+# keep track of which components have finished
+TYComponents = [text_3]
+for thisComponent in TYComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+TYClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
+
+# -------Run Routine "TY"-------
+while continueRoutine:
+    # get current time
+    t = TYClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=TYClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_3* updates
+    if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.tStart = t  # local t and not account for scr refresh
+        text_3.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+        text_3.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in TYComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "TY"-------
+for thisComponent in TYComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('text_3.started', text_3.tStartRefresh)
+thisExp.addData('text_3.stopped', text_3.tStopRefresh)
+# the Routine "TY" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
