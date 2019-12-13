@@ -1,0 +1,1233 @@
+19.6532 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+20.7925 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E88A8A1630>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E88A978E10>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+20.7925 	EXP 	window1: recordFrameIntervals = False
+20.9586 	EXP 	window1: recordFrameIntervals = True
+21.1422 	EXP 	window1: recordFrameIntervals = False
+21.3721 	EXP 	Created Instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='Instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.45)
+21.3956 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.4141 	EXP 	Created ISI = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='ISI', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.4166 	EXP 	Created Image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+21.4288 	EXP 	Created ratingQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='ratingQ', opacity=1.0, ori=0, pos=array([0.  , 0.15]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.3)
+21.4780 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['1', '2', '3', '4', '5', '6', '7'], depth=0, disappear=False, flipVert=False, high=6, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.35], precision=1, respKeys=['0', '1', '2', '3', '4', '5', '6'], rightKeys=['right'], scale='<default>', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.84, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.168, tickHeight=-1, tickMarks=6.0, win=Window(...))
+21.4880 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([ 0. , -0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.4924 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.5282 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.5)
+21.5332 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.5377 	EXP 	Created ISI = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='ISI', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.5398 	EXP 	Created Image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+21.5431 	EXP 	Created ratingQ = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='ratingQ', opacity=1.0, ori=0, pos=array([0.  , 0.15]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.3)
+21.5604 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=['1', '2', '3', '4', '5', '6', '7'], depth=0, disappear=False, flipVert=False, high=6, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.35], precision=1, respKeys=['0', '1', '2', '3', '4', '5', '6'], rightKeys=['right'], scale='<default>', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.84, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.168, tickHeight=-1, tickMarks=6.0, win=Window(...))
+21.5637 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([ 0. , -0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.5681 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+21.5972 	EXP 	Created ty = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='ty', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1.4)
+21.6274 	EXP 	rating: flipVert = False
+21.6274 	EXP 	rating: autoLog = True
+21.6274 	EXP 	rating: flipVert = False
+21.6274 	EXP 	rating: autoLog = True
+21.6274 	EXP 	Instructions: autoDraw = True
+23.1230 	EXP 	Imported foodRows.xlsx as conditions, 1 conditions, 3 params
+23.1231 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+23.1233 	EXP 	New trial (rep=0, index=0): OrderedDict([('CueType', 'REACT'), ('rows', '0010:0015'), ('CueType2', 'REGULATE')])
+23.1441 	DATA 	Keypress: space
+23.1481 	EXP 	Instructions: autoDraw = False
+23.1481 	EXP 	cue: text = 'REACT'
+23.1481 	EXP 	ISI: text = '+'
+23.1481 	EXP 	cue: autoDraw = True
+28.1478 	EXP 	cue: autoDraw = False
+28.1478 	EXP 	ISI: autoDraw = True
+30.1034 	EXP 	Imported FoodReg.csv as conditions, 3 conditions, 1 params
+30.1036 	EXP 	Created sequence: random, trialTypes=3, nReps=1, seed=None
+30.1038 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'FoodPics\\F4H\\breadtwists.jpg')])
+30.3194 	EXP 	cue: autoDraw = False
+30.3194 	EXP 	ISI: autoDraw = False
+30.3194 	EXP 	Image: size = array([1.5, 1. ])
+30.3194 	EXP 	Image: image = 'FoodPics\\F4H\\breadtwists.jpg'
+30.3194 	EXP 	Image: autoDraw = True
+38.1368 	EXP 	RatingScale rating: reset()
+38.1673 	EXP 	Image: autoDraw = False
+38.1673 	EXP 	ratingQ: text = 'How much are you craving this food?'
+38.1673 	EXP 	text_3: text = 'Not at all                                                Very Much'
+38.1673 	EXP 	ratingQ: autoDraw = True
+38.1673 	EXP 	rating: autoDraw = True
+38.1673 	EXP 	text_3: autoDraw = True
+40.4284 	DATA 	Mouse: Left button down, pos=(692,373)
+40.5121 	DATA 	Mouse:  Left button up, pos=(692,373)
+41.3463 	DATA 	Keypress: return
+41.3464 	DATA 	RatingScale rating: (key response) rating=2
+41.3465 	DATA 	RatingScale rating: rating RT=3.191
+41.3465 	DATA 	RatingScale rating: history=[(None, 0.0), ('2', 2.273), ('2', 3.191)]
+43.1270 	EXP 	ratingQ: autoDraw = False
+43.1270 	EXP 	rating: autoDraw = False
+43.1270 	EXP 	text_3: autoDraw = False
+43.1270 	EXP 	text_2: text = '+'
+43.1270 	EXP 	text_2: autoDraw = True
+45.1124 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'FoodPics\\F4H\\banana.jpg')])
+45.2058 	EXP 	text_2: autoDraw = False
+45.2058 	EXP 	Image: size = array([1.5, 1. ])
+45.2058 	EXP 	Image: image = 'FoodPics\\F4H\\banana.jpg'
+45.2058 	EXP 	Image: autoDraw = True
+53.1059 	EXP 	RatingScale rating: reset()
+53.1187 	EXP 	Image: autoDraw = False
+53.1187 	EXP 	ratingQ: text = 'How much are you craving this food?'
+53.1187 	EXP 	text_3: text = 'Not at all                                                Very Much'
+53.1187 	EXP 	ratingQ: autoDraw = True
+53.1187 	EXP 	rating: autoDraw = True
+53.1187 	EXP 	text_3: autoDraw = True
+58.1061 	EXP 	ratingQ: autoDraw = False
+58.1228 	EXP 	ratingQ: autoDraw = False
+58.1228 	EXP 	rating: autoDraw = False
+58.1228 	EXP 	text_3: autoDraw = False
+58.1228 	EXP 	text_2: text = '+'
+58.1228 	EXP 	text_2: autoDraw = True
+60.1082 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'FoodPics\\F4H\\bagels.jpg')])
+60.2164 	EXP 	text_2: autoDraw = False
+60.2164 	EXP 	Image: size = array([1.5, 1. ])
+60.2164 	EXP 	Image: image = 'FoodPics\\F4H\\bagels.jpg'
+60.2164 	EXP 	Image: autoDraw = True
+68.1153 	EXP 	RatingScale rating: reset()
+68.1308 	EXP 	Image: autoDraw = False
+68.1308 	EXP 	ratingQ: text = 'How much are you craving this food?'
+68.1308 	EXP 	text_3: text = 'Not at all                                                Very Much'
+68.1308 	EXP 	ratingQ: autoDraw = True
+68.1308 	EXP 	rating: autoDraw = True
+68.1308 	EXP 	text_3: autoDraw = True
+73.1020 	EXP 	ratingQ: autoDraw = False
+73.1186 	EXP 	ratingQ: autoDraw = False
+73.1186 	EXP 	rating: autoDraw = False
+73.1186 	EXP 	text_3: autoDraw = False
+73.1186 	EXP 	text_2: text = '+'
+73.1186 	EXP 	text_2: autoDraw = True
+75.1203 	EXP 	text_2: autoDraw = False
+75.1203 	EXP 	text: autoDraw = True
+88.7212 	EXP 	Imported foodRows.csv as conditions, 6 conditions, 3 params
+88.7214 	EXP 	Created sequence: sequential, trialTypes=6, nReps=1, seed=None
+88.7216 	EXP 	New trial (rep=0, index=0): OrderedDict([('CueType', 'REGULATE'), ('rows', '004:0014'), ('CueType2', 'REACT')])
+88.7408 	DATA 	Keypress: space
+88.7450 	EXP 	text: autoDraw = False
+88.7450 	EXP 	cue: text = 'REGULATE'
+88.7450 	EXP 	ISI: text = '+'
+88.7450 	EXP 	cue: autoDraw = True
+93.7359 	EXP 	ISI: autoDraw = True
+93.7523 	EXP 	cue: autoDraw = False
+95.7237 	EXP 	Imported FoodReg.csv as conditions, 10 conditions, 1 params
+95.7239 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+95.7241 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'FoodPics\\F4H\\cakes.jpg')])
+95.8003 	EXP 	cue: autoDraw = False
+95.8003 	EXP 	ISI: autoDraw = False
+95.8003 	EXP 	Image: size = array([1.5, 1. ])
+95.8003 	EXP 	Image: image = 'FoodPics\\F4H\\cakes.jpg'
+95.8003 	EXP 	Image: autoDraw = True
+103.7283 	EXP 	RatingScale rating: reset()
+103.7440 	EXP 	Image: autoDraw = False
+103.7440 	EXP 	ratingQ: text = 'How much are you craving this food?'
+103.7440 	EXP 	text_3: text = 'Not at all                                                Very Much'
+103.7440 	EXP 	ratingQ: autoDraw = True
+103.7440 	EXP 	rating: autoDraw = True
+103.7440 	EXP 	text_3: autoDraw = True
+108.7147 	EXP 	ratingQ: autoDraw = False
+108.7480 	EXP 	ratingQ: autoDraw = False
+108.7480 	EXP 	rating: autoDraw = False
+108.7480 	EXP 	text_3: autoDraw = False
+108.7480 	EXP 	text_2: text = '+'
+108.7480 	EXP 	text_2: autoDraw = True
+110.7337 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'FoodPics\\F4H\\cheese.jpg')])
+110.8528 	EXP 	text_2: autoDraw = False
+110.8528 	EXP 	Image: size = array([1.5, 1. ])
+110.8528 	EXP 	Image: image = 'FoodPics\\F4H\\cheese.jpg'
+110.8528 	EXP 	Image: autoDraw = True
+118.7238 	EXP 	RatingScale rating: reset()
+118.7397 	EXP 	Image: autoDraw = False
+118.7397 	EXP 	ratingQ: text = 'How much are you craving this food?'
+118.7397 	EXP 	text_3: text = 'Not at all                                                Very Much'
+118.7397 	EXP 	ratingQ: autoDraw = True
+118.7397 	EXP 	rating: autoDraw = True
+118.7397 	EXP 	text_3: autoDraw = True
+123.7106 	EXP 	ratingQ: autoDraw = False
+123.7439 	EXP 	ratingQ: autoDraw = False
+123.7439 	EXP 	rating: autoDraw = False
+123.7439 	EXP 	text_3: autoDraw = False
+123.7439 	EXP 	text_2: text = '+'
+123.7439 	EXP 	text_2: autoDraw = True
+125.7294 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'FoodPics\\F4H\\brownies2.jpg')])
+125.8372 	EXP 	text_2: autoDraw = False
+125.8372 	EXP 	Image: size = array([1.5, 1. ])
+125.8372 	EXP 	Image: image = 'FoodPics\\F4H\\brownies2.jpg'
+125.8372 	EXP 	Image: autoDraw = True
+133.7196 	EXP 	RatingScale rating: reset()
+133.7355 	EXP 	Image: autoDraw = False
+133.7355 	EXP 	ratingQ: text = 'How much are you craving this food?'
+133.7355 	EXP 	text_3: text = 'Not at all                                                Very Much'
+133.7355 	EXP 	ratingQ: autoDraw = True
+133.7355 	EXP 	rating: autoDraw = True
+133.7355 	EXP 	text_3: autoDraw = True
+138.7063 	EXP 	ratingQ: autoDraw = False
+138.7396 	EXP 	ratingQ: autoDraw = False
+138.7396 	EXP 	rating: autoDraw = False
+138.7396 	EXP 	text_3: autoDraw = False
+138.7396 	EXP 	text_2: text = '+'
+138.7396 	EXP 	text_2: autoDraw = True
+140.7251 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'FoodPics\\F4H\\cheesepuffs.jpg')])
+140.8284 	EXP 	text_2: autoDraw = False
+140.8284 	EXP 	Image: size = array([1.5, 1. ])
+140.8284 	EXP 	Image: image = 'FoodPics\\F4H\\cheesepuffs.jpg'
+140.8284 	EXP 	Image: autoDraw = True
+148.7322 	EXP 	RatingScale rating: reset()
+148.7480 	EXP 	Image: autoDraw = False
+148.7480 	EXP 	ratingQ: text = 'How much are you craving this food?'
+148.7480 	EXP 	text_3: text = 'Not at all                                                Very Much'
+148.7480 	EXP 	ratingQ: autoDraw = True
+148.7480 	EXP 	rating: autoDraw = True
+148.7480 	EXP 	text_3: autoDraw = True
+153.7189 	EXP 	ratingQ: autoDraw = False
+153.7356 	EXP 	ratingQ: autoDraw = False
+153.7356 	EXP 	rating: autoDraw = False
+153.7356 	EXP 	text_3: autoDraw = False
+153.7356 	EXP 	text_2: text = '+'
+153.7356 	EXP 	text_2: autoDraw = True
+155.7208 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'FoodPics\\F4H\\chickenkebab.jpg')])
+155.8088 	EXP 	text_2: autoDraw = False
+155.8088 	EXP 	Image: size = array([1.5, 1. ])
+155.8088 	EXP 	Image: image = 'FoodPics\\F4H\\chickenkebab.jpg'
+155.8088 	EXP 	Image: autoDraw = True
+163.7281 	EXP 	RatingScale rating: reset()
+163.7439 	EXP 	Image: autoDraw = False
+163.7439 	EXP 	ratingQ: text = 'How much are you craving this food?'
+163.7439 	EXP 	text_3: text = 'Not at all                                                Very Much'
+163.7439 	EXP 	ratingQ: autoDraw = True
+163.7439 	EXP 	rating: autoDraw = True
+163.7439 	EXP 	text_3: autoDraw = True
+168.7144 	EXP 	ratingQ: autoDraw = False
+168.7480 	EXP 	ratingQ: autoDraw = False
+168.7480 	EXP 	rating: autoDraw = False
+168.7480 	EXP 	text_3: autoDraw = False
+168.7480 	EXP 	text_2: text = '+'
+168.7480 	EXP 	text_2: autoDraw = True
+170.7335 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'FoodPics\\F4H\\chocballs.jpg')])
+171.2740 	EXP 	text_2: autoDraw = False
+171.2740 	EXP 	Image: size = array([1.5, 1. ])
+171.2740 	EXP 	Image: image = 'FoodPics\\F4H\\chocballs.jpg'
+171.2740 	EXP 	Image: autoDraw = True
+178.7236 	EXP 	RatingScale rating: reset()
+178.7393 	EXP 	Image: autoDraw = False
+178.7393 	EXP 	ratingQ: text = 'How much are you craving this food?'
+178.7393 	EXP 	text_3: text = 'Not at all                                                Very Much'
+178.7393 	EXP 	ratingQ: autoDraw = True
+178.7393 	EXP 	rating: autoDraw = True
+178.7393 	EXP 	text_3: autoDraw = True
+183.7103 	EXP 	ratingQ: autoDraw = False
+183.7435 	EXP 	ratingQ: autoDraw = False
+183.7435 	EXP 	rating: autoDraw = False
+183.7435 	EXP 	text_3: autoDraw = False
+183.7435 	EXP 	text_2: text = '+'
+183.7435 	EXP 	text_2: autoDraw = True
+185.7290 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'FoodPics\\F4H\\chickennuggs.jpg')])
+185.8223 	EXP 	text_2: autoDraw = False
+185.8223 	EXP 	Image: size = array([1.5, 1. ])
+185.8223 	EXP 	Image: image = 'FoodPics\\F4H\\chickennuggs.jpg'
+185.8223 	EXP 	Image: autoDraw = True
+193.7361 	EXP 	RatingScale rating: reset()
+193.7521 	EXP 	Image: autoDraw = False
+193.7521 	EXP 	ratingQ: text = 'How much are you craving this food?'
+193.7521 	EXP 	text_3: text = 'Not at all                                                Very Much'
+193.7521 	EXP 	ratingQ: autoDraw = True
+193.7521 	EXP 	rating: autoDraw = True
+193.7521 	EXP 	text_3: autoDraw = True
+198.7226 	EXP 	ratingQ: autoDraw = False
+198.7395 	EXP 	ratingQ: autoDraw = False
+198.7395 	EXP 	rating: autoDraw = False
+198.7395 	EXP 	text_3: autoDraw = False
+198.7395 	EXP 	text_2: text = '+'
+198.7395 	EXP 	text_2: autoDraw = True
+200.7247 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'FoodPics\\F4H\\chips.jpg')])
+200.8053 	EXP 	text_2: autoDraw = False
+200.8053 	EXP 	Image: size = array([1.5, 1. ])
+200.8053 	EXP 	Image: image = 'FoodPics\\F4H\\chips.jpg'
+200.8053 	EXP 	Image: autoDraw = True
+208.7315 	EXP 	RatingScale rating: reset()
+208.7478 	EXP 	Image: autoDraw = False
+208.7478 	EXP 	ratingQ: text = 'How much are you craving this food?'
+208.7478 	EXP 	text_3: text = 'Not at all                                                Very Much'
+208.7478 	EXP 	ratingQ: autoDraw = True
+208.7478 	EXP 	rating: autoDraw = True
+208.7478 	EXP 	text_3: autoDraw = True
+213.7186 	EXP 	ratingQ: autoDraw = False
+213.7353 	EXP 	ratingQ: autoDraw = False
+213.7353 	EXP 	rating: autoDraw = False
+213.7353 	EXP 	text_3: autoDraw = False
+213.7353 	EXP 	text_2: text = '+'
+213.7353 	EXP 	text_2: autoDraw = True
+215.7209 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'FoodPics\\F4H\\chips2.jpg')])
+215.7974 	EXP 	text_2: autoDraw = False
+215.7974 	EXP 	Image: size = array([1.5, 1. ])
+215.7974 	EXP 	Image: image = 'FoodPics\\F4H\\chips2.jpg'
+215.7974 	EXP 	Image: autoDraw = True
+223.7277 	EXP 	RatingScale rating: reset()
+223.7435 	EXP 	Image: autoDraw = False
+223.7435 	EXP 	ratingQ: text = 'How much are you craving this food?'
+223.7435 	EXP 	text_3: text = 'Not at all                                                Very Much'
+223.7435 	EXP 	ratingQ: autoDraw = True
+223.7435 	EXP 	rating: autoDraw = True
+223.7435 	EXP 	text_3: autoDraw = True
+228.7142 	EXP 	ratingQ: autoDraw = False
+228.7475 	EXP 	ratingQ: autoDraw = False
+228.7475 	EXP 	rating: autoDraw = False
+228.7475 	EXP 	text_3: autoDraw = False
+228.7475 	EXP 	text_2: text = '+'
+228.7475 	EXP 	text_2: autoDraw = True
+230.7331 	EXP 	New trial (rep=0, index=9): OrderedDict([('Picture', 'FoodPics\\F4H\\chips3.jpg')])
+230.8112 	EXP 	text_2: autoDraw = False
+230.8112 	EXP 	Image: size = array([1.5, 1. ])
+230.8112 	EXP 	Image: image = 'FoodPics\\F4H\\chips3.jpg'
+230.8112 	EXP 	Image: autoDraw = True
+238.7240 	EXP 	RatingScale rating: reset()
+238.7395 	EXP 	Image: autoDraw = False
+238.7395 	EXP 	ratingQ: text = 'How much are you craving this food?'
+238.7395 	EXP 	text_3: text = 'Not at all                                                Very Much'
+238.7395 	EXP 	ratingQ: autoDraw = True
+238.7395 	EXP 	rating: autoDraw = True
+238.7395 	EXP 	text_3: autoDraw = True
+243.7099 	EXP 	ratingQ: autoDraw = False
+243.7433 	EXP 	ratingQ: autoDraw = False
+243.7433 	EXP 	rating: autoDraw = False
+243.7433 	EXP 	text_3: autoDraw = False
+243.7433 	EXP 	text_2: text = '+'
+243.7433 	EXP 	text_2: autoDraw = True
+245.7291 	EXP 	New trial (rep=0, index=1): OrderedDict([('CueType', 'REACT'), ('rows', '0014:0024'), ('CueType2', 'REGULATE')])
+245.7450 	EXP 	text_2: autoDraw = False
+245.7450 	EXP 	cue: text = 'REACT'
+245.7450 	EXP 	ISI: text = '+'
+245.7450 	EXP 	cue: autoDraw = True
+250.7324 	EXP 	ISI: autoDraw = True
+250.7491 	EXP 	cue: autoDraw = False
+252.7229 	EXP 	Imported FoodReg.csv as conditions, 10 conditions, 1 params
+252.7231 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+252.7232 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'FoodPics\\F4H\\chocolate1.jpg')])
+252.8004 	EXP 	ISI: autoDraw = False
+252.8004 	EXP 	cue: autoDraw = False
+252.8004 	EXP 	ISI: autoDraw = False
+252.8004 	EXP 	Image: size = array([1.5, 1. ])
+252.8004 	EXP 	Image: image = 'FoodPics\\F4H\\chocolate1.jpg'
+252.8004 	EXP 	Image: autoDraw = True
+260.7254 	EXP 	RatingScale rating: reset()
+260.7411 	EXP 	Image: autoDraw = False
+260.7411 	EXP 	ratingQ: text = 'How much are you craving this food?'
+260.7411 	EXP 	text_3: text = 'Not at all                                                Very Much'
+260.7411 	EXP 	ratingQ: autoDraw = True
+260.7411 	EXP 	rating: autoDraw = True
+260.7411 	EXP 	text_3: autoDraw = True
+265.7114 	EXP 	ratingQ: autoDraw = False
+265.7451 	EXP 	ratingQ: autoDraw = False
+265.7451 	EXP 	rating: autoDraw = False
+265.7451 	EXP 	text_3: autoDraw = False
+265.7451 	EXP 	text_2: text = '+'
+265.7451 	EXP 	text_2: autoDraw = True
+267.7305 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'FoodPics\\F4H\\empanadas.jpg')])
+268.1851 	EXP 	text_2: autoDraw = False
+268.1851 	EXP 	Image: size = array([1.5, 1. ])
+268.1851 	EXP 	Image: image = 'FoodPics\\F4H\\empanadas.jpg'
+268.1851 	EXP 	Image: autoDraw = True
+275.7229 	EXP 	RatingScale rating: reset()
+275.7388 	EXP 	Image: autoDraw = False
+275.7388 	EXP 	ratingQ: text = 'How much are you craving this food?'
+275.7388 	EXP 	text_3: text = 'Not at all                                                Very Much'
+275.7388 	EXP 	ratingQ: autoDraw = True
+275.7388 	EXP 	rating: autoDraw = True
+275.7388 	EXP 	text_3: autoDraw = True
+280.7074 	EXP 	ratingQ: autoDraw = False
+280.7410 	EXP 	ratingQ: autoDraw = False
+280.7410 	EXP 	rating: autoDraw = False
+280.7410 	EXP 	text_3: autoDraw = False
+280.7410 	EXP 	text_2: text = '+'
+280.7410 	EXP 	text_2: autoDraw = True
+282.7261 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'FoodPics\\F4H\\chocolate2.jpg')])
+282.8106 	EXP 	text_2: autoDraw = False
+282.8106 	EXP 	Image: size = array([1.5, 1. ])
+282.8106 	EXP 	Image: image = 'FoodPics\\F4H\\chocolate2.jpg'
+282.8106 	EXP 	Image: autoDraw = True
+290.7336 	EXP 	RatingScale rating: reset()
+290.7492 	EXP 	Image: autoDraw = False
+290.7492 	EXP 	ratingQ: text = 'How much are you craving this food?'
+290.7492 	EXP 	text_3: text = 'Not at all                                                Very Much'
+290.7492 	EXP 	ratingQ: autoDraw = True
+290.7492 	EXP 	rating: autoDraw = True
+290.7492 	EXP 	text_3: autoDraw = True
+295.7201 	EXP 	ratingQ: autoDraw = False
+295.7366 	EXP 	ratingQ: autoDraw = False
+295.7366 	EXP 	rating: autoDraw = False
+295.7366 	EXP 	text_3: autoDraw = False
+295.7366 	EXP 	text_2: text = '+'
+295.7366 	EXP 	text_2: autoDraw = True
+297.7222 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'FoodPics\\F4H\\chocolates.jpg')])
+297.8008 	EXP 	text_2: autoDraw = False
+297.8008 	EXP 	Image: size = array([1.5, 1. ])
+297.8008 	EXP 	Image: image = 'FoodPics\\F4H\\chocolates.jpg'
+297.8008 	EXP 	Image: autoDraw = True
+305.7291 	EXP 	RatingScale rating: reset()
+305.7447 	EXP 	Image: autoDraw = False
+305.7447 	EXP 	ratingQ: text = 'How much are you craving this food?'
+305.7447 	EXP 	text_3: text = 'Not at all                                                Very Much'
+305.7447 	EXP 	ratingQ: autoDraw = True
+305.7447 	EXP 	rating: autoDraw = True
+305.7447 	EXP 	text_3: autoDraw = True
+310.7159 	EXP 	ratingQ: autoDraw = False
+310.7493 	EXP 	ratingQ: autoDraw = False
+310.7493 	EXP 	rating: autoDraw = False
+310.7493 	EXP 	text_3: autoDraw = False
+310.7493 	EXP 	text_2: text = '+'
+310.7493 	EXP 	text_2: autoDraw = True
+312.7346 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'FoodPics\\F4H\\cookies.jpg')])
+312.8092 	EXP 	text_2: autoDraw = False
+312.8092 	EXP 	Image: size = array([1.5, 1. ])
+312.8092 	EXP 	Image: image = 'FoodPics\\F4H\\cookies.jpg'
+312.8092 	EXP 	Image: autoDraw = True
+320.7253 	EXP 	RatingScale rating: reset()
+320.7409 	EXP 	Image: autoDraw = False
+320.7409 	EXP 	ratingQ: text = 'How much are you craving this food?'
+320.7409 	EXP 	text_3: text = 'Not at all                                                Very Much'
+320.7409 	EXP 	ratingQ: autoDraw = True
+320.7409 	EXP 	rating: autoDraw = True
+320.7409 	EXP 	text_3: autoDraw = True
+325.7112 	EXP 	ratingQ: autoDraw = False
+325.7448 	EXP 	ratingQ: autoDraw = False
+325.7448 	EXP 	rating: autoDraw = False
+325.7448 	EXP 	text_3: autoDraw = False
+325.7448 	EXP 	text_2: text = '+'
+325.7448 	EXP 	text_2: autoDraw = True
+327.7304 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'FoodPics\\F4H\\croissant.jpg')])
+327.8046 	EXP 	text_2: autoDraw = False
+327.8046 	EXP 	Image: size = array([1.5, 1. ])
+327.8046 	EXP 	Image: image = 'FoodPics\\F4H\\croissant.jpg'
+327.8046 	EXP 	Image: autoDraw = True
+335.7209 	EXP 	RatingScale rating: reset()
+335.7365 	EXP 	Image: autoDraw = False
+335.7365 	EXP 	ratingQ: text = 'How much are you craving this food?'
+335.7365 	EXP 	text_3: text = 'Not at all                                                Very Much'
+335.7365 	EXP 	ratingQ: autoDraw = True
+335.7365 	EXP 	rating: autoDraw = True
+335.7365 	EXP 	text_3: autoDraw = True
+340.7070 	EXP 	ratingQ: autoDraw = False
+340.7407 	EXP 	ratingQ: autoDraw = False
+340.7407 	EXP 	rating: autoDraw = False
+340.7407 	EXP 	text_3: autoDraw = False
+340.7407 	EXP 	text_2: text = '+'
+340.7407 	EXP 	text_2: autoDraw = True
+342.7261 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'FoodPics\\F4H\\donutes.jpg')])
+342.8010 	EXP 	text_2: autoDraw = False
+342.8010 	EXP 	Image: size = array([1.5, 1. ])
+342.8010 	EXP 	Image: image = 'FoodPics\\F4H\\donutes.jpg'
+342.8010 	EXP 	Image: autoDraw = True
+350.7331 	EXP 	RatingScale rating: reset()
+350.7489 	EXP 	Image: autoDraw = False
+350.7489 	EXP 	ratingQ: text = 'How much are you craving this food?'
+350.7489 	EXP 	text_3: text = 'Not at all                                                Very Much'
+350.7489 	EXP 	ratingQ: autoDraw = True
+350.7489 	EXP 	rating: autoDraw = True
+350.7489 	EXP 	text_3: autoDraw = True
+355.7198 	EXP 	ratingQ: autoDraw = False
+355.7364 	EXP 	ratingQ: autoDraw = False
+355.7364 	EXP 	rating: autoDraw = False
+355.7364 	EXP 	text_3: autoDraw = False
+355.7364 	EXP 	text_2: text = '+'
+355.7364 	EXP 	text_2: autoDraw = True
+357.7216 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'FoodPics\\F4H\\cracker.jpg')])
+357.9914 	EXP 	text_2: autoDraw = False
+357.9914 	EXP 	Image: size = array([1.5, 1. ])
+357.9914 	EXP 	Image: image = 'FoodPics\\F4H\\cracker.jpg'
+357.9914 	EXP 	Image: autoDraw = True
+365.7290 	EXP 	RatingScale rating: reset()
+365.7446 	EXP 	Image: autoDraw = False
+365.7446 	EXP 	ratingQ: text = 'How much are you craving this food?'
+365.7446 	EXP 	text_3: text = 'Not at all                                                Very Much'
+365.7446 	EXP 	ratingQ: autoDraw = True
+365.7446 	EXP 	rating: autoDraw = True
+365.7446 	EXP 	text_3: autoDraw = True
+370.7155 	EXP 	ratingQ: autoDraw = False
+370.7489 	EXP 	ratingQ: autoDraw = False
+370.7489 	EXP 	rating: autoDraw = False
+370.7489 	EXP 	text_3: autoDraw = False
+370.7489 	EXP 	text_2: text = '+'
+370.7489 	EXP 	text_2: autoDraw = True
+372.7348 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'FoodPics\\F4H\\donuts.jpg')])
+372.8152 	EXP 	text_2: autoDraw = False
+372.8152 	EXP 	Image: size = array([1.5, 1. ])
+372.8152 	EXP 	Image: image = 'FoodPics\\F4H\\donuts.jpg'
+372.8152 	EXP 	Image: autoDraw = True
+380.7244 	EXP 	RatingScale rating: reset()
+380.7404 	EXP 	Image: autoDraw = False
+380.7404 	EXP 	ratingQ: text = 'How much are you craving this food?'
+380.7404 	EXP 	text_3: text = 'Not at all                                                Very Much'
+380.7404 	EXP 	ratingQ: autoDraw = True
+380.7404 	EXP 	rating: autoDraw = True
+380.7404 	EXP 	text_3: autoDraw = True
+385.7110 	EXP 	ratingQ: autoDraw = False
+385.7445 	EXP 	ratingQ: autoDraw = False
+385.7445 	EXP 	rating: autoDraw = False
+385.7445 	EXP 	text_3: autoDraw = False
+385.7445 	EXP 	text_2: text = '+'
+385.7445 	EXP 	text_2: autoDraw = True
+387.7302 	EXP 	New trial (rep=0, index=9): OrderedDict([('Picture', 'FoodPics\\F4H\\cake.jpg')])
+388.1423 	EXP 	text_2: autoDraw = False
+388.1423 	EXP 	Image: size = array([1.5, 1. ])
+388.1423 	EXP 	Image: image = 'FoodPics\\F4H\\cake.jpg'
+388.1423 	EXP 	Image: autoDraw = True
+395.7203 	EXP 	RatingScale rating: reset()
+395.7363 	EXP 	Image: autoDraw = False
+395.7363 	EXP 	ratingQ: text = 'How much are you craving this food?'
+395.7363 	EXP 	text_3: text = 'Not at all                                                Very Much'
+395.7363 	EXP 	ratingQ: autoDraw = True
+395.7363 	EXP 	rating: autoDraw = True
+395.7363 	EXP 	text_3: autoDraw = True
+400.7069 	EXP 	ratingQ: autoDraw = False
+400.7404 	EXP 	ratingQ: autoDraw = False
+400.7404 	EXP 	rating: autoDraw = False
+400.7404 	EXP 	text_3: autoDraw = False
+400.7404 	EXP 	text_2: text = '+'
+400.7404 	EXP 	text_2: autoDraw = True
+402.7259 	EXP 	New trial (rep=0, index=2): OrderedDict([('CueType', 'REACT'), ('rows', '0024:0034'), ('CueType2', 'REGULATE')])
+402.7420 	EXP 	text_2: autoDraw = False
+402.7420 	EXP 	cue: text = 'REACT'
+402.7420 	EXP 	ISI: text = '+'
+402.7420 	EXP 	cue: autoDraw = True
+407.7127 	EXP 	ISI: autoDraw = True
+407.7460 	EXP 	cue: autoDraw = False
+409.7034 	EXP 	Imported FoodReg.csv as conditions, 10 conditions, 1 params
+409.7036 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+409.7038 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'FoodPics\\F4H\\donuts2.jpg')])
+409.7900 	EXP 	ISI: autoDraw = False
+409.7900 	EXP 	cue: autoDraw = False
+409.7900 	EXP 	ISI: autoDraw = False
+409.7900 	EXP 	Image: size = array([1.5, 1. ])
+409.7900 	EXP 	Image: image = 'FoodPics\\F4H\\donuts2.jpg'
+409.7900 	EXP 	Image: autoDraw = True
+417.7219 	EXP 	RatingScale rating: reset()
+417.7379 	EXP 	Image: autoDraw = False
+417.7379 	EXP 	ratingQ: text = 'How much are you craving this food?'
+417.7379 	EXP 	text_3: text = 'Not at all                                                Very Much'
+417.7379 	EXP 	ratingQ: autoDraw = True
+417.7379 	EXP 	rating: autoDraw = True
+417.7379 	EXP 	text_3: autoDraw = True
+422.7086 	EXP 	ratingQ: autoDraw = False
+422.7418 	EXP 	ratingQ: autoDraw = False
+422.7418 	EXP 	rating: autoDraw = False
+422.7418 	EXP 	text_3: autoDraw = False
+422.7418 	EXP 	text_2: text = '+'
+422.7418 	EXP 	text_2: autoDraw = True
+424.7274 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'FoodPics\\F4H\\doritos.jpg')])
+424.8025 	EXP 	text_2: autoDraw = False
+424.8025 	EXP 	Image: size = array([1.5, 1. ])
+424.8025 	EXP 	Image: image = 'FoodPics\\F4H\\doritos.jpg'
+424.8025 	EXP 	Image: autoDraw = True
+432.7343 	EXP 	RatingScale rating: reset()
+432.7504 	EXP 	Image: autoDraw = False
+432.7504 	EXP 	ratingQ: text = 'How much are you craving this food?'
+432.7504 	EXP 	text_3: text = 'Not at all                                                Very Much'
+432.7504 	EXP 	ratingQ: autoDraw = True
+432.7504 	EXP 	rating: autoDraw = True
+432.7504 	EXP 	text_3: autoDraw = True
+437.7210 	EXP 	ratingQ: autoDraw = False
+437.7374 	EXP 	ratingQ: autoDraw = False
+437.7374 	EXP 	rating: autoDraw = False
+437.7374 	EXP 	text_3: autoDraw = False
+437.7374 	EXP 	text_2: text = '+'
+437.7374 	EXP 	text_2: autoDraw = True
+439.7232 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'FoodPics\\F4H\\fries.jpg')])
+439.7984 	EXP 	text_2: autoDraw = False
+439.7984 	EXP 	Image: size = array([1.5, 1. ])
+439.7984 	EXP 	Image: image = 'FoodPics\\F4H\\fries.jpg'
+439.7984 	EXP 	Image: autoDraw = True
+447.7301 	EXP 	RatingScale rating: reset()
+447.7460 	EXP 	Image: autoDraw = False
+447.7460 	EXP 	ratingQ: text = 'How much are you craving this food?'
+447.7460 	EXP 	text_3: text = 'Not at all                                                Very Much'
+447.7460 	EXP 	ratingQ: autoDraw = True
+447.7460 	EXP 	rating: autoDraw = True
+447.7460 	EXP 	text_3: autoDraw = True
+452.7171 	EXP 	ratingQ: autoDraw = False
+452.7501 	EXP 	ratingQ: autoDraw = False
+452.7501 	EXP 	rating: autoDraw = False
+452.7501 	EXP 	text_3: autoDraw = False
+452.7501 	EXP 	text_2: text = '+'
+452.7501 	EXP 	text_2: autoDraw = True
+454.7188 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'FoodPics\\F4H\\fruittart.jpg')])
+454.7960 	EXP 	text_2: autoDraw = False
+454.7960 	EXP 	Image: size = array([1.5, 1. ])
+454.7960 	EXP 	Image: image = 'FoodPics\\F4H\\fruittart.jpg'
+454.7960 	EXP 	Image: autoDraw = True
+462.7260 	EXP 	RatingScale rating: reset()
+462.7416 	EXP 	Image: autoDraw = False
+462.7416 	EXP 	ratingQ: text = 'How much are you craving this food?'
+462.7416 	EXP 	text_3: text = 'Not at all                                                Very Much'
+462.7416 	EXP 	ratingQ: autoDraw = True
+462.7416 	EXP 	rating: autoDraw = True
+462.7416 	EXP 	text_3: autoDraw = True
+467.7128 	EXP 	ratingQ: autoDraw = False
+467.7461 	EXP 	ratingQ: autoDraw = False
+467.7461 	EXP 	rating: autoDraw = False
+467.7461 	EXP 	text_3: autoDraw = False
+467.7461 	EXP 	text_2: text = '+'
+467.7461 	EXP 	text_2: autoDraw = True
+469.7313 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'FoodPics\\F4H\\grapefruit.jpg')])
+469.8081 	EXP 	text_2: autoDraw = False
+469.8081 	EXP 	Image: size = array([1.5, 1. ])
+469.8081 	EXP 	Image: image = 'FoodPics\\F4H\\grapefruit.jpg'
+469.8081 	EXP 	Image: autoDraw = True
+477.7217 	EXP 	RatingScale rating: reset()
+477.7383 	EXP 	Image: autoDraw = False
+477.7383 	EXP 	ratingQ: text = 'How much are you craving this food?'
+477.7383 	EXP 	text_3: text = 'Not at all                                                Very Much'
+477.7383 	EXP 	ratingQ: autoDraw = True
+477.7383 	EXP 	rating: autoDraw = True
+477.7383 	EXP 	text_3: autoDraw = True
+482.7082 	EXP 	ratingQ: autoDraw = False
+482.7416 	EXP 	ratingQ: autoDraw = False
+482.7416 	EXP 	rating: autoDraw = False
+482.7416 	EXP 	text_3: autoDraw = False
+482.7416 	EXP 	text_2: text = '+'
+482.7416 	EXP 	text_2: autoDraw = True
+484.7272 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'FoodPics\\F4H\\gummybears.jpg')])
+484.8032 	EXP 	text_2: autoDraw = False
+484.8032 	EXP 	Image: size = array([1.5, 1. ])
+484.8032 	EXP 	Image: image = 'FoodPics\\F4H\\gummybears.jpg'
+484.8032 	EXP 	Image: autoDraw = True
+492.7343 	EXP 	RatingScale rating: reset()
+492.7498 	EXP 	Image: autoDraw = False
+492.7498 	EXP 	ratingQ: text = 'How much are you craving this food?'
+492.7498 	EXP 	text_3: text = 'Not at all                                                Very Much'
+492.7498 	EXP 	ratingQ: autoDraw = True
+492.7498 	EXP 	rating: autoDraw = True
+492.7498 	EXP 	text_3: autoDraw = True
+497.7206 	EXP 	ratingQ: autoDraw = False
+497.7380 	EXP 	ratingQ: autoDraw = False
+497.7380 	EXP 	rating: autoDraw = False
+497.7380 	EXP 	text_3: autoDraw = False
+497.7380 	EXP 	text_2: text = '+'
+497.7380 	EXP 	text_2: autoDraw = True
+499.7226 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'FoodPics\\F4H\\hamburgers.jpg')])
+499.7971 	EXP 	text_2: autoDraw = False
+499.7971 	EXP 	Image: size = array([1.5, 1. ])
+499.7971 	EXP 	Image: image = 'FoodPics\\F4H\\hamburgers.jpg'
+499.7971 	EXP 	Image: autoDraw = True
+507.7300 	EXP 	RatingScale rating: reset()
+507.7462 	EXP 	Image: autoDraw = False
+507.7462 	EXP 	ratingQ: text = 'How much are you craving this food?'
+507.7462 	EXP 	text_3: text = 'Not at all                                                Very Much'
+507.7462 	EXP 	ratingQ: autoDraw = True
+507.7462 	EXP 	rating: autoDraw = True
+507.7462 	EXP 	text_3: autoDraw = True
+512.7171 	EXP 	ratingQ: autoDraw = False
+512.7502 	EXP 	ratingQ: autoDraw = False
+512.7502 	EXP 	rating: autoDraw = False
+512.7502 	EXP 	text_3: autoDraw = False
+512.7502 	EXP 	text_2: text = '+'
+512.7502 	EXP 	text_2: autoDraw = True
+514.7352 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'FoodPics\\F4H\\icecream.jpg')])
+514.8106 	EXP 	text_2: autoDraw = False
+514.8106 	EXP 	Image: size = array([1.5, 1. ])
+514.8106 	EXP 	Image: image = 'FoodPics\\F4H\\icecream.jpg'
+514.8106 	EXP 	Image: autoDraw = True
+522.7260 	EXP 	RatingScale rating: reset()
+522.7420 	EXP 	Image: autoDraw = False
+522.7420 	EXP 	ratingQ: text = 'How much are you craving this food?'
+522.7420 	EXP 	text_3: text = 'Not at all                                                Very Much'
+522.7420 	EXP 	ratingQ: autoDraw = True
+522.7420 	EXP 	rating: autoDraw = True
+522.7420 	EXP 	text_3: autoDraw = True
+527.7127 	EXP 	ratingQ: autoDraw = False
+527.7458 	EXP 	ratingQ: autoDraw = False
+527.7458 	EXP 	rating: autoDraw = False
+527.7458 	EXP 	text_3: autoDraw = False
+527.7458 	EXP 	text_2: text = '+'
+527.7458 	EXP 	text_2: autoDraw = True
+529.7310 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'FoodPics\\F4H\\kitkat.jpg')])
+529.8136 	EXP 	text_2: autoDraw = False
+529.8136 	EXP 	Image: size = array([1.5, 1. ])
+529.8136 	EXP 	Image: image = 'FoodPics\\F4H\\kitkat.jpg'
+529.8136 	EXP 	Image: autoDraw = True
+537.7215 	EXP 	RatingScale rating: reset()
+537.7374 	EXP 	Image: autoDraw = False
+537.7374 	EXP 	ratingQ: text = 'How much are you craving this food?'
+537.7374 	EXP 	text_3: text = 'Not at all                                                Very Much'
+537.7374 	EXP 	ratingQ: autoDraw = True
+537.7374 	EXP 	rating: autoDraw = True
+537.7374 	EXP 	text_3: autoDraw = True
+542.7083 	EXP 	ratingQ: autoDraw = False
+542.7413 	EXP 	ratingQ: autoDraw = False
+542.7413 	EXP 	rating: autoDraw = False
+542.7413 	EXP 	text_3: autoDraw = False
+542.7413 	EXP 	text_2: text = '+'
+542.7413 	EXP 	text_2: autoDraw = True
+544.7269 	EXP 	New trial (rep=0, index=9): OrderedDict([('Picture', 'FoodPics\\F4H\\marshmallows.jpg')])
+544.8041 	EXP 	text_2: autoDraw = False
+544.8041 	EXP 	Image: size = array([1.5, 1. ])
+544.8041 	EXP 	Image: image = 'FoodPics\\F4H\\marshmallows.jpg'
+544.8041 	EXP 	Image: autoDraw = True
+552.7338 	EXP 	RatingScale rating: reset()
+552.7498 	EXP 	Image: autoDraw = False
+552.7498 	EXP 	ratingQ: text = 'How much are you craving this food?'
+552.7498 	EXP 	text_3: text = 'Not at all                                                Very Much'
+552.7498 	EXP 	ratingQ: autoDraw = True
+552.7498 	EXP 	rating: autoDraw = True
+552.7498 	EXP 	text_3: autoDraw = True
+557.7206 	EXP 	ratingQ: autoDraw = False
+557.7373 	EXP 	ratingQ: autoDraw = False
+557.7373 	EXP 	rating: autoDraw = False
+557.7373 	EXP 	text_3: autoDraw = False
+557.7373 	EXP 	text_2: text = '+'
+557.7373 	EXP 	text_2: autoDraw = True
+559.7227 	EXP 	New trial (rep=0, index=3): OrderedDict([('CueType', 'REGULATE'), ('rows', '0034:0044'), ('CueType2', 'REACT')])
+559.7390 	EXP 	text_2: autoDraw = False
+559.7390 	EXP 	cue: text = 'REGULATE'
+559.7390 	EXP 	ISI: text = '+'
+559.7390 	EXP 	cue: autoDraw = True
+564.7265 	EXP 	ISI: autoDraw = True
+564.7431 	EXP 	cue: autoDraw = False
+566.7159 	EXP 	Imported FoodReg.csv as conditions, 10 conditions, 1 params
+566.7160 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+566.7162 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'FoodPics\\F4H\\muffins.jpg')])
+566.7947 	EXP 	ISI: autoDraw = False
+566.7947 	EXP 	cue: autoDraw = False
+566.7947 	EXP 	ISI: autoDraw = False
+566.7947 	EXP 	Image: size = array([1.5, 1. ])
+566.7947 	EXP 	Image: image = 'FoodPics\\F4H\\muffins.jpg'
+566.7947 	EXP 	Image: autoDraw = True
+574.7356 	EXP 	RatingScale rating: reset()
+574.7515 	EXP 	Image: autoDraw = False
+574.7515 	EXP 	ratingQ: text = 'How much are you craving this food?'
+574.7515 	EXP 	text_3: text = 'Not at all                                                Very Much'
+574.7515 	EXP 	ratingQ: autoDraw = True
+574.7515 	EXP 	rating: autoDraw = True
+574.7515 	EXP 	text_3: autoDraw = True
+579.7221 	EXP 	ratingQ: autoDraw = False
+579.7387 	EXP 	ratingQ: autoDraw = False
+579.7387 	EXP 	rating: autoDraw = False
+579.7387 	EXP 	text_3: autoDraw = False
+579.7387 	EXP 	text_2: text = '+'
+579.7387 	EXP 	text_2: autoDraw = True
+581.7245 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'FoodPics\\F4H\\oreos.jpg')])
+581.8061 	EXP 	text_2: autoDraw = False
+581.8061 	EXP 	Image: size = array([1.5, 1. ])
+581.8061 	EXP 	Image: image = 'FoodPics\\F4H\\oreos.jpg'
+581.8061 	EXP 	Image: autoDraw = True
+589.7312 	EXP 	RatingScale rating: reset()
+589.7471 	EXP 	Image: autoDraw = False
+589.7471 	EXP 	ratingQ: text = 'How much are you craving this food?'
+589.7471 	EXP 	text_3: text = 'Not at all                                                Very Much'
+589.7471 	EXP 	ratingQ: autoDraw = True
+589.7471 	EXP 	rating: autoDraw = True
+589.7471 	EXP 	text_3: autoDraw = True
+594.7180 	EXP 	ratingQ: autoDraw = False
+594.7514 	EXP 	ratingQ: autoDraw = False
+594.7514 	EXP 	rating: autoDraw = False
+594.7514 	EXP 	text_3: autoDraw = False
+594.7514 	EXP 	text_2: text = '+'
+594.7514 	EXP 	text_2: autoDraw = True
+596.7200 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'FoodPics\\F4H\\pizza.jpg')])
+596.8205 	EXP 	text_2: autoDraw = False
+596.8205 	EXP 	Image: size = array([1.5, 1. ])
+596.8205 	EXP 	Image: image = 'FoodPics\\F4H\\pizza.jpg'
+596.8205 	EXP 	Image: autoDraw = True
+604.7270 	EXP 	RatingScale rating: reset()
+604.7428 	EXP 	Image: autoDraw = False
+604.7428 	EXP 	ratingQ: text = 'How much are you craving this food?'
+604.7428 	EXP 	text_3: text = 'Not at all                                                Very Much'
+604.7428 	EXP 	ratingQ: autoDraw = True
+604.7428 	EXP 	rating: autoDraw = True
+604.7428 	EXP 	text_3: autoDraw = True
+609.7136 	EXP 	ratingQ: autoDraw = False
+609.7473 	EXP 	ratingQ: autoDraw = False
+609.7473 	EXP 	rating: autoDraw = False
+609.7473 	EXP 	text_3: autoDraw = False
+609.7473 	EXP 	text_2: text = '+'
+609.7473 	EXP 	text_2: autoDraw = True
+611.7332 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'FoodPics\\F4H\\pretzel.jpg')])
+611.8120 	EXP 	text_2: autoDraw = False
+611.8120 	EXP 	Image: size = array([1.5, 1. ])
+611.8120 	EXP 	Image: image = 'FoodPics\\F4H\\pretzel.jpg'
+611.8120 	EXP 	Image: autoDraw = True
+619.7228 	EXP 	RatingScale rating: reset()
+619.7387 	EXP 	Image: autoDraw = False
+619.7387 	EXP 	ratingQ: text = 'How much are you craving this food?'
+619.7387 	EXP 	text_3: text = 'Not at all                                                Very Much'
+619.7387 	EXP 	ratingQ: autoDraw = True
+619.7387 	EXP 	rating: autoDraw = True
+619.7387 	EXP 	text_3: autoDraw = True
+624.7093 	EXP 	ratingQ: autoDraw = False
+624.7426 	EXP 	ratingQ: autoDraw = False
+624.7426 	EXP 	rating: autoDraw = False
+624.7426 	EXP 	text_3: autoDraw = False
+624.7426 	EXP 	text_2: text = '+'
+624.7426 	EXP 	text_2: autoDraw = True
+626.7282 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'FoodPics\\F4H\\eclair.jpg')])
+627.2564 	EXP 	text_2: autoDraw = False
+627.2564 	EXP 	Image: size = array([1.5, 1. ])
+627.2564 	EXP 	Image: image = 'FoodPics\\F4H\\eclair.jpg'
+627.2564 	EXP 	Image: autoDraw = True
+634.7353 	EXP 	RatingScale rating: reset()
+634.7513 	EXP 	Image: autoDraw = False
+634.7513 	EXP 	ratingQ: text = 'How much are you craving this food?'
+634.7513 	EXP 	text_3: text = 'Not at all                                                Very Much'
+634.7513 	EXP 	ratingQ: autoDraw = True
+634.7513 	EXP 	rating: autoDraw = True
+634.7513 	EXP 	text_3: autoDraw = True
+639.7220 	EXP 	ratingQ: autoDraw = False
+639.7385 	EXP 	ratingQ: autoDraw = False
+639.7385 	EXP 	rating: autoDraw = False
+639.7385 	EXP 	text_3: autoDraw = False
+639.7385 	EXP 	text_2: text = '+'
+639.7385 	EXP 	text_2: autoDraw = True
+641.7239 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'FoodPics\\F4H\\mm.jpg')])
+642.0634 	EXP 	text_2: autoDraw = False
+642.0634 	EXP 	Image: size = array([1.5, 1. ])
+642.0634 	EXP 	Image: image = 'FoodPics\\F4H\\mm.jpg'
+642.0634 	EXP 	Image: autoDraw = True
+649.7310 	EXP 	RatingScale rating: reset()
+649.7471 	EXP 	Image: autoDraw = False
+649.7471 	EXP 	ratingQ: text = 'How much are you craving this food?'
+649.7471 	EXP 	text_3: text = 'Not at all                                                Very Much'
+649.7471 	EXP 	ratingQ: autoDraw = True
+649.7471 	EXP 	rating: autoDraw = True
+649.7471 	EXP 	text_3: autoDraw = True
+654.7176 	EXP 	ratingQ: autoDraw = False
+654.7512 	EXP 	ratingQ: autoDraw = False
+654.7512 	EXP 	rating: autoDraw = False
+654.7512 	EXP 	text_3: autoDraw = False
+654.7512 	EXP 	text_2: text = '+'
+654.7512 	EXP 	text_2: autoDraw = True
+656.7198 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'FoodPics\\F4H\\pretzels.jpg')])
+656.8009 	EXP 	text_2: autoDraw = False
+656.8009 	EXP 	Image: size = array([1.5, 1. ])
+656.8009 	EXP 	Image: image = 'FoodPics\\F4H\\pretzels.jpg'
+656.8009 	EXP 	Image: autoDraw = True
+664.7269 	EXP 	RatingScale rating: reset()
+664.7426 	EXP 	Image: autoDraw = False
+664.7426 	EXP 	ratingQ: text = 'How much are you craving this food?'
+664.7426 	EXP 	text_3: text = 'Not at all                                                Very Much'
+664.7426 	EXP 	ratingQ: autoDraw = True
+664.7426 	EXP 	rating: autoDraw = True
+664.7426 	EXP 	text_3: autoDraw = True
+669.7133 	EXP 	ratingQ: autoDraw = False
+669.7467 	EXP 	ratingQ: autoDraw = False
+669.7467 	EXP 	rating: autoDraw = False
+669.7467 	EXP 	text_3: autoDraw = False
+669.7467 	EXP 	text_2: text = '+'
+669.7467 	EXP 	text_2: autoDraw = True
+671.7330 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'FoodPics\\F4H\\ritz.jpg')])
+671.8202 	EXP 	text_2: autoDraw = False
+671.8202 	EXP 	Image: size = array([1.5, 1. ])
+671.8202 	EXP 	Image: image = 'FoodPics\\F4H\\ritz.jpg'
+671.8202 	EXP 	Image: autoDraw = True
+679.7229 	EXP 	RatingScale rating: reset()
+679.7387 	EXP 	Image: autoDraw = False
+679.7387 	EXP 	ratingQ: text = 'How much are you craving this food?'
+679.7387 	EXP 	text_3: text = 'Not at all                                                Very Much'
+679.7387 	EXP 	ratingQ: autoDraw = True
+679.7387 	EXP 	rating: autoDraw = True
+679.7387 	EXP 	text_3: autoDraw = True
+684.7121 	EXP 	ratingQ: autoDraw = False
+684.7457 	EXP 	ratingQ: autoDraw = False
+684.7457 	EXP 	rating: autoDraw = False
+684.7457 	EXP 	text_3: autoDraw = False
+684.7457 	EXP 	text_2: text = '+'
+684.7457 	EXP 	text_2: autoDraw = True
+686.7324 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'FoodPics\\F4H\\strawberries.jpg')])
+686.9541 	EXP 	text_2: autoDraw = False
+686.9541 	EXP 	Image: size = array([1.5, 1. ])
+686.9541 	EXP 	Image: image = 'FoodPics\\F4H\\strawberries.jpg'
+686.9541 	EXP 	Image: autoDraw = True
+694.7358 	EXP 	RatingScale rating: reset()
+694.7516 	EXP 	Image: autoDraw = False
+694.7516 	EXP 	ratingQ: text = 'How much are you craving this food?'
+694.7516 	EXP 	text_3: text = 'Not at all                                                Very Much'
+694.7516 	EXP 	ratingQ: autoDraw = True
+694.7516 	EXP 	rating: autoDraw = True
+694.7516 	EXP 	text_3: autoDraw = True
+699.7218 	EXP 	ratingQ: autoDraw = False
+699.7380 	EXP 	ratingQ: autoDraw = False
+699.7380 	EXP 	rating: autoDraw = False
+699.7380 	EXP 	text_3: autoDraw = False
+699.7380 	EXP 	text_2: text = '+'
+699.7380 	EXP 	text_2: autoDraw = True
+701.7235 	EXP 	New trial (rep=0, index=9): OrderedDict([('Picture', 'FoodPics\\F4H\\chocbar.jpg')])
+702.5172 	EXP 	text_2: autoDraw = False
+702.5172 	EXP 	Image: size = array([1.5, 1. ])
+702.5172 	EXP 	Image: image = 'FoodPics\\F4H\\chocbar.jpg'
+702.5172 	EXP 	Image: autoDraw = True
+709.7305 	EXP 	RatingScale rating: reset()
+709.7464 	EXP 	Image: autoDraw = False
+709.7464 	EXP 	ratingQ: text = 'How much are you craving this food?'
+709.7464 	EXP 	text_3: text = 'Not at all                                                Very Much'
+709.7464 	EXP 	ratingQ: autoDraw = True
+709.7464 	EXP 	rating: autoDraw = True
+709.7464 	EXP 	text_3: autoDraw = True
+714.7174 	EXP 	ratingQ: autoDraw = False
+714.7505 	EXP 	ratingQ: autoDraw = False
+714.7505 	EXP 	rating: autoDraw = False
+714.7505 	EXP 	text_3: autoDraw = False
+714.7505 	EXP 	text_2: text = '+'
+714.7505 	EXP 	text_2: autoDraw = True
+716.7193 	EXP 	New trial (rep=0, index=4): OrderedDict([('CueType', 'REGULATE'), ('rows', '0044:0054'), ('CueType2', 'REACT')])
+716.7354 	EXP 	text_2: autoDraw = False
+716.7354 	EXP 	cue: text = 'REGULATE'
+716.7354 	EXP 	ISI: text = '+'
+716.7354 	EXP 	cue: autoDraw = True
+721.7063 	EXP 	ISI: autoDraw = True
+721.7398 	EXP 	cue: autoDraw = False
+723.6960 	EXP 	Imported FoodReg.csv as conditions, 10 conditions, 1 params
+723.6962 	EXP 	Created sequence: sequential, trialTypes=10, nReps=1, seed=None
+723.6963 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'FoodPics\\F4H\\strawberries2.jpg')])
+723.7846 	EXP 	ISI: autoDraw = False
+723.7846 	EXP 	cue: autoDraw = False
+723.7846 	EXP 	ISI: autoDraw = False
+723.7846 	EXP 	Image: size = array([1.5, 1. ])
+723.7846 	EXP 	Image: image = 'FoodPics\\F4H\\strawberries2.jpg'
+723.7846 	EXP 	Image: autoDraw = True
+731.7323 	EXP 	RatingScale rating: reset()
+731.7480 	EXP 	Image: autoDraw = False
+731.7480 	EXP 	ratingQ: text = 'How much are you craving this food?'
+731.7480 	EXP 	text_3: text = 'Not at all                                                Very Much'
+731.7480 	EXP 	ratingQ: autoDraw = True
+731.7480 	EXP 	rating: autoDraw = True
+731.7480 	EXP 	text_3: autoDraw = True
+736.7188 	EXP 	ratingQ: autoDraw = False
+736.7356 	EXP 	ratingQ: autoDraw = False
+736.7356 	EXP 	rating: autoDraw = False
+736.7356 	EXP 	text_3: autoDraw = False
+736.7356 	EXP 	text_2: text = '+'
+736.7356 	EXP 	text_2: autoDraw = True
+738.7210 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'FoodPics\\F4H\\sushi.jpg')])
+738.8087 	EXP 	text_2: autoDraw = False
+738.8087 	EXP 	Image: size = array([1.5, 1. ])
+738.8087 	EXP 	Image: image = 'FoodPics\\F4H\\sushi.jpg'
+738.8087 	EXP 	Image: autoDraw = True
+746.7281 	EXP 	RatingScale rating: reset()
+746.7436 	EXP 	Image: autoDraw = False
+746.7436 	EXP 	ratingQ: text = 'How much are you craving this food?'
+746.7436 	EXP 	text_3: text = 'Not at all                                                Very Much'
+746.7436 	EXP 	ratingQ: autoDraw = True
+746.7436 	EXP 	rating: autoDraw = True
+746.7436 	EXP 	text_3: autoDraw = True
+751.7143 	EXP 	ratingQ: autoDraw = False
+751.7478 	EXP 	ratingQ: autoDraw = False
+751.7478 	EXP 	rating: autoDraw = False
+751.7478 	EXP 	text_3: autoDraw = False
+751.7478 	EXP 	text_2: text = '+'
+751.7478 	EXP 	text_2: autoDraw = True
+753.7333 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'FoodPics\\F4H\\watermelon.jpg')])
+753.8069 	EXP 	text_2: autoDraw = False
+753.8069 	EXP 	Image: size = array([1.5, 1. ])
+753.8069 	EXP 	Image: image = 'FoodPics\\F4H\\watermelon.jpg'
+753.8069 	EXP 	Image: autoDraw = True
+761.7235 	EXP 	RatingScale rating: reset()
+761.7394 	EXP 	Image: autoDraw = False
+761.7394 	EXP 	ratingQ: text = 'How much are you craving this food?'
+761.7394 	EXP 	text_3: text = 'Not at all                                                Very Much'
+761.7394 	EXP 	ratingQ: autoDraw = True
+761.7394 	EXP 	rating: autoDraw = True
+761.7394 	EXP 	text_3: autoDraw = True
+766.7104 	EXP 	ratingQ: autoDraw = False
+766.7435 	EXP 	ratingQ: autoDraw = False
+766.7435 	EXP 	rating: autoDraw = False
+766.7435 	EXP 	text_3: autoDraw = False
+766.7435 	EXP 	text_2: text = '+'
+766.7435 	EXP 	text_2: autoDraw = True
+768.7293 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'FoodPics\\F4H\\pineapple.jpg')])
+768.8054 	EXP 	text_2: autoDraw = False
+768.8054 	EXP 	Image: size = array([1.5, 1. ])
+768.8054 	EXP 	Image: image = 'FoodPics\\F4H\\pineapple.jpg'
+768.8054 	EXP 	Image: autoDraw = True
+776.7360 	EXP 	RatingScale rating: reset()
+776.7519 	EXP 	Image: autoDraw = False
+776.7519 	EXP 	ratingQ: text = 'How much are you craving this food?'
+776.7519 	EXP 	text_3: text = 'Not at all                                                Very Much'
+776.7519 	EXP 	ratingQ: autoDraw = True
+776.7519 	EXP 	rating: autoDraw = True
+776.7519 	EXP 	text_3: autoDraw = True
+781.7227 	EXP 	ratingQ: autoDraw = False
+781.7394 	EXP 	ratingQ: autoDraw = False
+781.7394 	EXP 	rating: autoDraw = False
+781.7394 	EXP 	text_3: autoDraw = False
+781.7394 	EXP 	text_2: text = '+'
+781.7394 	EXP 	text_2: autoDraw = True
+783.7249 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'FoodPics\\F4H\\pretzelsticks.jpg')])
+783.8038 	EXP 	text_2: autoDraw = False
+783.8038 	EXP 	Image: size = array([1.5, 1. ])
+783.8038 	EXP 	Image: image = 'FoodPics\\F4H\\pretzelsticks.jpg'
+783.8038 	EXP 	Image: autoDraw = True
+791.7318 	EXP 	RatingScale rating: reset()
+791.7478 	EXP 	Image: autoDraw = False
+791.7478 	EXP 	ratingQ: text = 'How much are you craving this food?'
+791.7478 	EXP 	text_3: text = 'Not at all                                                Very Much'
+791.7478 	EXP 	ratingQ: autoDraw = True
+791.7478 	EXP 	rating: autoDraw = True
+791.7478 	EXP 	text_3: autoDraw = True
+796.7186 	EXP 	ratingQ: autoDraw = False
+796.7352 	EXP 	ratingQ: autoDraw = False
+796.7352 	EXP 	rating: autoDraw = False
+796.7352 	EXP 	text_3: autoDraw = False
+796.7352 	EXP 	text_2: text = '+'
+796.7352 	EXP 	text_2: autoDraw = True
+798.7209 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'FoodPics\\F4H\\steak.jpg')])
+798.7961 	EXP 	text_2: autoDraw = False
+798.7961 	EXP 	Image: size = array([1.5, 1. ])
+798.7961 	EXP 	Image: image = 'FoodPics\\F4H\\steak.jpg'
+798.7961 	EXP 	Image: autoDraw = True
+806.7280 	EXP 	RatingScale rating: reset()
+806.7433 	EXP 	Image: autoDraw = False
+806.7433 	EXP 	ratingQ: text = 'How much are you craving this food?'
+806.7433 	EXP 	text_3: text = 'Not at all                                                Very Much'
+806.7433 	EXP 	ratingQ: autoDraw = True
+806.7433 	EXP 	rating: autoDraw = True
+806.7433 	EXP 	text_3: autoDraw = True
+811.7144 	EXP 	ratingQ: autoDraw = False
+811.7477 	EXP 	ratingQ: autoDraw = False
+811.7477 	EXP 	rating: autoDraw = False
+811.7477 	EXP 	text_3: autoDraw = False
+811.7477 	EXP 	text_2: text = '+'
+811.7477 	EXP 	text_2: autoDraw = True
+813.7331 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'FoodPics\\F4H\\candy.jpg')])
+813.8078 	EXP 	text_2: autoDraw = False
+813.8078 	EXP 	Image: size = array([1.5, 1. ])
+813.8078 	EXP 	Image: image = 'FoodPics\\F4H\\candy.jpg'
+813.8078 	EXP 	Image: autoDraw = True
+821.7233 	EXP 	RatingScale rating: reset()
+821.7392 	EXP 	Image: autoDraw = False
+821.7392 	EXP 	ratingQ: text = 'How much are you craving this food?'
+821.7392 	EXP 	text_3: text = 'Not at all                                                Very Much'
+821.7392 	EXP 	ratingQ: autoDraw = True
+821.7392 	EXP 	rating: autoDraw = True
+821.7392 	EXP 	text_3: autoDraw = True
+826.7100 	EXP 	ratingQ: autoDraw = False
+826.7433 	EXP 	ratingQ: autoDraw = False
+826.7433 	EXP 	rating: autoDraw = False
+826.7433 	EXP 	text_3: autoDraw = False
+826.7433 	EXP 	text_2: text = '+'
+826.7433 	EXP 	text_2: autoDraw = True
+828.7292 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'FoodPics\\F4H\\bread.jpg')])
+828.8050 	EXP 	text_2: autoDraw = False
+828.8050 	EXP 	Image: size = array([1.5, 1. ])
+828.8050 	EXP 	Image: image = 'FoodPics\\F4H\\bread.jpg'
+828.8050 	EXP 	Image: autoDraw = True
+836.7197 	EXP 	RatingScale rating: reset()
+836.7353 	EXP 	Image: autoDraw = False
+836.7353 	EXP 	ratingQ: text = 'How much are you craving this food?'
+836.7353 	EXP 	text_3: text = 'Not at all                                                Very Much'
+836.7353 	EXP 	ratingQ: autoDraw = True
+836.7353 	EXP 	rating: autoDraw = True
+836.7353 	EXP 	text_3: autoDraw = True
+841.7058 	EXP 	ratingQ: autoDraw = False
+841.7391 	EXP 	ratingQ: autoDraw = False
+841.7391 	EXP 	rating: autoDraw = False
+841.7391 	EXP 	text_3: autoDraw = False
+841.7391 	EXP 	text_2: text = '+'
+841.7391 	EXP 	text_2: autoDraw = True
+843.7245 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'FoodPics\\F4H\\wafers.jpg')])
+844.0650 	EXP 	text_2: autoDraw = False
+844.0650 	EXP 	Image: size = array([1.5, 1. ])
+844.0650 	EXP 	Image: image = 'FoodPics\\F4H\\wafers.jpg'
+844.0650 	EXP 	Image: autoDraw = True
+851.7317 	EXP 	RatingScale rating: reset()
+851.7475 	EXP 	Image: autoDraw = False
+851.7475 	EXP 	ratingQ: text = 'How much are you craving this food?'
+851.7475 	EXP 	text_3: text = 'Not at all                                                Very Much'
+851.7475 	EXP 	ratingQ: autoDraw = True
+851.7475 	EXP 	rating: autoDraw = True
+851.7475 	EXP 	text_3: autoDraw = True
+856.7184 	EXP 	ratingQ: autoDraw = False
+856.7516 	EXP 	ratingQ: autoDraw = False
+856.7516 	EXP 	rating: autoDraw = False
+856.7516 	EXP 	text_3: autoDraw = False
+856.7516 	EXP 	text_2: text = '+'
+856.7516 	EXP 	text_2: autoDraw = True
+858.7228 	EXP 	New trial (rep=0, index=9): OrderedDict([('Picture', 'FoodPics\\F4H\\cookies2.jpg')])
+858.8053 	EXP 	text_2: autoDraw = False
+858.8053 	EXP 	Image: size = array([1.5, 1. ])
+858.8053 	EXP 	Image: image = 'FoodPics\\F4H\\cookies2.jpg'
+858.8053 	EXP 	Image: autoDraw = True
+866.7275 	EXP 	RatingScale rating: reset()
+866.7434 	EXP 	Image: autoDraw = False
+866.7434 	EXP 	ratingQ: text = 'How much are you craving this food?'
+866.7434 	EXP 	text_3: text = 'Not at all                                                Very Much'
+866.7434 	EXP 	ratingQ: autoDraw = True
+866.7434 	EXP 	rating: autoDraw = True
+866.7434 	EXP 	text_3: autoDraw = True
+871.7143 	EXP 	ratingQ: autoDraw = False
+871.7474 	EXP 	ratingQ: autoDraw = False
+871.7474 	EXP 	rating: autoDraw = False
+871.7474 	EXP 	text_3: autoDraw = False
+871.7474 	EXP 	text_2: text = '+'
+871.7474 	EXP 	text_2: autoDraw = True
+873.7330 	EXP 	New trial (rep=0, index=5): OrderedDict([('CueType', 'REACT'), ('rows', '0054:0064'), ('CueType2', 'REGULATE')])
+873.7490 	EXP 	text_2: autoDraw = False
+873.7490 	EXP 	cue: text = 'REACT'
+873.7490 	EXP 	ISI: text = '+'
+873.7490 	EXP 	cue: autoDraw = True
+878.7367 	EXP 	ISI: autoDraw = True
+878.7532 	EXP 	cue: autoDraw = False
+880.7250 	EXP 	Imported FoodReg.csv as conditions, 9 conditions, 1 params
+880.7252 	EXP 	Created sequence: sequential, trialTypes=9, nReps=1, seed=None
+880.7253 	EXP 	New trial (rep=0, index=0): OrderedDict([('Picture', 'FoodPics\\F4H\\sunchips.jpg')])
+880.8027 	EXP 	cue: autoDraw = False
+880.8027 	EXP 	ISI: autoDraw = False
+880.8027 	EXP 	Image: size = array([1.5, 1. ])
+880.8027 	EXP 	Image: image = 'FoodPics\\F4H\\sunchips.jpg'
+880.8027 	EXP 	Image: autoDraw = True
+888.7292 	EXP 	RatingScale rating: reset()
+888.7448 	EXP 	Image: autoDraw = False
+888.7448 	EXP 	ratingQ: text = 'How much are you craving this food?'
+888.7448 	EXP 	text_3: text = 'Not at all                                                Very Much'
+888.7448 	EXP 	ratingQ: autoDraw = True
+888.7448 	EXP 	rating: autoDraw = True
+888.7448 	EXP 	text_3: autoDraw = True
+893.7157 	EXP 	ratingQ: autoDraw = False
+893.7491 	EXP 	ratingQ: autoDraw = False
+893.7491 	EXP 	rating: autoDraw = False
+893.7491 	EXP 	text_3: autoDraw = False
+893.7491 	EXP 	text_2: text = '+'
+893.7491 	EXP 	text_2: autoDraw = True
+895.7348 	EXP 	New trial (rep=0, index=1): OrderedDict([('Picture', 'FoodPics\\F4H\\sushi2.jpg')])
+895.8098 	EXP 	text_2: autoDraw = False
+895.8098 	EXP 	Image: size = array([1.5, 1. ])
+895.8098 	EXP 	Image: image = 'FoodPics\\F4H\\sushi2.jpg'
+895.8098 	EXP 	Image: autoDraw = True
+903.7249 	EXP 	RatingScale rating: reset()
+903.7406 	EXP 	Image: autoDraw = False
+903.7406 	EXP 	ratingQ: text = 'How much are you craving this food?'
+903.7406 	EXP 	text_3: text = 'Not at all                                                Very Much'
+903.7406 	EXP 	ratingQ: autoDraw = True
+903.7406 	EXP 	rating: autoDraw = True
+903.7406 	EXP 	text_3: autoDraw = True
+908.7121 	EXP 	ratingQ: autoDraw = False
+908.7448 	EXP 	ratingQ: autoDraw = False
+908.7448 	EXP 	rating: autoDraw = False
+908.7448 	EXP 	text_3: autoDraw = False
+908.7448 	EXP 	text_2: text = '+'
+908.7448 	EXP 	text_2: autoDraw = True
+910.7304 	EXP 	New trial (rep=0, index=2): OrderedDict([('Picture', 'FoodPics\\F4H\\croissants.jpg')])
+910.8056 	EXP 	text_2: autoDraw = False
+910.8056 	EXP 	Image: size = array([1.5, 1. ])
+910.8056 	EXP 	Image: image = 'FoodPics\\F4H\\croissants.jpg'
+910.8056 	EXP 	Image: autoDraw = True
+918.7210 	EXP 	RatingScale rating: reset()
+918.7366 	EXP 	Image: autoDraw = False
+918.7366 	EXP 	ratingQ: text = 'How much are you craving this food?'
+918.7366 	EXP 	text_3: text = 'Not at all                                                Very Much'
+918.7366 	EXP 	ratingQ: autoDraw = True
+918.7366 	EXP 	rating: autoDraw = True
+918.7366 	EXP 	text_3: autoDraw = True
+923.7073 	EXP 	ratingQ: autoDraw = False
+923.7405 	EXP 	ratingQ: autoDraw = False
+923.7405 	EXP 	rating: autoDraw = False
+923.7405 	EXP 	text_3: autoDraw = False
+923.7405 	EXP 	text_2: text = '+'
+923.7405 	EXP 	text_2: autoDraw = True
+925.7261 	EXP 	New trial (rep=0, index=3): OrderedDict([('Picture', 'FoodPics\\F4H\\grapes.jpg')])
+926.0823 	EXP 	text_2: autoDraw = False
+926.0823 	EXP 	Image: size = array([1.5, 1. ])
+926.0823 	EXP 	Image: image = 'FoodPics\\F4H\\grapes.jpg'
+926.0823 	EXP 	Image: autoDraw = True
+933.7331 	EXP 	RatingScale rating: reset()
+933.7489 	EXP 	Image: autoDraw = False
+933.7489 	EXP 	ratingQ: text = 'How much are you craving this food?'
+933.7489 	EXP 	text_3: text = 'Not at all                                                Very Much'
+933.7489 	EXP 	ratingQ: autoDraw = True
+933.7489 	EXP 	rating: autoDraw = True
+933.7489 	EXP 	text_3: autoDraw = True
+938.7206 	EXP 	ratingQ: autoDraw = False
+938.7376 	EXP 	ratingQ: autoDraw = False
+938.7376 	EXP 	rating: autoDraw = False
+938.7376 	EXP 	text_3: autoDraw = False
+938.7376 	EXP 	text_2: text = '+'
+938.7376 	EXP 	text_2: autoDraw = True
+940.7217 	EXP 	New trial (rep=0, index=4): OrderedDict([('Picture', 'FoodPics\\F4H\\meatballs.jpg')])
+940.8742 	EXP 	text_2: autoDraw = False
+940.8742 	EXP 	Image: size = array([1.5, 1. ])
+940.8742 	EXP 	Image: image = 'FoodPics\\F4H\\meatballs.jpg'
+940.8742 	EXP 	Image: autoDraw = True
+948.7289 	EXP 	RatingScale rating: reset()
+948.7448 	EXP 	Image: autoDraw = False
+948.7448 	EXP 	ratingQ: text = 'How much are you craving this food?'
+948.7448 	EXP 	text_3: text = 'Not at all                                                Very Much'
+948.7448 	EXP 	ratingQ: autoDraw = True
+948.7448 	EXP 	rating: autoDraw = True
+948.7448 	EXP 	text_3: autoDraw = True
+953.7151 	EXP 	ratingQ: autoDraw = False
+953.7489 	EXP 	ratingQ: autoDraw = False
+953.7489 	EXP 	rating: autoDraw = False
+953.7489 	EXP 	text_3: autoDraw = False
+953.7489 	EXP 	text_2: text = '+'
+953.7489 	EXP 	text_2: autoDraw = True
+955.7340 	EXP 	New trial (rep=0, index=5): OrderedDict([('Picture', 'FoodPics\\F4H\\cornbread.jpg')])
+955.8108 	EXP 	text_2: autoDraw = False
+955.8108 	EXP 	Image: size = array([1.5, 1. ])
+955.8108 	EXP 	Image: image = 'FoodPics\\F4H\\cornbread.jpg'
+955.8108 	EXP 	Image: autoDraw = True
+963.7245 	EXP 	RatingScale rating: reset()
+963.7403 	EXP 	Image: autoDraw = False
+963.7403 	EXP 	ratingQ: text = 'How much are you craving this food?'
+963.7403 	EXP 	text_3: text = 'Not at all                                                Very Much'
+963.7403 	EXP 	ratingQ: autoDraw = True
+963.7403 	EXP 	rating: autoDraw = True
+963.7403 	EXP 	text_3: autoDraw = True
+968.7113 	EXP 	ratingQ: autoDraw = False
+968.7444 	EXP 	ratingQ: autoDraw = False
+968.7444 	EXP 	rating: autoDraw = False
+968.7444 	EXP 	text_3: autoDraw = False
+968.7444 	EXP 	text_2: text = '+'
+968.7444 	EXP 	text_2: autoDraw = True
+970.7300 	EXP 	New trial (rep=0, index=6): OrderedDict([('Picture', 'FoodPics\\F4H\\icecream2.jpg')])
+970.8023 	EXP 	text_2: autoDraw = False
+970.8023 	EXP 	Image: size = array([1.5, 1. ])
+970.8023 	EXP 	Image: image = 'FoodPics\\F4H\\icecream2.jpg'
+970.8023 	EXP 	Image: autoDraw = True
+978.7205 	EXP 	RatingScale rating: reset()
+978.7361 	EXP 	Image: autoDraw = False
+978.7361 	EXP 	ratingQ: text = 'How much are you craving this food?'
+978.7361 	EXP 	text_3: text = 'Not at all                                                Very Much'
+978.7361 	EXP 	ratingQ: autoDraw = True
+978.7361 	EXP 	rating: autoDraw = True
+978.7361 	EXP 	text_3: autoDraw = True
+983.7070 	EXP 	ratingQ: autoDraw = False
+983.7404 	EXP 	ratingQ: autoDraw = False
+983.7404 	EXP 	rating: autoDraw = False
+983.7404 	EXP 	text_3: autoDraw = False
+983.7404 	EXP 	text_2: text = '+'
+983.7404 	EXP 	text_2: autoDraw = True
+985.7258 	EXP 	New trial (rep=0, index=7): OrderedDict([('Picture', 'FoodPics\\F4H\\muffins2.jpg')])
+985.8003 	EXP 	text_2: autoDraw = False
+985.8003 	EXP 	Image: size = array([1.5, 1. ])
+985.8003 	EXP 	Image: image = 'FoodPics\\F4H\\muffins2.jpg'
+985.8003 	EXP 	Image: autoDraw = True
+993.7327 	EXP 	RatingScale rating: reset()
+993.7487 	EXP 	Image: autoDraw = False
+993.7487 	EXP 	ratingQ: text = 'How much are you craving this food?'
+993.7487 	EXP 	text_3: text = 'Not at all                                                Very Much'
+993.7487 	EXP 	ratingQ: autoDraw = True
+993.7487 	EXP 	rating: autoDraw = True
+993.7487 	EXP 	text_3: autoDraw = True
+998.7195 	EXP 	ratingQ: autoDraw = False
+998.7362 	EXP 	ratingQ: autoDraw = False
+998.7362 	EXP 	rating: autoDraw = False
+998.7362 	EXP 	text_3: autoDraw = False
+998.7362 	EXP 	text_2: text = '+'
+998.7362 	EXP 	text_2: autoDraw = True
+1000.7214 	EXP 	New trial (rep=0, index=8): OrderedDict([('Picture', 'FoodPics\\F4H\\turnovers.jpg')])
+1001.2010 	EXP 	text_2: autoDraw = False
+1001.2010 	EXP 	Image: size = array([1.5, 1. ])
+1001.2010 	EXP 	Image: image = 'FoodPics\\F4H\\turnovers.jpg'
+1001.2010 	EXP 	Image: autoDraw = True
+1008.7284 	EXP 	RatingScale rating: reset()
+1008.7444 	EXP 	Image: autoDraw = False
+1008.7444 	EXP 	ratingQ: text = 'How much are you craving this food?'
+1008.7444 	EXP 	text_3: text = 'Not at all                                                Very Much'
+1008.7444 	EXP 	ratingQ: autoDraw = True
+1008.7444 	EXP 	rating: autoDraw = True
+1008.7444 	EXP 	text_3: autoDraw = True
+1013.7154 	EXP 	ratingQ: autoDraw = False
+1013.7485 	EXP 	ratingQ: autoDraw = False
+1013.7485 	EXP 	rating: autoDraw = False
+1013.7485 	EXP 	text_3: autoDraw = False
+1013.7485 	EXP 	text_2: text = '+'
+1013.7485 	EXP 	text_2: autoDraw = True
+1015.7503 	EXP 	text_2: autoDraw = False
+1015.7503 	EXP 	ty: autoDraw = True
+1033.1930 	EXP 	window1: mouseVisible = True
