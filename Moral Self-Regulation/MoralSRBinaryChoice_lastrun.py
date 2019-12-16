@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 21, 2019, at 12:18
+    on December 16, 2019, at 09:06
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -353,14 +353,14 @@ RemText2 = visual.TextStim(win=win, name='RemText2',
 leftText2 = visual.TextStim(win=win, name='leftText2',
     text='default text',
     font='Arial',
-    pos=(0.4, 0.05), height=0.045, wrapWidth=None, ori=0, 
+    pos=(0.4, 0.053), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 rightText2 = visual.TextStim(win=win, name='rightText2',
     text='default text',
     font='Arial',
-    pos=(0.4, -0.04), height=0.045, wrapWidth=None, ori=0, 
+    pos=(0.4, -0.043), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
