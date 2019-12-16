@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on November 13, 2019, at 12:01
+    on December 16, 2019, at 09:04
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -260,7 +260,7 @@ def earningsFunct(gamProb, chosenMoney, WinLossType, earning):
 # Initialize components for Routine "Inst2"
 Inst2Clock = core.Clock()
 instruct2 = visual.TextStim(win=win, name='instruct2',
-    text='You will be given regulation instructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press enter!',
+    text='You will be given regulation instructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press ENTER!',
     font='Arial',
     pos=(0, 0), height=0.06, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -283,7 +283,7 @@ PracticeCueClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
     text='EMPHASIZE',
     font='Arial',
-    pos=(0, 0), height=0.13, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.12, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -384,7 +384,7 @@ CueClock = core.Clock()
 cue = visual.TextStim(win=win, name='cue',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.15, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.12, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -477,7 +477,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # update component parameters for each repeat
 Instructions.setColor('white', colorSpace='rgb')
 Instructions.setPos((0, 0))
-Instructions.setText('In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble or choosing a sure option. \n\nFor each gamble, you will have a chance of either winning money, losing money, or gaining nothing, while the sure option guarantees a win or loss. \n\nPress space to continue. ')
+Instructions.setText('In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble or choosing a sure option. \n\nFor each gamble, you will have a chance of either winning money, losing money, or gaining nothing, while the sure option guarantees a win or loss. \n\nPress SPACE to continue. ')
 Instructions.setFont('Arial')
 Instructions.setHeight(0.06)
 space.keys = []
@@ -747,7 +747,7 @@ thisExp.addData('isi2.started', isi2.tStartRefresh)
 thisExp.addData('isi2.stopped', isi2.tStopRefresh)
 
 # ------Prepare to start Routine "PracticeCue"-------
-routineTimer.add(2.000000)
+routineTimer.add(5.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 PracticeCueComponents = [text]
@@ -784,7 +784,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         text.setAutoDraw(True)
     if text.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text.tStartRefresh + 2-frameTolerance:
+        if tThisFlipGlobal > text.tStartRefresh + 5-frameTolerance:
             # keep track of stop time/frame for later
             text.tStop = t  # not accounting for scr refresh
             text.frameNStop = frameN  # exact frame index
@@ -1561,7 +1561,7 @@ for thisMainLoop in mainLoop:
     mainLoop.addData('isi2.stopped', isi2.tStopRefresh)
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(2.000000)
+    routineTimer.add(5.000000)
     # update component parameters for each repeat
     cue.setText(CueType)
     # keep track of which components have finished
@@ -1599,7 +1599,7 @@ for thisMainLoop in mainLoop:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
