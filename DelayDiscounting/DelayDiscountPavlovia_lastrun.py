@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 12, 2019, at 09:02
+    on December 16, 2019, at 14:43
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -110,26 +110,6 @@ isi2 = visual.TextStim(win=win, name='isi2',
     languageStyle='LTR',
     depth=0.0);
 
-# Initialize components for Routine "PracticeCue"
-PracticeCueClock = core.Clock()
-text = visual.TextStim(win=win, name='text',
-    text='REGULATE',
-    font='Arial',
-    pos=(0, 0), height=0.13, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
-# Initialize components for Routine "isi"
-isiClock = core.Clock()
-isi2 = visual.TextStim(win=win, name='isi2',
-    text='default text',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
 # Initialize components for Routine "Practice"
 PracticeClock = core.Clock()
 Line = visual.Line(
@@ -190,26 +170,6 @@ text_2 = visual.TextStim(win=win, name='text_2',
     languageStyle='LTR',
     depth=0.0);
 key_resp = keyboard.Keyboard()
-
-# Initialize components for Routine "isi"
-isiClock = core.Clock()
-isi2 = visual.TextStim(win=win, name='isi2',
-    text='default text',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
-# Initialize components for Routine "Cue"
-CueClock = core.Clock()
-cue = visual.TextStim(win=win, name='cue',
-    text=None,
-    font='Arial',
-    pos=(0, 0), height=0.15, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -289,7 +249,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # update component parameters for each repeat
 Instructions.setColor('white', colorSpace='rgb')
 Instructions.setPos((0, 0))
-Instructions.setText('In this task you will be choosing between two different monetary rewards. \n\nYou will be given a regulation strategy prior to a block of trials. Please employ the strategy given while making decisions.\n\nPress SPACE to continue.\n')
+Instructions.setText('In this task you will be choosing between two different monetary rewards. \n\nPress SPACE to continue.\n')
 Instructions.setFont('Arial')
 Instructions.setHeight(0.055)
 space.keys = []
@@ -487,145 +447,6 @@ thisExp.addData('enter.stopped', enter.tStopRefresh)
 thisExp.nextEntry()
 # the Routine "Inst2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
-
-# ------Prepare to start Routine "isi"-------
-routineTimer.add(2.000000)
-# update component parameters for each repeat
-isi2.setText('+')
-# keep track of which components have finished
-isiComponents = [isi2]
-for thisComponent in isiComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-isiClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-continueRoutine = True
-
-# -------Run Routine "isi"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = isiClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=isiClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *isi2* updates
-    if isi2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        isi2.frameNStart = frameN  # exact frame index
-        isi2.tStart = t  # local t and not account for scr refresh
-        isi2.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(isi2, 'tStartRefresh')  # time at next scr refresh
-        isi2.setAutoDraw(True)
-    if isi2.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > isi2.tStartRefresh + 2-frameTolerance:
-            # keep track of stop time/frame for later
-            isi2.tStop = t  # not accounting for scr refresh
-            isi2.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(isi2, 'tStopRefresh')  # time at next scr refresh
-            isi2.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in isiComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "isi"-------
-for thisComponent in isiComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('isi2.started', isi2.tStartRefresh)
-thisExp.addData('isi2.stopped', isi2.tStopRefresh)
-
-# ------Prepare to start Routine "PracticeCue"-------
-routineTimer.add(4.000000)
-# update component parameters for each repeat
-# keep track of which components have finished
-PracticeCueComponents = [text]
-for thisComponent in PracticeCueComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-PracticeCueClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-continueRoutine = True
-
-# -------Run Routine "PracticeCue"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = PracticeCueClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=PracticeCueClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *text* updates
-    if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        text.frameNStart = frameN  # exact frame index
-        text.tStart = t  # local t and not account for scr refresh
-        text.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
-        text.setAutoDraw(True)
-    if text.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text.tStartRefresh + 4-frameTolerance:
-            # keep track of stop time/frame for later
-            text.tStop = t  # not accounting for scr refresh
-            text.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(text, 'tStopRefresh')  # time at next scr refresh
-            text.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in PracticeCueComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "PracticeCue"-------
-for thisComponent in PracticeCueComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('text.started', text.tStartRefresh)
-thisExp.addData('text.stopped', text.tStopRefresh)
 
 # set up handler to look after randomisation of conditions etc
 PracticeLoop = data.TrialHandler(nReps=1, method='sequential', 
@@ -1115,150 +936,6 @@ for thisMainLoop in mainLoop:
     if thisMainLoop != None:
         for paramName in thisMainLoop:
             exec('{} = thisMainLoop[paramName]'.format(paramName))
-    
-    # ------Prepare to start Routine "isi"-------
-    routineTimer.add(2.000000)
-    # update component parameters for each repeat
-    isi2.setText('+')
-    # keep track of which components have finished
-    isiComponents = [isi2]
-    for thisComponent in isiComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    isiClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "isi"-------
-    while continueRoutine and routineTimer.getTime() > 0:
-        # get current time
-        t = isiClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=isiClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *isi2* updates
-        if isi2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            isi2.frameNStart = frameN  # exact frame index
-            isi2.tStart = t  # local t and not account for scr refresh
-            isi2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(isi2, 'tStartRefresh')  # time at next scr refresh
-            isi2.setAutoDraw(True)
-        if isi2.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > isi2.tStartRefresh + 2-frameTolerance:
-                # keep track of stop time/frame for later
-                isi2.tStop = t  # not accounting for scr refresh
-                isi2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(isi2, 'tStopRefresh')  # time at next scr refresh
-                isi2.setAutoDraw(False)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in isiComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "isi"-------
-    for thisComponent in isiComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    mainLoop.addData('isi2.started', isi2.tStartRefresh)
-    mainLoop.addData('isi2.stopped', isi2.tStopRefresh)
-    
-    # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(4.000000)
-    # update component parameters for each repeat
-    cue.setText('')
-    if subID%2 == 0 :
-        cue.setText(CueType1)
-    if subID%2 == 1 :
-        cue.setText(CueType2)
-    # keep track of which components have finished
-    CueComponents = [cue]
-    for thisComponent in CueComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    CueClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "Cue"-------
-    while continueRoutine and routineTimer.getTime() > 0:
-        # get current time
-        t = CueClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=CueClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *cue* updates
-        if cue.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            cue.frameNStart = frameN  # exact frame index
-            cue.tStart = t  # local t and not account for scr refresh
-            cue.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cue, 'tStartRefresh')  # time at next scr refresh
-            cue.setAutoDraw(True)
-        if cue.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 4-frameTolerance:
-                # keep track of stop time/frame for later
-                cue.tStop = t  # not accounting for scr refresh
-                cue.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(cue, 'tStopRefresh')  # time at next scr refresh
-                cue.setAutoDraw(False)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in CueComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "Cue"-------
-    for thisComponent in CueComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    mainLoop.addData('cue.started', cue.tStartRefresh)
-    mainLoop.addData('cue.stopped', cue.tStopRefresh)
     
     # set up handler to look after randomisation of conditions etc
     trials = data.TrialHandler(nReps=1, method='random', 

@@ -1,0 +1,3 @@
+﻿practiceLoop.thisRepN,practiceLoop.thisTrialN,practiceLoop.thisN,practiceLoop.thisIndex,CueType1,rows,CueType2,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,Picture,LeftText,NeutralText,EmoType,RightText,Instructions.started,Instructions.stopped,space.keys,space.rt,space.started,space.stopped,Iti.started,Iti.stopped,cue.started,cue.stopped,ISI.started,ISI.stopped,Image.started,Image.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,,,6.555426400154829,None,space,1.444953900296241,6.555426400154829,None,,,,,,,,,1,001,2019_Dec_16_1632,EmotRegPavlovia,3.2.4,60.193570430105346,
+,,,,,,,,,,,,,,,,,,,,,,8.018693999852985,None,10.05508829979226,13.056205499917269,13.056205499917269,None,15.061561100184917,None,,,,,,,

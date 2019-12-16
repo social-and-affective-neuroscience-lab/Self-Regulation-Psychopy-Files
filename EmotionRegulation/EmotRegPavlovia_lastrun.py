@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 12, 2019, at 10:25
+    on December 16, 2019, at 16:33
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -139,11 +139,18 @@ ratingQ = visual.TextStim(win=win, name='ratingQ',
 text_2 = visual.TextStim(win=win, name='text_2',
     text='default text',
     font='Arial',
-    pos=(-0.02, -0.1), height=0.035, wrapWidth=1.6, ori=0, 
+    pos=(-0.33, -0.1), height=0.039, wrapWidth=1.6, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
+rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.35, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5'], tickHeight=-1)
+text_4 = visual.TextStim(win=win, name='text_4',
+    text='default text',
+    font='Arial',
+    pos=(0.33, -0.1), height=0.039, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -216,11 +223,18 @@ ratingQ = visual.TextStim(win=win, name='ratingQ',
 text_2 = visual.TextStim(win=win, name='text_2',
     text='default text',
     font='Arial',
-    pos=(-0.02, -0.1), height=0.035, wrapWidth=1.6, ori=0, 
+    pos=(-0.33, -0.1), height=0.039, wrapWidth=1.6, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.4, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5', '6', '7'], tickHeight=-1)
+rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.35, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5'], tickHeight=-1)
+text_4 = visual.TextStim(win=win, name='text_4',
+    text='default text',
+    font='Arial',
+    pos=(0.33, -0.1), height=0.039, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -435,7 +449,7 @@ for thisPracticeLoop in practiceLoop:
             exec('{} = thisPracticeLoop[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(7.000000)
+    routineTimer.add(5.000000)
     # update component parameters for each repeat
     cue.setText('')
     ISI.setText('+')
@@ -480,7 +494,7 @@ for thisPracticeLoop in practiceLoop:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 3-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -488,7 +502,7 @@ for thisPracticeLoop in practiceLoop:
                 cue.setAutoDraw(False)
         
         # *ISI* updates
-        if ISI.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
+        if ISI.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
             # keep track of start time/frame for later
             ISI.frameNStart = frameN  # exact frame index
             ISI.tStart = t  # local t and not account for scr refresh
@@ -624,10 +638,11 @@ for thisPracticeLoop in practiceLoop:
         routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
-        text_2.setText('Very Negative                                                 Very Positive')
+        text_2.setText(LeftText)
         rating.reset()
+        text_4.setText(RightText)
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, text_2, rating]
+        ratingsComponents = [ratingQ, text_2, rating, text_4]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -694,6 +709,23 @@ for thisPracticeLoop in practiceLoop:
                 rating.setAutoDraw(True)
             continueRoutine &= rating.noResponse  # a response ends the trial
             
+            # *text_4* updates
+            if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_4.frameNStart = frameN  # exact frame index
+                text_4.tStart = t  # local t and not account for scr refresh
+                text_4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
+                text_4.setAutoDraw(True)
+            if text_4.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > text_4.tStartRefresh + 5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    text_4.tStop = t  # not accounting for scr refresh
+                    text_4.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_4, 'tStopRefresh')  # time at next scr refresh
+                    text_4.setAutoDraw(False)
+            
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
@@ -724,6 +756,8 @@ for thisPracticeLoop in practiceLoop:
         trials.addData('rating.rt', rating.getRT())
         trials.addData('rating.started', rating.tStart)
         trials.addData('rating.stopped', rating.tStop)
+        trials.addData('text_4.started', text_4.tStartRefresh)
+        trials.addData('text_4.stopped', text_4.tStopRefresh)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)
@@ -992,7 +1026,7 @@ for thisTrial_2 in trials_2:
             exec('{} = thisTrial_2[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(7.000000)
+    routineTimer.add(5.000000)
     # update component parameters for each repeat
     cue.setText('')
     ISI.setText('+')
@@ -1037,7 +1071,7 @@ for thisTrial_2 in trials_2:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 3-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -1045,7 +1079,7 @@ for thisTrial_2 in trials_2:
                 cue.setAutoDraw(False)
         
         # *ISI* updates
-        if ISI.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
+        if ISI.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
             # keep track of start time/frame for later
             ISI.frameNStart = frameN  # exact frame index
             ISI.tStart = t  # local t and not account for scr refresh
@@ -1181,10 +1215,11 @@ for thisTrial_2 in trials_2:
         routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
-        text_2.setText('Very Negative                                                 Very Positive')
+        text_2.setText(LeftText)
         rating.reset()
+        text_4.setText(RightText)
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, text_2, rating]
+        ratingsComponents = [ratingQ, text_2, rating, text_4]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1251,6 +1286,23 @@ for thisTrial_2 in trials_2:
                 rating.setAutoDraw(True)
             continueRoutine &= rating.noResponse  # a response ends the trial
             
+            # *text_4* updates
+            if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_4.frameNStart = frameN  # exact frame index
+                text_4.tStart = t  # local t and not account for scr refresh
+                text_4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
+                text_4.setAutoDraw(True)
+            if text_4.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > text_4.tStartRefresh + 5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    text_4.tStop = t  # not accounting for scr refresh
+                    text_4.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_4, 'tStopRefresh')  # time at next scr refresh
+                    text_4.setAutoDraw(False)
+            
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
@@ -1281,6 +1333,8 @@ for thisTrial_2 in trials_2:
         mainTrials.addData('rating.rt', rating.getRT())
         mainTrials.addData('rating.started', rating.tStart)
         mainTrials.addData('rating.stopped', rating.tStop)
+        mainTrials.addData('text_4.started', text_4.tStartRefresh)
+        mainTrials.addData('text_4.stopped', text_4.tStopRefresh)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 12, 2019, at 09:12
+    on December 16, 2019, at 14:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -638,7 +638,7 @@ for thisCueLoop in CueLoop:
             
             # ------Prepare to start Routine "sendMoney1"-------
             # update component parameters for each repeat
-            sendInstructions.setText('You have been given $5 to use. You have the opportunity to send money to Player 1. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 1 will then have the opportunity to give some money amount back to you. \n\n\nPlease indicate how many dollars you will give to Player 1:\n')
+            sendInstructions.setText('\nYou have been given $5 to use. You can give Player 1 $0, $1, $2, $3, $4, or $5.\n\n\nPlease indicate how many dollars you will give to Player 1:\n')
             Player1Name.setText('Player 1')
             Player1Pic.setPos((0, 0.36))
             Player1Pic.setSize((0.2, 0.2))
@@ -904,11 +904,11 @@ for thisCueLoop in CueLoop:
             receiveMoney = giveMoney * 3
             receiveMoneyStr = '$' + str(receiveMoney)
             
-            array1 = [0,1]
-            array2 = [0,1,2]
-            array3 = [1,2,3,4]
-            array4 = [2,3,4,5]
-            array5 = [3,4,5,6,7]
+            array1 = [0,1,2]
+            array2 = [0,1,2,3]
+            array3 = [1,2,3,4,5]
+            array4 = [2,3,4,5,6]
+            array5 = [3,4,5,6,7,8]
             if giveMoney == 0:
                 backTransfer = 0
             if giveMoney == 1:
@@ -1086,7 +1086,7 @@ for thisCueLoop in CueLoop:
             
             # ------Prepare to start Routine "sendMoney2"-------
             # update component parameters for each repeat
-            sendInst2.setText('You have been given $5 to use. You have the opportunity to send money to Player 2. You may give them all or none of the money, or any amount in between, using increments of $1. Therefore you can choose to give them $0, $1, $2, $3, $4, or $5.\nThe amount of money you send to them will be tripled, and Player 2 will then have the opportunity to give some money amount back to you. \n\nPlease type how much money you would like to give Player 2 : ')
+            sendInst2.setText('You have been given $5 to use. You can choose to give Player 2 $0, $1, $2, $3, $4, or $5.\n\n\nPlease type how much money you would like to give Player 2 : ')
             Player2Name.setText('Player 2')
             Player2Pic.setPos((0, 0.36))
             Player2Pic.setSize((0.2, 0.2))
@@ -1354,7 +1354,7 @@ for thisCueLoop in CueLoop:
             receiveMoney = giveMoney * 3
             receiveMoneyStr = '$' + str(receiveMoney)
             
-            array1 = [1,2]
+            array1 = [0,1,2]
             array2 = [3,4,5]
             array3 = [4,5,6,7]
             array4 = [6,7,8,9,10]
