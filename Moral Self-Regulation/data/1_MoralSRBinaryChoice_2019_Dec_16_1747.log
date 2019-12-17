@@ -1,0 +1,296 @@
+7.4192 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1200]. Using actual size
+8.1961 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D167829FD0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001D167691828>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.1961 	EXP 	window1: recordFrameIntervals = False
+8.3628 	EXP 	window1: recordFrameIntervals = True
+8.6294 	EXP 	window1: recordFrameIntervals = False
+9.9999 	EXP 	Created InstText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='InstText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+10.0097 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.0218 	EXP 	Created practiceQs = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='practiceQs', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+10.0235 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.0388 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.5)
+10.0404 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.0408 	EXP 	Created conBlank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='conBlank', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+10.0535 	EXP 	Created leftText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='leftText', opacity=1.0, ori=0, pos=array([0.45, 0.2 ]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.0566 	EXP 	Created rightText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='rightText', opacity=1.0, ori=0, pos=array([0.5 , 0.05]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.0706 	EXP 	Created Yes = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Yes', opacity=1.0, ori=0, pos=array([ 0.  , -0.33]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=2.5)
+10.0736 	EXP 	Created No = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='No', opacity=1.0, ori=0, pos=array([ 0.  , -0.41]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.0860 	EXP 	Created Question = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.055, italic=False, languageStyle='LTR', name='Question', opacity=1.0, ori=0, pos=array([ 0. , -0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.0891 	EXP 	Created sureGroup = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='sureGroup', opacity=1.0, ori=0, pos=array([-0.5,  0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.0910 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.0938 	EXP 	Created FeedbackVar = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='FeedbackVar', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+10.0956 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.0998 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.5)
+10.1014 	EXP 	Created isi_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.1480 	EXP 	Created instructions2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='instructions2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.1496 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.1528 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+10.1544 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.1588 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.5)
+10.1604 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.1609 	EXP 	Created conBlank2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='conBlank2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+10.1613 	EXP 	Created RemText2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='RemText2', opacity=1.0, ori=0, pos=array([0.  , 0.32]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1.5)
+10.1650 	EXP 	Created leftText2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='leftText2', opacity=1.0, ori=0, pos=array([0.4  , 0.053]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.1683 	EXP 	Created rightText2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='rightText2', opacity=1.0, ori=0, pos=array([ 0.4  , -0.043]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.1714 	EXP 	Created yes2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='yes2', opacity=1.0, ori=0, pos=array([ 0.  , -0.33]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.1746 	EXP 	Created no2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='no2', opacity=1.0, ori=0, pos=array([ 0.  , -0.41]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.1778 	EXP 	Created Question2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.055, italic=False, languageStyle='LTR', name='Question2', opacity=1.0, ori=0, pos=array([ 0. , -0.2]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.1810 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.045, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([-0.5,  0. ]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+10.1826 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.1855 	EXP 	Created FeedbackVar = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='FeedbackVar', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.4)
+10.1871 	EXP 	Created isi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+10.1914 	EXP 	Created cue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='cue', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1.5)
+10.2378 	EXP 	Created TY = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='TY', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.2594 	EXP 	Imported MoralSelfRegInst.xlsx as conditions, 7 conditions, 1 params
+10.2596 	EXP 	Created sequence: sequential, trialTypes=7, nReps=1, seed=None
+10.2597 	EXP 	New trial (rep=0, index=0): OrderedDict([('Instructions', 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \n\nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. \n\nWhen you are done reading each screen, you can press SPACE to move on to the next one.\n\nHowever, please try your best to get the fullest understanding of the scenario as described thus far before moving on to the next screen.')])
+13.3060 	EXP 	InstText: color = 'white (named)'
+13.3060 	EXP 	InstText: pos = array([0., 0.])
+13.3060 	EXP 	InstText: text = 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \n\nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. \n\nWhen you are done reading each screen, you can press SPACE to move on to the next one.\n\nHowever, please try your best to get the fullest understanding of the scenario as described thus far before moving on to the next screen.'
+13.3060 	EXP 	InstText: font = 'Arial'
+13.3060 	EXP 	InstText: height = 0.04
+13.3060 	EXP 	InstText: autoDraw = True
+13.3060 	EXP 	InstText: text = 'In this study you will be asked to evaluate a number of moral dilemmas under various conditions. \n\nYou will be presented with 10 different scenario contexts and will respond to 10 conditions for each one.\n\nFor each scenario, you will proceed through four screens. The first three screens will start to describe a situation that you are hypothetically faced with and an action that you could perform in response to that situation. \n\nWhen you are done reading each screen, you can press SPACE to move on to the next one.\n\nHowever, please try your best to get the fullest understanding of the scenario as described thus far before moving on to the next screen.'
+16.3072 	EXP 	New trial (rep=0, index=1): OrderedDict([('Instructions', 'The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma:\n\na) a number of people involved in part of the scenario, and \n\nb) a likelihood that something will happen\n\nYou will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.')])
+16.3926 	DATA 	Keypress: space
+16.3979 	EXP 	InstText: autoDraw = False
+16.3979 	EXP 	InstText: color = 'white (named)'
+16.3979 	EXP 	InstText: pos = array([0., 0.])
+16.3979 	EXP 	InstText: text = 'The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma:\n\na) a number of people involved in part of the scenario, and \n\nb) a likelihood that something will happen\n\nYou will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.'
+16.3979 	EXP 	InstText: font = 'Arial'
+16.3979 	EXP 	InstText: height = 0.04
+16.3979 	EXP 	InstText: autoDraw = True
+16.3979 	EXP 	InstText: text = 'The scenario description will include all the information you need to make your decision EXCEPT that it will not explicitly state the values for two features of the dilemma:\n\na) a number of people involved in part of the scenario, and \n\nb) a likelihood that something will happen\n\nYou will be evaluating this scenario given a number of variations of these features.\n\nThe fourth and final screen will provide you with the prompt that you will be answering for each of these variations - namely, whether or not it is morally acceptable for you to perform the action in question.'
+16.5063 	EXP 	New trial (rep=0, index=2): OrderedDict([('Instructions', 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be reminded of this after this screen.\n\nFirst, you will see a "+" in the middle of the screen. Any time that this is up, all you need to do is fixate on the "+" and prepare to respond to the next trial. \n\nNext, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a judgment of its moral acceptibility.\n\nYou will then indicate the course of action you would like to take in each scenario; by pressing either \'y\' on your keyboard to indicate \'Yes\', or \'n\' to indicate \'No.\'\n')])
+16.6397 	DATA 	Keypress: space
+16.6455 	EXP 	InstText: autoDraw = False
+16.6455 	EXP 	InstText: color = 'white (named)'
+16.6455 	EXP 	InstText: pos = array([0., 0.])
+16.6455 	EXP 	InstText: text = 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be reminded of this after this screen.\n\nFirst, you will see a "+" in the middle of the screen. Any time that this is up, all you need to do is fixate on the "+" and prepare to respond to the next trial. \n\nNext, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a judgment of its moral acceptibility.\n\nYou will then indicate the course of action you would like to take in each scenario; by pressing either \'y\' on your keyboard to indicate \'Yes\', or \'n\' to indicate \'No.\'\n'
+16.6455 	EXP 	InstText: font = 'Arial'
+16.6455 	EXP 	InstText: height = 0.04
+16.6455 	EXP 	InstText: autoDraw = True
+16.6455 	EXP 	InstText: text = 'After you have understood the scenario context and the question you will be answering, you can press SPACE to move on to the individual trials that will fill these gaps for you in the scenario.\n\nBefore you do so, please try your best to hold in mind what the action is that you will be evaluating across trials, as you will not be reminded of this after this screen.\n\nFirst, you will see a "+" in the middle of the screen. Any time that this is up, all you need to do is fixate on the "+" and prepare to respond to the next trial. \n\nNext, you will see text appear indicating the missing information. You should then evaluate the action in question in the context of these values given, and make a judgment of its moral acceptibility.\n\nYou will then indicate the course of action you would like to take in each scenario; by pressing either \'y\' on your keyboard to indicate \'Yes\', or \'n\' to indicate \'No.\'\n'
+16.6900 	EXP 	New trial (rep=0, index=3): OrderedDict([('Instructions', 'After you answer you will again see a "+" in the middle of the screen, followed by the next trial. This will occur for 10 different variations of each scenario. \n\nIt is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the "+" appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the "+" and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.')])
+16.7909 	DATA 	Keypress: space
+16.7964 	EXP 	InstText: autoDraw = False
+16.7964 	EXP 	InstText: color = 'white (named)'
+16.7964 	EXP 	InstText: pos = array([0., 0.])
+16.7964 	EXP 	InstText: text = 'After you answer you will again see a "+" in the middle of the screen, followed by the next trial. This will occur for 10 different variations of each scenario. \n\nIt is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the "+" appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the "+" and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.'
+16.7964 	EXP 	InstText: font = 'Arial'
+16.7964 	EXP 	InstText: height = 0.04
+16.7964 	EXP 	InstText: autoDraw = True
+16.7964 	EXP 	InstText: text = 'After you answer you will again see a "+" in the middle of the screen, followed by the next trial. This will occur for 10 different variations of each scenario. \n\nIt is important that you try your best to judge each trial in isolation, and avoid consideration of past responses for the current scenario or past scenarios.\n\nYou will only have 10 seconds to respond to each variation. If the "+" appears before you have responded, that means you are out of time. If this happens, do not attempt to respond. Simply look at the "+" and wait for the next trial. \n\nOnce you have pressed a button there is no way to go back to the previous screen. If you press the wrong button or if you press a button too soon, don\'t worry.'
+16.8573 	EXP 	New trial (rep=0, index=4): OrderedDict([('Instructions', 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as "written in stone." All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. ')])
+16.9796 	DATA 	Keypress: space
+16.9856 	EXP 	InstText: autoDraw = False
+16.9856 	EXP 	InstText: color = 'white (named)'
+16.9856 	EXP 	InstText: pos = array([0., 0.])
+16.9856 	EXP 	InstText: text = 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as "written in stone." All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. '
+16.9856 	EXP 	InstText: font = 'Arial'
+16.9856 	EXP 	InstText: height = 0.04
+16.9856 	EXP 	InstText: autoDraw = True
+16.9856 	EXP 	InstText: text = 'Moral judgments can be difficult to make, and we understand that people sometimes change their minds about moral questions or feel conflicted about the answers they\'ve given. Don\'t think of your answers as "written in stone." All we want from you is a thoughtful first response.\n\nWhile we want your answers to be thoughtful, you may find that in some cases the right answer seems immediately obvious. If that happens, it\'s okay to answer quickly. There are no trick questions, and in every case we have done our best to make the relevant information as clear as possible. \n\nNote, however, that no two scenarios are the same, although many are similar to each other. To answer a question properly you will have to read it carefully because it will always be different in some way from the questions you have already answered. '
+17.1067 	DATA 	Keypress: space
+17.1243 	EXP 	New trial (rep=0, index=5): OrderedDict([('Instructions', "In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this happens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. \n\nFor example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. ")])
+17.2501 	EXP 	InstText: autoDraw = False
+17.2501 	EXP 	InstText: color = 'white (named)'
+17.2501 	EXP 	InstText: pos = array([0., 0.])
+17.2501 	EXP 	InstText: text = "In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this happens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. \n\nFor example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. "
+17.2501 	EXP 	InstText: font = 'Arial'
+17.2501 	EXP 	InstText: height = 0.04
+17.2501 	EXP 	InstText: autoDraw = True
+17.2501 	EXP 	InstText: text = "In some cases, you might feel that the situation we've described is not realistic. For example, it might say that if you do X, then Y will happen, and you might think that this is not realistic, that Y might not necessarily happen if you do X. If you find yourself having these sorts of doubts, you should suspend disbelief and assume that the situation really is the way it's described, even if it doesn't seem realistic to you.\n\nLikewise, you may feel that you need more information than is provided about the situation before you can give your answer. If this happens, you should make your best guess about what you think the situation is like without making any unneccessary assumptions. \n\nFor example, if it doesn't say that the other person in the situation is related to you, then you should assume that you and the other person are unrelated. "
+17.6576 	EXP 	New trial (rep=0, index=6): OrderedDict([('Instructions', 'When you are done reading this screen you will begin two practice scenarios. \n\nOnce again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale, and press ENTER to submit your rating. \n\nWhile you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials!\n')])
+17.7606 	DATA 	Keypress: space
+17.7659 	EXP 	InstText: autoDraw = False
+17.7659 	EXP 	InstText: color = 'white (named)'
+17.7659 	EXP 	InstText: pos = array([0., 0.])
+17.7659 	EXP 	InstText: text = 'When you are done reading this screen you will begin two practice scenarios. \n\nOnce again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale, and press ENTER to submit your rating. \n\nWhile you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials!\n'
+17.7659 	EXP 	InstText: font = 'Arial'
+17.7659 	EXP 	InstText: height = 0.04
+17.7659 	EXP 	InstText: autoDraw = True
+17.7659 	EXP 	InstText: text = 'When you are done reading this screen you will begin two practice scenarios. \n\nOnce again, you can press SPACE to advance through the first four screens. Then you will encounter a number of trials which you will rate on a 1-7 scale, and press ENTER to submit your rating. \n\nWhile you will see 10 such trials for each scenario in the actual experiment, you will only respond to 4 variations of each practice scenario.\n\nFurthermore, when the actual experiment begins there will be an additional 10 seconds of fixation before the scenario text comes up, while the scanner warms up. Please begin reading as usual when the text comes up.\n\nPress SPACE to begin the practice trials!\n'
+18.3446 	EXP 	Imported moralRows.csv as conditions, 1 conditions, 3 params
+18.3447 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+18.3449 	EXP 	New trial (rep=0, index=0): OrderedDict([('rows', '000:005'), ('CueInstructions1', 'EMPHASIZE'), ('CueInstructions2', 'DE-EMPHASIZE')])
+18.3476 	DATA 	Keypress: space
+18.3542 	EXP 	InstText: autoDraw = False
+18.3542 	EXP 	isi: autoDraw = True
+18.5728 	DATA 	Keypress: space
+20.3548 	EXP 	Imported PracticeMoralSelfReg.xlsx as conditions, 5 conditions, 10 params
+20.3550 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+20.3553 	EXP 	New trial (rep=0, index=0): OrderedDict([('PracticeDilemmas', "• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall \n\n• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them"), ('PracticeLeftText', 'Skydivers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die \n\nDo nothing: The skydivers on the left will live, the group on the right  has a chance of surviving'), ('ChoseNothing', 'The 3 skydivers on the left were saved.\n \nThe '), ('ChosePlan', 'The 3 skydivers on the left died.\n\nThe 6 skydivers on the right were saved.'), ('GroupNumber', 6), ('GroupProb', 35), ('Noun', ' skydivers on the right'), ('sureGroupText', 'Skydivers on the left: 3')])
+20.4162 	EXP 	isi: autoDraw = False
+20.4162 	EXP 	isi: autoDraw = False
+20.4162 	EXP 	practiceQs: text = "• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall \n\n• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them"
+20.4162 	EXP 	practiceQs: autoDraw = True
+22.1778 	EXP 	New trial (rep=0, index=1): OrderedDict([('PracticeDilemmas', "• Your crew sees a smaller group of divers apart from the rest who are much closer to reaching the ground, and instinctively moves a few feet to the left to catch them\n\n• You know that there won't be enough time to reach the group on the right if you wait to catch the group on the left"), ('PracticeLeftText', 'Skydivers on right: 9'), ('PracticeRightText', 'Probability of \nparachute opening: 50% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die \n\nDo nothing: The skydivers on the left will live, the group on the right  has a chance of surviving'), ('ChoseNothing', 'The 4 skydivers on the left were saved.\n \nThe '), ('ChosePlan', 'The 4 skydivers on the left died.\n\nThe 9 skydivers on the right were saved.'), ('GroupNumber', 9), ('GroupProb', 50), ('Noun', ' skydivers on the right'), ('sureGroupText', 'Skydivers on the left: 4')])
+22.2207 	DATA 	Keypress: space
+22.2259 	EXP 	practiceQs: autoDraw = False
+22.2259 	EXP 	practiceQs: text = "• Your crew sees a smaller group of divers apart from the rest who are much closer to reaching the ground, and instinctively moves a few feet to the left to catch them\n\n• You know that there won't be enough time to reach the group on the right if you wait to catch the group on the left"
+22.2259 	EXP 	practiceQs: autoDraw = True
+22.3612 	EXP 	New trial (rep=0, index=2): OrderedDict([('PracticeDilemmas', "• If nothing is done, the safety crew will catch the divers to the left, avoiding their death, but the separate group of divers will land on the ground, causing their deaths\n\n• You can re-direct your crew to the right, preventing the death of the group, but the divers on the left won't be caught"), ('PracticeLeftText', 'Skydivers on right: 5'), ('PracticeRightText', 'Probability of \nparachute opening: 50% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die \n\nDo nothing: The skydivers on the left will live, the group on the right  has a chance of surviving'), ('ChoseNothing', 'The 2 skydivers on the left were saved.\n \nThe '), ('ChosePlan', 'The 2 skydivers on the left died.\n\nThe 5 skydivers on the right were saved.'), ('GroupNumber', 5), ('GroupProb', 50), ('Noun', ' skydivers on the right'), ('sureGroupText', 'Skydivers on the left: 2')])
+22.4118 	DATA 	Keypress: space
+22.4170 	EXP 	practiceQs: autoDraw = False
+22.4170 	EXP 	practiceQs: text = "• If nothing is done, the safety crew will catch the divers to the left, avoiding their death, but the separate group of divers will land on the ground, causing their deaths\n\n• You can re-direct your crew to the right, preventing the death of the group, but the divers on the left won't be caught"
+22.4170 	EXP 	practiceQs: autoDraw = True
+22.5448 	EXP 	New trial (rep=0, index=3): OrderedDict([('PracticeDilemmas', '• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths\n\n• There is no chance that the parachute will open for the one diver, given how close he is to the ground'), ('PracticeLeftText', 'Skydivers on right: 4'), ('PracticeRightText', 'Probability of \nparachute opening: 65% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die \n\nDo nothing: The skydivers on the left will live, the group on the right  has a chance of surviving'), ('ChoseNothing', 'The 3 skydivers on the left were saved.\n \nThe '), ('ChosePlan', 'The 3 skydivers on the left died.\n\nThe 4 skydivers on the right were saved.'), ('GroupNumber', 4), ('GroupProb', 65), ('Noun', ' skydivers on the right'), ('sureGroupText', 'Skydivers on the left: 3')])
+22.5802 	DATA 	Keypress: space
+22.5852 	EXP 	practiceQs: autoDraw = False
+22.5852 	EXP 	practiceQs: text = '• You also know that there is a chance that one of the parachutes of the group will still open in time to prevent all of their deaths\n\n• There is no chance that the parachute will open for the one diver, given how close he is to the ground'
+22.5852 	EXP 	practiceQs: autoDraw = True
+22.6947 	EXP 	New trial (rep=0, index=4): OrderedDict([('PracticeDilemmas', 'Consider each of the following scenarios and, for each one, determine what course of action you will take.'), ('PracticeLeftText', 'Skydivers on right: 8'), ('PracticeRightText', 'Probability of \nparachute opening: 65% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die \n\nDo nothing: The skydivers on the left will live, the group on the right  has a chance of surviving'), ('ChoseNothing', 'The 5 skydivers on the left were saved.\n \nThe '), ('ChosePlan', 'The 5 skydivers on the left died.\n\nThe 8 skydivers on the right were saved.'), ('GroupNumber', 8), ('GroupProb', 65), ('Noun', ' skydivers on the right'), ('sureGroupText', 'Skydivers on the left: 5')])
+22.7163 	DATA 	Keypress: space
+22.7208 	EXP 	practiceQs: autoDraw = False
+22.7208 	EXP 	practiceQs: text = 'Consider each of the following scenarios and, for each one, determine what course of action you will take.'
+22.7208 	EXP 	practiceQs: autoDraw = True
+22.8974 	DATA 	Keypress: space
+22.9078 	EXP 	practiceQs: autoDraw = False
+22.9078 	EXP 	isi: autoDraw = True
+24.9248 	EXP 	isi: autoDraw = False
+24.9248 	EXP 	isi: autoDraw = False
+24.9248 	EXP 	cue: text = 'EMPHASIZE'
+24.9248 	EXP 	cue: text = 'DE-EMPHASIZE'
+24.9248 	EXP 	cue: autoDraw = True
+27.9085 	EXP 	Imported PracticeMoralSelfReg.xlsx as conditions, 5 conditions, 10 params
+27.9093 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+27.9102 	EXP 	New trial (rep=0, index=0): OrderedDict([('PracticeDilemmas', "• You are the head of a safety crew that has been alerted about a group of skydivers that is wearing defective parachutes and is currently in a freefall \n\n• You've arrived in time to see that a group of divers is holding onto one another and will fall to their death a few feet to your right unless your crew's trampoline is moved beneath them"), ('PracticeLeftText', 'Skydivers on right: 6'), ('PracticeRightText', 'Probability of \nparachute opening: 35% '), ('Reminder', 'Plan: Direct your crew to the right, repositioning the trampoline and leaving the skydivers on the left to die \n\nDo nothing: The skydivers on the left will live, the group on the right  has a chance of surviving'), ('ChoseNothing', 'The 3 skydivers on the left were saved.\n \nThe '), ('ChosePlan', 'The 3 skydivers on the left died.\n\nThe 6 skydivers on the right were saved.'), ('GroupNumber', 6), ('GroupProb', 35), ('Noun', ' skydivers on the right'), ('sureGroupText', 'Skydivers on the left: 3')])
+27.9167 	EXP 	cue: autoDraw = False
+27.9167 	EXP 	isi: autoDraw = True
+29.9587 	EXP 	isi: autoDraw = False
+29.9587 	EXP 	conBlank: text = ''
+29.9587 	EXP 	leftText: text = 'Skydivers on right: 6'
+29.9587 	EXP 	rightText: text = 'Probability of \nparachute opening: 35% '
+29.9587 	EXP 	Yes: text = "Implement the plan ('y')"
+29.9587 	EXP 	No: text = "Do nothing ('n')"
+29.9587 	EXP 	Question: text = 'What do you do?'
+29.9587 	EXP 	sureGroup: text = 'Skydivers on the left: 3'
+29.9587 	EXP 	leftText: autoDraw = True
+29.9587 	EXP 	rightText: autoDraw = True
+29.9587 	EXP 	Yes: autoDraw = True
+29.9587 	EXP 	No: autoDraw = True
+29.9587 	EXP 	Question: autoDraw = True
+29.9587 	EXP 	sureGroup: autoDraw = True
+61.8449 	DATA 	Keypress: n
+61.8742 	EXP 	conBlank: autoDraw = True
+61.8742 	EXP 	No: color = 'red (named)'
+61.8900 	EXP 	No: color = 'red (named)'
+61.9067 	EXP 	No: color = 'red (named)'
+61.9235 	EXP 	No: color = 'red (named)'
+61.9401 	EXP 	No: color = 'red (named)'
+61.9568 	EXP 	No: color = 'red (named)'
+61.9734 	EXP 	No: color = 'red (named)'
+61.9901 	EXP 	No: color = 'red (named)'
+62.0067 	EXP 	No: color = 'red (named)'
+62.0235 	EXP 	No: color = 'red (named)'
+62.0403 	EXP 	No: color = 'red (named)'
+62.0568 	EXP 	No: color = 'red (named)'
+62.0734 	EXP 	No: color = 'red (named)'
+62.0902 	EXP 	No: color = 'red (named)'
+62.1069 	EXP 	No: color = 'red (named)'
+62.1236 	EXP 	No: color = 'red (named)'
+62.1403 	EXP 	No: color = 'red (named)'
+62.1569 	EXP 	No: color = 'red (named)'
+62.1735 	EXP 	No: color = 'red (named)'
+62.1902 	EXP 	No: color = 'red (named)'
+62.2070 	EXP 	No: color = 'red (named)'
+62.2236 	EXP 	No: color = 'red (named)'
+62.2402 	EXP 	No: color = 'red (named)'
+62.2570 	EXP 	No: color = 'red (named)'
+62.2737 	EXP 	No: color = 'red (named)'
+62.2903 	EXP 	No: color = 'red (named)'
+62.3070 	EXP 	No: color = 'red (named)'
+62.3237 	EXP 	No: color = 'red (named)'
+62.3404 	EXP 	No: color = 'red (named)'
+62.3571 	EXP 	No: color = 'red (named)'
+62.3738 	EXP 	No: color = 'red (named)'
+62.3904 	EXP 	No: color = 'red (named)'
+62.4071 	EXP 	No: color = 'red (named)'
+62.4238 	EXP 	No: color = 'red (named)'
+62.4405 	EXP 	No: color = 'red (named)'
+62.4571 	EXP 	No: color = 'red (named)'
+62.4738 	EXP 	No: color = 'red (named)'
+62.4919 	EXP 	No: color = 'red (named)'
+62.5073 	EXP 	No: color = 'red (named)'
+62.5239 	EXP 	No: color = 'red (named)'
+62.5407 	EXP 	No: color = 'red (named)'
+62.5572 	EXP 	No: color = 'red (named)'
+62.5742 	EXP 	No: color = 'red (named)'
+62.5906 	EXP 	No: color = 'red (named)'
+62.6072 	EXP 	No: color = 'red (named)'
+62.6241 	EXP 	No: color = 'red (named)'
+62.6406 	EXP 	No: color = 'red (named)'
+62.6573 	EXP 	No: color = 'red (named)'
+62.6740 	EXP 	No: color = 'red (named)'
+62.6907 	EXP 	No: color = 'red (named)'
+62.7076 	EXP 	No: color = 'red (named)'
+62.7241 	EXP 	No: color = 'red (named)'
+62.7408 	EXP 	No: color = 'red (named)'
+62.7575 	EXP 	No: color = 'red (named)'
+62.7742 	EXP 	No: color = 'red (named)'
+62.7908 	EXP 	No: color = 'red (named)'
+62.8076 	EXP 	No: color = 'red (named)'
+62.8242 	EXP 	No: color = 'red (named)'
+62.8408 	EXP 	No: color = 'red (named)'
+62.8576 	EXP 	No: color = 'red (named)'
+62.8742 	EXP 	No: color = 'red (named)'
+62.8910 	EXP 	No: color = 'red (named)'
+62.9076 	EXP 	No: color = 'red (named)'
+62.9243 	EXP 	No: color = 'red (named)'
+62.9410 	EXP 	No: color = 'red (named)'
+62.9576 	EXP 	No: color = 'red (named)'
+62.9743 	EXP 	No: color = 'red (named)'
+62.9910 	EXP 	No: color = 'red (named)'
+63.0076 	EXP 	No: color = 'red (named)'
+63.0245 	EXP 	No: color = 'red (named)'
+63.0419 	EXP 	No: color = 'red (named)'
+63.0577 	EXP 	No: color = 'red (named)'
+63.0743 	EXP 	No: color = 'red (named)'
+63.0911 	EXP 	No: color = 'red (named)'
+63.1076 	EXP 	No: color = 'red (named)'
+63.1244 	EXP 	No: color = 'red (named)'
+63.1412 	EXP 	No: color = 'red (named)'
+63.1578 	EXP 	No: color = 'red (named)'
+63.1745 	EXP 	No: color = 'red (named)'
+63.1911 	EXP 	No: color = 'red (named)'
+63.2078 	EXP 	No: color = 'red (named)'
+63.2245 	EXP 	No: color = 'red (named)'
+63.2412 	EXP 	No: color = 'red (named)'
+63.2578 	EXP 	No: color = 'red (named)'
+63.2746 	EXP 	No: color = 'red (named)'
+63.2912 	EXP 	No: color = 'red (named)'
+63.3079 	EXP 	No: color = 'red (named)'
+63.3247 	EXP 	No: color = 'red (named)'
+63.3413 	EXP 	No: color = 'red (named)'
+63.3582 	EXP 	No: color = 'red (named)'
+63.3747 	EXP 	No: color = 'red (named)'
+63.3912 	EXP 	No: color = 'red (named)'
+63.4080 	EXP 	No: color = 'red (named)'
+63.4246 	EXP 	No: color = 'red (named)'
+63.4413 	EXP 	No: color = 'red (named)'
+63.4581 	EXP 	No: color = 'red (named)'
+63.4750 	EXP 	No: color = 'red (named)'
+63.4922 	EXP 	No: color = 'red (named)'
+63.5080 	EXP 	No: color = 'red (named)'
+63.5250 	EXP 	No: color = 'red (named)'
+63.5416 	EXP 	No: color = 'red (named)'
+63.5582 	EXP 	No: color = 'red (named)'
+63.5748 	EXP 	No: color = 'red (named)'
+63.5914 	EXP 	No: color = 'red (named)'
+63.6081 	EXP 	No: color = 'red (named)'
+63.6248 	EXP 	No: color = 'red (named)'
+63.6415 	EXP 	No: color = 'red (named)'
+63.6581 	EXP 	No: color = 'red (named)'
+63.6749 	EXP 	No: color = 'red (named)'
+63.6916 	EXP 	No: color = 'red (named)'
+63.7087 	EXP 	No: color = 'red (named)'
+63.7249 	EXP 	No: color = 'red (named)'
+63.7415 	EXP 	No: color = 'red (named)'
+63.7583 	EXP 	No: color = 'red (named)'
+63.7749 	EXP 	No: color = 'red (named)'
+63.7917 	EXP 	No: color = 'red (named)'
+63.8083 	EXP 	No: color = 'red (named)'
+63.8252 	EXP 	No: color = 'red (named)'
+63.8417 	EXP 	No: color = 'red (named)'
+63.8584 	EXP 	No: color = 'red (named)'
+63.8862 	EXP 	window1: mouseVisible = True

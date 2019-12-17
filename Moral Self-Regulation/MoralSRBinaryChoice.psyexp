@@ -119,30 +119,6 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <TextComponent name="RemText">
-        <Param name="color" updates="constant" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.045" valType="code"/>
-        <Param name="name" updates="None" val="RemText" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0.32)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="conBlank.status == FINISHED" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="$Reminder" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="1.5" valType="code"/>
-      </TextComponent>
       <TextComponent name="leftText">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -155,7 +131,7 @@
         <Param name="name" updates="None" val="leftText" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.45, 0.05)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.45, 0.2)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -179,7 +155,7 @@
         <Param name="name" updates="None" val="rightText" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0.5, -0.04)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, 0.05)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -250,7 +226,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="if (key_resp.keys == 'y'){&amp;#10;    choseCode = 1;&amp;#10;    }&amp;#10;if (key_resp.keys == 'n'){&amp;#10;    choseCode = 0;&amp;#10;    }&amp;#10;&amp;#10;if (choseCode == 0 ){  &amp;#10;    print('Chose to do nothing, play out the probability ');&amp;#10;    probs = int(GroupProb);&amp;#10;    if (probs == 65){&amp;#10;        probability = SixtyGamble;&amp;#10;        print('65% gamble');&amp;#10;        }&amp;#10;    if (probs == 35){&amp;#10;        probability = ThirtyGamble;&amp;#10;        print('35% gamble');&amp;#10;        }&amp;#10;    if (probs == 50){&amp;#10;        probability = FiftyGamble;&amp;#10;        print('50% gamble');&amp;#10;        }&amp;#10;    result = random.choice(probability);&amp;#10;    print('Chance result:');&amp;#10;    print(result);&amp;#10;    if (result == 1){&amp;#10;        print('The group escaped!');&amp;#10;        print(earnings);&amp;#10;        chanceResult = (&quot; was saved.&quot;);&amp;#10;        }&amp;#10;    if (result == 0){&amp;#10;        print('The group died! :(');&amp;#10;        chanceResult = (' died.');&amp;#10;        }&amp;#10;  }&amp;#10;&amp;#10;&amp;#10;&amp;#10;Yes.setColor('white')&amp;#10;No.setColor('white')&amp;#10;&amp;#10;if (conBlank.status == FINISHED){&amp;#10;    leftText.setAutoDraw(False);&amp;#10;    rightText.setAutoDraw(False);&amp;#10;    Yes.setAutoDraw(False);&amp;#10;    No.setAutoDraw(False);&amp;#10;    RemText.setAutoDraw(False);&amp;#10;    Question.setAutoDraw(False);&amp;#10;    continueRoutine = False ;&amp;#10;    }" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if key_resp.keys == 'y':&amp;#10;    choseCode = 1&amp;#10;if key_resp.keys == 'n':&amp;#10;    choseCode = 0&amp;#10;&amp;#10;if choseCode == 0 :  &amp;#10;    print('Chose to do nothing, play out the probability ')&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% gamble')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% gamble')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% gamble')&amp;#10;    result = random.choice(probability)&amp;#10;    print('Chance result:')&amp;#10;    print(result)&amp;#10;    if result == 1:   #win&amp;#10;        print('The group escaped!')&amp;#10;        print(earnings)&amp;#10;        chanceResult = (&quot; were saved.&quot;)&amp;#10;    if result == 0: #lose&amp;#10;        print('The group died! :(')&amp;#10;        chanceResult = (' died.')&amp;#10;&amp;#10;&amp;#10;&amp;#10;Yes.setColor('white')&amp;#10;No.setColor('white')&amp;#10;&amp;#10;if conBlank.status == FINISHED:&amp;#10;    leftText.setAutoDraw(False)&amp;#10;    rightText.setAutoDraw(False)&amp;#10;    Yes.setAutoDraw(False)&amp;#10;    No.setAutoDraw(False)&amp;#10;    sureGroup.setAutoDraw(False)&amp;#10;    RemText.setAutoDraw(False)&amp;#10;    Question.setAutoDraw(False)&amp;#10;    continueRoutine = False " valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if key_resp.keys == 'y':&amp;#10;    choseCode = 1&amp;#10;if key_resp.keys == 'n':&amp;#10;    choseCode = 0&amp;#10;&amp;#10;if choseCode == 0 :  &amp;#10;    print('Chose to do nothing, play out the probability ')&amp;#10;    probs = int(GroupProb)&amp;#10;    if probs == 65:&amp;#10;        probability = SixtyGamble&amp;#10;        print('65% gamble')&amp;#10;    if probs == 35:&amp;#10;        probability = ThirtyGamble&amp;#10;        print('35% gamble')&amp;#10;    if probs == 50:&amp;#10;        probability = FiftyGamble&amp;#10;        print('50% gamble')&amp;#10;    result = random.choice(probability)&amp;#10;    print('Chance result:')&amp;#10;    print(result)&amp;#10;    if result == 1:   #win&amp;#10;        print('The group escaped!')&amp;#10;        print(earnings)&amp;#10;        chanceResult = (&quot; were saved.&quot;)&amp;#10;    if result == 0: #lose&amp;#10;        print('The group died! :(')&amp;#10;        chanceResult = (' died.')&amp;#10;&amp;#10;&amp;#10;&amp;#10;Yes.setColor('white')&amp;#10;No.setColor('white')&amp;#10;&amp;#10;if conBlank.status == FINISHED:&amp;#10;    leftText.setAutoDraw(False)&amp;#10;    rightText.setAutoDraw(False)&amp;#10;    Yes.setAutoDraw(False)&amp;#10;    No.setAutoDraw(False)&amp;#10;    sureGroup.setAutoDraw(False)&amp;#10;#    RemText.setAutoDraw(False)&amp;#10;    Question.setAutoDraw(False)&amp;#10;    continueRoutine = False " valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_5" valType="code"/>
       </CodeComponent>
@@ -290,7 +266,7 @@
         <Param name="name" updates="None" val="sureGroup" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(-0.5, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, 0.20)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
