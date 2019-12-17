@@ -177,53 +177,52 @@ Do nothing: The repairmen on the sidetrack will live, the other group has a chan
 The  ","The 2 repairmen on the sidetrack died.
 
 The 7 repairmen on the track were saved.",7,35, repairmen on the main track,dis,2.45,2,Repairmen on sidetrack: 2
-"Customers in main
-dining room: 6","Probability customers
-will be spared: 35%","• You are working in the kitchen of a café, and see a terrorist throw a grenade next to the main dining room, in which a number of customers are eating
+"Scientists at the 
+north end of lake: 6","Probability scientists will
+get out of the water: 35%","• There is a group of ice fishermen towards the north side of a large frozen lake
 
-• If nothing is done the grenade will explode and the walls of the main dining room will collapse and kill these customers","Plan: Throw the grenade onto the patio, killing the customers there
-Do nothing: The customers on the patio will live, the group in the dining room has a chance of surviving","The 3 customers on the patio lived.
+• A group of scientists are on the south side of the lake drilling ice cores","Plan: Drive to the scientists, causing the fishermen to fall into the water and die
+Do nothing: The fishermen will live,  the scientists may get out of the water in time","The 3 fishermen on the south end lived.
 
-The   ","The 3 customers on the patio died.
+The   ","The 3 fishermen on the south end died.
 
-The 6 customers in the main dining room were saved.",6,35, customers in the main dining room,dis,2.1,3,Customers on the patio: 3
-"Customers in main
-dining room: 14","Probability customers
-will be spared: 50%","• There is only one other location the grenade could be thrown before it explodes, and that is the patio outside of the main dining room
+The 6 scientists on the north end were saved.",6,35,scientists at the north end of the lake,dis,2.1,3,Fishermen on the south end: 3
+"Scientists at the 
+north end of lake: 14","Probability scientists will
+get out of the water: 50%","•The scientists sent out a distress call because the ice around them started to shatter and they have fallen into the freezing water
 
-• There are other customers sitting on the patio, and they would certainly be killed if the grenade is thrown there","Plan: Throw the grenade onto the patio, killing the customers there
-Do nothing: The customers on the patio will live, the group in the dining room has a chance of surviving","The 7 customers on the patio lived.
+• You are an emergency worker who has been called to rescue the scientists","Plan: Drive to the scientists, causing the fishermen to fall into the water and die
+Do nothing: The fishermen will live,  the scientists may get out of the water in time","The 7 fishermen on the south end lived.
 
-The   ","The 7 customers on the patio died.
+The   ","The 7 fishermen on the south end died.
 
-The 14 customers in the main dining room were saved.",14,50, customers in the main dining room,EQUAL,7,7,Customers on the patio: 7
-"Customers in main
-dining room: 5","Probability customers
-will be spared: 35%","• You have time to run out and throw the grenade to the patio, without risking any harm to yourself","Plan: Throw the grenade onto the patio, killing the customers there
-
-Do nothing: The customers on the patio will live, the group in the dining room has a chance of surviving","The 2 customers on the patio lived.
-
-The   ","The 2 customers on the patio died.
-
-The 5 customers in the main dining room were saved.",5,50, customers in the main dining room,AD,2.5,2,Customers on the patio: 2
-"Customers in main
-dining room: 7","Probability customers
-will be spared: 65%","• If you do this, the customers in the dining room will live but the customers on the patio will die 
-
-• You also know that there is a chance that the dining room walls will withstand the blast of the grenade explosion, and the customers would be spared","Plan: Throw the grenade onto the patio, killing the customers there
-Do nothing: The customers on the patio will live, the group in the dining room has a chance of surviving","The 2 customers on the patio lived.
+The 14 scientists on the north end were saved.",14,50,scientists at the north end of the lake,EQUAL,7,7,Fishermen on the south end: 7
+"Scientists at the 
+north end of lake: 5","Probability scientists will
+get out of the water: 35%","• To reach the scientists in time, you would need to drive a vehicle across the ice, past the fishermen","Plan: Drive to the scientists, causing the fishermen to fall into the water and die
+Do nothing: The fishermen will live,  the scientists may get out of the water in time","The 2 fishermen on the south end lived.
 
 The   ","The 2 customers on the patio died.
 
-The 7 customers in the main dining room were saved.",7,35, customers in the main dining room,ad,2.45,2,Customers on the patio: 2
-"Customers in main
-dining room: 9","Probability customers
-will be spared: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Throw the grenade onto the patio, killing the customers there
-Do nothing: The customers on the patio will live, the group in the dining room has a chance of surviving","The 7 customers on the patio lived.
+The 5 customers in the main dining room were saved.",5,50,scientists at the north end of the lake,AD,2.5,2,Fishermen on the south end: 2
+"Scientists at the 
+north end of lake: 7","Probability scientists will
+get out of the water: 65%","• If you do this, the weight of the vehicle would cause the ice to crack around the fishermen, causing them to fall into the water and die from the cold
+
+• You also know that there is a chance that the scientists may be able to climb out of the freezing water before going into shock and dying","Plan: Drive to the scientists, causing the fishermen to fall into the water and die
+Do nothing: The fishermen will live,  the scientists may get out of the water in time","The 2 fishermen on the south end lived.
+
+The   ","The 2 customers on the patio died.
+
+The 7 customers in the main dining room were saved.",7,35,scientists at the north end of the lake,ad,2.45,2,Fishermen on the south end: 2
+"Scientists at the 
+north end of lake: 9","Probability  scientists will
+get out of the water: 50%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Drive to the scientists, causing the fishermen to fall into the water and die
+Do nothing: The fishermen will live,  the scientists may get out of the water in time","The 7 fishermen on the south end lived.
 
 The   ","The 7 customers on the patio died.
 
-The 9 customers in the main dining room were saved.",9,65, customers in the main dining room,dis,5.85,7,Customers on the patio: 7
+The 9 customers in the main dining room were saved.",9,65,scientists at the north end of the lake,dis,5.85,7,Fishermen on the south end: 7
 "Workers in the 
 office building: 4","Probability the Bomb Squad
 will arrive in time: 35%","• There has been a bomb planted in two buildings, drawing from the same set of wires
