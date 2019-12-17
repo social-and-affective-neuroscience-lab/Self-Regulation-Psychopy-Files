@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 16, 2019, at 17:49
+    on December 17, 2019, at 14:21
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -104,7 +104,7 @@ PracticeDilemmas_2Clock = core.Clock()
 practiceQs = visual.TextStim(win=win, name='practiceQs',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.06, wrapWidth=1.4, ori=0, 
+    pos=(0, 0), height=0.05, wrapWidth=1.4, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -153,28 +153,28 @@ conBlank = visual.TextStim(win=win, name='conBlank',
 leftText = visual.TextStim(win=win, name='leftText',
     text='default text',
     font='Arial',
-    pos=(0.45, 0.2), height=0.045, wrapWidth=None, ori=0, 
+    pos=(0.41, 0.2), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 rightText = visual.TextStim(win=win, name='rightText',
     text='default text',
     font='Arial',
-    pos=(0.5, 0.05), height=0.045, wrapWidth=None, ori=0, 
+    pos=(0.46, 0.05), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 Yes = visual.TextStim(win=win, name='Yes',
     text='default text',
     font='Arial',
-    pos=(0, -0.33), height=0.05, wrapWidth=2.5, ori=0, 
+    pos=(0, -0.25), height=0.05, wrapWidth=2.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 No = visual.TextStim(win=win, name='No',
     text='default text',
     font='Arial',
-    pos=(0.0, -0.41), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0.0, -0.33), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
@@ -219,20 +219,13 @@ def gambleFunc(GroupProb):
     result = random.choice(probability)
     print('Chance result:')
     print(result)
-Question = visual.TextStim(win=win, name='Question',
-    text='default text',
-    font='Arial',
-    pos=(0, -0.20), height=0.055, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-7.0);
 sureGroup = visual.TextStim(win=win, name='sureGroup',
     text='default text',
     font='Arial',
-    pos=(-0.5, 0.20), height=0.05, wrapWidth=None, ori=0, 
+    pos=(-0.43, 0.20), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-8.0);
+    depth=-7.0);
 
 # Initialize components for Routine "ISI"
 ISIClock = core.Clock()
@@ -310,7 +303,7 @@ MainDilemmasClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
     text='default text',
     font='Arial',
-    pos=(0, 0), height=0.06, wrapWidth=1.4, ori=0, 
+    pos=(0, 0), height=0.05, wrapWidth=1.4, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -366,28 +359,28 @@ RemText2 = visual.TextStim(win=win, name='RemText2',
 leftText2 = visual.TextStim(win=win, name='leftText2',
     text='default text',
     font='Arial',
-    pos=(0.4, 0.053), height=0.045, wrapWidth=None, ori=0, 
+    pos=(0.41, 0.2), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-3.0);
 rightText2 = visual.TextStim(win=win, name='rightText2',
     text='default text',
     font='Arial',
-    pos=(0.4, -0.043), height=0.045, wrapWidth=None, ori=0, 
+    pos=(0.46, 0.05), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
 yes2 = visual.TextStim(win=win, name='yes2',
     text='default text',
     font='Arial',
-    pos=(0, -0.33), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0, -0.25), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-5.0);
 no2 = visual.TextStim(win=win, name='no2',
     text='default text',
     font='Arial',
-    pos=(0.0, -0.41), height=0.05, wrapWidth=None, ori=0, 
+    pos=(0.0, -0.33), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-6.0);
@@ -432,20 +425,13 @@ def gambleFunc(GroupProb):
     result = random.choice(probability)
     print('Chance result:')
     print(result)
-Question2 = visual.TextStim(win=win, name='Question2',
-    text='default text',
-    font='Arial',
-    pos=(0, -0.20), height=0.055, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-8.0);
 text_2 = visual.TextStim(win=win, name='text_2',
     text='default text',
     font='Arial',
-    pos=(-0.5, 0), height=0.045, wrapWidth=None, ori=0, 
+    pos=(-0.43, 0.20), height=0.045, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-9.0);
+    depth=-8.0);
 
 # Initialize components for Routine "ISI"
 ISIClock = core.Clock()
@@ -1079,10 +1065,9 @@ for thisPracticeLoop in PracticeLoop:
         rightText.setText(PracticeRightText)
         Yes.setText("Implement the plan ('y')")
         No.setText("Do nothing ('n')")
-        Question.setText('What do you do?')
         sureGroup.setText(sureGroupText)
         # keep track of which components have finished
-        PracticeAnswersComponents = [key_resp, conBlank, leftText, rightText, Yes, No, Question, sureGroup]
+        PracticeAnswersComponents = [key_resp, conBlank, leftText, rightText, Yes, No, sureGroup]
         for thisComponent in PracticeAnswersComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1224,22 +1209,6 @@ for thisPracticeLoop in PracticeLoop:
             if key_resp.keys == 'y' or key_resp.keys == 'n':
                 key_resp.status = FINISHED
             
-            # *Question* updates
-            if Question.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                Question.frameNStart = frameN  # exact frame index
-                Question.tStart = t  # local t and not account for scr refresh
-                Question.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(Question, 'tStartRefresh')  # time at next scr refresh
-                Question.setAutoDraw(True)
-            if Question.status == STARTED:
-                if bool(conBlank.status == FINISHED):
-                    # keep track of stop time/frame for later
-                    Question.tStop = t  # not accounting for scr refresh
-                    Question.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(Question, 'tStopRefresh')  # time at next scr refresh
-                    Question.setAutoDraw(False)
-            
             # *sureGroup* updates
             if sureGroup.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
@@ -1335,10 +1304,8 @@ for thisPracticeLoop in PracticeLoop:
             No.setAutoDraw(False)
             sureGroup.setAutoDraw(False)
         #    RemText.setAutoDraw(False)
-            Question.setAutoDraw(False)
+        #    Question.setAutoDraw(False)
             continueRoutine = False 
-        practiceAs.addData('Question.started', Question.tStartRefresh)
-        practiceAs.addData('Question.stopped', Question.tStopRefresh)
         practiceAs.addData('sureGroup.started', sureGroup.tStartRefresh)
         practiceAs.addData('sureGroup.stopped', sureGroup.tStopRefresh)
         # the Routine "PracticeAnswers" was not non-slip safe, so reset the non-slip timer
@@ -2272,10 +2239,9 @@ for thisMainLoop in MainLoop:
         rightText2.setText(PracticeRightText)
         yes2.setText("Implement the plan ('y')")
         no2.setText("Do nothing ('n')")
-        Question2.setText('What do you do?')
         text_2.setText(sureGroupText)
         # keep track of which components have finished
-        MainAnswers_2Components = [key_resp_3, conBlank2, RemText2, leftText2, rightText2, yes2, no2, Question2, text_2]
+        MainAnswers_2Components = [key_resp_3, conBlank2, RemText2, leftText2, rightText2, yes2, no2, text_2]
         for thisComponent in MainAnswers_2Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2433,22 +2399,6 @@ for thisMainLoop in MainLoop:
             if key_resp_3.keys == 'y' or key_resp_3.keys == 'n':
                 key_resp_3.status = FINISHED
             
-            # *Question2* updates
-            if Question2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                Question2.frameNStart = frameN  # exact frame index
-                Question2.tStart = t  # local t and not account for scr refresh
-                Question2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(Question2, 'tStartRefresh')  # time at next scr refresh
-                Question2.setAutoDraw(True)
-            if Question2.status == STARTED:
-                if bool(conBlank2.status == FINISHED):
-                    # keep track of stop time/frame for later
-                    Question2.tStop = t  # not accounting for scr refresh
-                    Question2.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(Question2, 'tStopRefresh')  # time at next scr refresh
-                    Question2.setAutoDraw(False)
-            
             # *text_2* updates
             if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
@@ -2545,11 +2495,9 @@ for thisMainLoop in MainLoop:
             yes2.setAutoDraw(False)
             no2.setAutoDraw(False)
             text_2.setAutoDraw(False)
-            RemText2.setAutoDraw(False)
-            Question2.setAutoDraw(False)
+           # RemText2.setAutoDraw(False)
+            #Question2.setAutoDraw(False)
             continueRoutine = False 
-        trials_2.addData('Question2.started', Question2.tStartRefresh)
-        trials_2.addData('Question2.stopped', Question2.tStopRefresh)
         trials_2.addData('text_2.started', text_2.tStartRefresh)
         trials_2.addData('text_2.stopped', text_2.tStopRefresh)
         # the Routine "MainAnswers_2" was not non-slip safe, so reset the non-slip timer

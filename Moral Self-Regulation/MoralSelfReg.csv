@@ -31,7 +31,13 @@ Do nothing: The workers in Room B will live, the group in Room A has a chance of
 The  ","The 6 workers in Room B died. 
 
 The 12 workers in Room A were saved.",12,50, workers in Room A,EQUAL,6,6,Workers in Room B: 6
-Workers in Room A: 5,Probability of escape: 65%,"Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Hit the button to divert the gas to Room B, killing the workers there
+Workers in Room A: 5,Probability of escape: 65%,"Consider each of the following scenarios and, for each one, determine if you will:
+
+Implement the plan: Hit the button to divert the gas to Room B, killing the workers there
+
+OR
+
+Do nothing: The workers in Room B will live, the group on Room A has a chance of escaping.","Plan: Hit the button to divert the gas to Room B, killing the workers there
 Do nothing: The workers in Room B will live, the group in Room A has a chance of escaping","The 4 workers in Room B lived.
 
 The  ","The 4 workers in Room B died. 
@@ -44,7 +50,7 @@ drive to safety: 35%","• You are operating a crane in front of a tall bridge whe
 ","Plan: Move your crane to push the bus, certainly killing the people in the car
 Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 2 people in the car lived.
 
-The   ","The 2 people in the car died. 
+The  ","The 2 people in the car died. 
 
 The 7 people on the bus were saved.",7,50, people on the bus,dis,3.5,2,People in the car: 2
 People on bus: 9,"Probability bus will 
@@ -53,7 +59,7 @@ drive to safety: 35%","• If nothing is done, the bus will soon plummet and all o
 • You know that you can move your crane in a way to push the bus back onto the bridge, avoiding  the deaths of all the people on board","Plan: Move your crane to push the bus, certainly killing the people in the car
 Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 6 people in the car lived.
 
-The   ","The 6 people in the car died. 
+The  ","The 6 people in the car died. 
 
 The 9 people on the bus were saved.",9,65, people on the bus,EQUAL,~6,6,People in the car: 6
 People on bus: 6,"Probability bus will 
@@ -62,7 +68,7 @@ drive to safety: 50%","• However, you are also aware that in its current positio
 • If you move the crane, this part will certainly collapse and the people in that car will be killed","Plan: Move your crane to push the bus, certainly killing the people in the car
 Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 2 people in the car lived.
 
-The   ","The 2 people in the car died. 
+The  ","The 2 people in the car died. 
 
 The 6 people on the bus were saved.",6,35, people on the bus,EQUAL,~2,2,People in the car: 2
 People on bus: 10,"Probability bus will 
@@ -71,14 +77,14 @@ drive to safety: 65%","• You also know that there is a chance the bus will be ab
 • There is no chance that the car will be able to avoid falling if you move your crane ","Plan: Move your crane to push the bus, certainly killing the people in the car
 Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 7 people in the car lived.
 
-The   ","The 7 people in the car died. 
+The  ","The 7 people in the car died. 
 
 The 10 people on the bus were saved.",10,65, people on the bus,ad,6.5,7,People in the car: 7
 People on bus: 7,"Probability bus will 
 drive to safety: 35%","Consider each of the following scenarios and, for each one, determine what course of action you will take.","Plan: Move your crane to push the bus, certainly killing the people in the car
 Do nothing: The person in the car will live, the people in the bus have a chance of surviving","The 4 people in the car lived.
 
-The   ","The 4 people in the car died. 
+The  ","The 4 people in the car died. 
 
 The 7 people on the bus were saved.",7,50, people on the bus,ad,-3.5,4,People in the car: 4
 "People drowning
