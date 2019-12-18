@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 16, 2019, at 17:38
+    on December 18, 2019, at 11:13
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -260,13 +260,24 @@ def earningsFunct(gamProb, chosenMoney, WinLossType, earning):
 # Initialize components for Routine "Inst2"
 Inst2Clock = core.Clock()
 instruct2 = visual.TextStim(win=win, name='instruct2',
-    text='You will be given regulation instructions prior to a block of trials. Please employ the strategy while making your decision. \n\nYou will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press ENTER!',
+    text='You will be instructed to either "DE-EMPHASIZE" or "EMPHASIZE." When you see the word "DE-EMPHASIZE," we would like you to reinterpret the upcoming decision as one of many opportunities, and that the outcome is not very important. Try to think that the decision is not a big deal; you will have other chances.\n\nWhen you see the word "EMPHASIZE" we would like you to stress the importance of the upcoming decision. Please reinterpret the upcoming decision as very important and one in which you need to make the right choice. Try to think that it matters a lot what you choose. \n\nPress SPACE to continue.',
     font='Arial',
-    pos=(0, 0), height=0.06, wrapWidth=1.5, ori=0, 
+    pos=(0, 0), height=0.045, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 enter = keyboard.Keyboard()
+
+# Initialize components for Routine "inst3"
+inst3Clock = core.Clock()
+text_4 = visual.TextStim(win=win, name='text_4',
+    text='You will have three seconds to make your choice upon seeing the options. \n\nTo choose the option on the left, press "1". To choose the option on the right, press "2".\n\nYou will first be playing some practice rounds. To begin the practice, press ENTER!',
+    font='Arial',
+    pos=(0, 0), height=0.045, wrapWidth=1.4, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+key_resp_2 = keyboard.Keyboard()
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -381,9 +392,9 @@ text_3 = visual.TextStim(win=win, name='text_3',
 # Initialize components for Routine "BeginInst"
 BeginInstClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='You will now begin the full task.\n\nPress SPACE to start!',
+    text='You will now be completing the full task. Your money bank will begin with the $6.00 you earned from the card task\n\nPress SPACE to start!',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    pos=(0, 0), height=0.085, wrapWidth=1.4, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
@@ -517,9 +528,9 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # update component parameters for each repeat
 Instructions.setColor('white', colorSpace='rgb')
 Instructions.setPos((0, 0))
-Instructions.setText('In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble or choosing a sure option. \n\nFor each gamble, you will have a chance of either winning money, losing money, or gaining nothing, while the sure option guarantees a win or loss. \n\nPress SPACE to continue. ')
+Instructions.setText('In this part of the study, you will be making a series of monetary decisions.\n\nYou will have the choice between taking a gamble or choosing a sure option. For each gamble, you will have a chance of either winning money, losing money, or gaining nothing, while the sure option guarantees a win or loss. \n\nYou will be given regulation instructions prior to a block of trials. Please employ the strategy while making your decision. \n\nPress SPACE to continue. ')
 Instructions.setFont('Arial')
-Instructions.setHeight(0.06)
+Instructions.setHeight(0.045)
 space.keys = []
 space.rt = []
 # keep track of which components have finished
@@ -669,7 +680,7 @@ while continueRoutine:
         win.callOnFlip(enter.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(enter.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if enter.status == STARTED and not waitOnFlip:
-        theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
+        theseKeys = enter.getKeys(keyList=['space'], waitRelease=False)
         if len(theseKeys):
             theseKeys = theseKeys[0]  # at least one key was pressed
             
@@ -714,6 +725,105 @@ thisExp.addData('enter.started', enter.tStartRefresh)
 thisExp.addData('enter.stopped', enter.tStopRefresh)
 thisExp.nextEntry()
 # the Routine "Inst2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "inst3"-------
+# update component parameters for each repeat
+key_resp_2.keys = []
+key_resp_2.rt = []
+# keep track of which components have finished
+inst3Components = [text_4, key_resp_2]
+for thisComponent in inst3Components:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+inst3Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+continueRoutine = True
+
+# -------Run Routine "inst3"-------
+while continueRoutine:
+    # get current time
+    t = inst3Clock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=inst3Clock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_4* updates
+    if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_4.frameNStart = frameN  # exact frame index
+        text_4.tStart = t  # local t and not account for scr refresh
+        text_4.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_4, 'tStartRefresh')  # time at next scr refresh
+        text_4.setAutoDraw(True)
+    
+    # *key_resp_2* updates
+    waitOnFlip = False
+    if key_resp_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_resp_2.frameNStart = frameN  # exact frame index
+        key_resp_2.tStart = t  # local t and not account for scr refresh
+        key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
+        key_resp_2.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_resp_2.status == STARTED and not waitOnFlip:
+        theseKeys = key_resp_2.getKeys(keyList=['return'], waitRelease=False)
+        if len(theseKeys):
+            theseKeys = theseKeys[0]  # at least one key was pressed
+            
+            # check for quit:
+            if "escape" == theseKeys:
+                endExpNow = True
+            key_resp_2.keys = theseKeys.name  # just the last key pressed
+            key_resp_2.rt = theseKeys.rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in inst3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "inst3"-------
+for thisComponent in inst3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('text_4.started', text_4.tStartRefresh)
+thisExp.addData('text_4.stopped', text_4.tStopRefresh)
+# check responses
+if key_resp_2.keys in ['', [], None]:  # No response was made
+    key_resp_2.keys = None
+thisExp.addData('key_resp_2.keys',key_resp_2.keys)
+if key_resp_2.keys != None:  # we had a response
+    thisExp.addData('key_resp_2.rt', key_resp_2.rt)
+thisExp.addData('key_resp_2.started', key_resp_2.tStartRefresh)
+thisExp.addData('key_resp_2.stopped', key_resp_2.tStopRefresh)
+thisExp.nextEntry()
+# the Routine "inst3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "isi"-------
@@ -787,7 +897,7 @@ thisExp.addData('isi2.started', isi2.tStartRefresh)
 thisExp.addData('isi2.stopped', isi2.tStopRefresh)
 
 # ------Prepare to start Routine "PracticeCue"-------
-routineTimer.add(5.000000)
+routineTimer.add(3.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 PracticeCueComponents = [text]
@@ -824,7 +934,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         text.setAutoDraw(True)
     if text.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text.tStartRefresh + 5-frameTolerance:
+        if tThisFlipGlobal > text.tStartRefresh + 3-frameTolerance:
             # keep track of stop time/frame for later
             text.tStop = t  # not accounting for scr refresh
             text.frameNStop = frameN  # exact frame index
@@ -1393,6 +1503,9 @@ for thisPracticeLoop in PracticeLoop:
                print(earnings)
         earningsStr = "$" + '%.2f' % earnings
         earningsText.setText('$' + earningsStr)
+    if choice.keys == None:
+        feedbackVar = 4;
+    
     GambleAmt.setColor('white')
     SureAmt.setColor('white')
     
@@ -1500,6 +1613,8 @@ for thisPracticeLoop in PracticeLoop:
         text_3.setText("You won $0.00")
     if feedbackVar == 3 and WinLossCode == 0:
         text_3.setText("You lost $0.00")
+    if feedbackVar ==4 :
+        text_3.setText("No response made")
     # keep track of which components have finished
     FeedbackComponents = [text_3]
     for thisComponent in FeedbackComponents:
@@ -1767,7 +1882,7 @@ for thisMainLoop in mainLoop:
     mainLoop.addData('isi2.stopped', isi2.tStopRefresh)
     
     # ------Prepare to start Routine "Cue"-------
-    routineTimer.add(5.000000)
+    routineTimer.add(3.000000)
     # update component parameters for each repeat
     cue.setText(CueType)
     # keep track of which components have finished
@@ -1805,7 +1920,7 @@ for thisMainLoop in mainLoop:
             cue.setAutoDraw(True)
         if cue.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cue.tStartRefresh + 5-frameTolerance:
+            if tThisFlipGlobal > cue.tStartRefresh + 3-frameTolerance:
                 # keep track of stop time/frame for later
                 cue.tStop = t  # not accounting for scr refresh
                 cue.frameNStop = frameN  # exact frame index
@@ -2377,6 +2492,9 @@ for thisMainLoop in mainLoop:
                    print(earnings)
             earningsStr = "$" + '%.2f' % earnings
             earningsText.setText('$' + earningsStr)
+        if choice.keys == None:
+            feedbackVar = 4;
+        
         GambleAmt.setColor('white')
         SureAmt.setColor('white')
         
@@ -2482,6 +2600,8 @@ for thisMainLoop in mainLoop:
             text_3.setText("You won $0.00")
         if feedbackVar == 3 and WinLossCode == 0:
             text_3.setText("You lost $0.00")
+        if feedbackVar ==4 :
+            text_3.setText("No response made")
         # keep track of which components have finished
         FeedbackComponents = [text_3]
         for thisComponent in FeedbackComponents:
