@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 17, 2019, at 14:49
+    on December 18, 2019, at 09:33
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -143,14 +143,14 @@ text_2 = visual.TextStim(win=win, name='text_2',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.35, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5'], tickHeight=-1)
 text_4 = visual.TextStim(win=win, name='text_4',
     text='default text',
     font='Arial',
     pos=(0.33, -0.1), height=0.039, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-2.0);
+rating_2 = visual.RatingScale(win=win, name='rating_2', marker='triangle', size=1.35, pos=[0.0, -0.38], low=1, high=5, labels=['1', '2', '3', '4', '5'], scale='')
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -227,14 +227,14 @@ text_2 = visual.TextStim(win=win, name='text_2',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.35, pos=[0.0, -0.33], choices=['1', '2', '3', '4', '5'], tickHeight=-1)
 text_4 = visual.TextStim(win=win, name='text_4',
     text='default text',
     font='Arial',
     pos=(0.33, -0.1), height=0.039, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
-    depth=-3.0);
+    depth=-2.0);
+rating_2 = visual.RatingScale(win=win, name='rating_2', marker='triangle', size=1.35, pos=[0.0, -0.38], low=1, high=5, labels=['1', '2', '3', '4', '5'], scale='')
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -639,10 +639,10 @@ for thisPracticeLoop in practiceLoop:
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
         text_2.setText(LeftText)
-        rating.reset()
         text_4.setText(RightText)
+        rating_2.reset()
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, text_2, rating, text_4]
+        ratingsComponents = [ratingQ, text_2, text_4, rating_2]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -699,15 +699,6 @@ for thisPracticeLoop in practiceLoop:
                     text_2.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
                     text_2.setAutoDraw(False)
-            # *rating* updates
-            if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                rating.frameNStart = frameN  # exact frame index
-                rating.tStart = t  # local t and not account for scr refresh
-                rating.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
-                rating.setAutoDraw(True)
-            continueRoutine &= rating.noResponse  # a response ends the trial
             
             # *text_4* updates
             if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -725,6 +716,15 @@ for thisPracticeLoop in practiceLoop:
                     text_4.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(text_4, 'tStopRefresh')  # time at next scr refresh
                     text_4.setAutoDraw(False)
+            # *rating_2* updates
+            if rating_2.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                rating_2.frameNStart = frameN  # exact frame index
+                rating_2.tStart = t  # local t and not account for scr refresh
+                rating_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating_2, 'tStartRefresh')  # time at next scr refresh
+                rating_2.setAutoDraw(True)
+            continueRoutine &= rating_2.noResponse  # a response ends the trial
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -751,13 +751,13 @@ for thisPracticeLoop in practiceLoop:
         trials.addData('ratingQ.stopped', ratingQ.tStopRefresh)
         trials.addData('text_2.started', text_2.tStartRefresh)
         trials.addData('text_2.stopped', text_2.tStopRefresh)
-        # store data for trials (TrialHandler)
-        trials.addData('rating.response', rating.getRating())
-        trials.addData('rating.rt', rating.getRT())
-        trials.addData('rating.started', rating.tStart)
-        trials.addData('rating.stopped', rating.tStop)
         trials.addData('text_4.started', text_4.tStartRefresh)
         trials.addData('text_4.stopped', text_4.tStopRefresh)
+        # store data for trials (TrialHandler)
+        trials.addData('rating_2.response', rating_2.getRating())
+        trials.addData('rating_2.rt', rating_2.getRT())
+        trials.addData('rating_2.started', rating_2.tStart)
+        trials.addData('rating_2.stopped', rating_2.tStop)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)
@@ -1216,10 +1216,10 @@ for thisTrial_2 in trials_2:
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
         text_2.setText(LeftText)
-        rating.reset()
         text_4.setText(RightText)
+        rating_2.reset()
         # keep track of which components have finished
-        ratingsComponents = [ratingQ, text_2, rating, text_4]
+        ratingsComponents = [ratingQ, text_2, text_4, rating_2]
         for thisComponent in ratingsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1276,15 +1276,6 @@ for thisTrial_2 in trials_2:
                     text_2.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(text_2, 'tStopRefresh')  # time at next scr refresh
                     text_2.setAutoDraw(False)
-            # *rating* updates
-            if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                rating.frameNStart = frameN  # exact frame index
-                rating.tStart = t  # local t and not account for scr refresh
-                rating.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
-                rating.setAutoDraw(True)
-            continueRoutine &= rating.noResponse  # a response ends the trial
             
             # *text_4* updates
             if text_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1302,6 +1293,15 @@ for thisTrial_2 in trials_2:
                     text_4.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(text_4, 'tStopRefresh')  # time at next scr refresh
                     text_4.setAutoDraw(False)
+            # *rating_2* updates
+            if rating_2.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                rating_2.frameNStart = frameN  # exact frame index
+                rating_2.tStart = t  # local t and not account for scr refresh
+                rating_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating_2, 'tStartRefresh')  # time at next scr refresh
+                rating_2.setAutoDraw(True)
+            continueRoutine &= rating_2.noResponse  # a response ends the trial
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1328,13 +1328,13 @@ for thisTrial_2 in trials_2:
         mainTrials.addData('ratingQ.stopped', ratingQ.tStopRefresh)
         mainTrials.addData('text_2.started', text_2.tStartRefresh)
         mainTrials.addData('text_2.stopped', text_2.tStopRefresh)
-        # store data for mainTrials (TrialHandler)
-        mainTrials.addData('rating.response', rating.getRating())
-        mainTrials.addData('rating.rt', rating.getRT())
-        mainTrials.addData('rating.started', rating.tStart)
-        mainTrials.addData('rating.stopped', rating.tStop)
         mainTrials.addData('text_4.started', text_4.tStartRefresh)
         mainTrials.addData('text_4.stopped', text_4.tStopRefresh)
+        # store data for mainTrials (TrialHandler)
+        mainTrials.addData('rating_2.response', rating_2.getRating())
+        mainTrials.addData('rating_2.rt', rating_2.getRT())
+        mainTrials.addData('rating_2.started', rating_2.tStart)
+        mainTrials.addData('rating_2.stopped', rating_2.tStop)
         
         # ------Prepare to start Routine "isi"-------
         routineTimer.add(2.000000)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 17, 2019, at 14:43
+    on December 18, 2019, at 09:46
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -81,7 +81,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "intro"
 introClock = core.Clock()
 Instructions = visual.TextStim(win=win, name='Instructions',
-    text='In this part of the study you will be given a regulation strategy to use while viewing pictures of food.\n\nThen you will use a rating scale to indicate how much you are craving the food item. Please use the mouse to select a rating, then press ENTER to submit your answer.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press SPACE to start!',
+    text='In this part of the study you will be given a regulation strategy to use while viewing pictures of food.\n\nThen you will use a rating scale to indicate how much you are craving the food item. Use the number keys 1-5 to select a rating, then press ENTER to submit your answer.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press SPACE to start!',
     font='Arial',
     pos=(0, 0), height=0.06, wrapWidth=1.45, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -133,7 +133,7 @@ text_3 = visual.TextStim(win=win, name='text_3',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-rating_2 = visual.RatingScale(win=win, name='rating_2', marker='triangle', size=1.4, pos=[0.0, -0.35], choices=['1', '2', '3', '4', '5'], tickHeight=-1)
+rating_2 = visual.RatingScale(win=win, name='rating_2', marker='triangle', size=1.4, pos=[0.0, -0.35], low=1, high=5, labels=[''], scale='')
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()
@@ -200,7 +200,7 @@ text_3 = visual.TextStim(win=win, name='text_3',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-rating_2 = visual.RatingScale(win=win, name='rating_2', marker='triangle', size=1.4, pos=[0.0, -0.35], choices=['1', '2', '3', '4', '5'], tickHeight=-1)
+rating_2 = visual.RatingScale(win=win, name='rating_2', marker='triangle', size=1.4, pos=[0.0, -0.35], low=1, high=5, labels=[''], scale='')
 
 # Initialize components for Routine "isi"
 isiClock = core.Clock()

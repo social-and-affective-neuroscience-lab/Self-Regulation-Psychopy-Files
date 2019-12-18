@@ -53,7 +53,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="In this part of the study you will be given a regulation strategy to use while viewing pictures of food.&amp;#10;&amp;#10;Then you will use a rating scale to indicate how much you are craving the food item. Please use the mouse to select a rating, then press ENTER to submit your answer.&amp;#10;&amp;#10;You will first be completing a few practice rounds.&amp;#10;&amp;#10;When you are ready, press SPACE to start!" valType="str"/>
+        <Param name="text" updates="constant" val="In this part of the study you will be given a regulation strategy to use while viewing pictures of food.&amp;#10;&amp;#10;Then you will use a rating scale to indicate how much you are craving the food item. Use the number keys 1-5 to select a rating, then press ENTER to submit your answer.&amp;#10;&amp;#10;You will first be completing a few practice rounds.&amp;#10;&amp;#10;When you are ready, press SPACE to start!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.45" valType="code"/>
       </TextComponent>
@@ -246,7 +246,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <RatingScaleComponent name="rating_2">
-        <Param name="categoryChoices" updates="constant" val="1,2,3,4,5" valType="str"/>
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
         <Param name="customize_everything" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="disappear" updates="constant" val="False" valType="bool"/>
