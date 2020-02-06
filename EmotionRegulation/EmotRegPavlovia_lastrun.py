@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on December 18, 2019, at 09:33
+    on February 06, 2020, at 09:15
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -81,7 +81,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "intro"
 introClock = core.Clock()
 Instructions = visual.TextStim(win=win, name='Instructions',
-    text='In this part of the study you will be given a regulation strategy to use while viewing various pictures.\n\nThen you will use a rating scale to indicate how you feel in the present moment. Use the mouse to select a rating, then press ENTER to move on. You will have 5 seconds to make a response once you see the rating scale.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press SPACE to start!',
+    text='In this part of the study you will be given a regulation strategy to use while viewing various pictures.\n\nThen you will use a rating scale to indicate how you feel in the present moment. Use the number keys 1-5 to make a rating, then press ENTER to record the response. You will have 5 seconds to make a response once you see the rating scale.\n\nYou will first be completing a few practice rounds.\n\nWhen you are ready, press SPACE to start!',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=1.5, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -638,7 +638,7 @@ for thisPracticeLoop in practiceLoop:
         routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
-        text_2.setText(LeftText)
+        text_2.setText('Neutral')
         text_4.setText(RightText)
         rating_2.reset()
         # keep track of which components have finished
@@ -1215,7 +1215,7 @@ for thisTrial_2 in trials_2:
         routineTimer.add(5.000000)
         # update component parameters for each repeat
         ratingQ.setText('How would you characterize your feelings at the present moment?')
-        text_2.setText(LeftText)
+        text_2.setText('Neutral')
         text_4.setText(RightText)
         rating_2.reset()
         # keep track of which components have finished
